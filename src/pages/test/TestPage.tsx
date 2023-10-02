@@ -1,7 +1,9 @@
 import React from 'react';
 
 const TestPage = () => {
-    return <div>Test Page</div>;
+    return <div>
+        <i className="bi bi-tiktok"></i>
+    </div>;
 };
 
 export default TestPage;
