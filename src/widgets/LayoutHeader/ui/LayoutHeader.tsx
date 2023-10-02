@@ -23,7 +23,7 @@ const upperTitle = "АКТУАЛЬНО: Набір на курси лідерс�
 export const LayoutHeader = () => {
     return (
         <div>
-            <span></span>
+            <span>{upperTitle}</span>
             <div className={css.headerContainer}>
                 {icons.map(item => (
                     <Icon height={item.height} width={item.width} iconBootstrap={item.iconBootstrap}/>
