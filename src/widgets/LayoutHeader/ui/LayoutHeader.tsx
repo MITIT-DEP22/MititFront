@@ -4,7 +4,7 @@ import css from "./LayoutHeader.module.scss"
 export const LayoutHeader = () => {
     return (
         <div className={css.someClass}>
-            Header
+            <p className={css.foo}>Header</p>
         </div>
     );
 };
