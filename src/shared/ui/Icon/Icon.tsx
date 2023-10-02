@@ -1,15 +1,16 @@
 import React, {FC} from 'react';
-
+import css from "./Icon.module.scss"
 interface IconProps {
-    link: string;
-    icon: string;
+    iconBootstrap?: string;
+    iconSvg?: string;
+    height: number;
+    width: number;
+    className?:string;
 }
 
-const Icon: FC<IconProps> = ({link, icon}) => {
+const Icon: FC<IconProps> = ({iconSvg, height, width, iconBootstrap, className}) => {
     return (
-        <a href={link}>
-            <i className={icon}/>
-        </a>
+        <i  style={{height: height, width: width}} className={`${iconBootstrap} ${className} ${css.icon}`}/>
     );
 };
 

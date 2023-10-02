@@ -1,10 +1,8 @@
-.someClass{
-  font-size:120px;
-}
-
-.foo{
-  color:red;
-  font-weight: lighter;
-  font-size: 20px;
+.headerContainer{
+  display: flex;
+  background: rgba(30, 30, 30, 0.25);
+  padding: 18px;
+  align-items: center;
+  color:white;
 }
 
