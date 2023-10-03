@@ -17,8 +17,8 @@ export const sliderItems: ISliderItem[] = [
     },
     {
         imageSrc: require("../../../assets/slider/slider-image-2.png"),
-        title: "2022 під час воєнного стану",
-        text: "Вступна кампанія",
+        title: "Начальник інформаційно-телекомунікаційного вузла",
+        text: "Військова професія",
         descriptionButton: {
             href: "/",
             text: "ДЕТАЛЬНІШЕ"
