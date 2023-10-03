@@ -1,0 +1,127 @@
+.slider {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  user-select: none;
+}
+
+.sliderPicture {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.sliderPicture::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--Green-gradient, linear-gradient(112deg, rgba(53, 92, 64, 0.55) 7.61%, rgba(14, 55, 25, 0.55) 92.39%));
+  z-index: 1;
+}
+
+.sliderPicture.active::before {
+  opacity: 1;
+}
+
+.sliderPicture.active {
+  opacity: 1;
+}
+
+.sliderImg {
+  width: 100%;
+  height: 100%;
+}
+
+.prevButton,
+.nextButton {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem; /* Converted to rem */
+  padding: 0.25rem; /* Converted to rem */
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  &.prevButton {
+    left: 1.25rem; /* Converted to rem */
+  }
+
+  &.nextButton {
+    right: 1.25rem; /* Converted to rem */
+  }
+}
+
+.sliderContent {
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.sliderDescription {
+  color: var(--White-Text, #F3F3F3);
+  text-align: center;
+  font-family: Montserrat, serif;
+  font-size: 1.5rem; /* Converted to rem */
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sliderTitle {
+  color: var(--White-Text, #F3F3F3);
+  font-family: Montserrat, serif;
+  font-size: 2rem; /* Converted to rem */
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 1.5rem; /* Converted to rem */
+}
+
+.sliderLink {
+  border-radius: 0.125rem; /* Converted to rem */
+  border: 0.125rem solid var(--White-Text, #F3F3F3);
+  background: rgba(30, 30, 30, 0.25);
+  color: var(--White-Text, #F3F3F3);
+  text-align: center;
+  font-family: Montserrat, serif;
+  font-size: 0.875rem; /* Converted to rem */
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 0.75rem 1.5rem; /* Converted to rem */
+  width: auto;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.bottomButton {
+  z-index: 2;
+  position: absolute;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
