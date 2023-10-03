@@ -7,6 +7,7 @@ import TitleLogo from "./TitleLogo/TitleLogo";
 import UpperTitle from "./UpperTitle/UpperTitle";
 import {observer} from "mobx-react";
 import {model} from "../model/model"
+import SocialMediaLink from "../../../features/SocialMeadiLink/SocialMediaLink";
 
 const linksT = [
     {title: "Інститут", to: "", id: 0},
@@ -46,7 +47,7 @@ export const LayoutHeader = observer(() => {
             <div className={css.headerTopContainer}>
                 <div className={css.iconsContainer}>
                     {icons.map(item => (
-                        <Icon height={item.height} width={item.width} iconBootstrap={item.iconBootstrap}/>
+                       <SocialMediaLink/>
                     ))}
                     <LanguageToggle/>
                 </div>
