@@ -3,7 +3,7 @@ import css from "./LayoutHeader.module.scss"
 import {NavLinkB, NavLinkT} from "../../../features/NavLink";
 import Icon from "../../../shared/ui/Icon/Icon";
 import {LanguageToggle} from "../../../features/LanguageToggle";
-import TitleLogo from "../../../shared/ui/TitleLogo/TitleLogo";
+import TitleLogo from "../../../shared/ui/TitleLogo/TitleLogo"
 import UpperTitle from "./UpperTitle/UpperTitle";
 import {observer} from "mobx-react";
 import {model} from "../model/model"
@@ -40,7 +40,7 @@ export const LayoutHeader = observer(() => {
 
 
     return (
-        <div className={css.container}>
+        <div>
             <UpperTitle value={upperTitle}/>
 
             <div className={css.headerTopContainer}>
