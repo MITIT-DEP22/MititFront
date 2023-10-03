@@ -3,11 +3,10 @@ import css from "./LayoutHeader.module.scss"
 import {NavLinkB, NavLinkT} from "../../../features/NavLink";
 import Icon from "../../../shared/ui/Icon/Icon";
 import {LanguageToggle} from "../../../features/LanguageToggle";
-import TitleLogo from "./TitleLogo/TitleLogo";
+import TitleLogo from "../../../shared/ui/TitleLogo/TitleLogo";
 import UpperTitle from "./UpperTitle/UpperTitle";
 import {observer} from "mobx-react";
 import {model} from "../model/model"
-import SocialMediaLink from "../../../features/SocialMeadiLink/SocialMediaLink";
 
 const linksT = [
     {title: "Інститут", to: "", id: 0},
@@ -38,14 +37,16 @@ const titleName = "ВІЙСЬКОВИЙ ІНСТИТУТ\nТЕЛЕКОМУНІК
 const upperTitle = "АКТУАЛЬНО: Набір на курси лідерства"
 
 export const LayoutHeader = observer(() => {
+
+
     return (
-        <div className={css.container}>
+        <div>
             <UpperTitle value={upperTitle}/>
 
             <div className={css.headerTopContainer}>
                 <div className={css.iconsContainer}>
                     {icons.map(item => (
-                        <SocialMediaLink icon={item.iconBootstrap}/>
+                        <Icon height={item.height} width={item.width} iconBootstrap={item.iconBootstrap}/>
                     ))}
                     <LanguageToggle/>
                 </div>
