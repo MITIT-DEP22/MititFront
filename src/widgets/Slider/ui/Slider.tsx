@@ -46,9 +46,9 @@ export const Slider: React.FC<SliderProps> = ({scrollDown}) => {
             ))}
 
 
-            <Icon height={36} iconBootstrap={"bi bi-caret-left"} width={36} className={css.prevButton}
+            <Icon height={36} iconBootstrap={"bi bi-caret-left"} width={36} className={`${css.prevButton} ${css.left}`}
                   onClick={prevImage}/>
-            <Icon height={36} iconBootstrap={"bi bi-caret-right"} width={36} className={css.nextButton}
+            <Icon height={36} iconBootstrap={"bi bi-caret-right"} width={36} className={`${css.nextButton} ${css.right}`}
                   onClick={nextImage}/>
 
             <Icon height={36} iconBootstrap={"bi bi-caret-down"} width={36} className={css.bottomButton}
