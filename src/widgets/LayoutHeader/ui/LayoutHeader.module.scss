@@ -1,8 +1,35 @@
-.headerContainer{
+.headerTopContainer {
   display: flex;
   background: rgba(30, 30, 30, 0.25);
-  padding: 18px;
+  padding: 18px 10%;
   align-items: center;
-  color:white;
+  color: white;
+  justify-content: space-between;
 }
+
+.headerBottomContainer {
+
+}
+
+.iconsContainer {
+  display: flex;
+  gap: 15px;
+}
+
+.linksContainer {
+  display: flex;
+  gap: 15px;
+}
+
+.upperTitle {
+  color: var(--White-Text, #F3F3F3);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  margin: 4px 0;
+}
+
 

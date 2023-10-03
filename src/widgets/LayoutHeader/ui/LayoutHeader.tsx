@@ -2,6 +2,8 @@ import React from 'react';
 import css from "./LayoutHeader.module.scss"
 import {NavLink} from "../../../features/NavLink";
 import Icon from "../../../shared/ui/Icon/Icon";
+import {LanguageToggle} from "../../../features/LanguageToggle";
+import {Logo} from "./Logo/Logo";
 
 const links = [
     {title: "Інститут", to: ""},
@@ -23,14 +25,24 @@ const upperTitle = "АКТУАЛЬНО: Набір на курси лідерс�
 export const LayoutHeader = () => {
     return (
         <div>
-            <span>{upperTitle}</span>
-            <div className={css.headerContainer}>
-                {icons.map(item => (
-                    <Icon height={item.height} width={item.width} iconBootstrap={item.iconBootstrap}/>
-                ))}
-                {links.map(item => (
-                    <NavLink title={item.title} to={item.to}/>
-                ))}
+            <div className={css.upperTitle}>
+                {upperTitle}
+            </div>
+            <div className={css.headerTopContainer}>
+                <div className={css.iconsContainer}>
+                    {icons.map(item => (
+                        <Icon height={item.height} width={item.width} iconBootstrap={item.iconBootstrap}/>
+                    ))}
+                </div>
+                <LanguageToggle/>
+                <div className={css.linksContainer}>
+                    {links.map(item => (
+                        <NavLink title={item.title} to={item.to}/>
+                    ))}
+                </div>
+            </div>
+            <div className={css.headerBottomContainer}>
+                <Logo/>
             </div>
         </div>
 
