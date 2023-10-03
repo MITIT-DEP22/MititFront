@@ -4,7 +4,11 @@ import {sliderItems} from "../model";
 import {Link} from "react-router-dom";
 import Icon from "../../../shared/ui/Icon/Icon";
 
-export const Slider: React.FC = () => {
+interface SliderProps {
+    scrollDown: () => void;
+}
+
+export const Slider: React.FC<SliderProps> = ({scrollDown}) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     const nextImage = () => {
@@ -28,17 +32,21 @@ export const Slider: React.FC = () => {
                         <div className={css.sliderDescription}>{item.text}</div>
                         <div className={css.sliderTitle}>{item.title}</div>
                         {item.descriptionButton && (
-                            <Link className={css.sliderLink} to={item.descriptionButton.href}>{item.descriptionButton.text}</Link>
+                            <Link className={css.sliderLink}
+                                  to={item.descriptionButton.href}>{item.descriptionButton.text}</Link>
                         )}
                     </div>
                 </picture>
             ))}
 
 
-            <Icon height={36} iconBootstrap={"bi bi-caret-left"} width={36} className={css.prevButton} onClick={prevImage}/>
-            <Icon height={36} iconBootstrap={"bi bi-caret-right"} width={36} className={css.nextButton} onClick={nextImage}/>
+            <Icon height={36} iconBootstrap={"bi bi-caret-left"} width={36} className={css.prevButton}
+                  onClick={prevImage}/>
+            <Icon height={36} iconBootstrap={"bi bi-caret-right"} width={36} className={css.nextButton}
+                  onClick={nextImage}/>
 
-            <Icon height={36} iconBootstrap={"bi bi-caret-down"} width={36} className={css.bottomButton}/>
+            <Icon height={36} iconBootstrap={"bi bi-caret-down"} width={36} className={css.bottomButton}
+                  onClick={scrollDown}/>
         </div>
     );
 };

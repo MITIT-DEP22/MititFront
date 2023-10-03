@@ -1,4 +1,5 @@
 export enum RouterNames {
+    HOME = "/",
     INSTITUTE = "/institute",
     ENTRANTS = "/entrants",
     STUDY = "/study",
