@@ -29,8 +29,14 @@ export const Slider: React.FC<SliderProps> = ({scrollDown}) => {
                     <img className={css.sliderImg} src={item.imageSrc} alt=""/>
 
                     <div className={css.sliderContent}>
-                        <div className={css.sliderDescription}>{item.text}</div>
-                        <div className={css.sliderTitle}>{item.title}</div>
+                        {item.text && (
+                            <div className={css.sliderDescription}>{item.text}</div>
+                        )}
+
+                        {item.title && (
+                            <div className={css.sliderTitle}>{item.title}</div>
+                        )}
+
                         {item.descriptionButton && (
                             <Link className={css.sliderLink}
                                   to={item.descriptionButton.href}>{item.descriptionButton.text}</Link>
