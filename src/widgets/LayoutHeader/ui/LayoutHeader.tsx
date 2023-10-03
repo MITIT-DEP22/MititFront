@@ -40,7 +40,7 @@ export const LayoutHeader = observer(() => {
 
 
     return (
-        <div>
+        <div className={css.container}>
             <UpperTitle value={upperTitle}/>
 
             <div className={css.headerTopContainer}>
