@@ -8,10 +8,10 @@ import {Slider} from "../widgets/Slider";
 
 const App = () => (
     <>
-        {/*<LayoutHeader/>*/}
+        <LayoutHeader/>
         <Slider/>
         <Routing/>
-        <LayoutFooter/>
+        {/*<LayoutFooter/>*/}
     </>
 )
 

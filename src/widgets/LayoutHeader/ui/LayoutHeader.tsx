@@ -38,16 +38,14 @@ const titleName = "ВІЙСЬКОВИЙ ІНСТИТУТ\nТЕЛЕКОМУНІК
 const upperTitle = "АКТУАЛЬНО: Набір на курси лідерства"
 
 export const LayoutHeader = observer(() => {
-
-
     return (
-        <div>
+        <div className={css.container}>
             <UpperTitle value={upperTitle}/>
 
             <div className={css.headerTopContainer}>
                 <div className={css.iconsContainer}>
                     {icons.map(item => (
-                       <SocialMediaLink/>
+                        <SocialMediaLink icon={item.iconBootstrap}/>
                     ))}
                     <LanguageToggle/>
                 </div>
