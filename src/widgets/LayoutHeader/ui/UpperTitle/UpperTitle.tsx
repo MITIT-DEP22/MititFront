@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import css from "../LayoutHeader.module.scss";
+import css from "./UpperTitle.module.scss";
 
 interface UpperTitleProps {
     value: string;
