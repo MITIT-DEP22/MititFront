@@ -1,0 +1,23 @@
+.img{
+  height:125px;
+  width: 125px;
+}
+
+.additionalLink{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title{
+  color: var(--White-Text, #F3F3F3);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

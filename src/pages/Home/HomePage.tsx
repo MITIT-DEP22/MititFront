@@ -1,5 +1,6 @@
 import React from 'react';
 import {Slider} from "../../widgets/Slider";
+import {AdditionalLinksBlock} from "../../widgets/AdditionalLinksBlock";
 
 const HomePage = () => {
     const scroll = () => {
@@ -10,9 +11,10 @@ const HomePage = () => {
     };
 
     return (
-        <div style={{height: "300vh"}}>
+        <>
             <Slider scrollDown={scroll}/>
-        </div>
+            <AdditionalLinksBlock/>
+        </>
     );
 };
 
