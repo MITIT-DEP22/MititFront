@@ -10,7 +10,7 @@ const App = () => {
    
     return (
         <>
-            <LayoutHeader/>
+            {/*<LayoutHeader/>*/}
             <Routing/>
             <LayoutFooter/>
         </>
