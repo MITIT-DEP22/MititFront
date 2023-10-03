@@ -1,25 +1,36 @@
 .headerTopContainer {
   display: flex;
+  flex-wrap: wrap;
   background: rgba(30, 30, 30, 0.25);
   padding: 18px 10%;
   align-items: center;
   color: white;
   justify-content: space-between;
+  gap:26px;
 }
 
 .headerBottomContainer {
-
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 10%;
+  gap: 26px;
 }
 
 .iconsContainer {
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
 }
 
 .linksContainer {
   display: flex;
-  gap: 15px;
+  flex-wrap: wrap;
+  gap: min(30px, 4vw);
+  align-items: center;
 }
+
 
 .upperTitle {
   color: var(--White-Text, #F3F3F3);
@@ -30,6 +41,10 @@
   line-height: normal;
   text-align: center;
   margin: 4px 0;
+}
+
+.search {
+  color: white;
 }
 
 

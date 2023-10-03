@@ -1,4 +1,4 @@
-.navLink{
+.navLinkT {
   text-transform: uppercase;
   text-decoration: none;
   text-decoration-color: white;
@@ -9,4 +9,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.navLinkT_active{
+  font-weight: 700;
+  transition-duration: 200ms;
 }

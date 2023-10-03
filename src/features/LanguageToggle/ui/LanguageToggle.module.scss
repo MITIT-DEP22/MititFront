@@ -1,0 +1,31 @@
+.langBtn {
+  border: none;
+  background: transparent;
+  color: var(--White-Text, #F3F3F3);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.langBtn_active {
+  font-weight: 600;
+  transition-duration: 200ms;
+}
+
+.separator {
+  height: 14px;
+  width: 2px;
+  border-radius: 2px;
+  background: white;
+}
+
+.toggleContainer {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin-left: 3vw;
+}

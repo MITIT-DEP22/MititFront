@@ -1,0 +1,19 @@
+.titleName {
+  color: #F3F3F3;
+  font-family: Montserrat;
+  font-size: min(14px, 3vw);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.logo {
+  width: min(125px, 16vw);
+  height: min(125px, 16vw);
+}
+
+.containerTitleLogo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
