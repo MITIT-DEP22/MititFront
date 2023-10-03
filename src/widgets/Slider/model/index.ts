@@ -4,8 +4,8 @@ export interface IButtonDescription {
 }
 export interface ISliderItem {
     imageSrc: string,
-    title: string,
-    text: string,
+    title?: string,
+    text?: string,
     descriptionButton?: IButtonDescription
 }
 
