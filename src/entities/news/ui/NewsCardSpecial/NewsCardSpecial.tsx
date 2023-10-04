@@ -9,7 +9,7 @@ interface NewsProps {
 
 export const NewsCardSpecial: FC<NewsProps> = ({news}) => {
     return (
-        <div className={css.container}>
+        <div  className={css.container}>
             <img className={css.img} src={news?.img} alt=""/>
             <div className={css.date}>{formatDate(news?.date)}</div>
             <div className={css.title}>{news?.title}</div>

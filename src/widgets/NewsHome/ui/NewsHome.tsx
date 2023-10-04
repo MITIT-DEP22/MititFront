@@ -18,7 +18,7 @@ export const NewsHome = () => {
 
     return (
         <>
-            <SectionTitle title={"Хроніка"}/>
+            <SectionTitle margin={"25px 0"} title={"Хроніка"}/>
             <div className={css.container}>
                 <NewsCardSpecial news={news[0]}/>
                 <div className={css.subcontainer}>

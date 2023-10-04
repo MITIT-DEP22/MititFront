@@ -1,23 +1,28 @@
 .container {
-
-  @media screen and (max-width: 600px) {
-    width: 90vw;
-  };
-
-  position: relative;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  position: relative;
   background: rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  @media screen and (width > 768){
+
+  }
+
+  @media screen and (width < 768){
+    width: 100vw;
+  }
 }
 
 .img {
+  width: 100%;
   z-index: -10;
 }
 
 .date {
   position: absolute;
-  bottom: 30px;
-  left: 10px;
+  bottom: 6%;
+  left: 2%;
   z-index: 10;
   color: var(--White-Text, #F3F3F3);
   font-family: Montserrat;
@@ -29,9 +34,10 @@
 
 .title {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  bottom: 2%;
+  left: 2%;
   z-index: 10;
+
   color: var(--White-Text, #F3F3F3);
   font-family: Montserrat;
   font-size: 14px;

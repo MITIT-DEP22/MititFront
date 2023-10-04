@@ -12,7 +12,6 @@ const HomePage = () => {
     };
 
 
-
     return (
         <>
             <Slider scrollDown={scroll}/>

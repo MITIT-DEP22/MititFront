@@ -3,11 +3,12 @@ import css from "./SectionTitle.module.scss";
 
 interface SectionTitleProps {
     title: string;
+    margin?:string;
 }
 
-const SectionTitle: FC<SectionTitleProps> = ({title}) => {
+const SectionTitle: FC<SectionTitleProps> = ({title, margin}) => {
     return (
-        <div className={css.titleContainer}>
+        <div style={{margin:margin}} className={css.titleContainer}>
             <p className={css.title}>
                 {title}
             </p>

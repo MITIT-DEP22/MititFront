@@ -13,12 +13,11 @@ export const NewsCard: FC<NewsProps> = ({news}) => {
             <div className={css.cardDate}>
                 {formatDate(news?.date)}
             </div>
-
             <div className={css.cardTitle}>
                 {news?.title}
             </div>
 
-            <img src={news?.img}/>
+            <img className={css.cardImg} src={news?.img}/>
         </div>
     );
 };

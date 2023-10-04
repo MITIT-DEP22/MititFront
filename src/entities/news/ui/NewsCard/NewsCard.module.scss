@@ -1,16 +1,22 @@
 .card {
-  @media screen and (min-width: 600px) {
-    width: 240px;
-  };
+  @media screen and (width > 768px) {
+    width: 45%;
+  }
 
-  @media screen and (max-width: 600px) {
-    width: 200px;
-  };
-
+  @media screen and (width < 768px) {
+    width: 90%;
+  }
   display: flex;
   flex-direction: column;
-  gap:10px;
+  gap: 5px;
+  margin: 0 auto;
 }
+
+.cardImg {
+  height: 100%;
+  width: 100%;
+}
+
 
 .cardTitle {
   color: #000;
