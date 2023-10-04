@@ -1,12 +1,12 @@
 .container {
   width: 100%;
-  gap: 5%;
+  gap: 3%;
 
   display: grid;
-  grid-template-columns:  1fr 1fr;
+  grid-template-columns:  1.3fr 1fr;
   padding: 3% 5% 5% 5%;
 
-  @media screen and (width < 1240px) {
+  @media screen and (width < 1380px) {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

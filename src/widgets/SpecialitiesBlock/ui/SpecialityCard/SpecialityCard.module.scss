@@ -1,16 +1,26 @@
 .card {
-  @media screen and (width < 768px){
+  @media screen and (width < 768px) {
     width: 90%;
   }
-  @media screen and (width > 768px){
+  @media screen and (width > 768px) {
     width: 75%;
   }
-  //@media screen and (width > 1140px){
-  //  width: 75%;
-  //}
-
   margin: 20px auto;
 }
+
+.details {
+  text-decoration: none;
+  padding-left: 20px;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.detailsContainer{
+  margin-top: 20px;
+}
+
 
 .line {
   height: 135%;

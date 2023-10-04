@@ -1,5 +1,7 @@
 import React from 'react';
 import css from "./SpecialityCard.module.scss"
+import {Link} from "react-router-dom";
+import {RouterNames} from "../../../../shared/enums/RouterNames";
 
 const SpecialityCard = () => {
 
@@ -18,7 +20,9 @@ const SpecialityCard = () => {
                 {cardData.title}
             </p>
             <p className={css.cardDescription}>{cardData.description}</p>
-
+            <div className={css.detailsContainer}>
+                <Link className={css.details}  to={RouterNames.SPECIALITIES + "/:id"}>Детальніше</Link>
+            </div>
         </div>
     );
 };

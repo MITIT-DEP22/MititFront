@@ -11,5 +11,5 @@ export enum RouterNames {
     UNITS = "/units",
     COOPERATION = "/cooperation",
     OUR_WINS = "/wins",
-
+    SPECIALITIES = "/specialities"
 }
