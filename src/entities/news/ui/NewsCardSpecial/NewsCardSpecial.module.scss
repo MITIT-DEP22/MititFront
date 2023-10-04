@@ -1,15 +1,14 @@
 .container {
-  width: 100%;
   display: flex;
   justify-content: center;
   position: relative;
   background: rgba(0, 0, 0, 0.5);
   margin: 0 auto;
-  @media screen and (width > 768){
-
+  @media screen and (width > 768px){
+    width:100%;
   }
 
-  @media screen and (width < 768){
+  @media screen and (width < 768px){
     width: 100vw;
   }
 }

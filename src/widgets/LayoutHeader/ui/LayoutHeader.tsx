@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import css from "./LayoutHeader.module.scss"
 import {NavLinkB, NavLinkT} from "../../../features/NavLink";
 import Icon from "../../../shared/ui/Icon/Icon";
@@ -38,12 +38,18 @@ const upperTitle = "АКТУАЛЬНО: Набір на курси лідерс�
 
 export const LayoutHeader = observer(() => {
 
+    const [topPosition, setTopPosition] = useState(30)
+    const handleScroll = () => {
+        window.scrollY > 30 ? setTopPosition(0) : setTopPosition(30);
+        window.addEventListener('scroll', handleScroll);
+    }
+    window.addEventListener('scroll', handleScroll);
 
     return (
         <div className={css.container}>
             <UpperTitle value={upperTitle}/>
 
-            <div className={css.headerTopContainer}>
+            <div style={{top: `${topPosition}px`}} className={css.headerTopContainer}>
                 <div className={css.iconsContainer}>
                     {icons.map(item => (
                         <Icon height={item.height} width={item.width} iconBootstrap={item.iconBootstrap}/>
