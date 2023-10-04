@@ -26,6 +26,11 @@ export const Slider: React.FC<SliderProps> = ({scrollDown}) => {
                     key={item.imageSrc + index}
                     className={`${css.sliderPicture} ${index === currentImageIndex ? css.active : ''}`}
                 >
+
+                    {item.mobileImageSrc && (
+                        <source media="(max-width: 420px)" srcSet={item.mobileImageSrc} />
+                    )}
+
                     <img className={css.sliderImg} src={item.imageSrc} alt=""/>
 
                     <div className={css.sliderContent}>
