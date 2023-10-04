@@ -7,9 +7,10 @@ import TitleLogo from "../../../shared/ui/TitleLogo/TitleLogo"
 import UpperTitle from "./UpperTitle/UpperTitle";
 import {observer} from "mobx-react";
 import {model} from "../model/model"
+import {RouterNames} from "../../../shared/enums/RouterNames";
 
 const linksT = [
-    {title: "Інститут", to: "", id: 0},
+    {title: "Інститут", to: RouterNames.INSTITUTE, id: 0},
     {title: "Вступникам", to: "", id: 1},
     {title: "Навчання", to: "", id: 2},
     {title: "Контакти", to: "", id: 3},

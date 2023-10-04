@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: rgba(53, 92, 64, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: #FEFEFE;
+  font-family: Volja;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+}

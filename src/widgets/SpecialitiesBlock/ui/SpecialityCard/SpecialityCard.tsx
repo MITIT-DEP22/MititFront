@@ -2,6 +2,7 @@ import React from 'react';
 import css from "./SpecialityCard.module.scss"
 import {Link} from "react-router-dom";
 import {RouterNames} from "../../../../shared/enums/RouterNames";
+import TitleWithLine from "../../../../shared/ui/TitleWithLine/TitleWithLine";
 
 const SpecialityCard = () => {
 
@@ -15,13 +16,10 @@ const SpecialityCard = () => {
             <img className={css.cardImg}
                  src={cardData.img}
                  alt=""/>
-            <p className={css.cardTitle}>
-                <div className={css.line}/>
-                {cardData.title}
-            </p>
+            <TitleWithLine title={cardData.title}/>
             <p className={css.cardDescription}>{cardData.description}</p>
             <div className={css.detailsContainer}>
-                <Link className={css.details}  to={RouterNames.SPECIALITIES + "/:id"}>Детальніше</Link>
+                <Link className={css.details} to={RouterNames.SPECIALITIES + "/:id"}>Детальніше</Link>
             </div>
         </div>
     );
