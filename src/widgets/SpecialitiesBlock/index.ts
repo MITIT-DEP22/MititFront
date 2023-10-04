@@ -1,0 +1,1 @@
+export {SpecialitiesBlock} from "./ui/SpecialitiesBlock"

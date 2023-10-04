@@ -1,2 +1,21 @@
 @import "normalize.scss";
 @import "vars.scss";
+
+@font-face {
+  font-family: 'UAF Sans';
+  src: url('../../assets/fonts/UAFSans-Regular.ttf') format('woff'),
+  url('../../assets/fonts/UAFSans-SemiBold.ttf') format('woff');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Volja';
+  src: url('../../assets/fonts/Volja-Black.otf') format('woff'),
+  url('../../assets/fonts/Volja-Regular.otf') format('woff');
+
+  font-weight: normal;
+  font-style: normal;
+}

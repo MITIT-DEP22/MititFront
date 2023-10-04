@@ -7,7 +7,7 @@ import {LayoutFooter} from "../widgets/LayoutFooter";
 
 const App = () => {
 
-   
+
     return (
         <>
             <LayoutHeader/>

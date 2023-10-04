@@ -78,22 +78,16 @@
 }
 
 .sliderDescription {
-  color: var(--White-Text, #F3F3F3);
+  color: #F3F3F3;
   text-align: center;
-  font-family: Montserrat, serif;
   font-size: 1.5rem;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .sliderTitle {
-  color: var(--White-Text, #F3F3F3);
-  font-family: Montserrat, serif;
+  color:  #F3F3F3;
   font-size: 2rem;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   margin-bottom: 1.5rem;
 }
 
@@ -103,11 +97,8 @@
   background: rgba(30, 30, 30, 0.25);
   color: var(--White-Text, #F3F3F3);
   text-align: center;
-  font-family: Montserrat, serif;
   font-size: 0.875rem;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   padding: 0.75rem 1.5rem;
   width: auto;
   display: inline-block;
@@ -128,7 +119,6 @@
   margin: 0 auto;
 }
 
-/* Media Queries */
 @media (max-width: 1200px) {
   .sliderContent {
     max-width: 800px;

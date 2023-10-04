@@ -8,16 +8,14 @@
 
 .marqueeContent {
   width: 100%;
-  color: var(--White-Text, #F3F3F3);
-  font-family: Montserrat;
+  color: #F3F3F3;
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  font-family: Volja;
   text-align: center;
   margin: 4px 0;
   display: inline-block;
-  animation: marquee 30s linear infinite; /* Adjust animation duration as needed */
+  animation: marquee 30s linear infinite;
 }
 
 @keyframes marquee {

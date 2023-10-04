@@ -1,0 +1,26 @@
+import React from 'react';
+import css from "./SpecialityCard.module.scss"
+
+const SpecialityCard = () => {
+
+    let cardData = {
+        title: "Компʼ.терні науки",
+        description: "Математичне, інформаційне і програмне забезпечення військових інформаційних систем",
+        img: "https://loremflickr.com/640/480/people"
+    }
+    return (
+        <div className={css.card}>
+            <img className={css.cardImg}
+                 src={cardData.img}
+                 alt=""/>
+            <p className={css.cardTitle}>
+                <div className={css.line}/>
+                {cardData.title}
+            </p>
+            <p className={css.cardDescription}>{cardData.description}</p>
+
+        </div>
+    );
+};
+
+export default SpecialityCard;

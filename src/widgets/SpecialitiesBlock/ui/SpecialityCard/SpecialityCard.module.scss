@@ -1,0 +1,42 @@
+.card {
+  @media screen and (width < 768px){
+    width: 90%;
+  }
+  @media screen and (width > 768px){
+    width: 75%;
+  }
+  //@media screen and (width > 1140px){
+  //  width: 75%;
+  //}
+
+  margin: 20px auto;
+}
+
+.line {
+  height: 135%;
+  width: 2px;
+  background: black;
+  position: absolute;
+  bottom: 5%;
+  left: 3%
+}
+
+.cardTitle {
+  font-family: UAF Sans;
+  position: relative;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 1px 0 0 20px;
+
+}
+
+.cardImg {
+  width: 100%;
+}
+
+.cardDescription {
+  font-family: UAF Sans;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 0 0 20px;
+}

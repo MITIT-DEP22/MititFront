@@ -2,9 +2,9 @@
   width: 100%;
   gap: 5%;
 
-    display: grid;
-    grid-template-columns:  1fr 1fr;
-    padding: 3% 5% 5% 5%;
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+  padding: 3% 5% 5% 5%;
 
   @media screen and (width < 1240px) {
     display: flex;

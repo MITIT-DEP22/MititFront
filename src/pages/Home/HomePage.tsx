@@ -2,6 +2,7 @@ import React from 'react';
 import {Slider} from "../../widgets/Slider";
 import {AdditionalLinksBlock} from "../../widgets/AdditionalLinksBlock";
 import {NewsHome} from "../../widgets/NewsHome";
+import {SpecialitiesBlock} from "../../widgets/SpecialitiesBlock";
 
 const HomePage = () => {
     const scroll = () => {
@@ -15,6 +16,7 @@ const HomePage = () => {
         <>
             <Slider scrollDown={scroll}/>
             <NewsHome/>
+            <SpecialitiesBlock/>
             <AdditionalLinksBlock/>
         </>
     );
