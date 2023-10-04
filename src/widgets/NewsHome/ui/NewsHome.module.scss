@@ -1,0 +1,12 @@
+.container {
+  padding: 5% 10%;
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+  gap: 5%;
+}
+
+.subcontainer {
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+  gap: 5px;
+}

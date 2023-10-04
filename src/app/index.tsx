@@ -12,7 +12,7 @@ const App = () => {
         <>
             <LayoutHeader/>
             <Routing/>
-            <LayoutFooter/>
+            {/*<LayoutFooter/>*/}
         </>
     )
 }

@@ -1,0 +1,41 @@
+.container {
+
+  @media screen and (max-width: 600px) {
+    width: 90vw;
+  };
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.img {
+  z-index: -10;
+}
+
+.date {
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  z-index: 10;
+  color: var(--White-Text, #F3F3F3);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 10;
+  color: var(--White-Text, #F3F3F3);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
