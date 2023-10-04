@@ -1,0 +1,16 @@
+.titleContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+}

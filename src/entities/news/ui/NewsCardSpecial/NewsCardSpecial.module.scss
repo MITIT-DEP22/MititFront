@@ -1,0 +1,47 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  @media screen and (width > 768){
+
+  }
+
+  @media screen and (width < 768){
+    width: 100vw;
+  }
+}
+
+.img {
+  width: 100%;
+  z-index: -10;
+}
+
+.date {
+  position: absolute;
+  bottom: 6%;
+  left: 2%;
+  z-index: 10;
+  color: var(--White-Text, #F3F3F3);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.title {
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+  z-index: 10;
+
+  color: var(--White-Text, #F3F3F3);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

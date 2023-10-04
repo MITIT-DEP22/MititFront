@@ -1,0 +1,1 @@
+export {NewsHome} from "./ui/NewsHome"

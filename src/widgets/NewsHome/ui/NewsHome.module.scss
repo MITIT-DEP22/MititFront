@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  margin-top: 20px;
+  gap: 5%;
+
+
+  @media screen and (width > 1440px) {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    padding: 5% 10%;
+  }
+
+  @media screen and (width < 1440px) {
+   display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1% 2%;
+  }
+
+}
+
+.subcontainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5%;
+  height: 100%;
+}
