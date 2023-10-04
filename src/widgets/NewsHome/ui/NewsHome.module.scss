@@ -7,11 +7,11 @@
   @media screen and (width > 1440px) {
     display: grid;
     grid-template-columns:  1fr 1fr;
-    padding: 5% 10%;
+    padding: 5% 5% 5% 10%;
   }
 
   @media screen and (width < 1440px) {
-   display: flex;
+    display: flex;;
     justify-content: center;
     flex-wrap: wrap;
     padding: 1% 2%;
@@ -20,10 +20,11 @@
 }
 
 .subcontainer {
+  padding: 5%;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 5%;
+  gap: 5vh;
   height: 100%;
 }

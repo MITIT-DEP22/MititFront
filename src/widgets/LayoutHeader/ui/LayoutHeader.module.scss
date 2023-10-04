@@ -1,4 +1,4 @@
-.container{
+.container {
   position: absolute;
   z-index: 10;
   width: 100%;
@@ -6,17 +6,22 @@
 
 .headerTopContainer {
   display: flex;
+  position: fixed;
+  width: 100%;
   flex-wrap: wrap;
   background: rgba(30, 30, 30, 0.25);
   padding: 18px 10%;
   align-items: center;
   color: white;
   justify-content: space-between;
-  gap:26px;
+  gap: 26px;
 }
 
 .headerBottomContainer {
   display: flex;
+  top: 8vh;
+  width: 100%;
+  position: absolute;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
