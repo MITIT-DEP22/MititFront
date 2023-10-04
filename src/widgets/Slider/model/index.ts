@@ -4,6 +4,7 @@ export interface IButtonDescription {
 }
 export interface ISliderItem {
     imageSrc: string,
+    mobileImageSrc?: string,
     title?: string,
     text?: string,
     descriptionButton?: IButtonDescription
@@ -12,6 +13,7 @@ export interface ISliderItem {
 export const sliderItems: ISliderItem[] = [
     {
         imageSrc: require("../../../assets/slider/slider-image-1.png"),
+        mobileImageSrc: require("../../../assets/slider/slider-image-mobile-1.png"),
         title: "Вступай до ВІТІ!",
         text: "Мрієш стати професіоналом військової справи?"
     },
