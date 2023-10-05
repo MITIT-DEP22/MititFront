@@ -5,8 +5,6 @@ import SpecialityCard from "./SpecialityCard/SpecialityCard";
 
 export const SpecialitiesBlock = () => {
     return (
-        <div>
-            <SectionTitle title={"Спеціальності підготовки"}/>
             <div  className={css.container}>
                 <SpecialityCard/>
                 <SpecialityCard/>
@@ -15,6 +13,5 @@ export const SpecialitiesBlock = () => {
                 <SpecialityCard/>
                 <SpecialityCard/>
             </div>
-        </div>
     );
 };
