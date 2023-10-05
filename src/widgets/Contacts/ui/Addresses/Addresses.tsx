@@ -50,12 +50,14 @@ const Addresses = () => {
                         ))}
                     </ul>
 
-                    <div>
+                    <ul>
                         <Title value={"Як дібратися?"}/>
-                        <div className={css.instruction}>
-                            {instructionForBecome}
-                        </div>
-                    </div>
+                        <li>
+                            <div className={css.instruction}>
+                                {instructionForBecome}
+                            </div>
+                        </li>
+                    </ul>
                 </div>
 
             </div>
