@@ -8,6 +8,7 @@ import UpperTitle from "./UpperTitle/UpperTitle";
 import {observer} from "mobx-react";
 import {model} from "../model/model"
 import {RouterNames} from "../../../shared/enums/RouterNames";
+import Sidebar from "./Sidebar/Sidebar";
 
 const linksT = [
     {title: "Інститут", to: RouterNames.INSTITUTE, id: 0},
@@ -47,36 +48,42 @@ export const LayoutHeader = observer(() => {
     window.addEventListener('scroll', handleScroll);
 
     return (
-        <div className={css.container}>
-            <UpperTitle value={upperTitle}/>
+        <>
+            {window.innerWidth < 1000 &&
+                <Sidebar/>
+            }
 
-            <div style={{top: `${topPosition}px`}} className={css.headerTopContainer}>
-                <div className={css.iconsContainer}>
-                    {icons.map(item => (
-                        <Icon height={item.height} width={item.width} iconBootstrap={item.iconBootstrap}/>
-                    ))}
-                    <LanguageToggle/>
+            <div className={css.container}>
+                <UpperTitle value={upperTitle}/>
+
+                <div style={{top: `${topPosition}px`}} className={css.headerTopContainer}>
+                    <div className={css.iconsContainer}>
+                        {icons.map(item => (
+                            <Icon height={item.height} width={item.width} iconBootstrap={item.iconBootstrap}/>
+                        ))}
+                        <LanguageToggle/>
+                    </div>
+                    <div className={css.linksContainer}>
+                        {linksT.map(item => (
+                            <NavLinkT isActive={item.id === model.activeLink} click={() => model.changeLink(item.id)}
+                                      title={item.title} to={item.to}/>
+                        ))}
+                    </div>
                 </div>
-                <div className={css.linksContainer}>
-                    {linksT.map(item => (
-                        <NavLinkT isActive={item.id === model.activeLink} click={() => model.changeLink(item.id)}
-                                  title={item.title} to={item.to}/>
-                    ))}
+
+                <div className={css.headerBottomContainer}>
+                    <TitleLogo value={titleName}/>
+                    <div className={css.linksContainer}>
+                        {linksB.map(item => (
+                            <NavLinkB click={() => model.changeLink(item.id)} isActive={item.id === model.activeLink}
+                                      id={item.id} title={item.title} to={item.to}/>
+                        ))}
+                        <Icon className={css.search} height={25} width={25} iconBootstrap={"bi bi-search"}/>
+                    </div>
                 </div>
+
             </div>
-
-            <div className={css.headerBottomContainer}>
-                <TitleLogo value={titleName}/>
-                <div className={css.linksContainer}>
-                    {linksB.map(item => (
-                        <NavLinkB click={() => model.changeLink(item.id)} isActive={item.id === model.activeLink}
-                                  id={item.id} title={item.title} to={item.to}/>
-                    ))}
-                    <Icon className={css.search} height={25} width={25} iconBootstrap={"bi bi-search"}/>
-                </div>
-            </div>
-
-        </div>
+        </>
     )
 })
 
