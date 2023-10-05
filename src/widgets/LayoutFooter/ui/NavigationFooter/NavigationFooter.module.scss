@@ -1,3 +1,8 @@
+.navigationTitle {
+  font-weight: 700;
+}
+
+
 .navigationContainer {
   font: {
     weight: 400;
@@ -9,6 +14,16 @@
   gap: 5px;
 }
 
-.navigationTitle {
-  font-weight: 700;
+.navigationElement {
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 640px) {
+  .navigationContainer {
+    align-items: center;
+    justify-content: center;
+  }
 }

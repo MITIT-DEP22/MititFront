@@ -1,11 +1,8 @@
 .footerMainContainer {
-  background-image: url("../../../assets/footer/line.png");
-  height: 530px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
+  background: no-repeat center url('../../../assets/backgrounds/leather-bg.png');
+  background-size: cover;
+  height: min-content;
+  padding-top: 50px;
 }
 
 .footerUpperContainer {
@@ -17,11 +14,31 @@
 }
 
 .footerBottomContainer {
-  display: flex;
-  gap: 250px;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 200px;
+  padding: 20px;
+  align-items: start;
 }
+
+
+@media (max-width: 640px) {
+  .footerBottomContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 150px;
+  }
+  .footerWhiteContainer {
+
+    padding-left: 40px;
+  }
+}
+
 
 .footerWhiteContainer {
   display: flex;
