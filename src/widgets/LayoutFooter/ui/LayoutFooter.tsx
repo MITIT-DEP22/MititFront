@@ -1,5 +1,6 @@
 import React from 'react';
 import css from "./LayoutFooter.module.scss"
+import bg from '../../../assets/footer/line.png'
 import TitleLogo from "../../../shared/ui/TitleLogo/TitleLogo"
 import {observer} from "mobx-react";
 import MiddleTitle from "./MiddleTitle/MiddleTitle";
@@ -18,25 +19,24 @@ const navArray = [
         {title: "Герої не вмирають", to: "", id: 4},
     ],
     [
-        {title: "Чому ВІТІ", to: "", id: 5},
-        {title: "Історична довідка", to: "", id: 6},
-        {title: "Керівний склад", to: "", id: 7},
-        {title: "Публічна інформація", to: "", id: 8},
-        {title: "Герої не вмирають", to: "", id: 9},
+        {title: "Організація освітньої діяльності", to: "", id: 5},
+        {title: "Методична робота", to: "", id: 6},
+        {title: "Матеріально-технічна база", to: "", id: 7},
+        {title: "Ліцензія, сертифікати, акредитація", to: "", id: 8},
+        {title: "Нормативно-правова база", to: "", id: 9},
     ],
     [
-        {title: "Чому ВІТІ", to: "", id: 10},
-        {title: "Історична довідка", to: "", id: 11},
-        {title: "Керівний склад", to: "", id: 12},
-        {title: "Публічна інформація", to: "", id: 13},
-        {title: "Герої не вмирають", to: "", id: 14},
+        {title: "Денна форма навчання", to: "", id: 10},
+        {title: "Заочна форма навчання", to: "", id: 11},
+        {title: "Навчання в докторантурі та ад'юнктурі", to: "", id: 12},
+        {title: "Підготовка за програмою офіцерів запасу", to: "", id: 13},
+        {title: "Приймальна комісія", to: "", id: 14},
+        {title: "ЗНО 2022", to: "", id: 15},
     ],
     [
-        {title: "Чому ВІТІ", to: "", id: 15},
-        {title: "Історична довідка", to: "", id: 16},
-        {title: "Керівний склад", to: "", id: 17},
-        {title: "Публічна інформація", to: "", id: 18},
-        {title: "Герої не вмирають", to: "", id: 19},
+        {title: "Прийом громадян", to: "", id: 16},
+        {title: "Адреса", to: "", id: 17},
+        {title: "Гаряча лінія", to: "", id: 18},
     ]
 ]
 
@@ -59,12 +59,12 @@ export const LayoutFooter = observer(() => {
                 </div>
                 <div className={css.footerBottomContainer}>
                     {navArray.map((value, index) => (
-                        <NavigationFooter key={index} title={titleArray[index]} value={value} />
+                        <NavigationFooter key={index} title={titleArray[index]} value={value}/>
                     ))}
                 </div>
             </div>
             <div className={css.footerWhiteContainer}>
-                © Військовий інститут телекомунікацій та інформатизації, 2009-2022.
+                © Військовий інститут телекомунікацій та інформатизації, 2009-2023.
             </div>
         </div>
     )
