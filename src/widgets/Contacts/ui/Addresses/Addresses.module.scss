@@ -1,0 +1,32 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2% 0;
+  gap: 5%;
+}
+
+.img {
+  width: 100%;
+}
+
+
+ul li {
+  list-style-type: disc;
+  margin-top: 24px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+
+.instruction{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.addressesContainer{
+  display: flex;
+  flex-direction: column;
+  gap:5%;
+}
+
