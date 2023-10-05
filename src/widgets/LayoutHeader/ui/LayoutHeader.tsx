@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import css from "./LayoutHeader.module.scss"
 import {NavLinkB, NavLinkT} from "../../../features/NavLink";
 import Icon from "../../../shared/ui/Icon/Icon";
@@ -11,19 +11,19 @@ import {RouterNames} from "../../../shared/enums/RouterNames";
 
 const linksT = [
     {title: "Інститут", to: RouterNames.INSTITUTE, id: 0},
-    {title: "Вступникам", to: "", id: 1},
-    {title: "Навчання", to: "", id: 2},
-    {title: "Контакти", to: "", id: 3},
+    {title: "Вступникам", to: RouterNames.ENTRANTS, id: 1},
+    {title: "Навчання", to: RouterNames.STUDY, id: 2},
+    {title: "Контакти", to: RouterNames.CONTACTS, id: 3},
 ]
 
 const linksB = [
-    {title: "Новини", to: "", id: 4},
-    {title: "Наука", to: "", id: 5},
-    {title: "Факультети", to: "", id: 6},
-    {title: "Кафедри", to: "", id: 7},
-    {title: "Підрозіли", to: "", id: 8},
-    {title: "Співробітництво", to: "", id: 9},
-    {title: "Наші перемоги", to: "", id: 10}
+    {title: "Новини", to: RouterNames.NEWS, id: 4},
+    {title: "Наука", to: RouterNames.SCIENCE, id: 5},
+    {title: "Факультети", to: RouterNames.FACULTIES, id: 6},
+    {title: "Кафедри", to: RouterNames.DEPARTMENTS, id: 7},
+    {title: "Підрозіли", to: RouterNames.UNITS, id: 8},
+    {title: "Співробітництво", to: RouterNames.COOPERATION, id: 9},
+    {title: "Наші перемоги", to: RouterNames.OUR_WINS, id: 10}
 ]
 
 const icons = [

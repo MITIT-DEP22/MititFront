@@ -1,6 +1,6 @@
 import React from 'react';
 import InfoCard from "./InfoCard/InfoCard";
-import css from "./InstituteInfoBlock.module.scss"
+import css from "./InstituteInfo.module.scss"
 
 const infoCards = [
     {
@@ -30,8 +30,7 @@ const infoCards = [
     },
 ]
 
-export const InstituteInfoBlock = () => {
-
+export const InstituteInfo = () => {
     return (
         <div className={css.container}>
             {infoCards.map(item => (

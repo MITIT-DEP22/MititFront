@@ -1,5 +1,5 @@
 import React from 'react';
-import css from "./AdditionalLinksBlock.module.scss"
+import css from "./AdditionalLinks.module.scss"
 import AdditionalLink from "./AdditionalLink/AdditionalLink";
 
 
@@ -22,7 +22,7 @@ const links = [
 
 ]
 
-export const AdditionalLinksBlock = () => {
+export const AdditionalLinks = () => {
     return (
         <div className={css.container}>
             {links.map(item => (

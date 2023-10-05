@@ -1,1 +1,0 @@
-export {InstituteInfoBlock} from "./ui/InstituteInfoBlock"
