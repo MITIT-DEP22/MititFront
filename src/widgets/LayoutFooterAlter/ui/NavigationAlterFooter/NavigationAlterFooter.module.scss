@@ -8,7 +8,7 @@
     weight: 400;
     size: 14px;
   };
-  color: #F3F3F3;
+  color: black;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -17,12 +17,5 @@
 .navigationElement {
   cursor: pointer;
   text-decoration: none;
-  color: white;
-}
-
-@media (max-width: 640px) {
-  .navigationContainer {
-    align-items: center;
-    justify-content: center;
-  }
+  color: black;
 }
