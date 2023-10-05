@@ -1,17 +1,14 @@
-.line {
-  height: 135%;
-  width: 2px;
-  background: black;
-  position: absolute;
-  bottom: 5%;
-  left: 3%
+.card{
+  width: 500px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+  color: #131313;
 }
 
-.title {
-  font-family: UAF Sans;
-  position: relative;
-  font-size: 24px;
-  font-weight: 700;
-  padding: 1px 0 0 20px;
-
+.img{
+  width: 100%;
 }
