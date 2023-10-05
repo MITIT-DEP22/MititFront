@@ -42,7 +42,6 @@ const Addresses = () => {
             <div className={css.container}>
                 <img className={css.img} src={img} alt=""/>
                 <div className={css.addressesContainer}>
-
                     <ul>
                         <li>{address}</li>
                         {addressesData.map(item => (
@@ -50,14 +49,11 @@ const Addresses = () => {
                         ))}
                     </ul>
 
-                    <ul>
-                        <Title value={"Як дібратися?"}/>
-                        <li>
-                            <div className={css.instruction}>
-                                {instructionForBecome}
-                            </div>
-                        </li>
-                    </ul>
+                    <Title margin={"25px 0 0 0"} value={"Як дібратися?"}/>
+                    <div className={css.instruction}>
+                        <span>&#9679;</span>{instructionForBecome}
+                    </div>
+
                 </div>
 
             </div>

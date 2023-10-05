@@ -1,5 +1,8 @@
 .container {
   display: grid;
+  @media screen and (width < 1200px) {
+    grid-template-columns: 1fr;
+  }
   grid-template-columns: 1fr 1fr;
   padding: 2% 0;
   gap: 5%;
@@ -17,16 +20,27 @@ ul li {
   font-weight: 400;
 }
 
-
-
-.instruction{
-  font-size: 14px;
-  font-weight: 400;
+.addressesContainer ul {
+  margin-left: 20px;
 }
 
-.addressesContainer{
+.instruction {
+  margin:0 0 30px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: start;
+  span {
+    font-size: 9px;
+    margin-right: 6px;
+  }
+}
+
+
+.addressesContainer {
   display: flex;
   flex-direction: column;
-  gap:5%;
+  gap: 5%;
 }
 
