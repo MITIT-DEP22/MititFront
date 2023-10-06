@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import css from "./NavigationFooter.module.scss"
+import css from "./NavigationAlterFooter.module.scss"
 import {Link} from "react-router-dom";
 
 interface NavigationElement {
@@ -7,7 +7,7 @@ interface NavigationElement {
     value: any[];
 }
 
-const NavigationFooter: FC<NavigationElement> = ({title, value}) => {
+const NavigationAlterFooter: FC<NavigationElement> = ({title, value}) => {
     return (
         <div className={css.navigationContainer}>
             <span className={css.navigationTitle}>{title}</span>
@@ -18,4 +18,4 @@ const NavigationFooter: FC<NavigationElement> = ({title, value}) => {
     );
 };
 
-export default NavigationFooter;
+export default NavigationAlterFooter;

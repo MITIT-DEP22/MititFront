@@ -1,13 +1,14 @@
 .middleTitle {
   display: flex;
-  text-align: center;
+  text-align: start;
   font: {
     size: 14px;
     weight: 300;
     style: normal;
   };
-  color: #F3F3F3;
+
+  color: black;
   width: min(600px, 50vw);
-  height: min(100px, 10vw);
+  height: min-content;
   line-height: normal;
 }

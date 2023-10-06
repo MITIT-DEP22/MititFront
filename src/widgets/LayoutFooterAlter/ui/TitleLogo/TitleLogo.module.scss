@@ -1,0 +1,17 @@
+.titleName {
+  font-size: 1.5vh;
+  font-weight: 700;
+  color: black;
+  font-family: Volja;
+}
+
+.logo {
+  width: min(100px, 10vw);
+  height: min(100px, 10vw);
+}
+
+.containerTitleLogo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
