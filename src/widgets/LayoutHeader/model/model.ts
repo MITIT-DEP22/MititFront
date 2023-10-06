@@ -1,17 +1,16 @@
 import {makeAutoObservable, observable} from 'mobx';
 
 class HeaderModel {
-    activeLink: number = -1;
+    pathname = "";
 
     constructor() {
         makeAutoObservable(this, {
-            activeLink: observable
+            pathname: observable
         });
     }
 
-    async changeLink(linkId: number) {
-        console.log(linkId)
-        this.activeLink = linkId;
+    changeLink(link: string) {
+        this.pathname = link;
     }
 }
 
