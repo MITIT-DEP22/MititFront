@@ -10,7 +10,7 @@ interface AddressDataLiProps {
 const AddressDataLi:FC<AddressDataLiProps> = ({emails,emailTitle}) => {
     return (
         <li>
-            <p className={css.emailTitle}>Електронна пошта:</p>
+            <p className={css.emailTitle}>{emailTitle}</p>
             <ul>
                 {emails.map(item => (
                     <li className={css.emails}>{item}</li>
