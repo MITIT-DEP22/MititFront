@@ -12,7 +12,6 @@ const Footer = () => {
     } else {
         return <LayoutFooter/>
     }
-
 };
 
 export default Footer;
