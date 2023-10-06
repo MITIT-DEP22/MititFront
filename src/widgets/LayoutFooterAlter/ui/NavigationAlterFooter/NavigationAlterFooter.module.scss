@@ -1,0 +1,21 @@
+.navigationTitle {
+  font-weight: 700;
+}
+
+
+.navigationContainer {
+  font: {
+    weight: 400;
+    size: 14px;
+  };
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.navigationElement {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}

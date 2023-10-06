@@ -16,9 +16,8 @@
 
 .navigationElement {
   cursor: pointer;
-  &:hover {
-    text-decoration: underline;
-  }
+  text-decoration: none;
+  color: white;
 }
 
 @media (max-width: 640px) {

@@ -1,8 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import {News, NewsApi, NewsCard} from "../../../entities/news";
+import {News, NewsApi, NewsCard} from "entities/news";
 import css from "./NewsHome.module.scss"
-import {NewsCardSpecial} from "../../../entities/news/ui/NewsCardSpecial/NewsCardSpecial";
-import SectionTitle from "../../../shared/ui/SectionTitle/SectionTitle";
+import {NewsCardSpecial} from "entities/news/ui/NewsCardSpecial/NewsCardSpecial";
 
 export const NewsHome = () => {
 

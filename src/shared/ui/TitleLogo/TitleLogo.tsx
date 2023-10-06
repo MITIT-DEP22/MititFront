@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import css from "../TitleLogo/TitleLogo.module.scss";
+import css from "./TitleLogo.module.scss";
 import logo from "../../../assets/logo/logo.png"
 
 interface TitleNameProps {

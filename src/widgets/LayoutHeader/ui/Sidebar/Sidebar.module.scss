@@ -1,0 +1,10 @@
+.container {
+  font-size: 55px;
+  @media screen and (width < 900px) {
+    display: block;
+  }
+
+  @media screen and (width > 900px) {
+    display: none;
+  }
+}

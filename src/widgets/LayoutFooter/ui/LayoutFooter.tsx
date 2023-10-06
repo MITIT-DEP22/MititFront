@@ -1,6 +1,5 @@
 import React from 'react';
 import css from "./LayoutFooter.module.scss"
-import bg from '../../../assets/footer/line.png'
 import TitleLogo from "../../../shared/ui/TitleLogo/TitleLogo"
 import {observer} from "mobx-react";
 import MiddleTitle from "./MiddleTitle/MiddleTitle";

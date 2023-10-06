@@ -1,0 +1,1 @@
+export {InstituteInfo} from "./ui/InstituteInfo"

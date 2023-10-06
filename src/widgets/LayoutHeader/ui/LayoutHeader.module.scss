@@ -4,8 +4,8 @@
   width: 100%;
 }
 
+
 .headerTopContainer {
-  display: flex;
   position: fixed;
   width: 100%;
   flex-wrap: wrap;
@@ -18,6 +18,14 @@
   justify-content: space-between;
   gap: 26px;
   transition-duration: 400ms;
+
+  @media screen and (width > 900px) {
+    display: flex;
+  }
+
+  @media screen and (width < 900px) {
+    display: none;
+  }
 }
 
 .headerBottomContainer {
@@ -31,6 +39,14 @@
   justify-content: space-between;
   padding: 16px 10%;
   gap: 26px;
+
+  @media screen and (width > 900px) {
+    display: flex;
+  }
+
+  @media screen and (width < 900px) {
+    display: none;
+  }
 }
 
 .iconsContainer {
@@ -41,6 +57,7 @@
 
 .linksContainer {
   display: flex;
+  justify-content: end;
   flex-wrap: wrap;
   gap: min(20px, 2vw);
   align-items: center;
