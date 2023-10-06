@@ -1,8 +1,8 @@
 import React from 'react';
 import css from "./SpecialityCard.module.scss"
 import {Link} from "react-router-dom";
-import {RouterNames} from "../../../../shared/enums/RouterNames";
-import TitleWithLine from "../../../../shared/ui/TitleWithLine/TitleWithLine";
+import {RouterNames} from "shared/enums/RouterNames";
+import TitleWithLine from "shared/ui/TitleWithLine/TitleWithLine";
 
 const SpecialityCard = () => {
 

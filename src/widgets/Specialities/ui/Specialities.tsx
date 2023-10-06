@@ -1,5 +1,4 @@
 import React from 'react';
-import SectionTitle from "../../../shared/ui/SectionTitle/SectionTitle";
 import css from "./Specialities.module.scss"
 import SpecialityCard from "./SpecialityCard/SpecialityCard";
 

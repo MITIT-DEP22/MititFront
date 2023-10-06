@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import TitleWithLine from "../../../../shared/ui/TitleWithLine/TitleWithLine";
+import TitleWithLine from "shared/ui/TitleWithLine/TitleWithLine";
 import {Link} from "react-router-dom";
 import css from "./InfoCard.module.scss"
 

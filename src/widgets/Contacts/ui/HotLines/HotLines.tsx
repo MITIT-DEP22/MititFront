@@ -1,5 +1,5 @@
 import React from 'react';
-import SectionTitle from "../../../../shared/ui/SectionTitle/SectionTitle";
+import SectionTitle from "shared/ui/SectionTitle/SectionTitle";
 import css from "./HotLines.module.scss"
 import NumbersBlock from "./ui/NumbersBlock/NumbersBlock";
 

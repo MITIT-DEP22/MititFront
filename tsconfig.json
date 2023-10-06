@@ -1,7 +1,34 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ],
+    "paths": {
+      "widgets": [
+        "widgets/*"
+      ],
+      "app": [
+        "app/*"
+      ],
+      "assets": [
+        "assets/*"
+      ],
+      "entities": [
+        "entities/*"
+      ],
+      "features": [
+        "features/*"
+      ],
+      "pages": [
+        "pages/*"
+      ],
+      "shared": [
+        "shared/*"
+      ]
+    },
     "baseUrl": "./src",
     "lib": [
       "dom",
@@ -20,7 +47,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
+    "jsx": "react-jsx"
   },
   "include": [
     "src",

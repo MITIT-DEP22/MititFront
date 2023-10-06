@@ -1,9 +1,9 @@
 import React from 'react';
-import {Slider} from "../../widgets/Slider";
-import {AdditionalLinks} from "../../widgets/AdditionalLinks";
-import {NewsHome} from "../../widgets/NewsHome";
-import {Specialities} from "../../widgets/Specialities";
-import SectionTitle from "../../shared/ui/SectionTitle/SectionTitle";
+import {Slider} from "widgets/Slider";
+import {AdditionalLinks} from "widgets/AdditionalLinks";
+import {NewsHome} from "widgets/NewsHome";
+import {Specialities} from "widgets/Specialities";
+import SectionTitle from "shared/ui/SectionTitle/SectionTitle";
 
 const HomePage = () => {
     const scroll = () => {
