@@ -1,0 +1,1 @@
+export { CompositionOfChiefs } from './ui/CompositionOfChiefs';
