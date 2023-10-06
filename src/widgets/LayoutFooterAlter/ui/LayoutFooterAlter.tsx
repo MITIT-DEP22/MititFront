@@ -49,7 +49,7 @@ const titleArray = [
     'КОНТАКТИ'
 ]
 
-export const LayoutFooter = observer(() => {
+export const LayoutFooterAlter = observer(() => {
 
 
     return (

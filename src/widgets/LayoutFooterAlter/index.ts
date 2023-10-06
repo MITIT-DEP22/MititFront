@@ -1,1 +1,1 @@
-export {LayoutFooter} from "./ui/LayoutFooterAlter";
+export {LayoutFooterAlter} from "./ui/LayoutFooterAlter";

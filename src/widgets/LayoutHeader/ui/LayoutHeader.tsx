@@ -1,13 +1,13 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import css from "./LayoutHeader.module.scss"
-import {NavLinkB, NavLinkT} from "../../../features/NavLink";
-import Icon from "../../../shared/ui/Icon/Icon";
-import {LanguageToggle} from "../../../features/LanguageToggle";
-import TitleLogo from "../../LayoutFooterAlter/ui/TitleLogo/TitleLogo"
+import {NavLinkB, NavLinkT} from "features/NavLink";
+import Icon from "shared/ui/Icon/Icon";
+import {LanguageToggle} from "features/LanguageToggle";
+import TitleLogo from "shared/ui/TitleLogo/TitleLogo"
 import UpperTitle from "./UpperTitle/UpperTitle";
 import {observer} from "mobx-react";
 import {model} from "../model/model"
-import {RouterNames} from "../../../shared/enums/RouterNames";
+import {RouterNames} from "shared/enums/RouterNames";
 
 const linksT = [
     {title: "Інститут", to: RouterNames.INSTITUTE, id: 0},
