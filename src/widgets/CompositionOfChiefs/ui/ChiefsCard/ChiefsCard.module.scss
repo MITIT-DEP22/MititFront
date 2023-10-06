@@ -5,8 +5,6 @@
   width: 65%;
   height: max-content;
   gap: 30px;
-  flex-wrap: wrap;
-
   img {
     width: 300px;
     height: 400px;
@@ -18,7 +16,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-  width: 40%;
+  width: 415px;
   div {
     display: flex;
     align-items: center;
@@ -79,10 +77,30 @@
 
 @media (max-width: 900px) {
   .chiefCard {
-    flex-direction: column-reverse; /* Поменять порядок на обратный при уменьшении экрана */
-    text-align: center; /* Центрировать текст по центру */
+    flex-direction: column-reverse;
+    text-align: center;
+    width: max-content;
+    height: min-content;
     img {
-      order: 2; /* Поместить изображение после текста */
+      order: 2;
+      width: 262px;
+      height: 327px;
     }
+  }
+  .chiefCardText {
+    width: 216px;
+    height: max-content;
+  }
+  .chiefCardPosition {
+    font-size: 18px;
+  }
+  .chiefCardDescription {
+    font-size: 10px;
+  }
+  .chiefCardRangAndName{
+    font-size: 10px;
+  }
+  .chiefCardPhone {
+    font-size: 10px;
   }
 }
