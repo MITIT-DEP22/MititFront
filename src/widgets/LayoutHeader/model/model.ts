@@ -5,13 +5,14 @@ class HeaderModel {
 
     constructor() {
         makeAutoObservable(this, {
-            pathname: observable
+            pathname: observable,
         });
     }
 
     changeLink(link: string) {
         this.pathname = link;
     }
+
 }
 
 export const model = new HeaderModel();
