@@ -16,7 +16,7 @@ const infoCards = [
     {
         title: "Керівний склад",
         img: "https://s3-alpha-sig.figma.com/img/193b/3bea/11990510684a455b899f40709d0daccd?Expires=1697414400&Signature=GUH1HgQol1fTMfzMG5GVNXB0EUH~fVPXLho575nIrjlYV6sLSmoMASg-~0AFKFPX73atS1-k8FNUt2TZ0O1uDrtWxVAzAHK3mZ6pwqu5vACllbkvOsVSbFVhgHI1w6~o0bC4idlXjY4tSO7FrUfY-FHwr7hZtO1D4~CUA4JjzwdbbOaxKMrbE-PJM43L~x35-kuNYb5TTyGyKAqauOcwWazFzpSNPleB5Bzn0lkfVKFSfdeqaBTNgLGHWDJV6dsqywReoKhtVS5fKJ-YQpe-FnK3yX7qSJKI6nnEKW~hbh8jo-wDkjgW6MKqWcOQdB5dOGEKXT38zNfmq9DrcTDXPQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-        link: "/"
+        link: "/chiefs"
     },
     {
         title: "Публічна інформація",
