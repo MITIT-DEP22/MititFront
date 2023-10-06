@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import css from "./LayoutHeader.module.scss"
 import {NavLinkB, NavLinkT} from "features/NavLink";
 import Icon from "shared/ui/Icon/Icon";
@@ -8,22 +8,23 @@ import UpperTitle from "./UpperTitle/UpperTitle";
 import {observer} from "mobx-react";
 import {model} from "../model/model"
 import {RouterNames} from "shared/enums/RouterNames";
+import {useLocation} from "react-router-dom";
 
 const linksT = [
-    {title: "Інститут", to: RouterNames.INSTITUTE, id: 0},
-    {title: "Вступникам", to: RouterNames.ENTRANTS, id: 1},
-    {title: "Навчання", to: RouterNames.STUDY, id: 2},
-    {title: "Контакти", to: RouterNames.CONTACTS, id: 3},
+    {title: "Інститут", to: RouterNames.INSTITUTE},
+    {title: "Вступникам", to: RouterNames.ENTRANTS},
+    {title: "Навчання", to: RouterNames.STUDY},
+    {title: "Контакти", to: RouterNames.CONTACTS},
 ]
 
 const linksB = [
-    {title: "Новини", to: RouterNames.NEWS, id: 4},
-    {title: "Наука", to: RouterNames.SCIENCE, id: 5},
-    {title: "Факультети", to: RouterNames.FACULTIES, id: 6},
-    {title: "Кафедри", to: RouterNames.DEPARTMENTS, id: 7},
-    {title: "Підрозіли", to: RouterNames.UNITS, id: 8},
-    {title: "Співробітництво", to: RouterNames.COOPERATION, id: 9},
-    {title: "Наші перемоги", to: RouterNames.OUR_WINS, id: 10}
+    {title: "Новини", to: RouterNames.NEWS},
+    {title: "Наука", to: RouterNames.SCIENCE},
+    {title: "Факультети", to: RouterNames.FACULTIES},
+    {title: "Кафедри", to: RouterNames.DEPARTMENTS},
+    {title: "Підрозіли", to: RouterNames.UNITS},
+    {title: "Співробітництво", to: RouterNames.COOPERATION},
+    {title: "Наші перемоги", to: RouterNames.OUR_WINS}
 ]
 
 const icons = [
@@ -39,13 +40,17 @@ const titleName = "ВІЙСЬКОВИЙ ІНСТИТУТ\nТЕЛЕКОМУНІК
 const upperTitle = "АКТУАЛЬНО: Набір на курси лідерства"
 
 export const LayoutHeader = observer(() => {
-
     const [topPosition, setTopPosition] = useState(30)
+    const {pathname} = useLocation()
     const handleScroll = () => {
         window.scrollY > 30 ? setTopPosition(0) : setTopPosition(30);
         window.addEventListener('scroll', handleScroll);
     }
     window.addEventListener('scroll', handleScroll);
+
+    useEffect(() => {
+        model.changeLink(pathname)
+    }, [])
 
     return (
         <div className={css.container}>
@@ -60,7 +65,7 @@ export const LayoutHeader = observer(() => {
                 </div>
                 <div className={css.linksContainer}>
                     {linksT.map(item => (
-                        <NavLinkT isActive={item.id === model.activeLink} click={() => model.changeLink(item.id)}
+                        <NavLinkT isActive={model.pathname.includes(item.to)} click={() => model.changeLink(item.to)}
                                   title={item.title} to={item.to}/>
                     ))}
                 </div>
@@ -70,8 +75,8 @@ export const LayoutHeader = observer(() => {
                 <TitleLogo value={titleName}/>
                 <div className={css.linksContainer}>
                     {linksB.map(item => (
-                        <NavLinkB click={() => model.changeLink(item.id)} isActive={item.id === model.activeLink}
-                                  id={item.id} title={item.title} to={item.to}/>
+                        <NavLinkB click={() => model.changeLink(item.to)} isActive={model.pathname.includes(item.to)}
+                                  title={item.title} to={item.to}/>
                     ))}
                     <Icon className={css.search} height={25} width={25} iconBootstrap={"bi bi-search"}/>
                 </div>
