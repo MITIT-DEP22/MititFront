@@ -1,6 +1,6 @@
 import React from 'react';
 import css from "./LayoutFooter.module.scss"
-import TitleLogo from "../../../shared/ui/TitleLogo/TitleLogo"
+import TitleLogo from "../../../../shared/ui/TitleLogo/TitleLogo"
 import {observer} from "mobx-react";
 import MiddleTitle from "./MiddleTitle/MiddleTitle";
 import NavigationFooter from "./NavigationFooter/NavigationFooter";
