@@ -31,6 +31,7 @@ const icons = [
     {iconBootstrap: "bi bi-telegram", height: 25, width: 25},
     {iconBootstrap: "bi bi-facebook", height: 25, width: 25},
     {iconBootstrap: "bi bi-youtube", height: 25, width: 25},
+
     {iconBootstrap: "bi bi-tiktok", height: 25, width: 25}
 ]
 
