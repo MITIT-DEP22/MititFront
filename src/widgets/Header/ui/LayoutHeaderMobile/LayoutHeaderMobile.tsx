@@ -21,6 +21,7 @@ const LayoutHeaderMobile = () => {
         setSidebar(true)
         // @ts-ignore
         document.getElementById("root").style.overflow = "hidden"
+
     }
 
     useEffect(() => {

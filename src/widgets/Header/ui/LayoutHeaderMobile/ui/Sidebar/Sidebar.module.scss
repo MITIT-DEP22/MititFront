@@ -8,14 +8,30 @@
   transition-duration: 500ms;
 }
 
+.logoContainer {
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
 
 .active {
   z-index: 40;
   background: rgba(0, 0, 0, 0.5);
-  //overflow: ;
+}
+
+.link {
+  color: black;
 }
 
 .menu {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 80vw;
+  height: 100vh;
   position: absolute;
   transition-duration: 500ms;
   left: -120vw;
@@ -23,8 +39,8 @@
 }
 
 .menuActive {
-  width: 80vw;
-  height: 100vh;
+  box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.5);
+
   left: 0;
 }
 
