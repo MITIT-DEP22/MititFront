@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import css from "./LayoutHeaderMobile.module.scss"
-import TitleLogo from "../../../../shared/ui/TitleLogo/TitleLogo";
+import TitleLogo from "shared/ui/TitleLogo/TitleLogo";
 import Sidebar from "./ui/Sidebar/Sidebar";
+import {instituteName} from "shared/enums/Data";
 
-const titleName = "ВІЙСЬКОВИЙ ІНСТИТУТ\nТЕЛЕКОМУНІКАЦІЙ ТА ІНФОРМАТИЗАЦІЇ\nІМЕНІ ГЕРОЇВ КРУТ"
 
 const LayoutHeaderMobile = () => {
 
@@ -48,7 +48,7 @@ const LayoutHeaderMobile = () => {
         <>
             <div style={{top: `${topPosition}px`}} className={css.mobileHeader}>
                 <div className={css.logoContainer}>
-                    <TitleLogo logoSize={"12vh"} value={titleName}/>
+                    <TitleLogo logoSize={"12vh"} value={instituteName}/>
                 </div>
                 <div>
                     <button className={css.openSidebar} onClick={openSidebar}>

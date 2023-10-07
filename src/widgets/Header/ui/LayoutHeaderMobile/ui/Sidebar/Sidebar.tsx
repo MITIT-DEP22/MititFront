@@ -10,6 +10,7 @@ const Sidebar:FC<SidebarProps> = ({isOpen, close}) => {
     return (
         <div onClick={close} className={`${css.container} ${isOpen && css.active}`}>
             <div className={`${css.menu} ${isOpen && css.menuActive}`}>
+
             </div>
         </div>
     );
