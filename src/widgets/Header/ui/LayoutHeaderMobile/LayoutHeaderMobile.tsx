@@ -49,13 +49,11 @@ const LayoutHeaderMobile = () => {
         <>
             <div style={{top: `${topPosition}px`}} className={css.mobileHeader}>
                 <div className={css.logoContainer}>
-                    <TitleLogo logoSize={"12vh"} value={instituteName}/>
+                    <TitleLogo logoSize={"10vh"} value={instituteName}/>
                 </div>
-                <div>
                     <button className={css.openSidebar} onClick={openSidebar}>
                         <i className="bi bi-list"></i>
                     </button>
-                </div>
             </div>
             <Sidebar isOpen={sidebar} close={closeSidebar}/>
         </>
