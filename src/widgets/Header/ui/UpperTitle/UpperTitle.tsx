@@ -7,11 +7,11 @@ interface UpperTitleProps {
 
 const UpperTitle: FC<UpperTitleProps> = ({value}) => {
     return (
-        <>
+        <div className={css.container}>
             <div className={css.marquee}>
                 <div className={css.marqueeContent}>{value}</div>
             </div>
-        </>
+        </div>
     );
 };
 

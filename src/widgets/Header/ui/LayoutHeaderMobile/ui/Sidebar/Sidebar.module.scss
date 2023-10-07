@@ -1,0 +1,32 @@
+.container {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+  transition-duration: 500ms;
+}
+
+
+.active {
+  z-index: 40;
+  background: rgba(0, 0, 0, 0.5);
+  //overflow: ;
+}
+
+.menu {
+  position: absolute;
+  transition-duration: 500ms;
+  left: -120vw;
+  background: #fefefe;
+}
+
+.menuActive {
+  width: 80vw;
+  height: 100vh;
+  left: 0;
+}
+
+
+
