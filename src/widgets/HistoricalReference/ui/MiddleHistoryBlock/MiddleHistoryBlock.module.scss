@@ -17,14 +17,17 @@
 }
 
 .middleHistoryImgContainer {
-  display: grid;
-  grid-template: repeat(auto-fit, 425px) / min-content ;
-  align-items: center;
-  justify-content: center;
+  display: flex;
+  width: 1000px;
+  height: min-content;
+  flex-wrap: wrap;
   gap: 150px;
 }
 
 .middleHistoryImg {
-  width: 425px;
+  width: 495px;
   height: 268px;
+  img {
+
+  }
 }
