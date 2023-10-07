@@ -1,0 +1,15 @@
+.decreeBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 1000px;
+  height: max-content;
+}
+
+.decreeText {
+  font: {
+    size: 14px;
+    weight: 400;
+  };
+  text-align: left;
+}

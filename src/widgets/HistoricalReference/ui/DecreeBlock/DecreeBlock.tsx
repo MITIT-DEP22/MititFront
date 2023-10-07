@@ -1,14 +1,17 @@
 import React, {FC} from 'react';
+import css from "./DecreeBlock.module.scss";
 
 
 interface InfoDecree {
-    value: string
+    array: string[]
 }
 
-const DecreeBlock: FC<InfoDecree> = ({value}) => {
+const DecreeBlock: FC<InfoDecree> = ({array}) => {
     return (
-        <div>
-            
+        <div className={css.decreeBlock}>
+            {array.map((value) => (
+                <div className={css.decreeText}>{value}</div>
+            ))}
         </div>
     );
 };

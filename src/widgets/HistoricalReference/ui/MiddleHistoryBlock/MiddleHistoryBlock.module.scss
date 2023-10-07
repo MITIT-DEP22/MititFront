@@ -1,0 +1,30 @@
+.middleHistoryContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: max-content;
+  gap: 10px;
+  width: min-content;
+}
+
+.middleHistoryText {
+  width: 1000px;
+  height: max-content;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: start;
+}
+
+.middleHistoryImgContainer {
+  display: grid;
+  grid-template: repeat(auto-fit, 425px) / min-content ;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+}
+
+.middleHistoryImg {
+  width: 425px;
+  height: 268px;
+}

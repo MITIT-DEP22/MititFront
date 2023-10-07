@@ -14,13 +14,13 @@ const HistoryCard: FC<InfoCard> = ({imgSource, value, positionRight}) => {
             {positionRight ? (
                 <>
                     <img src={imgSource} alt="" />
-                    <div>
+                    <div className={`${positionRight? css.textAlignLeft : css.textAlignLeft}`}>
                         {value}
                     </div>
                 </>
             ) : (
                 <>
-                    <div>
+                    <div className={`${positionRight? css.textAlignRight : css.textAlignRight}`}>
                         {value}
                     </div>
                     <img src={imgSource} alt="" />

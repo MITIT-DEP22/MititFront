@@ -3,6 +3,7 @@
   height: max-content;
   display: flex;
   gap: 20px;
+  align-items: center;
 
   img {
     width: 425px;
@@ -11,5 +12,15 @@
   div {
     width: 555px;
     height: min-content;
+    font-size: 14px;
+    font-weight: 600;
   }
+}
+
+.textAlignRight {
+  text-align: right;
+}
+
+.textAlignLeft{
+  text-align: left;
 }

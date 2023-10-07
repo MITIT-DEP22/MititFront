@@ -15,6 +15,6 @@ export const historyCardItems: IHistoryCard[] = [
     },
     {
         imageSrc: "https://s3-alpha-sig.figma.com/img/41b5/f50a/a15f3e364ec39046035b9421ebce3e96?Expires=1697414400&Signature=BdJscLdM3sRyKJy-izifOPqAkpjjavZTL32A~4QHYy4JoxpORsiHO0Br-1RMfPOrFcN5ZVWmOUWAzIvK9q0ym-0Ej3RQEolhQeuzdjCpqw5T5Qq7NMEnFVbdyPP9faix1I263KxOAQmCGF1tc8OSdiYcZ2is9-rxlO~aap15QXKe85zWJcrtMpoOK~ru40CCjcBiUsCSBOM0rKkxOkoPI8xGE3NblE1nOXYu-SQpJ8pV3vdCwJZKGkbFBl1FGx9FU9uYvQ5j29rf4Y95LMy3vx3jYvEp7EIHfS29GGuIa~tFaMg05jY4eOfRE2jfaiBwroIeMA~Oj7tn15nZvS7w~g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-        text: "До 100-ї річниці історичних подій під Крутами та з метою вшанування подвигу Героїв Крут і військово-патріотичного виховання військовослужбовців Збройних Сил України, Президент України – Верховний Головнокомандувач Збройних Сил України Петро Порошенко 29 січня 2018 року присвоїв Військовому інституту телекомунікацій та інформатизації почесне найменування імені Героїв Крут.",
+        text: "З нагоди присвоєння інституту імені Героїв Крут Верховний Головнокомандувач ЗС України вручив начальнику інституту полковнику Євгену Степаненку бойовий прапор інституту.",
     },
 ]
