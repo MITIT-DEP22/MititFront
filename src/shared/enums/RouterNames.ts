@@ -11,5 +11,10 @@ export enum RouterNames {
     UNITS = "/units",
     COOPERATION = "/cooperation",
     OUR_WINS = "/wins",
-    SPECIALITIES = "/specialities"
+    SPECIALITIES = "/specialities",
+    CHIEFS = "/institute/chiefs",
+    WHY_MITIT = "/institute/why",
+    HISTORY = "/institute/history",
+    PUBLIC_INFO = "/institute/public",
+    HEROES = "/institute/heroes"
 }

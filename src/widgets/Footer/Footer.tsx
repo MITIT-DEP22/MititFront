@@ -8,7 +8,8 @@ import {LayoutFooter} from "./LayoutFooter";
 const Footer = () => {
     const {pathname} = useLocation();
     if (pathname === RouterNames.HOME) {
-        return <LayoutFooterAlter/>
+
+        return<LayoutFooterAlter/>
     } else {
         return <LayoutFooter/>
     }

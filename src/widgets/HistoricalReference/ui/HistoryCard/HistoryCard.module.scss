@@ -1,0 +1,15 @@
+.historyCard {
+  width: max-content;
+  height: max-content;
+  display: flex;
+  gap: 20px;
+
+  img {
+    width: 425px;
+    height: 268px;
+  }
+  div {
+    width: 555px;
+    height: min-content;
+  }
+}

@@ -12,7 +12,7 @@ const NavigationAlterFooter: FC<NavigationElement> = ({title, value}) => {
         <div className={css.navigationContainer}>
             <span className={css.navigationTitle}>{title}</span>
             {value.map(el => (
-                <Link to={'/'} className={css.navigationElement}>{el.title}</Link>
+                <Link to={'/chiefs'} className={css.navigationElement}>{el.title}</Link>
             ))}
         </div>
     );

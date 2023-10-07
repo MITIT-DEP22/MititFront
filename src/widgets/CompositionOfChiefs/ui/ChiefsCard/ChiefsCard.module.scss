@@ -1,0 +1,106 @@
+.chiefCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65%;
+  height: max-content;
+  gap: 30px;
+  img {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+.chiefCardText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 415px;
+  div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+  }
+}
+
+.chiefCardPosition {
+  color: #000;
+  font-size: 24px;
+  width: 100%;
+}
+
+.chiefCardRangAndName {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.chiefCardDescription {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  width: 100%;
+}
+
+.chiefCardPhone {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  width: 100%;
+}
+
+.borderRight {
+  border: none;
+  border-right: 2px #0E3719 groove;
+  padding-right: 10px;
+}
+
+.borderLeft {
+  border: none;
+  border-left: 2px #0E3719 groove;
+  padding-left: 10px;
+}
+
+.rightAlign {
+  align-items: end;
+  text-align: end;
+}
+
+.leftAlign {
+  align-items: start;
+  text-align: start;
+}
+
+
+@media (max-width: 900px) {
+  .chiefCard {
+    flex-direction: column-reverse;
+    text-align: center;
+    width: max-content;
+    height: min-content;
+    img {
+      order: 2;
+      width: 262px;
+      height: 327px;
+    }
+  }
+  .chiefCardText {
+    width: 216px;
+    height: max-content;
+  }
+  .chiefCardPosition {
+    font-size: 18px;
+  }
+  .chiefCardDescription {
+    font-size: 10px;
+  }
+  .chiefCardRangAndName{
+    font-size: 10px;
+  }
+  .chiefCardPhone {
+    font-size: 10px;
+  }
+}

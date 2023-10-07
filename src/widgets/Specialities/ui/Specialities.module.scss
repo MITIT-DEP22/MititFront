@@ -1,16 +1,15 @@
 .container {
-  padding: 5%;
-  margin-top: 40px;
+  padding: 2% 5%;
   display: grid;
-  @media screen and (width > 1140px){
+  @media screen and (width > 1140px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  @media screen and (width < 1140px){
-    grid-template-columns: 1fr 1fr ;
+  @media screen and (width < 1140px) {
+    grid-template-columns: 1fr 1fr;
   }
 
-  @media screen and (width < 768px){
+  @media screen and (width < 768px) {
     grid-template-columns: 1fr;
   }
 }
