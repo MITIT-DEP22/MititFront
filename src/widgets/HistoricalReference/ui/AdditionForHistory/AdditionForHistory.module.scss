@@ -1,0 +1,25 @@
+.additionForHistoryContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 1000px;
+  height: max-content;
+  gap: 10px;
+}
+
+.additionForHistoryTitle {
+  text-align: left;
+  font: {
+    size: 14px;
+    weight: 600;
+  }
+}
+
+.additionForHistoryMain {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+}

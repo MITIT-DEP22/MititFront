@@ -21,13 +21,23 @@
   width: 1000px;
   height: min-content;
   flex-wrap: wrap;
-  gap: 150px;
+  gap: 10px;
 }
 
 .middleHistoryImg {
   width: 495px;
   height: 268px;
+  display: flex;
+  align-items: center;
   img {
-
+    width: 425px;
+    height: 100%
   }
+}
+
+.alignImgLeft {
+  justify-content: start;
+}
+.alignImgRight {
+  justify-content: end;
 }

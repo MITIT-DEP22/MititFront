@@ -1,19 +1,27 @@
 import React, {FC} from 'react';
 import css from "./MiddleHistoryBlock.module.scss";
+import {ISecondHistoryCard} from "../../model/model";
+import HTMLReactParser from "html-react-parser";
 
 
-interface InfoCard {
-    text: string,
-    array: string[]
+interface InfoBlock {
+    value: ISecondHistoryCard;
 }
 
-const MiddleHistoryBlock: FC<InfoCard> = ({text, array}) => {
+const MiddleHistoryBlock: FC<InfoBlock> = ({value}) => {
     return (
         <div className={css.middleHistoryContainer}>
-            <div className={css.middleHistoryText}>{text}</div>
+            <div className={css.middleHistoryText}>{HTMLReactParser(value.text)}</div>
             <div className={css.middleHistoryImgContainer}>
-                {array.map((value) => (
-                    <img className={css.middleHistoryImg} src={value} alt=""/>
+                {value.imageSrc.map((value, index) => (
+                    index % 2 ?
+                        <div className={`${css.middleHistoryImg} ${css.alignImgRight}`}>
+                            <img src={value} alt=""/>
+                        </div>
+                        :
+                        <div className={`${css.middleHistoryImg} ${css.alignImgLeft}`}>
+                            <img src={value} alt=""/>
+                        </div>
                 ))}
             </div>
         </div>
