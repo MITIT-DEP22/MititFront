@@ -2,11 +2,20 @@
   position: absolute;
   z-index: 10;
   width: 100%;
+
+  @media screen and (width > 900px) {
+    display: block;
+  }
+
+  @media screen and (width < 900px) {
+    display: none;
+  }
 }
 
 
 .headerTopContainer {
   position: fixed;
+  display: flex;
   width: 100%;
   flex-wrap: wrap;
   background: rgba(30, 30, 30, 0.25);
@@ -19,13 +28,7 @@
   gap: 26px;
   transition-duration: 400ms;
 
-  @media screen and (width > 900px) {
-    display: flex;
-  }
 
-  @media screen and (width < 900px) {
-    display: none;
-  }
 }
 
 .headerBottomContainer {
