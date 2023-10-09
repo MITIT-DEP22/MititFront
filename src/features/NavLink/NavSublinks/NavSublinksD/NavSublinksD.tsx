@@ -1,7 +1,7 @@
 import React, {FC, useState} from 'react';
 import {Link} from "react-router-dom";
-import css from "./NavSublinks.module.scss";
-import {NavLink} from "entities/link";
+import css from "./NavSublinksD.module.scss";
+import {NavLink} from "../../../../entities/link";
 
 interface NavSublinksProps {
     isMobile?: boolean;
@@ -10,7 +10,7 @@ interface NavSublinksProps {
     click: (any: any) => any;
 }
 
-const NavSublinks: FC<NavSublinksProps> = ({click, link, isMobile, isActive}) => {
+const NavSublinksD: FC<NavSublinksProps> = ({click, link, isMobile, isActive}) => {
     const [isHovered, setHovered] = useState(false)
 
     return (
@@ -33,4 +33,4 @@ const NavSublinks: FC<NavSublinksProps> = ({click, link, isMobile, isActive}) =>
     );
 };
 
-export default NavSublinks;
+export default NavSublinksD;

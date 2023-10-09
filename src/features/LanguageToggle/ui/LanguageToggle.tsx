@@ -10,13 +10,15 @@ interface LanguageToggleProps {
 export const LanguageToggle: FC<LanguageToggleProps> = observer(({isMobile}) => {
 
     return (
-        <div className={`${css.toggleContainer} ${isMobile && css.mobile}`}>
-            <button className={`${css.langBtn} ${model.activeLanguage === "en" && css.langBtn_active} `}
-                    onClick={() => model.changeLang("en")}>EN
+        <div className={`${css.toggleContainer} `}>
+            <button
+                className={`${css.langBtn}  ${model.activeLanguage === "en" && css.langBtn_active} ${isMobile && css.mobile}`}
+                onClick={() => model.changeLang("en")}>EN
             </button>
             <div className={`${css.separator} ${isMobile && css.separatorMobile}`}/>
-            <button className={`${css.langBtn} ${model.activeLanguage === "ua" && css.langBtn_active}`}
-                    onClick={() => model.changeLang("ua")}>UA
+            <button
+                className={`${css.langBtn} ${model.activeLanguage === "ua" && css.langBtn_active} ${isMobile && css.mobile} `}
+                onClick={() => model.changeLang("ua")}>UA
             </button>
         </div>
     );

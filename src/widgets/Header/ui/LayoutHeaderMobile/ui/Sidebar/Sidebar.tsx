@@ -8,6 +8,7 @@ import TitleLogo from "shared/ui/TitleLogo/TitleLogo";
 import Icon from "shared/ui/Icon/Icon";
 import {LanguageToggle} from "features/LanguageToggle";
 import Search from "../../../Search/Search";
+import NavSublinksM from "../../../../../../features/NavLink/NavSublinks/NavSublinksM/NavSublinksM";
 
 interface SidebarProps {
     isOpen: boolean;
@@ -32,6 +33,12 @@ const Sidebar: FC<SidebarProps> = observer(({isOpen, close}) => {
                 ))}
 
                 {headerData.linksB.map((item) => (
+                    item.sublinks?
+                        <NavSublinksM  click={() => {
+                            model.changeLink(item.to)
+                            close()
+                        }} isActive={model.pathname.includes(item.to)}  link={item}/>
+                        :
                     <NavLinkB isMobile={true} link={item}
                               click={() => {
                                   model.changeLink(item.to)

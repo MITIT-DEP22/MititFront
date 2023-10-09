@@ -1,0 +1,14 @@
+.container {
+  transition-duration: 500ms;
+  height: 0;
+
+  * {
+    display: none;
+  }
+}
+
+.container_active {
+  * {
+    display: flex;
+  }
+}

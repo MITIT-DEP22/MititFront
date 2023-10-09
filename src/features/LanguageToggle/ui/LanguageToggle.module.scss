@@ -15,14 +15,14 @@
 }
 
 .separator {
-  height: 14px;
+  height: 20px;
   width: 2px;
   border-radius: 2px;
   background: white;
 }
 
 .separatorMobile{
-  height: 14px;
+  height: 20px;
   width: 2px;
   border-radius: 2px;
   background: black;
@@ -32,11 +32,11 @@
   display: flex;
   gap: 4px;
   align-items: center;
+  justify-content: center;
   margin-left: 3vw;
   color: #fefefe;
 }
 
 .mobile {
-  margin-top: 10px;
   color: black;
 }

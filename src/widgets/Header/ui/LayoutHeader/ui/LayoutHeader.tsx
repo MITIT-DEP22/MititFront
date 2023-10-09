@@ -9,7 +9,7 @@ import {model} from "../../../model/model"
 import {useLocation} from "react-router-dom";
 import {headerData, instituteName} from "shared/enums/Data";
 import Search from "../../Search/Search";
-import NavSublinks from "../../../../../features/NavLink/NavSublinks/NavSublinks";
+import NavSublinksD from "../../../../../features/NavLink/NavSublinks/NavSublinksD/NavSublinksD";
 
 
 export const LayoutHeader = observer(() => {
@@ -55,8 +55,8 @@ export const LayoutHeader = observer(() => {
                 <div className={css.linksContainer}>
                     {headerData.linksB.map(item => (
                         item.sublinks ?
-                            <NavSublinks link={item} isActive={model.pathname.includes(item.to)}
-                                         click={() => model.changeLink(item.to)}/>
+                            <NavSublinksD link={item} isActive={model.pathname.includes(item.to)}
+                                          click={() => model.changeLink(item.to)}/>
                             :
                             <NavLinkB click={() => model.changeLink(item.to)}
                                       isActive={model.pathname.includes(item.to)}
