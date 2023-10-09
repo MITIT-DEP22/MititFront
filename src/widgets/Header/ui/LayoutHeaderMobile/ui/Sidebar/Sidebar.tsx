@@ -25,14 +25,20 @@ const Sidebar: FC<SidebarProps> = observer(({isOpen, close}) => {
                 {headerData.linksT.map((item) => (
                     <NavLinkT isMobile={true} title={item.title}
                               to={item.to}
-                              click={() => model.changeLink(item.to)}
+                              click={() => {
+                                  model.changeLink(item.to)
+                                  close()
+                              }}
                               isActive={model.pathname.includes(item.to)}/>
                 ))}
 
                 {headerData.linksB.map((item) => (
                     <NavLinkB isMobile={true} title={item.title}
                               to={item.to}
-                              click={() => model.changeLink(item.to)}
+                              click={() => {
+                                  model.changeLink(item.to)
+                                  close()
+                              }}
                               isActive={model.pathname.includes(item.to)}/>
                 ))}
 
