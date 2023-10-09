@@ -1,7 +1,6 @@
 .langBtn {
   border: none;
   background: transparent;
-  color:  #F3F3F3;
   text-align: center;
   font-size: 14px;
   font-weight: 300;
@@ -21,9 +20,22 @@
   background: white;
 }
 
+.separatorMobile{
+  height: 14px;
+  width: 2px;
+  border-radius: 2px;
+  background: black;
+}
+
 .toggleContainer {
   display: flex;
   gap: 4px;
   align-items: center;
   margin-left: 3vw;
+  color: #fefefe;
+}
+
+.mobile {
+  margin-top: 10px;
+  color: black;
 }

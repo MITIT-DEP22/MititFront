@@ -4,7 +4,10 @@ import {headerData, instituteName} from "shared/enums/Data";
 import {NavLinkB, NavLinkT} from "features/NavLink";
 import {observer} from "mobx-react";
 import {model} from "../../../../model/model";
-import TitleLogo from "../../../../../../shared/ui/TitleLogo/TitleLogo";
+import TitleLogo from "shared/ui/TitleLogo/TitleLogo";
+import Icon from "shared/ui/Icon/Icon";
+import {LanguageToggle} from "features/LanguageToggle";
+import Search from "../../../Search/Search";
 
 interface SidebarProps {
     isOpen: boolean;
@@ -13,11 +16,12 @@ interface SidebarProps {
 
 const Sidebar: FC<SidebarProps> = observer(({isOpen, close}) => {
     return (
-        <div onClick={close} className={`${css.container} ${isOpen && css.active}`}>
+        <div className={`${css.container} ${isOpen && css.active}`}>
             <div className={`${css.menu} ${isOpen && css.menuActive}`}>
                 <div className={css.logoContainer}>
-                    <TitleLogo  logoSize={"25vw"} withTitle={false} value={instituteName}/>
+                    <TitleLogo logoSize={"25vw"} withTitle={false} value={instituteName}/>
                 </div>
+
                 {headerData.linksT.map((item) => (
                     <NavLinkT isMobile={true} title={item.title}
                               to={item.to}
@@ -31,7 +35,18 @@ const Sidebar: FC<SidebarProps> = observer(({isOpen, close}) => {
                               click={() => model.changeLink(item.to)}
                               isActive={model.pathname.includes(item.to)}/>
                 ))}
+
+                <div className={css.iconsContainer}>
+                    {headerData.icons.map(item => (
+                        <Icon height={item.height} width={item.width} iconBootstrap={item.iconBootstrap}/>
+                    ))}
+                </div>
+
+                <Search mobile/>
+                <LanguageToggle isMobile/>
+
             </div>
+            <div className={`${css.close} ${isOpen && css.close_active}`} onClick={close}/>
         </div>
     );
 });

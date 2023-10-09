@@ -3,6 +3,7 @@ import css from "./LayoutHeaderMobile.module.scss"
 import TitleLogo from "shared/ui/TitleLogo/TitleLogo";
 import Sidebar from "./ui/Sidebar/Sidebar";
 import {instituteName} from "shared/enums/Data";
+import Search from "../Search/Search";
 
 
 const LayoutHeaderMobile = () => {
@@ -51,10 +52,13 @@ const LayoutHeaderMobile = () => {
                 <div className={css.logoContainer}>
                     <TitleLogo logoSize={"10vh"} value={instituteName}/>
                 </div>
-                    <button className={css.openSidebar} onClick={openSidebar}>
-                        <i className="bi bi-list"></i>
-                    </button>
+                <button className={css.openSidebar} onClick={openSidebar}>
+                    <i className="bi bi-list"></i>
+                </button>
             </div>
+            {/*<div className={css.searchContainer}>*/}
+            {/*    <Search mobile color={"black"}/>*/}
+            {/*</div>*/}
             <Sidebar isOpen={sidebar} close={closeSidebar}/>
         </>
     );

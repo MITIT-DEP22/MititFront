@@ -8,6 +8,7 @@ import {observer} from "mobx-react";
 import {model} from "../../../model/model"
 import {useLocation} from "react-router-dom";
 import {headerData, instituteName} from "shared/enums/Data";
+import Search from "../../Search/Search";
 
 
 
@@ -57,7 +58,7 @@ export const LayoutHeader = observer(() => {
                                   isActive={model.pathname.includes(item.to)}
                                   title={item.title} to={item.to}/>
                     ))}
-                    <Icon className={css.search} height={25} width={25} iconBootstrap={"bi bi-search"}/>
+                    <Search/>
                 </div>
             </div>
         </div>

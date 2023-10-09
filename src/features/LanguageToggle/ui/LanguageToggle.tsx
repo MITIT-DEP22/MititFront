@@ -1,16 +1,20 @@
-import React from 'react';
+import React, {FC} from 'react';
 import {model} from "../model/model"
 import {observer} from "mobx-react";
 import css from "./LanguageToggle.module.scss"
 
-export const LanguageToggle = observer(() => {
+interface LanguageToggleProps{
+    isMobile?:boolean
+}
+
+export const LanguageToggle:FC<LanguageToggleProps> = observer(({isMobile}) => {
 
     return (
-        <div className={css.toggleContainer}>
-            <button className={`${css.langBtn} ${model.activeLanguage === "en" && css.langBtn_active}`}
+        <div className={`${css.toggleContainer} ${isMobile && css.mobile}`}>
+            <button className={`${css.langBtn} ${model.activeLanguage === "en" && css.langBtn_active} `}
                     onClick={() => model.changeLang("en")}>EN
             </button>
-            <div className={css.separator}/>
+            <div className={`${css.separator} ${css.separatorMobile}`}/>
             <button className={`${css.langBtn} ${model.activeLanguage === "ua" && css.langBtn_active}`}
                     onClick={() => model.changeLang("ua")}>UA
             </button>
