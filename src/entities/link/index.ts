@@ -1,0 +1,1 @@
+export type {NavLink} from "./model/types"

@@ -56,9 +56,6 @@ const LayoutHeaderMobile = () => {
                     <i className="bi bi-list"></i>
                 </button>
             </div>
-            {/*<div className={css.searchContainer}>*/}
-            {/*    <Search mobile color={"black"}/>*/}
-            {/*</div>*/}
             <Sidebar isOpen={sidebar} close={closeSidebar}/>
         </>
     );
