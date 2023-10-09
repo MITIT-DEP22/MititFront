@@ -41,3 +41,43 @@
 .alignImgRight {
   justify-content: end;
 }
+
+@media (max-width: 1000px) {
+  .middleHistoryText {
+    width: 600px;
+  }
+  .middleHistoryImgContainer {
+    width: 600px;
+  }
+  .middleHistoryImg {
+    width: 295px;
+    height: 168px;
+    img {
+      width: 270px;
+      height: 100%
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .middleHistoryContainer {
+    flex-direction: column-reverse;
+  }
+
+  .middleHistoryText {
+    width: 300px;
+  }
+  .middleHistoryImgContainer {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  .middleHistoryImg {
+    width: 300px;
+    height: 168px;
+    img {
+      width: 300px;
+      height: 100%
+    }
+  }
+}

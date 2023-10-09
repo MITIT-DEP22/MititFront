@@ -13,3 +13,15 @@
   };
   text-align: left;
 }
+
+@media (max-width: 1000px) {
+  .decreeBlock {
+    width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .decreeBlock {
+    width: 300px;
+  }
+}
