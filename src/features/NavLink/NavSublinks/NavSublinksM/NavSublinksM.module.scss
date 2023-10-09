@@ -1,6 +1,6 @@
 .container {
   transition-duration: 500ms;
-  height: 0;
+  height: auto;
 
   * {
     display: none;
@@ -8,7 +8,34 @@
 }
 
 .container_active {
+
+  padding-left: 10px;
+
   * {
     display: flex;
   }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+
+  * {
+    transition-duration: 500ms;
+  }
+}
+
+.title_active {
+  transform: rotate(-90deg);
+}
+
+.link {
+  margin-top: 10px;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid black;
+  padding-bottom: 4px;
 }

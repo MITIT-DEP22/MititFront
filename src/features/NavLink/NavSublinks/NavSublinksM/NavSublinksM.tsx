@@ -1,4 +1,4 @@
-import React, {FC, useState} from 'react';
+import React, {FC, useEffect, useState} from 'react';
 import {NavLink} from "entities/link";
 import {Link} from "react-router-dom";
 import css from "./NavSublinksM.module.scss"
@@ -11,23 +11,29 @@ interface NavSublinksMProps {
 
 const NavSublinksM: FC<NavSublinksMProps> = ({link, click, isActive}) => {
 
-    const [isOpen, setIsOpen] = useState(false)
+        const [isOpen, setIsOpen] = useState(false)
 
-    const openLinks = () => {
-        setIsOpen(!isOpen)
-    }
+        const openLinks = () => {
+            setIsOpen(!isOpen)
+        }
 
-    return (
-        <div onClick={openLinks}>
-            {/*<NavLinkT link={link} click={click} isActive={isActive}/>*/}
-            {link.title}
-            <div className={`${css.container} ${isOpen && css.container_active}`}>
-                {link.sublinks?.map(item => (
-                    <Link to={item.to}>{item.title}</Link>
-                ))}
+
+        return (
+            <div onClick={openLinks}>
+                <div className={`${css.title} }`}>
+                    {link.title}
+                    <div className={` ${isOpen && css.title_active}`}>
+                        <i style={{fontSize: 24}} className={`bi bi-caret-left`}></i>
+                    </div>
+                </div>
+                <div className={`${css.container} ${isOpen && css.container_active}`}>
+                    {link.sublinks?.map(item => (
+                        <Link className={css.link} to={item.to}>{item.title}</Link>
+                    ))}
+                </div>
             </div>
-        </div>
-    );
-};
+        );
+    }
+;
 
 export default NavSublinksM;

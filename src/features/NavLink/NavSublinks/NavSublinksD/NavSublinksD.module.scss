@@ -16,9 +16,11 @@
 }
 
 .sublinksContainer {
+  z-index:50;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(5px);
   flex-direction: column;
   position: absolute;
-  transition-duration: 500ms;
   height: 0;
 
   * {

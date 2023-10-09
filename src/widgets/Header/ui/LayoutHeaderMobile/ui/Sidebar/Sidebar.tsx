@@ -33,18 +33,18 @@ const Sidebar: FC<SidebarProps> = observer(({isOpen, close}) => {
                 ))}
 
                 {headerData.linksB.map((item) => (
-                    item.sublinks?
-                        <NavSublinksM  click={() => {
+                    item.sublinks ?
+                        <NavSublinksM click={() => {
                             model.changeLink(item.to)
                             close()
-                        }} isActive={model.pathname.includes(item.to)}  link={item}/>
+                        }} isActive={model.pathname.includes(item.to)} link={item}/>
                         :
-                    <NavLinkB isMobile={true} link={item}
-                              click={() => {
-                                  model.changeLink(item.to)
-                                  close()
-                              }}
-                              isActive={model.pathname.includes(item.to)}/>
+                        <NavLinkB isMobile={true} link={item}
+                                  click={() => {
+                                      model.changeLink(item.to)
+                                      close()
+                                  }}
+                                  isActive={model.pathname.includes(item.to)}/>
                 ))}
 
                 <div className={css.iconsContainer}>
