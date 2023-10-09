@@ -1,6 +1,7 @@
 .container {
+  overflow: auto;
   position: fixed;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   z-index: -1;
   display: grid;
@@ -27,21 +28,43 @@
 
 .menu {
   padding: 20px;
+  gap: 10px;
   display: flex;
   flex-direction: column;
   align-items: start;
   width: 80vw;
-  height: 100vh;
+  min-height: 100vh;
   position: absolute;
   transition-duration: 500ms;
   left: -120vw;
+  z-index: 50;
   background: #fefefe;
 }
 
 .menuActive {
   box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.5);
-
   left: 0;
+}
+
+.iconsContainer {
+  margin: 10px 0;
+  font-size: 24px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.close{
+  position: absolute;
+  right: -20vw;
+}
+
+.close_active{
+  right:0;
+  z-index: 50;
+  height: 100vh;
+  width: 20vw;
 }
 
 

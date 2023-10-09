@@ -1,0 +1,27 @@
+.decreeBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 1000px;
+  height: max-content;
+}
+
+.decreeText {
+  font: {
+    size: 14px;
+    weight: 400;
+  };
+  text-align: left;
+}
+
+@media (max-width: 1000px) {
+  .decreeBlock {
+    width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .decreeBlock {
+    width: 300px;
+  }
+}

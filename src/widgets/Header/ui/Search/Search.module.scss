@@ -1,0 +1,61 @@
+.search {
+  color: white;
+}
+
+.search:hover {
+  cursor: pointer;
+}
+
+.input {
+  transition-duration: 500ms;
+  width: 0;
+  border-radius: 100px;
+  background: transparent;
+  border: none;
+  padding: 6px 0 6px 14px;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 700;
+  outline: none;
+}
+
+.input::placeholder {
+  color: white;
+}
+
+.inputActive {
+  width: 10vw;
+}
+
+
+.container {
+  display: flex;
+  border-radius: 100px;
+  padding-right: 10px;
+  transition-duration: 500ms;
+}
+
+.containerActive {
+  transition-duration: 500ms;
+  border: white 1px solid;
+}
+
+
+.containerMobile {
+  width: 100%;
+  border: black 1px solid;
+}
+
+.inputMobile {
+  color: black;
+  width: 90%;
+}
+
+.inputMobile::placeholder{
+  color:black;
+}
+
+.searchMobile{
+  color:black;
+}
+

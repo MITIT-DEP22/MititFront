@@ -16,6 +16,7 @@ export const Routing = () => {
             <Route path={RouterNames.CONTACTS} element={<ContactPage/>}/>
             <Route path={RouterNames.CHIEFS} element={<ChiefsPage/>}/>
             <Route path={RouterNames.HISTORY} element={<HistoricalPage/>}/>
+            <Route path={RouterNames.DEPARTMENTS} element={<ChiefsPage/>}/>
             <Route path="*" element={<Navigate to="/"/>}/>
         </Routes>
     );
