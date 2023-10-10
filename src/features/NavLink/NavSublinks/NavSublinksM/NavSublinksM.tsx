@@ -28,7 +28,7 @@ const NavSublinksM: FC<NavSublinksMProps> = ({link, click, isActive}) => {
                 </div>
                 <div className={`${css.container} ${isOpen && css.container_active}`}>
                     {link.sublinks?.map(item => (
-                        <Link className={css.link} to={item.to}>{item.title}</Link>
+                        <Link className={css.link} to={`${item.to}/${item.id}` }>{item.title}</Link>
                     ))}
                 </div>
             </div>

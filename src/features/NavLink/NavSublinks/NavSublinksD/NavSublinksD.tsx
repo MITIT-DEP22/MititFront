@@ -23,12 +23,12 @@ const NavSublinksD: FC<NavSublinksProps> = ({click, link, isMobile, isActive}) =
                     <div className={`${css.triangle} ${isHovered && css.triangle_active}`}/>
                     <div className={`${css.sublinksContainer} ${isHovered && css.sublinksContainer_active}`}>
                         {link.sublinks.map(item => (
-                            <Link onClick={click} className={css.sublink} to={link.to}>{item.title}</Link>
+                            <Link onClick={click} className={css.sublink}
+                                  to={`${item.to}/${item.id}`}>{item.title}</Link>
                         ))}
                     </div>
                 </>
             }
-
         </div>
     );
 };

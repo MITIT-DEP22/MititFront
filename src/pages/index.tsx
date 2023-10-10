@@ -5,6 +5,7 @@ import {InstitutePage} from "./Institute/InstitutePage";
 import {ChiefsPage} from "./Chiefs/ChiefsPage";
 import {HistoricalPage} from "./Historical/HistoricalPage";
 import ContactPage from "./Contacts/ContactPage";
+import FacultyPage from "./Faculty/FacultyPage";
 
 const HomePage = lazy(() => import("./Home/HomePage"));
 
@@ -16,6 +17,7 @@ export const Routing = () => {
             <Route path={RouterNames.CONTACTS} element={<ContactPage/>}/>
             <Route path={RouterNames.CHIEFS} element={<ChiefsPage/>}/>
             <Route path={RouterNames.HISTORY} element={<HistoricalPage/>}/>
+            <Route path={RouterNames.FACULTY + "/:id"} element={<FacultyPage/>}/>
             <Route path={RouterNames.DEPARTMENTS} element={<ChiefsPage/>}/>
             <Route path="*" element={<Navigate to="/"/>}/>
         </Routes>

@@ -1,0 +1,1 @@
+export {FacultyBlock} from "./ui/FacultyBlock"

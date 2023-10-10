@@ -8,9 +8,11 @@ interface PageHeadProps {
 
 export const PageHead: FC<PageHeadProps> = ({title, img}) => {
     return (
-        <div style={{background: `url(${img}) no-repeat center`, backgroundSize: "cover"}} className={css.container}>
-            <p className={css.title}>{title}</p>
-            <div className={css.filter}/>
-        </div>
+        <>
+            <div style={{background: `url(${img}) no-repeat center`}} className={css.container}>
+                <p className={css.title}>{title}</p>
+                <div className={css.filter}/>
+            </div>
+        </>
     );
 };

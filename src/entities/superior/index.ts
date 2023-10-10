@@ -1,0 +1,1 @@
+export type {Superior} from "./model/types"
