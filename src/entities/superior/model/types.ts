@@ -5,4 +5,8 @@ export type Superior ={
     name:string;
     achievements?:string[]
     img:Image;
+    rang: string,
+    telephone?: string,
+
 }
+
