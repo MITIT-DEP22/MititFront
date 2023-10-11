@@ -7,7 +7,7 @@ export enum RouterNames {
     NEWS = "/news",
     SCIENCE = "/science",
     FACULTY = "/faculty",
-    DEPARTMENTS = "/departments",
+    DEPARTMENT = "/department",
     UNITS = "/units",
     COOPERATION = "/cooperation",
     OUR_WINS = "/wins",

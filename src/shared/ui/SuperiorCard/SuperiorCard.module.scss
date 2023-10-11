@@ -1,14 +1,17 @@
 .chiefCard {
+
   display: flex;
   align-items: center;
   justify-content: center;
   width: 65%;
   height: max-content;
   gap: 30px;
+
   img {
     width: 300px;
     height: 400px;
   }
+
 }
 
 .chiefCardText {
@@ -17,6 +20,7 @@
   justify-content: center;
   gap: 5px;
   width: 415px;
+
   div {
     display: flex;
     align-items: center;
@@ -81,6 +85,7 @@
     text-align: center;
     width: max-content;
     height: min-content;
+
     img {
       order: 2;
       width: 262px;
@@ -97,7 +102,7 @@
   .chiefCardDescription {
     font-size: 10px;
   }
-  .chiefCardRangAndName{
+  .chiefCardRangAndName {
     font-size: 10px;
   }
   .chiefCardPhone {

@@ -28,7 +28,7 @@ const TextBlockComponent: FC<TextBlockComponentProps> = ({textBlock}) => {
             {textBlock.images &&
                 <div className={css.imagesContainer}>
                     {textBlock.images?.map(img => (
-                        <img className={css.img} src={img.href} alt=""/>
+                        <img className={css.img} src={img?.href} alt=""/>
                     ))}
                 </div>
             }

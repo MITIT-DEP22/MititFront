@@ -29,18 +29,18 @@ export const headerData = {
             ]
         },
         {
-            title: "Кафедри", to: RouterNames.DEPARTMENTS,
+            title: "Кафедри", to: RouterNames.DEPARTMENT,
             sublinks: [
-                {id: 10, title: "Кафедра загально-військових дисциплін", to: RouterNames.DEPARTMENTS},
-                {id: 11, title: "Кафедра іноземних мов", to: RouterNames.DEPARTMENTS},
+                {id: 10, title: "Кафедра загально-військових дисциплін", to: RouterNames.DEPARTMENT},
+                {id: 11, title: "Кафедра іноземних мов", to: RouterNames.DEPARTMENT},
                 {
                     id: 12,
                     title: "Кафедра фізичного виховання, спеціальної фізичної підготовки і спорту",
-                    to: RouterNames.DEPARTMENTS
+                    to: RouterNames.DEPARTMENT
                 },
-                {id: 13, title: "Кафедра військово-гуманітарних дисциплін", to: RouterNames.DEPARTMENTS},
-                {id: 14, title: "Кафедра математики та фізики", to: RouterNames.DEPARTMENTS},
-                {id: 15, title: "Кафедра військової підготовки", to: RouterNames.DEPARTMENTS},
+                {id: 13, title: "Кафедра військово-гуманітарних дисциплін", to: RouterNames.DEPARTMENT},
+                {id: 14, title: "Кафедра математики та фізики", to: RouterNames.DEPARTMENT},
+                {id: 15, title: "Кафедра військової підготовки", to: RouterNames.DEPARTMENT},
             ]
         },
         {
@@ -72,7 +72,7 @@ export const headerData = {
     ]
 }
 
-export const faculties = [
+export const faculties: Faculty[] = [
     {
         id: 7,
         title: "Факультет телекомунікаційних систем",
@@ -652,4 +652,97 @@ export const superiors: Superior[] = [
         ],
         telephone: "+38 (044) 256-24-44"
     }
+]
+
+export const departments: Department[] = [
+    {
+        id: 10,
+        headerImg: "https://s3-alpha-sig.figma.com/img/37cb/e112/a43a141029e5dce369924c1db9f958a5?Expires=1698019200&Signature=KmpWSKmaCvXRu8wDRvzFPogNzUNKQnNWyIp3Ma6lTL8AgsqRVzviqTky2fpkxvn49AK1-YD8PqXmSJ6PehzPlvOf3m93oTyFSKweK3io9fTnsF~gKZr0Kz0FMJS5eRVFcwoEDS~iV2E8leQXcGOBEscm~oyIbvEtdr~E4gsAFG6HL01JDIJPCIlHIJKr8rAeY5gP4-pDxBNi5tmzfMbtJfBKvJcn9yUVZopo5uQ~56MU7DLDK6YkBYpkvOQjKI7fSoIZ670mU-af0FuOCDwciHt47~6qJa-9wDOxE3bTRaAiPFNOFwbBbxqt6bFh3g4EnM6VoW0bWy6wfrJrIIiG3A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        title: "Кафедра загальної тактики",
+        titleTextBlock: {
+            content: [
+                "Кафедра загальної тактики є базовим структурним підрозділ інституту що провадить освітню, методичну та наукову діяльність за всіма спеціальностями та спеціалізаціями підготовки курсантів (слухачів, студентів).\n"
+            ],
+            lists: [
+                {
+                    title: "Головними завданнями кафедри є:",
+                    items: [
+                        "виховування майбутніх офіцерів з твердою командирською волею та ініціативою, здатних самостійно вирішувати поставлені завдання та нести відповідальність за прийняті рішення;\n",
+                        "навчання курсантів теорії та практиці застосування підрозділів Сухопутних військ в сучасному загальновійськовому бою, формам та способам тактичних дій, вмілому управлінню підрозділами в бою з дотриманням норм міжнародного гуманітарного права;\n",
+                        "реалізація на практиці вимог начальника військ зв’язку Збройних Сил України – начальника Головного управління зв’язку та інформаційних систем Генерального штабу Збройних Сил України до випускників інституту в питаннях загальновійськової підготовки;\n",
+                        "впровадження у підготовку курсантів (слухачів, студентів) інституту нових форм підготовки з урахуванням вимог стандартів НАТО та досвіду застосування Збройних сил України в антитерористичній операції.",
+                    ]
+                } as List
+            ]
+        } as TextBlock,
+        superior: {
+            name: "ПАВЛЕНКО Олег Анатолійович",
+            rang: "полковник",
+            achievements: [
+                "кандидат педагогічних наук"
+            ],
+            position: "Начальник кафедри",
+            img: {href: "https://s3-alpha-sig.figma.com/img/197c/e6fe/0e29c69c50d963f1c6f5475f6951b68f?Expires=1698019200&Signature=aZ3LKF07Sma61ugepNxtlVBcAsyPrI6iL8Hh3XbXAYm5VWVAFJZXZ0S-Rz2M6VYsp1LnYJn2VG7Ia3by~77nXJiVcOdDXLwY4~v6e0ONN89VRduyHaiL0wH2t0KAWvT2OTZo0WbgICcWWajUm7LB0iic~XquP4uaix4fEVyl5vkCXQ0Fv5mwWplwvFjgq0u-3CjJDk3bn-nS0dbcN6vOFZsOkWOseoTx50QICiliHhN~6CmxWv8viTDs9nC~puzbPHZisishLlYfkDVnKrvxroFEL-jOfblofBtd9RsIUB5g8KhV975HA4bm5IwWvnZykKKYI~LEUrZPsq1bbhBQlA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image
+        } as Superior,
+        textBlocks: [
+            {
+                content: [
+                    "На кафедрі викладаються наступні дисципліни: загальна тактика, основи військового управління (в тому числі штабні процедури НАТО), управління повсякденною діяльністю військ, інженерна підготовка, військова топографія, радіаційний, хімічний, біологічний захист підрозділів (в тому числі екологія), бойова система виживання воїна (у тому числі військово-медична підготовка), стрілецька зброя та вогнева підготовка, а також історія війн та воєнного мистецтва (у тому числі історія українського війська)."
+                ],
+                images: [
+                    {href: "https://s3-alpha-sig.figma.com/img/bf4e/582b/e09abdcd91bd78f36bbb981cc1893e3d?Expires=1698019200&Signature=ZwseWJ-PHXHGBln1e5-FCp-7vJ3J2HnEGbnICAI86tu-C~P9fGrtpScfoDMcfRfhnJhTky4UrLpAvTES2uycxOcx1nrKg7E5n3poZ7Q2BO99Fm9gENrUu00eq5QggzokciSaw5cadTUaI1~QRqDR6c0W9TxNeM1Q0I9OHXC~GotICzcrhw6Z43tmrjFJ4lyatubLO2rBFHY48w-6~V6nyPFYRcNidgxxKTp5tJwAfpMekBiFEkssB5wPg~ef8co-8cRs425oyUy1KiQUZhiGJnWErS05EXcXqCsR4TPoXM3vFWNts8EOpf0S0afLbDbpVdEShXwiCvuy3pYWWevW~w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href: "https://s3-alpha-sig.figma.com/img/bf4e/582b/e09abdcd91bd78f36bbb981cc1893e3d?Expires=1698019200&Signature=ZwseWJ-PHXHGBln1e5-FCp-7vJ3J2HnEGbnICAI86tu-C~P9fGrtpScfoDMcfRfhnJhTky4UrLpAvTES2uycxOcx1nrKg7E5n3poZ7Q2BO99Fm9gENrUu00eq5QggzokciSaw5cadTUaI1~QRqDR6c0W9TxNeM1Q0I9OHXC~GotICzcrhw6Z43tmrjFJ4lyatubLO2rBFHY48w-6~V6nyPFYRcNidgxxKTp5tJwAfpMekBiFEkssB5wPg~ef8co-8cRs425oyUy1KiQUZhiGJnWErS05EXcXqCsR4TPoXM3vFWNts8EOpf0S0afLbDbpVdEShXwiCvuy3pYWWevW~w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href: "https://s3-alpha-sig.figma.com/img/bf4e/582b/e09abdcd91bd78f36bbb981cc1893e3d?Expires=1698019200&Signature=ZwseWJ-PHXHGBln1e5-FCp-7vJ3J2HnEGbnICAI86tu-C~P9fGrtpScfoDMcfRfhnJhTky4UrLpAvTES2uycxOcx1nrKg7E5n3poZ7Q2BO99Fm9gENrUu00eq5QggzokciSaw5cadTUaI1~QRqDR6c0W9TxNeM1Q0I9OHXC~GotICzcrhw6Z43tmrjFJ4lyatubLO2rBFHY48w-6~V6nyPFYRcNidgxxKTp5tJwAfpMekBiFEkssB5wPg~ef8co-8cRs425oyUy1KiQUZhiGJnWErS05EXcXqCsR4TPoXM3vFWNts8EOpf0S0afLbDbpVdEShXwiCvuy3pYWWevW~w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href: "https://s3-alpha-sig.figma.com/img/bf4e/582b/e09abdcd91bd78f36bbb981cc1893e3d?Expires=1698019200&Signature=ZwseWJ-PHXHGBln1e5-FCp-7vJ3J2HnEGbnICAI86tu-C~P9fGrtpScfoDMcfRfhnJhTky4UrLpAvTES2uycxOcx1nrKg7E5n3poZ7Q2BO99Fm9gENrUu00eq5QggzokciSaw5cadTUaI1~QRqDR6c0W9TxNeM1Q0I9OHXC~GotICzcrhw6Z43tmrjFJ4lyatubLO2rBFHY48w-6~V6nyPFYRcNidgxxKTp5tJwAfpMekBiFEkssB5wPg~ef8co-8cRs425oyUy1KiQUZhiGJnWErS05EXcXqCsR4TPoXM3vFWNts8EOpf0S0afLbDbpVdEShXwiCvuy3pYWWevW~w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href: "https://s3-alpha-sig.figma.com/img/bf4e/582b/e09abdcd91bd78f36bbb981cc1893e3d?Expires=1698019200&Signature=ZwseWJ-PHXHGBln1e5-FCp-7vJ3J2HnEGbnICAI86tu-C~P9fGrtpScfoDMcfRfhnJhTky4UrLpAvTES2uycxOcx1nrKg7E5n3poZ7Q2BO99Fm9gENrUu00eq5QggzokciSaw5cadTUaI1~QRqDR6c0W9TxNeM1Q0I9OHXC~GotICzcrhw6Z43tmrjFJ4lyatubLO2rBFHY48w-6~V6nyPFYRcNidgxxKTp5tJwAfpMekBiFEkssB5wPg~ef8co-8cRs425oyUy1KiQUZhiGJnWErS05EXcXqCsR4TPoXM3vFWNts8EOpf0S0afLbDbpVdEShXwiCvuy3pYWWevW~w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href: "https://s3-alpha-sig.figma.com/img/bf4e/582b/e09abdcd91bd78f36bbb981cc1893e3d?Expires=1698019200&Signature=ZwseWJ-PHXHGBln1e5-FCp-7vJ3J2HnEGbnICAI86tu-C~P9fGrtpScfoDMcfRfhnJhTky4UrLpAvTES2uycxOcx1nrKg7E5n3poZ7Q2BO99Fm9gENrUu00eq5QggzokciSaw5cadTUaI1~QRqDR6c0W9TxNeM1Q0I9OHXC~GotICzcrhw6Z43tmrjFJ4lyatubLO2rBFHY48w-6~V6nyPFYRcNidgxxKTp5tJwAfpMekBiFEkssB5wPg~ef8co-8cRs425oyUy1KiQUZhiGJnWErS05EXcXqCsR4TPoXM3vFWNts8EOpf0S0afLbDbpVdEShXwiCvuy3pYWWevW~w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                ]
+            } as TextBlock
+        ]
+    } as Department,
+    {
+        headerImg: "",
+        title: "",
+        titleTextBlock: {} as TextBlock,
+        superior: {} as Superior,
+        textBlocks: [
+            {} as TextBlock
+        ]
+    } as Department,
+    {
+        headerImg: "",
+        title: "",
+        titleTextBlock: {} as TextBlock,
+        superior: {} as Superior,
+        textBlocks: [
+            {} as TextBlock
+        ]
+    } as Department,
+    {
+        headerImg: "",
+        title: "",
+        titleTextBlock: {} as TextBlock,
+        superior: {} as Superior,
+        textBlocks: [
+            {} as TextBlock
+        ]
+    } as Department,
+    {
+        headerImg: "",
+        title: "",
+        titleTextBlock: {} as TextBlock,
+        superior: {} as Superior,
+        textBlocks: [
+            {} as TextBlock
+        ]
+    } as Department,
+    {
+        headerImg: "",
+        title: "",
+        titleTextBlock: {} as TextBlock,
+        superior: {} as Superior,
+        textBlocks: [
+            {} as TextBlock
+        ]
+    } as Department,
 ]
