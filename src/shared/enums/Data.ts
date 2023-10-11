@@ -856,7 +856,7 @@ export const departments: Department[] = [
         ]
     } as Department,
     {
-        id:13,
+        id: 13,
         headerImg: "https://s3-alpha-sig.figma.com/img/00cc/a057/0c1a4c3eed0977a1932bfe733bf36cf3?Expires=1698019200&Signature=dwPQg-fJLhHzdZbb3cxttrQ6e9G1-TkzfY6lltiuUvtzDuy1WvchSlDlIxmrTKVdR8tvbdaFttkJIG3w~4OjLUH2VGgsGK89er2LJoJoEbk3tShGxcbnV9ny8cygrwMBnVfX6dLrC-78WHvzMYYgFlU1DCUULnVOpp4NOZjJ8fYkcqig-UGG~PgVhF1b1F~qmi9TUqTxbPA0OC5qByl0F52H4vjjCnMaP9BvI0yngo6eoEhKCBkUpc7MkS7mvqrh-dmYPcKgjKRnS2IKb42NzIXVPJplfvdzCqV834kDpzkAsn7QmgawefjbX4JEI9xE0OTy76M1WHMDvp~ssQF1ag__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
         title: "Кафедра військово-гуманітарних дисциплін",
         titleTextBlock: {
@@ -908,31 +908,119 @@ export const departments: Department[] = [
                 ]
             } as TextBlock,
             {
-                images:[
-                    {href:"https://s3-alpha-sig.figma.com/img/1311/59d5/69159600e6f645bc180b804098dfa182?Expires=1698019200&Signature=LR54opaGw0PjWjxzqVo1764dB7PpEvokS0D-i4SUVExxNdiibgNrmOZvFt20CoDSHgYLqS44i-VzelaNhvAJMx4Gxz6nTMyIlqYt8a--XyZBTH-mFa38yRPpA0NORDUe~qYKwReQ18RkNjpZns8~sNyNrZm63tf2xXdNRBD~4OfEcE3koO12OckZfTES9BDGbiSMzDghe7mJ~Szou~yjiqgi1JyZi5Yhv3bLrVfh1HrmiN57M2mzL8-7J6Ab6W6Eswb3Z-owrLcWRYkh7iHbDso2a~v6Zz9cIfKKar547DZe3bXhlD~GnUx2yN9OH6PYauibUKqbvp0U8sNZaXT-9Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
-                    {href:"https://s3-alpha-sig.figma.com/img/1311/59d5/69159600e6f645bc180b804098dfa182?Expires=1698019200&Signature=LR54opaGw0PjWjxzqVo1764dB7PpEvokS0D-i4SUVExxNdiibgNrmOZvFt20CoDSHgYLqS44i-VzelaNhvAJMx4Gxz6nTMyIlqYt8a--XyZBTH-mFa38yRPpA0NORDUe~qYKwReQ18RkNjpZns8~sNyNrZm63tf2xXdNRBD~4OfEcE3koO12OckZfTES9BDGbiSMzDghe7mJ~Szou~yjiqgi1JyZi5Yhv3bLrVfh1HrmiN57M2mzL8-7J6Ab6W6Eswb3Z-owrLcWRYkh7iHbDso2a~v6Zz9cIfKKar547DZe3bXhlD~GnUx2yN9OH6PYauibUKqbvp0U8sNZaXT-9Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
-                    {href:"https://s3-alpha-sig.figma.com/img/1311/59d5/69159600e6f645bc180b804098dfa182?Expires=1698019200&Signature=LR54opaGw0PjWjxzqVo1764dB7PpEvokS0D-i4SUVExxNdiibgNrmOZvFt20CoDSHgYLqS44i-VzelaNhvAJMx4Gxz6nTMyIlqYt8a--XyZBTH-mFa38yRPpA0NORDUe~qYKwReQ18RkNjpZns8~sNyNrZm63tf2xXdNRBD~4OfEcE3koO12OckZfTES9BDGbiSMzDghe7mJ~Szou~yjiqgi1JyZi5Yhv3bLrVfh1HrmiN57M2mzL8-7J6Ab6W6Eswb3Z-owrLcWRYkh7iHbDso2a~v6Zz9cIfKKar547DZe3bXhlD~GnUx2yN9OH6PYauibUKqbvp0U8sNZaXT-9Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
-                    {href:"https://s3-alpha-sig.figma.com/img/1311/59d5/69159600e6f645bc180b804098dfa182?Expires=1698019200&Signature=LR54opaGw0PjWjxzqVo1764dB7PpEvokS0D-i4SUVExxNdiibgNrmOZvFt20CoDSHgYLqS44i-VzelaNhvAJMx4Gxz6nTMyIlqYt8a--XyZBTH-mFa38yRPpA0NORDUe~qYKwReQ18RkNjpZns8~sNyNrZm63tf2xXdNRBD~4OfEcE3koO12OckZfTES9BDGbiSMzDghe7mJ~Szou~yjiqgi1JyZi5Yhv3bLrVfh1HrmiN57M2mzL8-7J6Ab6W6Eswb3Z-owrLcWRYkh7iHbDso2a~v6Zz9cIfKKar547DZe3bXhlD~GnUx2yN9OH6PYauibUKqbvp0U8sNZaXT-9Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                images: [
+                    {href: "https://s3-alpha-sig.figma.com/img/1311/59d5/69159600e6f645bc180b804098dfa182?Expires=1698019200&Signature=LR54opaGw0PjWjxzqVo1764dB7PpEvokS0D-i4SUVExxNdiibgNrmOZvFt20CoDSHgYLqS44i-VzelaNhvAJMx4Gxz6nTMyIlqYt8a--XyZBTH-mFa38yRPpA0NORDUe~qYKwReQ18RkNjpZns8~sNyNrZm63tf2xXdNRBD~4OfEcE3koO12OckZfTES9BDGbiSMzDghe7mJ~Szou~yjiqgi1JyZi5Yhv3bLrVfh1HrmiN57M2mzL8-7J6Ab6W6Eswb3Z-owrLcWRYkh7iHbDso2a~v6Zz9cIfKKar547DZe3bXhlD~GnUx2yN9OH6PYauibUKqbvp0U8sNZaXT-9Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href: "https://s3-alpha-sig.figma.com/img/1311/59d5/69159600e6f645bc180b804098dfa182?Expires=1698019200&Signature=LR54opaGw0PjWjxzqVo1764dB7PpEvokS0D-i4SUVExxNdiibgNrmOZvFt20CoDSHgYLqS44i-VzelaNhvAJMx4Gxz6nTMyIlqYt8a--XyZBTH-mFa38yRPpA0NORDUe~qYKwReQ18RkNjpZns8~sNyNrZm63tf2xXdNRBD~4OfEcE3koO12OckZfTES9BDGbiSMzDghe7mJ~Szou~yjiqgi1JyZi5Yhv3bLrVfh1HrmiN57M2mzL8-7J6Ab6W6Eswb3Z-owrLcWRYkh7iHbDso2a~v6Zz9cIfKKar547DZe3bXhlD~GnUx2yN9OH6PYauibUKqbvp0U8sNZaXT-9Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href: "https://s3-alpha-sig.figma.com/img/1311/59d5/69159600e6f645bc180b804098dfa182?Expires=1698019200&Signature=LR54opaGw0PjWjxzqVo1764dB7PpEvokS0D-i4SUVExxNdiibgNrmOZvFt20CoDSHgYLqS44i-VzelaNhvAJMx4Gxz6nTMyIlqYt8a--XyZBTH-mFa38yRPpA0NORDUe~qYKwReQ18RkNjpZns8~sNyNrZm63tf2xXdNRBD~4OfEcE3koO12OckZfTES9BDGbiSMzDghe7mJ~Szou~yjiqgi1JyZi5Yhv3bLrVfh1HrmiN57M2mzL8-7J6Ab6W6Eswb3Z-owrLcWRYkh7iHbDso2a~v6Zz9cIfKKar547DZe3bXhlD~GnUx2yN9OH6PYauibUKqbvp0U8sNZaXT-9Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href: "https://s3-alpha-sig.figma.com/img/1311/59d5/69159600e6f645bc180b804098dfa182?Expires=1698019200&Signature=LR54opaGw0PjWjxzqVo1764dB7PpEvokS0D-i4SUVExxNdiibgNrmOZvFt20CoDSHgYLqS44i-VzelaNhvAJMx4Gxz6nTMyIlqYt8a--XyZBTH-mFa38yRPpA0NORDUe~qYKwReQ18RkNjpZns8~sNyNrZm63tf2xXdNRBD~4OfEcE3koO12OckZfTES9BDGbiSMzDghe7mJ~Szou~yjiqgi1JyZi5Yhv3bLrVfh1HrmiN57M2mzL8-7J6Ab6W6Eswb3Z-owrLcWRYkh7iHbDso2a~v6Zz9cIfKKar547DZe3bXhlD~GnUx2yN9OH6PYauibUKqbvp0U8sNZaXT-9Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
                 ]
             } as TextBlock,
         ]
     } as Department,
     {
-        headerImg: "",
-        title: "",
-        titleTextBlock: {} as TextBlock,
-        superior: {} as Superior,
+        id: 14,
+        headerImg: "https://s3-alpha-sig.figma.com/img/fd5c/ae26/f34d5e70ee962e123625346638f19b4e?Expires=1698019200&Signature=LEGBY5ZPLEWjwKMUiZJ66OpvMnpJ3i69YV-gD9pt~t0C6HyG7TNuQEtjIwHM1jc6ewCJr4TlwlEfzqgR0qgD73bspyWOC8FcpsQ~t3UZCDiOFRWfcZSW5Sg~qw1a44NGc6mgpY2molKco-BIipRvj7XH695paGS2GQS-NdCrFZGJmb5YCni0Z34~RUJbCZR2AgWdf7JhL2HJ7~v3ZAL6c8WD-QJA66L~mdG6HTdwFgb9DJWLAeWfX8F7E20vPabIGU8W3Sfshg88SkN9VWQX1bgXpPbIJ4Gd4-MwrSnf2gsplsrPsdgIZmpEC7RnRxnqECSabbZUECoqdG-IlC2COQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        title: "Кафедра математики та фізики",
+        titleTextBlock: {
+            textContent: [
+                "Кафедра забезпечує викладання фундаментальних <strong>математичних дисциплін</strong>(«Вища математика», «Теорія ймовірностей, імовірнісні процеси та математична статистика», «Теорія прийняття рішень») і <strong>фізики</strong> («Електрика і магнетизм», «Основи електродинаміки», «Основи квантової фізики», «Основи квантової механіки», «Фізика твердового тіла», «Фізика напвпровідників», «Контактні явища», «Квантова електроніка», «Ядерна фізика») для курсантів (студентів заочної форми навчання) усіх спеціальностей підготовки на трьох факультетах. З метою забезпечення високої якості навчального процесу підготовки курсантів, навчання на кафедрі організоване з урахуванням освітніх потреб учасників навчального процесу в частині поглибленого опанування програм навчальних дисциплін, як базових, для подальшого вивчення шляхом поєднання лекційного курсу з лабораторними та практичними заняттями, де кожний курсант активно включається в рішення поставлених завдань, а одержані результати запроваджує в практику навчання."
+            ]
+        } as TextBlock,
+        superior: {
+            img: {href: "https://s3-alpha-sig.figma.com/img/eb98/0cec/61b0f1b32e8294c4f24f07356e425d9f?Expires=1698019200&Signature=KeLafmlLGQDqiMrJOFZlSJQ9SguIARltN6WzWFTFpmAe3aHS54rpkOpyHIli~VHgIOptfWOli1ot1t3Lb0kMMsLSs1tgMsPYNcnt7Rk~oP4G~efOwvWY19SyeyM-5cEIB~z87vFgZyN-pZufDfYPNr4bf~WXvHKlvaIv8iKCjIPbO4fwt3IJjx8tL2g4senepQbwHyDKC~YcUzteNRI7pfQefWeK2TSyP6Hj79SSYjWJbY5ojTSocwbmOMZRPlMrqQHKPUX1Oo8Ma8FZyRQEds502tmI9Cjvnw4srd1OCxpZPwOdwWLYqpHYbQD1G7Dp-VwWukrKoMJTw1f5ch902w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+            name: "РУДОМІНО-ДУСЯТСЬКА Ірина Анатоліївна",
+            position: "Завідувач кафедри математики та фізики",
+            rang: "Пр. ЗСУ ",
+            achievements: [
+                "кандидат фізико-математичних наук, доцент"
+            ]
+        } as Superior,
         textBlocks: [
-            {} as TextBlock
+            {
+                textContent: [
+                    "Протягом навчання курсанти отримують фундаментальну математичну підготовку, що поєднується з вмінням ставити, аналізувати і ефективно розв’язувати сучасні прикладні задачі та високими практичними навичками у подальшому програмуванні, вирішуванні завдання, які пов’язані з обробкою та аналізом даних.\n",
+                    "Метою кафедри є надання курсантам знань, які є необхідними для підготовки фахівців у галузях Інформаційних технологій, Електроніки та телекомунікації, Воєнних наук, національної безпеки, безпеки державного кордону.\n",
+                    "Стратегічним завданням кафедри залишається розробка дидактичних матеріалів, електронних посібників до занять з усіх навчальних дисциплін кафедри.\n",
+                    "На кафедрі працює 11 викладачів, з них 1 професор, кандидат фізико-математичних наук, доктор педагогічних наук, 4 доцента, кандидата фізико-математичних наук.",
+                    "Методичні матеріали (вища математика)\nМетодичні матеріали (фізика)",
+                ]
+            } as TextBlock
         ]
     } as Department,
     {
-        headerImg: "",
-        title: "",
-        titleTextBlock: {} as TextBlock,
-        superior: {} as Superior,
+        id: 15,
+        headerImg: "https://s3-alpha-sig.figma.com/img/0ca1/4f1f/173368a6df3c319dbbda928d8b1ebdaf?Expires=1698019200&Signature=pE85aoifMBlaiqnqDxMcYwfHUMsZW4nHPx8ZxiJfu8E2YdKiXLAxNKMVnAC7Kr~j3QDYS9Km1cMMSLQ9-CG0nXjFexiOA20mAbtNBUujvxGOOsTDHBtmxflnpOWwXiAl3ReTNJJ9Mdu5LFLZEEzlbmJkSywPmuN8gVSMQNTc585HKTd-RaYq5w0DcEFrkN4fXQ2fyYimypcaF1E9bcEXqqIE8sn6AP1SHQa~mkPkjg9eMA8nrBYIQUMc2TuDhhhNT57xyzcMae5w577MVv7abnvPTedPN5qWDh8IcJRpzFwCdFdcFHjH0458NOG7zHRBeEWy-Sk-aE7K36odKHdWCw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        title: "Кафедра військової підготовки",
+        titleTextBlock: {
+            textContent: [
+                "Кафедра військової підготовки Військового інституту телекомунікацій та інформатизації здійснює підготовку громадян України за програмою підготовки офіцерів запасу за державним замовлення та за кошти фізичних осіб для Головного Управління військ зв’язку та інформаційних систем, Повітряних Сил Збройних Сил України,Військово-Морських Сил Збройних Сил України, Сухопутних військ Збройних Сил України, Головного управління по роботі з особовим складом Збройних Сил України, Департаменту фінансів Міністерства Оборони України, Центрального управління захисту інформації та криптології ГШ Збройних Сил України за 14 військово - обліковими спеціальностями."
+            ],
+        } as TextBlock,
+        superior: {
+            rang: "полковник",
+            name: "ТКАЧЕНКО Дмитро Віталійович",
+            position: "Начальник кафедри",
+            img: {href: "https://s3-alpha-sig.figma.com/img/eb98/0cec/61b0f1b32e8294c4f24f07356e425d9f?Expires=1698019200&Signature=KeLafmlLGQDqiMrJOFZlSJQ9SguIARltN6WzWFTFpmAe3aHS54rpkOpyHIli~VHgIOptfWOli1ot1t3Lb0kMMsLSs1tgMsPYNcnt7Rk~oP4G~efOwvWY19SyeyM-5cEIB~z87vFgZyN-pZufDfYPNr4bf~WXvHKlvaIv8iKCjIPbO4fwt3IJjx8tL2g4senepQbwHyDKC~YcUzteNRI7pfQefWeK2TSyP6Hj79SSYjWJbY5ojTSocwbmOMZRPlMrqQHKPUX1Oo8Ma8FZyRQEds502tmI9Cjvnw4srd1OCxpZPwOdwWLYqpHYbQD1G7Dp-VwWukrKoMJTw1f5ch902w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+        } as Superior,
         textBlocks: [
-            {} as TextBlock
+            {
+                textContent: [
+                    "Нормативно-правова база військової підготовки\n",
+                    "Закон України \"Про військовий обов'язок і військову службу\" (витяг)\n",
+                    "Постанова Кабінету Міністрів України від 1.02.2012 №48 (зі змінами) \"Про затвердження Порядку проведення військової підготовки громадян України за програмою підготовки офіцерів запасу\"\n",
+                    "Наказ №719/1289 від 14.12.2015 \"Про затвердження Інструкції про організацію військової підготовки громадян України за програмою підготовки офіцерів запасу\"\n",
+                ]
+            } as TextBlock,
+            {
+                textContent: [
+                    "Рівень підготовки науково педагогічних працівників,стан озброєння та військової техніки, навчально-матеріальна база дозволяють формувати - особистості військового фахівця вищого рівня,здатного застосовувати бойову техніку в складних умовах сучасної війни; розвиток інженерного мислення і дослідницьких якостей,вмінь і навиків працювати в складі групи,керувати підлеглими під час експлуатації та бойового застосування техніки та озброєння.\n"
+                ]
+            } as TextBlock,
+            {
+                title: "ВІЙСЬКИВИЙ ІНСТИТУТ ТЕЛЕКОМУНІКАЦІЙ ТА ІНФОРМАТИЗАЦІЇ",
+                lists: [
+                    {
+                        title: "Набір 2018 року буде здійснюватися для підготовки за програмою офіцерів запасу за військово-обліковими спеціальностями:\n",
+                        items: [
+                            "Організація захисту інформації та кібернетична безпека в інформаційно-комунікаційних системах.\n",
+                            "Застосування змішаних з’єднань, військових частин і підрозділів (крім підрозділів і військових частин зв’язку та радіотехнічного забезпечення авіації).\n",
+                            "Спеціальний зв'язок. Контроль за режимом секретності.\n",
+                            "Математичне та програмне забезпечення функціонування автоматизованих систем.\n",
+                            "Експлуатація та ремонт наземної апаратури радіозв’язку різної потужності.\n",
+                            "Технічне забезпечення функціонування автоматизованих систем управління.\n",
+                            "Експлуатація та ремонт автомобільної техніки і гусеничних тягачів.\n",
+                            "Соціальна психологія.\n",
+                        ]
+                    } as List
+                ]
+            } as TextBlock,
+            {
+                textContent: [
+                    "До військової підготовки можуть залучатись здобувачі вищої освіти незалежно від форми навчання у вищих навчальних закладах, у тому числі і військовослужбовці рядового складу, сержантського та старшинського складу, які проходять військову службу за контрактом та громадяни України, які мають освітній ступінь вищої освіти не нижче бакалавра, якщо їм на початок військової підготовки не виповнилося 40 років.\n",
+                    "<strong>Увага!</strong> Відповідно до пункту 173 Положення про проходження громадянами України військової служби у Збройних Силах України до навчання можуть залучатися військовослужбовці, які підписали другий контракт та мають дозвіл від командира з'єднання і вище.\n",
+                    "<strong>Вартість навчання: 4 500 грн./семестр (2 роки навчання - 18 000 грн.).\n</strong>",
+                    "Після закінчення навчання та складання випускного іспиту присвоюється військове звання „молодший лейтенант запасу” Збройних Сил України."
+                ],
+                images: [
+                    {href:"https://s3-alpha-sig.figma.com/img/b179/34ca/43fa4498829c440415e8de0a23370ee3?Expires=1698019200&Signature=A2u6oAJw~ypnW4Se2Rvz7F-dOEUt5dSSBsQ0RXW7I1Kp8iZ2aBhA5hRbtp-CyVgT5s0xu5H9Q71ebZZMy3ZGBmJiNvFGY2~6DeuZS8cNSYKOfe9GJ5Ugv-RGmSQZWmcFgOvadFxkp6VJdffY1~u2lE2mwyvsmRsXTO5-xJEe7hbFeKv3ir9XKqk~9ddZjc-NY7u8ZACBdQaDZQQrkftO4ZOuSwg~1s18vvG2y-ZGlrU~TsrY~8z1ouxFr7tXzaPtW3QRH~xh-WGknlPWrtytlz6sL0G6hdt7AmcDGlIzue7Nl0lKYefGGR32RKytDzXmf32ZOv6ytLmElxXcH8HXYw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href:"https://s3-alpha-sig.figma.com/img/b179/34ca/43fa4498829c440415e8de0a23370ee3?Expires=1698019200&Signature=A2u6oAJw~ypnW4Se2Rvz7F-dOEUt5dSSBsQ0RXW7I1Kp8iZ2aBhA5hRbtp-CyVgT5s0xu5H9Q71ebZZMy3ZGBmJiNvFGY2~6DeuZS8cNSYKOfe9GJ5Ugv-RGmSQZWmcFgOvadFxkp6VJdffY1~u2lE2mwyvsmRsXTO5-xJEe7hbFeKv3ir9XKqk~9ddZjc-NY7u8ZACBdQaDZQQrkftO4ZOuSwg~1s18vvG2y-ZGlrU~TsrY~8z1ouxFr7tXzaPtW3QRH~xh-WGknlPWrtytlz6sL0G6hdt7AmcDGlIzue7Nl0lKYefGGR32RKytDzXmf32ZOv6ytLmElxXcH8HXYw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href:"https://s3-alpha-sig.figma.com/img/b179/34ca/43fa4498829c440415e8de0a23370ee3?Expires=1698019200&Signature=A2u6oAJw~ypnW4Se2Rvz7F-dOEUt5dSSBsQ0RXW7I1Kp8iZ2aBhA5hRbtp-CyVgT5s0xu5H9Q71ebZZMy3ZGBmJiNvFGY2~6DeuZS8cNSYKOfe9GJ5Ugv-RGmSQZWmcFgOvadFxkp6VJdffY1~u2lE2mwyvsmRsXTO5-xJEe7hbFeKv3ir9XKqk~9ddZjc-NY7u8ZACBdQaDZQQrkftO4ZOuSwg~1s18vvG2y-ZGlrU~TsrY~8z1ouxFr7tXzaPtW3QRH~xh-WGknlPWrtytlz6sL0G6hdt7AmcDGlIzue7Nl0lKYefGGR32RKytDzXmf32ZOv6ytLmElxXcH8HXYw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href:"https://s3-alpha-sig.figma.com/img/b179/34ca/43fa4498829c440415e8de0a23370ee3?Expires=1698019200&Signature=A2u6oAJw~ypnW4Se2Rvz7F-dOEUt5dSSBsQ0RXW7I1Kp8iZ2aBhA5hRbtp-CyVgT5s0xu5H9Q71ebZZMy3ZGBmJiNvFGY2~6DeuZS8cNSYKOfe9GJ5Ugv-RGmSQZWmcFgOvadFxkp6VJdffY1~u2lE2mwyvsmRsXTO5-xJEe7hbFeKv3ir9XKqk~9ddZjc-NY7u8ZACBdQaDZQQrkftO4ZOuSwg~1s18vvG2y-ZGlrU~TsrY~8z1ouxFr7tXzaPtW3QRH~xh-WGknlPWrtytlz6sL0G6hdt7AmcDGlIzue7Nl0lKYefGGR32RKytDzXmf32ZOv6ytLmElxXcH8HXYw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href:"https://s3-alpha-sig.figma.com/img/b179/34ca/43fa4498829c440415e8de0a23370ee3?Expires=1698019200&Signature=A2u6oAJw~ypnW4Se2Rvz7F-dOEUt5dSSBsQ0RXW7I1Kp8iZ2aBhA5hRbtp-CyVgT5s0xu5H9Q71ebZZMy3ZGBmJiNvFGY2~6DeuZS8cNSYKOfe9GJ5Ugv-RGmSQZWmcFgOvadFxkp6VJdffY1~u2lE2mwyvsmRsXTO5-xJEe7hbFeKv3ir9XKqk~9ddZjc-NY7u8ZACBdQaDZQQrkftO4ZOuSwg~1s18vvG2y-ZGlrU~TsrY~8z1ouxFr7tXzaPtW3QRH~xh-WGknlPWrtytlz6sL0G6hdt7AmcDGlIzue7Nl0lKYefGGR32RKytDzXmf32ZOv6ytLmElxXcH8HXYw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href:"https://s3-alpha-sig.figma.com/img/b179/34ca/43fa4498829c440415e8de0a23370ee3?Expires=1698019200&Signature=A2u6oAJw~ypnW4Se2Rvz7F-dOEUt5dSSBsQ0RXW7I1Kp8iZ2aBhA5hRbtp-CyVgT5s0xu5H9Q71ebZZMy3ZGBmJiNvFGY2~6DeuZS8cNSYKOfe9GJ5Ugv-RGmSQZWmcFgOvadFxkp6VJdffY1~u2lE2mwyvsmRsXTO5-xJEe7hbFeKv3ir9XKqk~9ddZjc-NY7u8ZACBdQaDZQQrkftO4ZOuSwg~1s18vvG2y-ZGlrU~TsrY~8z1ouxFr7tXzaPtW3QRH~xh-WGknlPWrtytlz6sL0G6hdt7AmcDGlIzue7Nl0lKYefGGR32RKytDzXmf32ZOv6ytLmElxXcH8HXYw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                ]
+            } as TextBlock,
+            {
+                textContent:[
+                    "<strong>Детальну інформацію дивіться:\n</strong>",
+                    "Правила прийому громадян України для навчання за програмою підготовки офіцерів запасу на кафедрі військової підготовки Військового інституту телекомунікацій та інформатизації (2019 рік)\n",
+                    "Документи (анкети) необхідні для вступу\n",
+                    "Графік проведення конкурсного відбору громадян України, які виявили бажання проходити військову підготовку у Військовому інституті телекомунікацій та інформатизації за програмою підготовки офіцерів запасу у 2018 році"
+                ]
+            } as TextBlock,
+            {} as TextBlock,
+
+
         ]
     } as Department,
 ]
