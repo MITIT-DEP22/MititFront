@@ -8,7 +8,8 @@ import {observer} from "mobx-react";
 import {model} from "../../../model/model"
 import {useLocation} from "react-router-dom";
 import {headerData, instituteName} from "shared/enums/Data";
-
+import Search from "../../Search/Search";
+import NavSublinksD from "../../../../../features/NavLink/NavSublinks/NavSublinksD/NavSublinksD";
 
 
 export const LayoutHeader = observer(() => {
@@ -44,7 +45,7 @@ export const LayoutHeader = observer(() => {
                     {headerData.linksT.map(item => (
                         <NavLinkT isActive={model.pathname.includes(item.to)}
                                   click={() => model.changeLink(item.to)}
-                                  title={item.title} to={item.to}/>
+                                  link={item}/>
                     ))}
                 </div>
             </div>
@@ -53,11 +54,15 @@ export const LayoutHeader = observer(() => {
                 <TitleLogo value={instituteName}/>
                 <div className={css.linksContainer}>
                     {headerData.linksB.map(item => (
-                        <NavLinkB click={() => model.changeLink(item.to)}
-                                  isActive={model.pathname.includes(item.to)}
-                                  title={item.title} to={item.to}/>
+                        item.sublinks ?
+                            <NavSublinksD link={item} isActive={model.pathname.includes(item.to)}
+                                          click={() => model.changeLink(item.to)}/>
+                            :
+                            <NavLinkB click={() => model.changeLink(item.to)}
+                                      isActive={model.pathname.includes(item.to)}
+                                      link={item}/>
                     ))}
-                    <Icon className={css.search} height={25} width={25} iconBootstrap={"bi bi-search"}/>
+                    <Search color={"#fefefe"}/>
                 </div>
             </div>
         </div>

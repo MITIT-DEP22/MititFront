@@ -1,5 +1,6 @@
 import React, {FC} from 'react';
 import css from "./HistoryCard.module.scss";
+import HTMLReactParser from "html-react-parser";
 
 
 interface InfoCard {
@@ -14,14 +15,14 @@ const HistoryCard: FC<InfoCard> = ({imgSource, value, positionRight}) => {
             {positionRight ? (
                 <>
                     <img src={imgSource} alt="" />
-                    <div>
-                        {value}
+                    <div className={`${positionRight? css.textAlignLeft : css.textAlignLeft}`}>
+                        {HTMLReactParser(value)}
                     </div>
                 </>
             ) : (
                 <>
-                    <div>
-                        {value}
+                    <div className={`${positionRight? css.textAlignRight : css.textAlignRight}`}>
+                        {HTMLReactParser(value)}
                     </div>
                     <img src={imgSource} alt="" />
                 </>

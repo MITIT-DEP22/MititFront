@@ -1,0 +1,1 @@
+export type {Faculty} from "./model/types"

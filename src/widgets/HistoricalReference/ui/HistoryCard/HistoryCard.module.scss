@@ -3,6 +3,7 @@
   height: max-content;
   display: flex;
   gap: 20px;
+  align-items: center;
 
   img {
     width: 425px;
@@ -11,5 +12,41 @@
   div {
     width: 555px;
     height: min-content;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.textAlignRight {
+  text-align: right;
+}
+
+.textAlignLeft{
+  text-align: left;
+}
+
+@media (max-width: 1000px) {
+  .historyCard {
+    img {
+      width: 325px;
+      height: 168px;
+    }
+    div {
+      width: 255px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .historyCard {
+    flex-direction: column-reverse;
+    img {
+      order: 2;
+      width: 300px;
+      height: 181px;
+    }
+    div {
+      text-align: center;
+    }
   }
 }

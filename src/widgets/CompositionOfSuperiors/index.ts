@@ -1,0 +1,1 @@
+export { CompositionOfSuperiors } from './ui/CompositionOfSuperiors';
