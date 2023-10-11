@@ -39,3 +39,8 @@
   border-bottom: 1px solid black;
   padding-bottom: 4px;
 }
+
+.link_active{
+  transition-duration: 500ms;
+  border-bottom: 2px black solid;
+}

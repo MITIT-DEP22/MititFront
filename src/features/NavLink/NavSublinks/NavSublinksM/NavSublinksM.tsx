@@ -2,14 +2,15 @@ import React, {FC, useEffect, useState} from 'react';
 import {NavLink} from "entities/link";
 import {Link} from "react-router-dom";
 import css from "./NavSublinksM.module.scss"
+import {model} from "../../../../widgets/Header/model/model";
 
 interface NavSublinksMProps {
     link: NavLink;
-    click: (any: any) => any;
     isActive: boolean;
+    goTo: (any:any) => any;
 }
 
-const NavSublinksM: FC<NavSublinksMProps> = ({link, click, isActive}) => {
+const NavSublinksM: FC<NavSublinksMProps> = ({link, isActive, goTo}) => {
 
         const [isOpen, setIsOpen] = useState(false)
 
@@ -20,7 +21,7 @@ const NavSublinksM: FC<NavSublinksMProps> = ({link, click, isActive}) => {
 
         return (
             <div onClick={openLinks}>
-                <div className={`${css.title} }`}>
+                <div className={`${css.title} ${isActive && css.link_active} }`}>
                     {link.title}
                     <div className={` ${isOpen && css.title_active}`}>
                         <i style={{fontSize: 24}} className={`bi bi-caret-left`}></i>
@@ -28,7 +29,7 @@ const NavSublinksM: FC<NavSublinksMProps> = ({link, click, isActive}) => {
                 </div>
                 <div className={`${css.container} ${isOpen && css.container_active}`}>
                     {link.sublinks?.map(item => (
-                        <Link className={css.link} to={`${item.to}/${item.id}` }>{item.title}</Link>
+                        <Link onClick={()=>goTo(link.to)} className={css.link} to={`${item.to}/${item.id}`}>{item.title}</Link>
                     ))}
                 </div>
             </div>

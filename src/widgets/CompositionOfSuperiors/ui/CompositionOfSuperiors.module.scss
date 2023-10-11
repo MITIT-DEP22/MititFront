@@ -1,8 +1,17 @@
 .compositionCards {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   gap: 40px;
   padding: 10px;
 }
+
+.compositionCards > :nth-child(odd) {
+  align-self: start;
+}
+
+.compositionCards > :nth-child(even) {
+  align-self: end;
+}
+
+

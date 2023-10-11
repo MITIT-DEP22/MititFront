@@ -16,6 +16,11 @@ interface SidebarProps {
 }
 
 const Sidebar: FC<SidebarProps> = observer(({isOpen, close}) => {
+    const goTo = (to: string) => {
+        model.changeLink(to)
+        close()
+    }
+
     return (
         <div className={`${css.container} ${isOpen && css.active}`}>
             <div className={`${css.menu} ${isOpen && css.menuActive}`}>
@@ -26,23 +31,18 @@ const Sidebar: FC<SidebarProps> = observer(({isOpen, close}) => {
                 {headerData.linksT.map((item) => (
                     <NavLinkT isMobile={true} link={item}
                               click={() => {
-                                  model.changeLink(item.to)
-                                  close()
+                                  goTo(item.to)
                               }}
                               isActive={model.pathname.includes(item.to)}/>
                 ))}
 
                 {headerData.linksB.map((item) => (
                     item.sublinks ?
-                        <NavSublinksM click={() => {
-                            model.changeLink(item.to)
-                            close()
-                        }} isActive={model.pathname.includes(item.to)} link={item}/>
+                        <NavSublinksM goTo={goTo}  isActive={model.pathname.includes(item.to)} link={item}/>
                         :
                         <NavLinkB isMobile={true} link={item}
                                   click={() => {
-                                      model.changeLink(item.to)
-                                      close()
+                                      goTo(item.to)
                                   }}
                                   isActive={model.pathname.includes(item.to)}/>
                 ))}
