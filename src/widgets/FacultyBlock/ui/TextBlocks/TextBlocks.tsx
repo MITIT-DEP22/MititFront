@@ -3,7 +3,7 @@ import {TextBlock} from "entities/text-block";
 import TextBlockComponent from "shared/ui/TextBlockComponent/TextBlockComponent";
 import css from "./TextBlocks.module.scss"
 interface TextBlocksProps {
-    textBlocks?: TextBlock[];
+    textBlocks: TextBlock[];
 }
 
 const TextBlocks: FC<TextBlocksProps> = ({textBlocks}) => {

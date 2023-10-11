@@ -2,6 +2,8 @@ import React, {FC, useEffect, useState} from 'react';
 import {Department} from "entities/department";
 import SuperiorCard from "shared/ui/SuperiorCard/SuperiorCard";
 import css from "./DepartmentCard.module.scss"
+import TextBlocks from "../../TextBlocks/TextBlocks";
+import textBlocks from "../../TextBlocks/TextBlocks";
 
 interface DepartmentCardProps {
     department: Department;
@@ -23,27 +25,30 @@ const DepartmentCard: FC<DepartmentCardProps> = ({department, right}) => {
         setInnerWidth(window.innerWidth)
     }
 
-    if (innerWidth < 1050 || !right) {
-        return (<div className={css.container}>
-                <SuperiorCard superior={department.superior} positionRight={true}/>
-                <div className={css.about}>
-                    <p className={css.title}> {department.title}</p>
-                    <p className={css.description}>{department.description}</p>
+    return (<>
+            {innerWidth < 1050 || !right ?
+                <div className={css.container}>
+                    <SuperiorCard superior={department.superior} positionRight={true}/>
+                    <div className={css.about}>
+                        <p className={css.title}> {department.title}</p>
+                        <p className={css.description}>{department.description}</p>
+                    </div>
                 </div>
-            </div>
-        )
-    } else {
-        return (
-            <div className={css.container}>
-                <div className={css.about}>
-                    <p className={css.title}> {department.title}</p>
-                    <p className={css.description}>{department.description}</p>
+                :
+                <div className={css.container}>
+                    <div className={css.about}>
+                        <p className={css.title}> {department.title}</p>
+                        <p className={css.description}>{department.description}</p>
+                    </div>
+                    <SuperiorCard superior={department.superior} positionRight={false}/>
                 </div>
-                <SuperiorCard superior={department.superior} positionRight={false}/>
-            </div>
-        );
-    }
+            }
+            {department.textBlocks &&
+                <TextBlocks textBlocks={department.textBlocks}/>
+            }
+        </>
 
+    )
 };
 
 export default DepartmentCard;
