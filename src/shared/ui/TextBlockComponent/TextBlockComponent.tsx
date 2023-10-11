@@ -1,6 +1,11 @@
 import React, {FC} from 'react';
 import {TextBlock} from "entities/text-block";
 import css from "./TextBlockComponent.module.scss"
+import Title from "./ui/Title/Title";
+import TextContentContainer from "./ui/TextContentContainer/TextContentContainer";
+import ListsContainer from "./ui/ListsContainer/ListsContainer";
+import ImagesContainer from "./ui/ImagesContainer/ImagesContainer";
+import TablesContainer from "./ui/TablesContainer/TablesContainer";
 
 interface TextBlockComponentProps {
     textBlock: TextBlock
@@ -9,31 +14,26 @@ interface TextBlockComponentProps {
 const TextBlockComponent: FC<TextBlockComponentProps> = ({textBlock}) => {
     return (
         <div className={css.container}>
-            <p className={css.title}>{textBlock.title}</p>
+            {textBlock.title &&
+                <Title title={textBlock.title}/>
+            }
 
-            {textBlock.content?.map(item => (
-                <p className={css.textContent}>{item}</p>
-            ))}
+            {textBlock.textContent &&
+                <TextContentContainer textContent={textBlock.textContent}/>
+            }
 
-            {textBlock.lists?.map(list => (
-                <>
-                    <p className={css.listTitle}>{list.title}</p>
-                    <ul className={css.list}>
-                        {list.items.map(i => (
-                            <li className={css.listItem}>{i}</li>
-                        ))}
-                    </ul>
-                </>
-            ))}
+            {textBlock.lists &&
+                <ListsContainer lists={textBlock.lists}/>
+            }
+
             {textBlock.images &&
-                <div className={css.imagesContainer}>
-                    {textBlock.images?.map(img => (
-                        <img className={css.img} src={img?.href} alt=""/>
-                    ))}
-                </div>
+                <ImagesContainer images={textBlock.images}/>
+            }
+
+            {textBlock.tables &&
+                <TablesContainer tables={textBlock.tables}/>
             }
         </div>
-    );
-};
-
+    )
+}
 export default TextBlockComponent;

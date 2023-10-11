@@ -12,10 +12,10 @@ const DepartmentPage = () => {
 
     useEffect(() => {
         setDepartment(departments.filter(item => item.id === Number(id))[0])
-    }, []);
+    }, [id]);
     return (
         <>
-            <PageHead title={"Кафедри"} img={department.headerImg}/>
+            <PageHead title={"Кафедри"} img={department?.headerImg}/>
             <DepartmentBlock department={department}/>
         </>
     );

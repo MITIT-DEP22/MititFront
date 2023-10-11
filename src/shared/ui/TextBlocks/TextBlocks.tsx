@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
-import {TextBlock} from "entities/text-block";
-import TextBlockComponent from "shared/ui/TextBlockComponent/TextBlockComponent";
+import {TextBlock} from "../../../entities/text-block";
+import TextBlockComponent from "../TextBlockComponent/TextBlockComponent";
 import css from "./TextBlocks.module.scss"
 
 interface TextBlocksProps {

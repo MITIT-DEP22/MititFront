@@ -4,6 +4,7 @@ import {Faculty} from "../../entities/faculty";
 import {Superior} from "../../entities/superior";
 import {Department} from "../../entities/department";
 import {Image, TextBlock, List} from "../../entities/text-block";
+import {Row, Table} from "../../entities/text-block/model/types";
 
 export const instituteName = "ВІЙСЬКОВИЙ ІНСТИТУТ\nТЕЛЕКОМУНІКАЦІЙ ТА ІНФОРМАТИЗАЦІЇ\nІМЕНІ ГЕРОЇВ КРУТ"
 export const upperTitle = "АКТУАЛЬНО: Набір на курси лідерства"
@@ -163,7 +164,7 @@ export const faculties: Faculty[] = [
         textBlocks: [
             {
                 title: "НАВЧАЛЬНИЙ ТА НАУКОВИЙ ПРОЦЕС",
-                content: [
+                textContent: [
                     "На факультеті потужний науково-педагогічний потенціал, сучасна навчально-матеріальна база, комп’ютерні та спеціалізовані класи. Лекційні аудиторії оснащені новітньою телекомунікаційною технікою та засобами зв’язку. Серед курсантів факультету навчаються іменні стипендіати премій Президента України, Верховної Ради України, Кабінету Міністрів України і переможці конкурсів наукових робіт в різних галузях знань.\n"
                 ],
                 lists: [
@@ -177,7 +178,7 @@ export const faculties: Faculty[] = [
                 ]
             } as TextBlock,
             {
-                content: [
+                textContent: [
                     "Факультет приймає активну участь в винахідницькій та раціоналізаторській роботі, представники від факультету беруть участь у міжнародних навчаннях."
                 ]
             } as TextBlock,
@@ -209,7 +210,7 @@ export const faculties: Faculty[] = [
             } as TextBlock,
             {
                 title: "НАВЧАЛЬНІ ЗАНЯТТЯ",
-                content: [
+                textContent: [
                     "Військовослужбовці, які навчаються на факультеті мають статус курсанта та отримують грошове забезпечення. Курсантам, які навчаються на «добре» та «відмінно» нараховується підвищене грошове забезпечення. Випускники факультету після закінчення навчання отримують диплом державного зразка, первинне офіцерське звання «лейтенант» та обов’язкове (гарантоване державним замовленням) призначення на первинну офіцерську посаду."
                 ],
                 images: [
@@ -221,7 +222,7 @@ export const faculties: Faculty[] = [
             } as TextBlock,
             {
                 title: "ВИХОВНА РОБОТА",
-                content: [
+                textContent: [
                     "Факультетом створені всі умови для всебічного розвитку особистості. Курсанти постійно відвідують театри, кінотеатри, картинні галереї, музеї, пам’ятки вітчизняної історичної та культурної спадщини."
                 ],
                 images: [
@@ -235,7 +236,7 @@ export const faculties: Faculty[] = [
             } as TextBlock,
             {
                 title: "ФІЗИЧНА ПІДГОТОВКА І СПОРТ",
-                content: [
+                textContent: [
                     "Особлива увага приділяється розвитку фізичної культури та спорту. Особовий склад факультету має можливість відвідувати різноманітні спортивні секції, гуртки та басейн."
                 ],
                 images: [
@@ -337,7 +338,7 @@ export const faculties: Faculty[] = [
         textBlocks: [
             {
                 title: "НАВЧАЛЬНИЙ ТА НАУКОВИЙ ПРОЦЕС",
-                content: [
+                textContent: [
                     "На факультеті потужний науково-педагогічний потенціал, сучасна навчально-матеріальна база, комп’ютерні та спеціалізовані класи. Лекційні аудиторії оснащені новітньою телекомунікаційною технікою та засобами зв’язку. Серед курсантів факультету навчаються іменні стипендіати премій Президента України, Верховної Ради України, Кабінету Міністрів України і переможці конкурсів наукових робіт в різних галузях знань.\n"
                 ],
                 lists: [
@@ -351,7 +352,7 @@ export const faculties: Faculty[] = [
                 ]
             } as TextBlock,
             {
-                content: [
+                textContent: [
                     "Факультет приймає активну участь в винахідницькій та раціоналізаторській роботі, представники від факультету беруть участь у міжнародних навчаннях."
                 ]
             } as TextBlock,
@@ -374,7 +375,7 @@ export const faculties: Faculty[] = [
             } as TextBlock,
             {
                 title: "НАВЧАЛЬНІ ЗАНЯТТЯ",
-                content: [
+                textContent: [
                     "Військовослужбовці, які навчаються на факультеті мають статус курсанта та отримують грошове забезпечення. Курсантам, які навчаються на «добре» та «відмінно» нараховується підвищене грошове забезпечення. Випускники факультету після закінчення навчання отримують диплом державного зразка, первинне офіцерське звання «лейтенант» та обов’язкове (гарантоване державним замовленням) призначення на первинну офіцерську посаду."
                 ],
                 images: [
@@ -386,7 +387,7 @@ export const faculties: Faculty[] = [
             } as TextBlock,
             {
                 title: "ВИХОВНА РОБОТА",
-                content: [
+                textContent: [
                     "Факультетом створені всі умови для всебічного розвитку особистості. Курсанти постійно відвідують театри, кінотеатри, картинні галереї, музеї, пам’ятки вітчизняної історичної та культурної спадщини."
                 ],
                 images: [
@@ -400,7 +401,7 @@ export const faculties: Faculty[] = [
             } as TextBlock,
             {
                 title: "ФІЗИЧНА ПІДГОТОВКА І СПОРТ",
-                content: [
+                textContent: [
                     "Особлива увага приділяється розвитку фізичної культури та спорту. Особовий склад факультету має можливість відвідувати різноманітні спортивні секції, гуртки та басейн."
                 ],
                 images: [
@@ -502,7 +503,7 @@ export const faculties: Faculty[] = [
         textBlocks: [
             {
                 title: "НАВЧАЛЬНИЙ ТА НАУКОВИЙ ПРОЦЕС",
-                content: [
+                textContent: [
                     "На факультеті потужний науково-педагогічний потенціал, сучасна навчально-матеріальна база, комп’ютерні та спеціалізовані класи. Лекційні аудиторії оснащені новітньою телекомунікаційною технікою та засобами зв’язку. Серед курсантів факультету навчаються іменні стипендіати премій Президента України, Верховної Ради України, Кабінету Міністрів України і переможці конкурсів наукових робіт в різних галузях знань.\n"
                 ],
                 lists: [
@@ -516,7 +517,7 @@ export const faculties: Faculty[] = [
                 ]
             } as TextBlock,
             {
-                content: [
+                textContent: [
                     "Факультет приймає активну участь в винахідницькій та раціоналізаторській роботі, представники від факультету беруть участь у міжнародних навчаннях."
                 ]
             } as TextBlock,
@@ -539,7 +540,7 @@ export const faculties: Faculty[] = [
             } as TextBlock,
             {
                 title: "НАВЧАЛЬНІ ЗАНЯТТЯ",
-                content: [
+                textContent: [
                     "Військовослужбовці, які навчаються на факультеті мають статус курсанта та отримують грошове забезпечення. Курсантам, які навчаються на «добре» та «відмінно» нараховується підвищене грошове забезпечення. Випускники факультету після закінчення навчання отримують диплом державного зразка, первинне офіцерське звання «лейтенант» та обов’язкове (гарантоване державним замовленням) призначення на первинну офіцерську посаду."
                 ],
                 images: [
@@ -551,7 +552,7 @@ export const faculties: Faculty[] = [
             } as TextBlock,
             {
                 title: "ВИХОВНА РОБОТА",
-                content: [
+                textContent: [
                     "Факультетом створені всі умови для всебічного розвитку особистості. Курсанти постійно відвідують театри, кінотеатри, картинні галереї, музеї, пам’ятки вітчизняної історичної та культурної спадщини."
                 ],
                 images: [
@@ -565,7 +566,7 @@ export const faculties: Faculty[] = [
             } as TextBlock,
             {
                 title: "ФІЗИЧНА ПІДГОТОВКА І СПОРТ",
-                content: [
+                textContent: [
                     "Особлива увага приділяється розвитку фізичної культури та спорту. Особовий склад факультету має можливість відвідувати різноманітні спортивні секції, гуртки та басейн."
                 ],
                 images: [
@@ -660,7 +661,7 @@ export const departments: Department[] = [
         headerImg: "https://s3-alpha-sig.figma.com/img/37cb/e112/a43a141029e5dce369924c1db9f958a5?Expires=1698019200&Signature=KmpWSKmaCvXRu8wDRvzFPogNzUNKQnNWyIp3Ma6lTL8AgsqRVzviqTky2fpkxvn49AK1-YD8PqXmSJ6PehzPlvOf3m93oTyFSKweK3io9fTnsF~gKZr0Kz0FMJS5eRVFcwoEDS~iV2E8leQXcGOBEscm~oyIbvEtdr~E4gsAFG6HL01JDIJPCIlHIJKr8rAeY5gP4-pDxBNi5tmzfMbtJfBKvJcn9yUVZopo5uQ~56MU7DLDK6YkBYpkvOQjKI7fSoIZ670mU-af0FuOCDwciHt47~6qJa-9wDOxE3bTRaAiPFNOFwbBbxqt6bFh3g4EnM6VoW0bWy6wfrJrIIiG3A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
         title: "Кафедра загальної тактики",
         titleTextBlock: {
-            content: [
+            textContent: [
                 "Кафедра загальної тактики є базовим структурним підрозділ інституту що провадить освітню, методичну та наукову діяльність за всіма спеціальностями та спеціалізаціями підготовки курсантів (слухачів, студентів).\n"
             ],
             lists: [
@@ -686,7 +687,7 @@ export const departments: Department[] = [
         } as Superior,
         textBlocks: [
             {
-                content: [
+                textContent: [
                     "На кафедрі викладаються наступні дисципліни: загальна тактика, основи військового управління (в тому числі штабні процедури НАТО), управління повсякденною діяльністю військ, інженерна підготовка, військова топографія, радіаційний, хімічний, біологічний захист підрозділів (в тому числі екологія), бойова система виживання воїна (у тому числі військово-медична підготовка), стрілецька зброя та вогнева підготовка, а також історія війн та воєнного мистецтва (у тому числі історія українського війська)."
                 ],
                 images: [
@@ -701,30 +702,219 @@ export const departments: Department[] = [
         ]
     } as Department,
     {
-        headerImg: "",
-        title: "",
-        titleTextBlock: {} as TextBlock,
-        superior: {} as Superior,
+        id: 11,
+        headerImg: "https://s3-alpha-sig.figma.com/img/390f/ac3a/aa5e6c1bb3d46ee3a6e08072ee54e7b1?Expires=1698019200&Signature=oqSXji1W8R5uLF1tpvAOYKyw9iOjahYijAMneqckIWUJyDW7oxtL5Vb27~6u4qEiudd9gKJZh-McbHspQV0UY5EnctD1hJ5YEIR0L3lX6y5cBZap~cJYAtVGaGCXC5wsCkvjo-Zj-zWt51N7506JjfLiGp8Ji~R7iKGhoeHIBHNDxYxRYXe~e213iyr4dd7rjyKvOnc9VAmC1MxZgVu7aWpnJxAhvi0KtpqFxpNk7dLClIbT6Af864KqlGs5FHUT~ln-TL1D-nA34IOj6u6stkKzXryCvnybektZi704mpVmiwpvJ-WxwOMEcnoQ6vn5J0O0hQGXcAiBfohO9qNmUA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        title: "Кафедра іноземних мов",
+        titleTextBlock: {
+            textContent: [
+                "Кафедра Іноземних мов є загальноінститутською кафедрою, яка здійснює підготовку висококваліфікованих офіцерських кадрів для Збройних Сил України та інших військових формувань. Основний акцент в підготовці фахівців викладацьким складом кафедри робиться на вдосконаленні мовної компетентності фахівців, приведення її у відповідність з міжнародними стандартами та сучасними потребами щодо забезпечення мовної взаємосумісності органів управління, частин та підрозділів Збройних Сил України з військовими формуваннями міжнародних організацій та країн-партнерів НАТО у рамках реалізації заходів міжнародного співробітництва."
+            ]
+        } as TextBlock,
+        superior: {
+            name: "КАПАНАЙКО Ірина Ярославівна",
+            rang: "Пр. ЗСУ",
+            achievements: [
+                "кандидат філологічних наук"
+            ],
+            position: "Завідувач кафедри іноземних мов",
+            img: {href: "https://s3-alpha-sig.figma.com/img/197c/e6fe/0e29c69c50d963f1c6f5475f6951b68f?Expires=1698019200&Signature=aZ3LKF07Sma61ugepNxtlVBcAsyPrI6iL8Hh3XbXAYm5VWVAFJZXZ0S-Rz2M6VYsp1LnYJn2VG7Ia3by~77nXJiVcOdDXLwY4~v6e0ONN89VRduyHaiL0wH2t0KAWvT2OTZo0WbgICcWWajUm7LB0iic~XquP4uaix4fEVyl5vkCXQ0Fv5mwWplwvFjgq0u-3CjJDk3bn-nS0dbcN6vOFZsOkWOseoTx50QICiliHhN~6CmxWv8viTDs9nC~puzbPHZisishLlYfkDVnKrvxroFEL-jOfblofBtd9RsIUB5g8KhV975HA4bm5IwWvnZykKKYI~LEUrZPsq1bbhBQlA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image
+        } as Superior,
         textBlocks: [
-            {} as TextBlock
+            {
+                textContent: [
+                    "Навчання проводиться за навчальними дисциплінами: Іноземна мова, Іноземна мова (військово-спеціальна підготовка), Іноземна мова професійного спрямування, Ділова іноземна мова (для ад’юнктів). Завданням кафедри під час вивчення іноземної мови є розвиток у курсантів професійно орієнтованої міжкультурної комунікативної компетентності. Ця компетентність є результатом взаємодії та комплексної реалізації низки компетентностей, а саме, розвитку загальнонавчальної компетентності, формування та розвитку лінгвістичної мовної компетентності, розвитку іншомовної комунікативної компетентності, розвитку соціокультурної та прагматичної компетентностей. Зазначені компетентності формують професійну комунікативну компетентність особистості курсанта (слухача, ад’юнкта), здатного брати безпосередню участь у розв’язанні важливих проблем та професійних завдань іноземною мовою.\n",
+                    "Науково-педагогічні працівники кафедри забезпечують якісне проведення практичних занять, використовуючи сучасні навчально-методичні комплекси.",
+                    "На кафедрі працює 9 викладачів та 2 працівники лаборантського складу, які забезпечують навчальний процес.\n",
+                    "Значна увага на кафедрі приділяється підвищенню кваліфікації викладачів та їх професійному самовдосконаленню. Основними напрямками наукових досліджень кафедри є: лінгвістичні, методичні та педагогічні засади взаємопов’язаного навчання різних видів мовленнєвої діяльності, шляхи поповнення словникового запасу мови, психолінгвістичні аспекти підвищення ефективності викладання іноземних мов, удосконалення професійно-орієнтованої іншомовної підготовки як фактор підвищення ефективності діяльності працівників."
+                ]
+            } as TextBlock,
+            {
+                title: "Розклад додаткових консультативних занять.",
+                tables: [
+                    {
+                        headers: [
+                            "День тижня",
+                            "Назва курсу",
+                            "Час проведення",
+                            "Куратори курсу"
+                        ],
+                        rows: [
+                            {
+                                value: [
+                                    "ПОНЕДІЛОК",
+                                    "Advanced Grammar Lab / Підвищений курс Граматики",
+                                    "16.00 – 16.45",
+                                    "Бокій В.І., Дідурик А.І."
+                                ]
+                            } as Row,
+                            {
+                                value: [
+                                    "ВІВТОРОК",
+                                    "Speaking Booster (for officers) / Розмовний курс для офіцерів",
+                                    "16.00 – 16.45",
+                                    "Циганкова З.М., Бецько О.С"
+                                ]
+                            } as Row,
+                            {
+                                value: [
+                                    "СЕРЕДА",
+                                    "Basic Grammar Lab / Початковий курс Граматики",
+                                    "16.00 – 16.45",
+                                    "Шаблій О.С., Задорожна О."
+                                ]
+                            } as Row,
+                            {
+                                value: [
+                                    "ЧЕТВЕР",
+                                    "Speaking Club (for cadets) / Розмовний клуб для курсантів",
+                                    "16.00 – 16.45",
+                                    "Храбан Т.Є., Лемещенко А."
+                                ]
+                            } as Row,
+                            {
+                                value: [
+                                    "П’ЯТНИЦЯ",
+                                    "Pronunciation Course",
+                                    "16.00 – 16.45",
+                                    "Куценко М.А., Дзіман А.М."
+                                ]
+                            } as Row,
+                        ]
+                    } as Table
+                ]
+            } as TextBlock,
+            {
+                textContent: [
+                    "Відвідання занять буде проводитися за попереднім записом, який відкритий щоп’ятниці на кафедрі Іноземних мов у Навчальному кабінеті. Місце занять – 206 ауд."
+                ],
+                images: [
+                    {href: "https://s3-alpha-sig.figma.com/img/e016/200f/eef5dc79bd9bc3537204c15e199cff69?Expires=1698019200&Signature=dbz0CYWBOYHhAqgIQF9l4YB7zbdgX5uRmVZ7FmLmXKcJdStz0V71Tb-7365~RUbr7NAUgKKADvpoo5vsXEz2NxkAu8e41YhfgtW5WCi9SLyHylaKDUScgUndBURsv75ZhMWg-iNhPHLxG6suoLt0pn16ifSJMDfMoGRfD~Q2cOWTmaK-5sXaaeI4PFl22cXf~soY3zljeegHVOEkZjW8OJ-Zmjn3woT87pzqXxQ6OjxGQKImj-Jc6u0RrBatZxTq1Ynk6~4tXz~mf6XZ~4jrBGMNWO~l~d3uy9HHLc7F9yNU0yR~OcrCeAZoyNxdxc266yg62YFAb115QvzycKPijQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href: "https://s3-alpha-sig.figma.com/img/e016/200f/eef5dc79bd9bc3537204c15e199cff69?Expires=1698019200&Signature=dbz0CYWBOYHhAqgIQF9l4YB7zbdgX5uRmVZ7FmLmXKcJdStz0V71Tb-7365~RUbr7NAUgKKADvpoo5vsXEz2NxkAu8e41YhfgtW5WCi9SLyHylaKDUScgUndBURsv75ZhMWg-iNhPHLxG6suoLt0pn16ifSJMDfMoGRfD~Q2cOWTmaK-5sXaaeI4PFl22cXf~soY3zljeegHVOEkZjW8OJ-Zmjn3woT87pzqXxQ6OjxGQKImj-Jc6u0RrBatZxTq1Ynk6~4tXz~mf6XZ~4jrBGMNWO~l~d3uy9HHLc7F9yNU0yR~OcrCeAZoyNxdxc266yg62YFAb115QvzycKPijQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href: "https://s3-alpha-sig.figma.com/img/e016/200f/eef5dc79bd9bc3537204c15e199cff69?Expires=1698019200&Signature=dbz0CYWBOYHhAqgIQF9l4YB7zbdgX5uRmVZ7FmLmXKcJdStz0V71Tb-7365~RUbr7NAUgKKADvpoo5vsXEz2NxkAu8e41YhfgtW5WCi9SLyHylaKDUScgUndBURsv75ZhMWg-iNhPHLxG6suoLt0pn16ifSJMDfMoGRfD~Q2cOWTmaK-5sXaaeI4PFl22cXf~soY3zljeegHVOEkZjW8OJ-Zmjn3woT87pzqXxQ6OjxGQKImj-Jc6u0RrBatZxTq1Ynk6~4tXz~mf6XZ~4jrBGMNWO~l~d3uy9HHLc7F9yNU0yR~OcrCeAZoyNxdxc266yg62YFAb115QvzycKPijQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href: "https://s3-alpha-sig.figma.com/img/e016/200f/eef5dc79bd9bc3537204c15e199cff69?Expires=1698019200&Signature=dbz0CYWBOYHhAqgIQF9l4YB7zbdgX5uRmVZ7FmLmXKcJdStz0V71Tb-7365~RUbr7NAUgKKADvpoo5vsXEz2NxkAu8e41YhfgtW5WCi9SLyHylaKDUScgUndBURsv75ZhMWg-iNhPHLxG6suoLt0pn16ifSJMDfMoGRfD~Q2cOWTmaK-5sXaaeI4PFl22cXf~soY3zljeegHVOEkZjW8OJ-Zmjn3woT87pzqXxQ6OjxGQKImj-Jc6u0RrBatZxTq1Ynk6~4tXz~mf6XZ~4jrBGMNWO~l~d3uy9HHLc7F9yNU0yR~OcrCeAZoyNxdxc266yg62YFAb115QvzycKPijQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image
+                ]
+            } as TextBlock,
         ]
     } as Department,
     {
-        headerImg: "",
-        title: "",
-        titleTextBlock: {} as TextBlock,
-        superior: {} as Superior,
+        id: 12,
+        headerImg: "https://s3-alpha-sig.figma.com/img/5a5e/603d/b31b7bd78240dedeacd18fec8dccdf3f?Expires=1698019200&Signature=ZF9CAXGte44220AsSBKq1rph3KEyN4yMUmKjij1ZGf8jvBJ7SXOWPKDVJy1V-iFnmkJxYjl0DrItC0SiwoQ1Q6mlizUZE7Mbto1uEiCIN48ZxIQamXyF3v2rdhg6JZC~KD7JK9ATKIF9Nqz5NKVtkR~bA7WiAECiYcE8-nrcrWq84hEJ4e-p97Ur5NZJ1Di2CdxLyx9vKyyW2gW8LpmIUNbxOchi3ONIeo2Fs710TAk421gahmw2XSnNWftcAmBDarL63j8bKiWB9F0G858N84WdExa1zYg8xqgp5ID4jOo8S3GsBj7UCZPTyq4hQqCC44Ydg~DQcj5~pfzfDp1N-w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        title: "Кафедра фізичного виховання, \n" +
+            "спеціальної фізичної підготовки і спорту",
+        titleTextBlock: {
+            textContent: [
+                "Кафедра призначена для формування та вдосконалення у військових фахівців основ теоретичних знань, практичних та організаційно-методичних навичок та умінь управління фізичним вихованням, спеціальною фізичною підготовкою, спортом і фізичною реабілітацією військовослужбовців; забезпечення необхідного рівня розвитку фізичних якостей, військово-прикладних рухових навичок та їх вдосконалення; показників функціональних та морфологічних можливостей організму; працездатності. Курсанти мають можливість проводити тренування з різних спортивних та військово-прикладних видів спорту на навчально-спортивній базі інституту, що включає:\n"
+            ],
+            lists: [
+                {
+                    items: [
+                        "спортивний зал (36х18);",
+                        "зал рукопашного бою;",
+                        "тренажерний зал;",
+                        "методичний клас;",
+                        "смуга перешкод;",
+                        "гімнастичні майданчики;",
+                        "майданчики для гри: волейбол, баскетбол, міні-футбол;",
+                        "дистанції для бігу на короткі та довгі дистанції.",
+                    ]
+                } as List
+            ]
+        } as TextBlock,
+        superior: {
+            name: "БИЧІХІН Юрій Ігорович",
+            rang: "полковник",
+            position: "Начальник кафедри",
+            img: {href: "https://s3-alpha-sig.figma.com/img/8d42/00b0/8ab036e2df04780b61c77bcc0278beef?Expires=1698019200&Signature=aMuZB6LlNu0w5gHHEd9JZP-0fZO5VNlzxCOFHafQSFXI6hKL98SCEEZvV~GaUaaRWVeHsqH07FaTiTmthpZbDfUraUdYglGTLoDcWRlWViLxcwrrV3leiXtROVZwZM1di7oVPiLrK1WE~7L5X6XY4PmrC25qQuwVknea6Qw4A2iZV9TgSNsAz~~2behgt8xDqZG5yU~GPmSah~Jje5N6vuPbqDigP7DolQ7plPSuoRa4TR1bwcreT9etDQV6nyETeOKpwiLp1rrE3pSeUzV9S6tckAXUkvCQe5RIS2Ix5soTyuCld1e7TEYbcVYm8jwNU3XHtdQYqwBQ7xEMR2qE~w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image
+        } as Superior,
         textBlocks: [
-            {} as TextBlock
+            {
+                lists: [
+                    {
+                        title: "За 2016-2017 навчальний рік кафедра підготовила спортсменів-розрядників та військовослужбовців, які виконали норми ВСК",
+                        items: [
+                            "МС – 1",
+                            "КМС – 3",
+                            "1 розряд – 62",
+                            "2 розряд – 81",
+                            "3 розряд – 186",
+                            "Військовослужбовці, які виконали вправи ВСК : І ступеню - 62, та ІІ ступеню – 129 чол.",
+                        ]
+                    } as List
+                ]
+            } as TextBlock,
+            {
+                textContent: [
+                    "Кафедра має сучасні спортивні тренажери для розвитку різних груп м’язів."
+                ],
+                images: [
+                    {href: "https://s3-alpha-sig.figma.com/img/4c33/de4e/ab33dfb940880ac64f4e706d1f03486d?Expires=1698019200&Signature=mGrwXfoVYrb-6sTOyXKb1FoqmOiimxJVhhhseKLwZlIYC4lLkJzxdcGHzoARcmEy7BY00KCXLbZKxpcgOGTVtNfbTfadrr7aBbvSTNwnMwisHQ30dtthGXTC~8Gomr~22Hrvro~E3mEoKW308Yvv5gDtoxjQ1xV9iLm7VmqZDRCEtugM6WPqG5iGe0Ec8sO-ezu2kglYuizMF0U65lkyrkrMslroTwGHFWxX2iFZYBiVrfCyiAPazN3fMvb9JnknR6bL-s7mzUhGKHihMX4OyjCem~cxktw8HBvMrC01--svFim9Kdd50LlIlsYM6LrUm~xWP8UtosoANmK1GvUFNA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href: "https://s3-alpha-sig.figma.com/img/4c33/de4e/ab33dfb940880ac64f4e706d1f03486d?Expires=1698019200&Signature=mGrwXfoVYrb-6sTOyXKb1FoqmOiimxJVhhhseKLwZlIYC4lLkJzxdcGHzoARcmEy7BY00KCXLbZKxpcgOGTVtNfbTfadrr7aBbvSTNwnMwisHQ30dtthGXTC~8Gomr~22Hrvro~E3mEoKW308Yvv5gDtoxjQ1xV9iLm7VmqZDRCEtugM6WPqG5iGe0Ec8sO-ezu2kglYuizMF0U65lkyrkrMslroTwGHFWxX2iFZYBiVrfCyiAPazN3fMvb9JnknR6bL-s7mzUhGKHihMX4OyjCem~cxktw8HBvMrC01--svFim9Kdd50LlIlsYM6LrUm~xWP8UtosoANmK1GvUFNA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href: "https://s3-alpha-sig.figma.com/img/4c33/de4e/ab33dfb940880ac64f4e706d1f03486d?Expires=1698019200&Signature=mGrwXfoVYrb-6sTOyXKb1FoqmOiimxJVhhhseKLwZlIYC4lLkJzxdcGHzoARcmEy7BY00KCXLbZKxpcgOGTVtNfbTfadrr7aBbvSTNwnMwisHQ30dtthGXTC~8Gomr~22Hrvro~E3mEoKW308Yvv5gDtoxjQ1xV9iLm7VmqZDRCEtugM6WPqG5iGe0Ec8sO-ezu2kglYuizMF0U65lkyrkrMslroTwGHFWxX2iFZYBiVrfCyiAPazN3fMvb9JnknR6bL-s7mzUhGKHihMX4OyjCem~cxktw8HBvMrC01--svFim9Kdd50LlIlsYM6LrUm~xWP8UtosoANmK1GvUFNA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href: "https://s3-alpha-sig.figma.com/img/4c33/de4e/ab33dfb940880ac64f4e706d1f03486d?Expires=1698019200&Signature=mGrwXfoVYrb-6sTOyXKb1FoqmOiimxJVhhhseKLwZlIYC4lLkJzxdcGHzoARcmEy7BY00KCXLbZKxpcgOGTVtNfbTfadrr7aBbvSTNwnMwisHQ30dtthGXTC~8Gomr~22Hrvro~E3mEoKW308Yvv5gDtoxjQ1xV9iLm7VmqZDRCEtugM6WPqG5iGe0Ec8sO-ezu2kglYuizMF0U65lkyrkrMslroTwGHFWxX2iFZYBiVrfCyiAPazN3fMvb9JnknR6bL-s7mzUhGKHihMX4OyjCem~cxktw8HBvMrC01--svFim9Kdd50LlIlsYM6LrUm~xWP8UtosoANmK1GvUFNA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                ]
+            } as TextBlock
         ]
     } as Department,
     {
-        headerImg: "",
-        title: "",
-        titleTextBlock: {} as TextBlock,
-        superior: {} as Superior,
+        id:13,
+        headerImg: "https://s3-alpha-sig.figma.com/img/00cc/a057/0c1a4c3eed0977a1932bfe733bf36cf3?Expires=1698019200&Signature=dwPQg-fJLhHzdZbb3cxttrQ6e9G1-TkzfY6lltiuUvtzDuy1WvchSlDlIxmrTKVdR8tvbdaFttkJIG3w~4OjLUH2VGgsGK89er2LJoJoEbk3tShGxcbnV9ny8cygrwMBnVfX6dLrC-78WHvzMYYgFlU1DCUULnVOpp4NOZjJ8fYkcqig-UGG~PgVhF1b1F~qmi9TUqTxbPA0OC5qByl0F52H4vjjCnMaP9BvI0yngo6eoEhKCBkUpc7MkS7mvqrh-dmYPcKgjKRnS2IKb42NzIXVPJplfvdzCqV834kDpzkAsn7QmgawefjbX4JEI9xE0OTy76M1WHMDvp~ssQF1ag__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        title: "Кафедра військово-гуманітарних дисциплін",
+        titleTextBlock: {
+            textContent: [
+                "Кафедра призначена для провадження освітньої, методичної та наукової діяльності за всіма напрями підготовки та спеціальностями (спеціалізаціями) інституту по гуманітарним та соціально-економічним дисциплінам."
+            ]
+        } as TextBlock,
+        superior: {
+            name: "САЄНКО Олександр Григорович",
+            position: "Начальник кафедри",
+            rang: "полковник",
+            achievements: [
+                "кандидат технічних наук"
+            ],
+            img: {href: "https://s3-alpha-sig.figma.com/img/1bc6/ea31/5f16cda0ffe19f989285dccd58b9955b?Expires=1698019200&Signature=LTxOsExbNvmxRb~CtLeIdQYrlYEvkuNYI8MmbjGE0II-qvQYtYK~P4QwLj230Jz3n1D3HGcK0MmrloxVqcmEC555ZTkZLVE0hfRD0O0ojBM~87hmOFuy07x6Rn0emPawYaQR51tae7fWOn6XiUwK8Ckvih7wxhT2~0aDCfukHHV77g29Cls6dUvcYBwHjIHz0aiC8NQDydndNuq8LGbrJaVV62sWj~ZcTFkLc1w3Lss6kvyV-3hy8LxXEE99fRzcm3dhRxfPMhRINuNr8~MxyUGzcZA25SEMqe8x7vLG8cyB2ol~hdQ8R7OWkpFiANR7d-zOdWzaxay5wB36oALBfQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image
+        } as Superior,
         textBlocks: [
-            {} as TextBlock
+            {
+                lists: [
+                    {
+                        title: "Основні дисципліни кафедри:",
+                        items: [
+                            "Історія України та української культури;",
+                            "Українська мова за професійним спрямуванням;",
+                            "Філософія (філософія, релігієзнавство, логіка, етика, естетика);",
+                            "Політологія та соціологія;",
+                            "Правознавство (у тому числі основи військового законодавства та міжнародне гуманітарне право);",
+                            "Військова педагогіка та психологія;",
+                            "Морально-психологічне забезпечення підготовки та застосування Збройних Сил України.",
+                        ]
+                    } as List,
+                    {
+                        title: "Характеристика науково-педагогічних працівників кафедри:",
+                        items: [
+                            "Докторів наук – 1;",
+                            "Кандидатів наук – 5;",
+                            "Професорів – 1;",
+                            "Доцентів – 3.",
+                        ]
+                    } as List,
+                    {
+                        title: "У своєму складі кафедра має навчальний кабінет, який дозволяє курсантам (студентам), ад’юнктам (здобувачам) під час самостійної роботи більш якісно готуватись до навчальних занять та займатись науковою роботою. У своєму розпорядженні він має:",
+                        items: [
+                            "більш 800 сучасних підручників навчального, наукового та навчально-методичного характеру;",
+                            "100% підручників у електронному вигляді, які були віданні кафедрою;",
+                            "електронну базу законодавства України щодо військових питань.",
+                        ]
+                    } as List,
+                ]
+            } as TextBlock,
+            {
+                images:[
+                    {href:"https://s3-alpha-sig.figma.com/img/1311/59d5/69159600e6f645bc180b804098dfa182?Expires=1698019200&Signature=LR54opaGw0PjWjxzqVo1764dB7PpEvokS0D-i4SUVExxNdiibgNrmOZvFt20CoDSHgYLqS44i-VzelaNhvAJMx4Gxz6nTMyIlqYt8a--XyZBTH-mFa38yRPpA0NORDUe~qYKwReQ18RkNjpZns8~sNyNrZm63tf2xXdNRBD~4OfEcE3koO12OckZfTES9BDGbiSMzDghe7mJ~Szou~yjiqgi1JyZi5Yhv3bLrVfh1HrmiN57M2mzL8-7J6Ab6W6Eswb3Z-owrLcWRYkh7iHbDso2a~v6Zz9cIfKKar547DZe3bXhlD~GnUx2yN9OH6PYauibUKqbvp0U8sNZaXT-9Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href:"https://s3-alpha-sig.figma.com/img/1311/59d5/69159600e6f645bc180b804098dfa182?Expires=1698019200&Signature=LR54opaGw0PjWjxzqVo1764dB7PpEvokS0D-i4SUVExxNdiibgNrmOZvFt20CoDSHgYLqS44i-VzelaNhvAJMx4Gxz6nTMyIlqYt8a--XyZBTH-mFa38yRPpA0NORDUe~qYKwReQ18RkNjpZns8~sNyNrZm63tf2xXdNRBD~4OfEcE3koO12OckZfTES9BDGbiSMzDghe7mJ~Szou~yjiqgi1JyZi5Yhv3bLrVfh1HrmiN57M2mzL8-7J6Ab6W6Eswb3Z-owrLcWRYkh7iHbDso2a~v6Zz9cIfKKar547DZe3bXhlD~GnUx2yN9OH6PYauibUKqbvp0U8sNZaXT-9Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href:"https://s3-alpha-sig.figma.com/img/1311/59d5/69159600e6f645bc180b804098dfa182?Expires=1698019200&Signature=LR54opaGw0PjWjxzqVo1764dB7PpEvokS0D-i4SUVExxNdiibgNrmOZvFt20CoDSHgYLqS44i-VzelaNhvAJMx4Gxz6nTMyIlqYt8a--XyZBTH-mFa38yRPpA0NORDUe~qYKwReQ18RkNjpZns8~sNyNrZm63tf2xXdNRBD~4OfEcE3koO12OckZfTES9BDGbiSMzDghe7mJ~Szou~yjiqgi1JyZi5Yhv3bLrVfh1HrmiN57M2mzL8-7J6Ab6W6Eswb3Z-owrLcWRYkh7iHbDso2a~v6Zz9cIfKKar547DZe3bXhlD~GnUx2yN9OH6PYauibUKqbvp0U8sNZaXT-9Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href:"https://s3-alpha-sig.figma.com/img/1311/59d5/69159600e6f645bc180b804098dfa182?Expires=1698019200&Signature=LR54opaGw0PjWjxzqVo1764dB7PpEvokS0D-i4SUVExxNdiibgNrmOZvFt20CoDSHgYLqS44i-VzelaNhvAJMx4Gxz6nTMyIlqYt8a--XyZBTH-mFa38yRPpA0NORDUe~qYKwReQ18RkNjpZns8~sNyNrZm63tf2xXdNRBD~4OfEcE3koO12OckZfTES9BDGbiSMzDghe7mJ~Szou~yjiqgi1JyZi5Yhv3bLrVfh1HrmiN57M2mzL8-7J6Ab6W6Eswb3Z-owrLcWRYkh7iHbDso2a~v6Zz9cIfKKar547DZe3bXhlD~GnUx2yN9OH6PYauibUKqbvp0U8sNZaXT-9Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                ]
+            } as TextBlock,
         ]
     } as Department,
     {

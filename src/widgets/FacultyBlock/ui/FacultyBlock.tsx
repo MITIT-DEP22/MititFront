@@ -7,7 +7,7 @@ import Branches from "./Branches/Branches";
 import Specialities from "./Specialities/Specialities";
 import Departments from "./Departments/Departments";
 import {CompositionOfSuperiors} from "../../CompositionOfSuperiors";
-import TextBlocks from "./TextBlocks/TextBlocks";
+import TextBlocks from "../../../shared/ui/TextBlocks/TextBlocks";
 
 
 interface FacultyProps {

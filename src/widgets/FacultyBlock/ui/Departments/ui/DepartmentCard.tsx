@@ -2,8 +2,8 @@ import React, {FC, useEffect, useState} from 'react';
 import {Department} from "entities/department";
 import SuperiorCard from "shared/ui/SuperiorCard/SuperiorCard";
 import css from "./DepartmentCard.module.scss"
-import TextBlocks from "../../TextBlocks/TextBlocks";
-import textBlocks from "../../TextBlocks/TextBlocks";
+import TextBlocks from "../../../../../shared/ui/TextBlocks/TextBlocks";
+import textBlocks from "../../../../../shared/ui/TextBlocks/TextBlocks";
 
 interface DepartmentCardProps {
     department: Department;
