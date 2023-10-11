@@ -16,14 +16,17 @@ interface FacultyProps {
 
 export const FacultyBlock: FC<FacultyProps> = ({faculty}) => {
     return (
-        <>
+        <div className={css.container}>
             <SectionTitle title={faculty.title}/>
             <Description value={faculty.description}/>
-            <CompositionOfSuperiors superiors={faculty.superiors}/>
+
+            <div className={css.superiorContainer}>
+                <CompositionOfSuperiors superiors={faculty.superiors}/>
+            </div>
             <Branches branches={faculty.branches}/>
             <Specialities specialities={faculty.specialities}/>
             <Departments departments={faculty.departments}/>
             <TextBlocks textBlocks={faculty.textBlocks}/>
-        </>
+        </div>
     );
 };

@@ -1,16 +1,18 @@
 import React, {FC} from 'react';
-
+import css from "./Branches.module.scss"
 interface BranchesProps {
     branches: string[];
 }
 
 const Branches: FC<BranchesProps> = ({branches}) => {
     return (
-        <div>
+        <div className={css.container}>
             <p>ФАКУЛЬТЕТ ГОТУЄ ФАХІВЦІВ В ГАЛУЗІ ЗНАНЬ:</p>
-            {branches?.map(item => (
-                <p>{item}</p>
-            ))}
+            <ul className={css.list}>
+                {branches?.map(item => (
+                    <li>{item}</li>
+                ))}
+            </ul>
         </div>
     );
 };

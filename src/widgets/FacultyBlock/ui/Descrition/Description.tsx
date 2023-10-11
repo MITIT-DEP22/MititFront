@@ -1,11 +1,16 @@
 import React, {FC} from 'react';
-interface DescriptionProps{
-    value:string;
+import css from "./Description.module.scss"
+import HTMLReactParser from "html-react-parser";
+
+interface DescriptionProps {
+    value: string;
 }
-const Description:FC<DescriptionProps> = ({value}) => {
+
+const Description: FC<DescriptionProps> = ({value}) => {
     return (
-        <div>
-            {value}
+        <div className={css.container}>
+
+            {value && HTMLReactParser(value)}
         </div>
     );
 };

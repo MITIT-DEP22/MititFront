@@ -1,5 +1,6 @@
 import React, {FC} from 'react';
-import {TextBlock} from "../../../entities/text-block";
+import {TextBlock} from "entities/text-block";
+import css from "./TextBlockComponent.module.scss"
 
 interface TextBlockComponentProps {
     textBlock: TextBlock
@@ -7,27 +8,30 @@ interface TextBlockComponentProps {
 
 const TextBlockComponent: FC<TextBlockComponentProps> = ({textBlock}) => {
     return (
-        <div>
-            <p>{textBlock.title}</p>
+        <div className={css.container}>
+            <p className={css.title}>{textBlock.title}</p>
+
             {textBlock.content?.map(item => (
-                <p>{item}</p>
+                <p className={css.textContent}>{item}</p>
             ))}
+
             {textBlock.lists?.map(list => (
                 <>
-                    <p>{list.title}</p>
-                    <ul>
+                    <p className={css.listTitle}>{list.title}</p>
+                    <ul className={css.list}>
                         {list.items.map(i => (
-                            <li>{i}</li>
+                            <li className={css.listItem}>{i}</li>
                         ))}
                     </ul>
                 </>
             ))}
-            <div>
-                {textBlock.images?.map(img=>(
-                    <img src={img.href} alt=""/>
-                ))}
-            </div>
-
+            {textBlock.images &&
+                <div className={css.imagesContainer}>
+                    {textBlock.images?.map(img => (
+                        <img className={css.img} src={img.href} alt=""/>
+                    ))}
+                </div>
+            }
         </div>
     );
 };

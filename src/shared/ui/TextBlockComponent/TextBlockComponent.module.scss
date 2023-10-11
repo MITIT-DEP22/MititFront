@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.textContent {
+
+}
+
+.listTitle {
+
+}
+
+.list {
+  padding-left: 30px;
+}
+
+.listItem {
+
+}
+
+.imagesContainer {
+  padding:  0 5%;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media screen and (width < 900px){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+}
+
+.img {
+  margin-top: 20px;
+  width: 90%;
+}

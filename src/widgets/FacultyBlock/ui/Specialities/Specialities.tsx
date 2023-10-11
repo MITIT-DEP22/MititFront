@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-
+import css from "./Specialities.module.scss"
 
 interface SpecialitiesBlock {
     specialities: string[];
@@ -7,11 +7,13 @@ interface SpecialitiesBlock {
 
 const Specialities: FC<SpecialitiesBlock> = ({specialities}) => {
     return (
-        <div>
+        <div className={css.container}>
             <p>ЗА СПЕЦІАЛЬНІСТЮ:</p>
-            {specialities?.map(item => (
-                <p>{item}</p>
-            ))}
+            <ul className={css.list}>
+                {specialities?.map(item => (
+                    <li>{item}</li>
+                ))}
+            </ul>
         </div>
     );
 };
