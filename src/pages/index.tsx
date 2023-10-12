@@ -1,9 +1,9 @@
-import {lazy} from "react";
+import React, {lazy} from "react";
 import {Route, Routes, Navigate} from "react-router-dom";
 import {RouterNames} from "shared/enums/RouterNames";
 import {InstitutePage} from "./Institute/InstitutePage";
-import {SuperiorsPage} from "./Superiors/SuperiorsPage";
-import {HistoricalPage} from "./Historical/HistoricalPage";
+import {SuperiorsPage} from "./Institute/Superiors/SuperiorsPage";
+import {HistoricalPage} from "./Institute/Historical/HistoricalPage";
 import ContactPage from "./Contacts/ContactPage";
 import FacultyPage from "./Faculty/FacultyPage";
 import DepartmentPage from "./Department/DepartmentPage";
@@ -12,6 +12,7 @@ import EntrancePage from "./Entrance/EntrancePage";
 import StudyPage from "./Study/StudyPage";
 import {NewsPage} from "./News/NewsPage";
 import SciencePage from "./Science/SciencePage";
+import {WhyPage} from "./Institute/Why/WhyPage";
 
 const HomePage = lazy(() => import("./Home/HomePage"));
 
@@ -28,6 +29,7 @@ export const Routing = () => {
             <Route path={RouterNames.STUDY} element={<StudyPage/>}/>
             <Route path={RouterNames.NEWS} element={<NewsPage/>}/>
             <Route path={RouterNames.SCIENCE} element={<SciencePage/>}/>
+            <Route path={RouterNames.WHY_MITIT} element={<WhyPage/>}/>
 
             <Route path={RouterNames.FACULTY + "/:id"} element={<FacultyPage/>}/>
             <Route path={RouterNames.DEPARTMENT + "/:id"} element={<DepartmentPage/>}/>

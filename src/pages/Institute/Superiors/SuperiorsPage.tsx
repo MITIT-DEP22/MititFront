@@ -1,8 +1,8 @@
 import React from 'react';
-import {PageHead} from "widgets/PageHead";
-import {CompositionOfSuperiors} from "widgets/CompositionOfSuperiors";
-import SectionTitle from "shared/ui/SectionTitle/SectionTitle";
-import {superiors} from "shared/enums/Data";
+import {PageHead} from "../../../widgets/PageHead";
+import {CompositionOfSuperiors} from "../../../widgets/CompositionOfSuperiors";
+import SectionTitle from "../../../shared/ui/SectionTitle/SectionTitle";
+import {superiors} from "../../../shared/enums/Data";
 
 
 export const SuperiorsPage = () => {
