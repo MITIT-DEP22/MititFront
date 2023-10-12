@@ -1,0 +1,1 @@
+export {HeroesBlock} from "./ui/HeroesBlock"

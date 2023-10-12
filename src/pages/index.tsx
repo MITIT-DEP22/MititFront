@@ -13,8 +13,8 @@ import StudyPage from "./Study/StudyPage";
 import {NewsPage} from "./News/NewsPage";
 import SciencePage from "./Science/SciencePage";
 import {WhyPage} from "./Institute/Why/WhyPage";
-import {PublicInfoBlock} from "../widgets/PublicInfoBlock";
 import PublicInfoPage from "./Institute/PublicInfo/PublicInfoPage";
+import {HeroesPage} from "./Heroes/HeroesPage";
 
 const HomePage = lazy(() => import("./Home/HomePage"));
 
@@ -33,6 +33,7 @@ export const Routing = () => {
             <Route path={RouterNames.SCIENCE} element={<SciencePage/>}/>
             <Route path={RouterNames.WHY_MITIT} element={<WhyPage/>}/>
             <Route path={RouterNames.PUBLIC_INFO} element={<PublicInfoPage/>}/>
+            <Route path={RouterNames.HEROES} element={<HeroesPage/>}/>
 
             <Route path={RouterNames.FACULTY + "/:id"} element={<FacultyPage/>}/>
             <Route path={RouterNames.DEPARTMENT + "/:id"} element={<DepartmentPage/>}/>
