@@ -19,8 +19,6 @@ const UnitPage = () => {
         <div>
             <PageHead title={"Підрозділи"} img={unit?.headerImg}/>
             <UnitBlock unit={unit}/>
-            <button onClick={()=>console.log(unit)}>log</button>
-            test
         </div>
     );
 };
