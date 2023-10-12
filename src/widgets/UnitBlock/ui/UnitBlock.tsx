@@ -17,7 +17,9 @@ export const UnitBlock: FC<UnitProps> = ({unit}) => {
             {unit.titleTextBlock &&
                 <TextBlockComponent textBlock={unit.titleTextBlock}/>
             }
-            <SuperiorCard positionRight={true} superior={unit?.superior}/>
+            {unit.superior &&
+                <SuperiorCard positionRight={true} superior={unit?.superior}/>
+            }
             <TextBlocks textBlocks={unit.textBlocks}/>
         </div>
     );
