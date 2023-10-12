@@ -13,7 +13,7 @@ const UnitPage = () => {
     useEffect(() => {
         setUnit(units.filter(item => item.id === Number(id))[0])
         console.log(unit)
-    }, []);
+    }, [id]);
 
     return (
         <div>

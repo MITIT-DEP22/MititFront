@@ -4,7 +4,7 @@ import {Faculty} from "entities/faculty";
 import {Superior} from "entities/superior";
 import {Department} from "entities/department";
 import {Image, TextBlock, List} from "../../entities/text-block";
-import {Row, Table} from "entities/text-block/model/types";
+import {Row, RowElement, Table} from "entities/text-block/model/types";
 import {Unit} from "entities/unit";
 
 export const instituteName = "ВІЙСЬКОВИЙ ІНСТИТУТ\nТЕЛЕКОМУНІКАЦІЙ ТА ІНФОРМАТИЗАЦІЇ\nІМЕНІ ГЕРОЇВ КРУТ"
@@ -741,46 +741,46 @@ export const departments: Department[] = [
                         ],
                         rows: [
                             {
-                                value: [
-                                    "ПОНЕДІЛОК",
-                                    "Advanced Grammar Lab / Підвищений курс Граматики",
-                                    "16.00 – 16.45",
-                                    "Бокій В.І., Дідурик А.І."
+                                elements: [
+                                    {value: ["ПОНЕДІЛОК"]} as RowElement,
+                                    {value: ["Advanced Grammar Lab / Підвищений курс Граматики"]} as RowElement,
+                                    {value: ["16.00 – 16.45"]} as RowElement,
+                                    {value: ["Бокій В.І., Дідурик А.І."]} as RowElement
                                 ]
                             } as Row,
                             {
-                                value: [
-                                    "ВІВТОРОК",
-                                    "Speaking Booster (for officers) / Розмовний курс для офіцерів",
-                                    "16.00 – 16.45",
-                                    "Циганкова З.М., Бецько О.С"
+                                elements: [
+                                    {value: ["ВІВТОРОК"]} as RowElement,
+                                    {value: ["Speaking Booster (for officers) / Розмовний курс для офіцерів"]} as RowElement,
+                                    {value: ["16.00 – 16.45"]} as RowElement,
+                                    {value: ["Циганкова З.М., Бецько О.С"]} as RowElement
                                 ]
                             } as Row,
                             {
-                                value: [
-                                    "СЕРЕДА",
-                                    "Basic Grammar Lab / Початковий курс Граматики",
-                                    "16.00 – 16.45",
-                                    "Шаблій О.С., Задорожна О."
+                                elements: [
+                                    {value: ["СЕРЕДА"]} as RowElement,
+                                    {value: ["Basic Grammar Lab / Початковий курс Граматики"]} as RowElement,
+                                    {value: ["16.00 – 16.45"]} as RowElement,
+                                    {value: ["Шаблій О.С., Задорожна О."]} as RowElement
                                 ]
                             } as Row,
                             {
-                                value: [
-                                    "ЧЕТВЕР",
-                                    "Speaking Club (for cadets) / Розмовний клуб для курсантів",
-                                    "16.00 – 16.45",
-                                    "Храбан Т.Є., Лемещенко А."
+                                elements: [
+                                    {value: ["ЧЕТВЕР"]} as RowElement,
+                                    {value: ["Speaking Club (for cadets) / Розмовний клуб для курсантів"]} as RowElement,
+                                    {value: ["16.00 – 16.45"]} as RowElement,
+                                    {value: ["Храбан Т.Є., Лемещенко А."]} as RowElement
                                 ]
                             } as Row,
                             {
-                                value: [
-                                    "П’ЯТНИЦЯ",
-                                    "Pronunciation Course",
-                                    "16.00 – 16.45",
-                                    "Куценко М.А., Дзіман А.М."
+                                elements: [
+                                    {value: ["П’ЯТНИЦЯ"]} as RowElement,
+                                    {value: ["Pronunciation Course"]} as RowElement,
+                                    {value: ["16.00 – 16.45"]} as RowElement,
+                                    {value: ["Куценко М.А., Дзіман А.М."]} as RowElement
                                 ]
                             } as Row,
-                        ]
+                        ],
                     } as Table
                 ]
             } as TextBlock,
@@ -1233,4 +1233,203 @@ export const units: Unit[] = [
 
 
     } as Unit,
+    {
+        id: 18,
+        headerImg: "https://s3-alpha-sig.figma.com/img/9326/21f6/80a92b2484f207ca27e9a702f46320d8?Expires=1698019200&Signature=bMY7k4r-Q-DsxpJS6DKZUf3jLxDCRkzx4WI4v6l7lO4sxat6yBOP6SC3wD02w1sZCjp~5DveTmzoyVpRR~FxsFWw8bn6mzQjKNluMYrPJ1-cDqUGFbaPpvNBe3gvJkKCmz8Lm~2AlGFSMu8Lg8VCNgsE25Of4ehqwtcB35wuxkAPG3yoE~pW7FDFfZBPnMMIBjboZOZ2QDVw6-NuLemAjP3p9SBeYop8KuyWS3zLxjoQScRKkcAJRiekDy1TsldaL6UO-nCRac8ZxWL6cBAdcLwBq5VJ4lalAaxBcsM8Rxbx7A3PXzhb4-z5vZvfejT-RKN5sfW0NhioVX1NfXY1XQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        title: "Батальйон забезпечення навчального процесу",
+        titleTextBlock: {
+            textContent: [
+                "Відповідно до спільної директиви Міністества оборони України та Генерального штабу Збройних Сил України від 04.05.2016 № Д-322/1/8ДСК введений в дію штат №17/194 Військового інституту телекомунікацій та інформатизації в складі якого введено батальйон забезпечення навчального процесу (БЗНП)."
+            ]
+        } as TextBlock,
+        superior: {
+            position: "Командир батальйону забезпечення навчального процесу",
+            rang: "підполковник",
+            name: " КУРГАН Юрій Вікторович",
+            achievements: [
+                "учасник бойових дій"
+            ],
+            img: {href: "https://s3-alpha-sig.figma.com/img/ea67/822f/2f32227969d02e4faeee306672fbb288?Expires=1698019200&Signature=OZrF153tXhe-oKYCNS7seCqiHYETpNvAo-2DA4KCgCxDDmpSRbLQ1du8fly4F2EW1s982YPvM2S~BHeyVKwV5MiftsfeGyoJrLnNQd0a9TTUtnA2FiF7ZzcSTGo-Uxz6TUNlqri6trpqUzQjh2su9A8Ldzv1i5tIM~9nf-CkQ~8fuxcndRfgzFQ9g1laIDVWWXxuHZ4dCWvbxcT4sUV0o9syrykKSbnyDHqTtsCSN5Nwm3VPm4yUBAkkIcCqXDD1iTSfAi7ECE1pTgKNOnlkgosEBZZCMZxlZrO6oyBPuTJAk1SkUocQVTtaKUFuCdcTqm0KfF-IoF5cx-1D39Uc5w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image
+        } as Superior,
+        textBlocks: [
+            {
+                textContent: [
+                    "За Військовим інститутом телекомунікацій та інформатизації (місто Київ) закріплені на праві оперативного управління будівлі №75 та №106 військового містечка №1 (село Семиполки Київської області) з метою розміщення підрозділів БЗНП Військового інституту телекомунікацій та інформатизації (ВІТІ )\n",
+                    "Батальйон забезпечення навчального процесу з місцем дислокації смт. Семиполки введений до складу Військового інституту телекомунікацій та інформатизації для посилення практичної (польової) складової в підготовці випускників ВІТІ.\n",
+                ],
+                lists: [
+                    {
+                        title: "Це дозволило у 2016-2017 навчальному році реалізувати положення Плану вдосконалення практичної підготовки курсантів, а саме:\n",
+                        items: [
+                            "здійснити 4 польових виходи курсантів 1-3 курсів;\n" +
+                            "провести практичну складову державної екзаменаційної атестації для випускників всіх спеціальностей в польових умовах;\n",
+                            "провести навчальний збір з громадянами які проходять навчання за програмою підготовки офіцерів запасу у ВІТІ;\n",
+                            "провести курси перепідготовки та підвищення кваліфікації для осіб офіцерського складу за призовом, які закінчили кафедри військової підготовки, офіцерів військових частин прийнятих на військову служби за контрактом, осіб рядового та сержантського складу з вищою освітою;\n",
+                            "ппідготувати екіпажі для комплексних апаратних зв’язку БЗНП та забезпечити їх залучення в командно-штабних навчаннях з органами військового управління “Непохитна стійкість 2017”.\n"
+                        ]
+                    } as List,
+                    {
+                        title: "<strong>Об'єкти навчальної матеріальної бази БЗНП:</strong>",
+                        items: [
+                            "клас Тактико-спеціальної підготовки;\n",
+                            "клас Загальновійськових дисциплін;\n",
+                            "навчальне поле (взводний опорний пункт, полігон звязку);\n",
+                            "будівля 1/75 (казарма, спортивний зал).\n"
+                        ]
+                    } as List,
+                    {
+                        title: "<strong>Озброєння та військова техніка, які розгорнуті в БЗНП:\n</strong>",
+                        items: [
+                            "6 комплексних апаратних зв'язку (СТГ 8/16, П-240ТМ, Р-142Н \"Motorola\", Р-145БМ \"Motorola\", Р-142Н \"Harris\", Р-142Н \"Harris\");\n",
+                            "радіорелейна станція (Р-414-МУ);\n",
+                            "тропосферна станція (Р-412А)."
+                        ]
+                    } as List,
+                ], images: [
+                    {
+                        href: "https://s3-alpha-sig.figma.com/img/1cc8/1ede/52ab37a9366df35560d3e5d987582447?Expires=1698019200&Signature=O8MVQuJA3~mkPNB2m8VfbdHcN2rqbR6eaCQZaZkU5wN5SuzT9t6gDxBQIDaF5I38AZmc~DYoyqlwHr~FcL-~jSD3xDhGZp07NdEFRXnAeFM81QQ44nwqYKKwA3G1uR0piNeAnxUV95NrlhleDN5Ezt3cX8oqHXGHDo8T2xoQzj1IDfRhU8Da5eMbbVZJ-b-9s-UbTo~q9Q25AZI3bc4om~Ofu77lgVNUeFMb1vlmkjvVFh62nCEaClRsv~C~FKtpffbr25MyNG1s2Un6mEnsTQa~6mSLLGnQgFt7WZzHSi3NMs83DY6zDaQ0iH0QkpiDLMBQLWiXmUPN-KBrA9Yb6g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    } as Image,
+                    {
+                        href: "https://s3-alpha-sig.figma.com/img/1cc8/1ede/52ab37a9366df35560d3e5d987582447?Expires=1698019200&Signature=O8MVQuJA3~mkPNB2m8VfbdHcN2rqbR6eaCQZaZkU5wN5SuzT9t6gDxBQIDaF5I38AZmc~DYoyqlwHr~FcL-~jSD3xDhGZp07NdEFRXnAeFM81QQ44nwqYKKwA3G1uR0piNeAnxUV95NrlhleDN5Ezt3cX8oqHXGHDo8T2xoQzj1IDfRhU8Da5eMbbVZJ-b-9s-UbTo~q9Q25AZI3bc4om~Ofu77lgVNUeFMb1vlmkjvVFh62nCEaClRsv~C~FKtpffbr25MyNG1s2Un6mEnsTQa~6mSLLGnQgFt7WZzHSi3NMs83DY6zDaQ0iH0QkpiDLMBQLWiXmUPN-KBrA9Yb6g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    } as Image,
+                    {
+                        href: "https://s3-alpha-sig.figma.com/img/1cc8/1ede/52ab37a9366df35560d3e5d987582447?Expires=1698019200&Signature=O8MVQuJA3~mkPNB2m8VfbdHcN2rqbR6eaCQZaZkU5wN5SuzT9t6gDxBQIDaF5I38AZmc~DYoyqlwHr~FcL-~jSD3xDhGZp07NdEFRXnAeFM81QQ44nwqYKKwA3G1uR0piNeAnxUV95NrlhleDN5Ezt3cX8oqHXGHDo8T2xoQzj1IDfRhU8Da5eMbbVZJ-b-9s-UbTo~q9Q25AZI3bc4om~Ofu77lgVNUeFMb1vlmkjvVFh62nCEaClRsv~C~FKtpffbr25MyNG1s2Un6mEnsTQa~6mSLLGnQgFt7WZzHSi3NMs83DY6zDaQ0iH0QkpiDLMBQLWiXmUPN-KBrA9Yb6g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    } as Image,
+                    {
+                        href: "https://s3-alpha-sig.figma.com/img/1cc8/1ede/52ab37a9366df35560d3e5d987582447?Expires=1698019200&Signature=O8MVQuJA3~mkPNB2m8VfbdHcN2rqbR6eaCQZaZkU5wN5SuzT9t6gDxBQIDaF5I38AZmc~DYoyqlwHr~FcL-~jSD3xDhGZp07NdEFRXnAeFM81QQ44nwqYKKwA3G1uR0piNeAnxUV95NrlhleDN5Ezt3cX8oqHXGHDo8T2xoQzj1IDfRhU8Da5eMbbVZJ-b-9s-UbTo~q9Q25AZI3bc4om~Ofu77lgVNUeFMb1vlmkjvVFh62nCEaClRsv~C~FKtpffbr25MyNG1s2Un6mEnsTQa~6mSLLGnQgFt7WZzHSi3NMs83DY6zDaQ0iH0QkpiDLMBQLWiXmUPN-KBrA9Yb6g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    } as Image,
+                    {
+                        href: "https://s3-alpha-sig.figma.com/img/1cc8/1ede/52ab37a9366df35560d3e5d987582447?Expires=1698019200&Signature=O8MVQuJA3~mkPNB2m8VfbdHcN2rqbR6eaCQZaZkU5wN5SuzT9t6gDxBQIDaF5I38AZmc~DYoyqlwHr~FcL-~jSD3xDhGZp07NdEFRXnAeFM81QQ44nwqYKKwA3G1uR0piNeAnxUV95NrlhleDN5Ezt3cX8oqHXGHDo8T2xoQzj1IDfRhU8Da5eMbbVZJ-b-9s-UbTo~q9Q25AZI3bc4om~Ofu77lgVNUeFMb1vlmkjvVFh62nCEaClRsv~C~FKtpffbr25MyNG1s2Un6mEnsTQa~6mSLLGnQgFt7WZzHSi3NMs83DY6zDaQ0iH0QkpiDLMBQLWiXmUPN-KBrA9Yb6g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    } as Image,
+                    {
+                        href: "https://s3-alpha-sig.figma.com/img/1cc8/1ede/52ab37a9366df35560d3e5d987582447?Expires=1698019200&Signature=O8MVQuJA3~mkPNB2m8VfbdHcN2rqbR6eaCQZaZkU5wN5SuzT9t6gDxBQIDaF5I38AZmc~DYoyqlwHr~FcL-~jSD3xDhGZp07NdEFRXnAeFM81QQ44nwqYKKwA3G1uR0piNeAnxUV95NrlhleDN5Ezt3cX8oqHXGHDo8T2xoQzj1IDfRhU8Da5eMbbVZJ-b-9s-UbTo~q9Q25AZI3bc4om~Ofu77lgVNUeFMb1vlmkjvVFh62nCEaClRsv~C~FKtpffbr25MyNG1s2Un6mEnsTQa~6mSLLGnQgFt7WZzHSi3NMs83DY6zDaQ0iH0QkpiDLMBQLWiXmUPN-KBrA9Yb6g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    } as Image,
+                ]
+            } as TextBlock,
+        ]
+
+    } as Unit,
+    {
+        id: 19,
+        headerImg: "https://s3-alpha-sig.figma.com/img/7b0c/ce23/18e116c7c806ec0ad4f2ad12c05570f3?Expires=1698019200&Signature=Cl-aSARrAHrKlXppUJjktvfrX50tzh1U96X6iMhC44bwfPmvvE-wmIfCf72-plHLlWiJTcHt0oq9mvHTuIW3t0yV2m18pdy4wcSHuGEs8e8ovcf6uaW7doVVA787bRntbsw3H0bb~5kymsIQFhgWd5OqGNPBX8fC2U6j5iU11ImUy3j43uBXv4WLSo0hZviEe9wANZnZcaxwC8JBTCKiwWFbetAgpTdzNqR-035FflZsql8LWvB-VS3OUy1fYg4JRC2SVzA5eb6v40cjvjfgW-mh6voyojIJx~CGGAEqoz4wJ3SUIFugOd3BIsbeIWWddt~NOabH3yubewjYnaH4bw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        title: "5-ті Курси перепідготовки та підвищення кваліфікації",
+        titleTextBlock: {
+            textContent: [
+                "5-ті Курси перепідготовки та підвищення кваліфікації створені у 2014 році, відповідно до спільної директиви Міністра Оборони України та Генерального штабу Збройних Сил України від 03.07.2014 року. Курси перепідготовки та підвищення кваліфікації утримуються за рахунок чисельності Збройних Сил України та дислокуєтеся на території Військового інституту телекомунікацій та інформатизації."
+            ]
+        } as TextBlock,
+        superior: {
+            position: "Начальник 5 курсів перепідготовки та підвищення кваліфікації",
+            rang: "майор",
+            name: "КРАВЧЕНКО Олексій Олександрович",
+            img: {href: "https://s3-alpha-sig.figma.com/img/6528/609b/ed3b35de9fc8404e4dbe222b1feb9a50?Expires=1698019200&Signature=GFl8Lw~8EwgjV3XtjStuIq8C70MUFUMvC5CD08AhW--RPC5t-3DtXycw0MzlSH6CtiKs9lCGzBrm~WPTTyZOmSiV0wDas9u3KLXJeU4u2ULPZXrlAjitpzpfiih3TZ6WGFXOjrRCdxas61AUszxweNohzukV3hy0ruD-NiuZ5axv8XoMH7CyHDYOQTAxkngCXqQAu2G2lothCt9uZtTTrBG65VKBtRJt~dMNZ4BnkhDe5ePSNiNxFtIN7kfb9vNDAwUprSc-n6rPM6JcXTj26LFkQ6la7HSWbptFTXEY2oVialRC083rMVo~avR3DeqZtVYYCHqimfYKhIx8MsUXiQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+            achievements: []
+        } as Superior,
+        textBlocks: [
+            {
+                textContent: [
+                    "<strong>Мета</strong> – організація перепідготовки та підвищення кваліфікації військовослужбовців в особливий період за військово-обліковими спеціальностями.",
+                    "1. <strong>5 курси перепідготовки та підвищення кваліфікації (допідготовки) офіцерів, прийнятих на військову службу за контрактом з запасу, оперативного резерву №1 та №2, офіцери військових частин, що відновлюють боєздатність.\n</strong>",
+                    "<strong>Група №1.</strong> Підвищення кваліфікації офіцерів, прийнятих на військову службу за контрактом з запасу\n",
+                    "<strong>Термін навчання – 3 місяці\n</strong>",
+                    "<strong>Категорія осіб</strong>, які залучаються на курси підвищення кваліфікації: офіцери прийняті на віськову службу за контрактом з запасу (за відповідними спеціалізаціями); офіцери, які закінчили кафедри військової підготовки та не мають досвіду служби.\n",
+                    "<strong>Група №2.</strong> Підвищення кваліфікації офіцерів оперативного резерву №1 та №2 та військових частин, що відновлюють боєздатність\n",
+                    "<strong>Термін навчання – до 15 діб\n</strong>",
+                    "<strong>Категорія осіб</strong>, які залучаються на курси підвищення кваліфікації: офіцери оперативного резерву, яких призвано на навчальні збори, та військових частин, що відновлюють боєздатність.\n",
+                    "<strong>Група №3.</strong> Курси методичної підготовки\n",
+                    "<strong>Термін навчання – 7 діб\n</strong>",
+                    "<strong>Категорія осіб</strong>, які залучаються на курси підвищення кваліфікації: офіцери оперативного резерву, яких призвано на навчальні збори, та військових частин, що відновлюють боєздатність.\n",
+                    "2.<strong> Курси військової підготовки осіб сержантського (старшинського) складу з вищою освітою.\n</strong>",
+                    "<strong>Термін навчання – 3 місяці\n</strong>",
+                    "<strong>Група №1.</strong> Підготовка осіб рядового та сержантського (старшинського) складу з вищою освітою (за військово-обліковими спеціальностями, за якими здійснюється підготовка військових фахівців).\n",
+                    "<strong>Категорія осіб</strong>, які залучаються на курси підвищення кваліфікації: особи рядового та сержантського (старшинського) складу, які проходять військову службу за контрактом (призвані на військову службу під час мобілізації), обіймають (плануються до призначення на) офіцерські посади у військах, з наступним присвоєнням первинного офіцерського звання \"молодший лейтенант\".\n",
+                    "<strong>Курcи перепідготовки та підвищення кваліфікації в мирний час:\n</strong>",
+                    "Згідно наказу Міністерства оборони України від 04.04.2017р. № 202 \"Про організацію та проведення підвищення кваліфікації військовослужбовців, працівників Збройних Сил України та державних службовців Міністерства оборони України та Збройних Сил України"
+                ],
+                tables: [
+                    {
+                        headers: [
+                            "<strong>Назва курсів</strong>",
+                            "<strong>Групи та напрями підвищення кваліфікації</strong>"
+                        ],
+                        rows: [
+                            {
+                                elements: [
+                                    {value: ["<strong>1. Центральні курси підвищення кваліфікації офіцерів – фахівців зв’язку</strong>"]} as RowElement,
+                                    {
+                                        value: [
+                                            "<strong>Група № 1</strong> Підвищення кваліфікації офіцерів командної ланки з’єднань, військових частин і підрозділів зв’язку.",
+                                            "<strong>Група № 2</strong> Підвищення кваліфікації офіцерів штабів з’єднань, військових частин і підрозділів зв’язку.",
+                                            "<strong>Група № 3</strong> Підвищення кваліфікації офіцерів штабів з’єднань, військових частин і підрозділів зв’язку.",
+                                            "<strong>Група № 4</strong> Підвищення кваліфікації офіцерів з питань розгортання та обслуговування програмно-технічних комплексів.",
+                                            "<strong>Група № 5</strong> Підвищення кваліфікації офіцерів з питань розвитку та забезпечення функціонування телекомунікаційних мереж.",
+                                            "<strong>Група № 6</strong> Підвищення кваліфікації офіцерів з питань застосування новітніх засобів зв'язку.",
+                                        ]
+                                    } as RowElement,
+                                ]
+                            } as Row,
+                            {
+                                elements: [
+                                    {value: ["<strong>2. Центральні курси підвищення кваліфікації офіцерів – фахівців зв’язку</strong>"]} as RowElement,
+                                    {
+                                        value: ["<strong>Група № 1 </strong>Підвищення кваліфікації з питань забезпечення та організації електронного документування управлінської інформації."]
+                                    } as RowElement,
+                                ]
+                            } as Row,
+
+                            {
+                                elements: [
+                                    {value: ["<strong>2. Центральні курси підвищення кваліфікації офіцерів – фахівців зв’язку</strong>"]} as RowElement,
+                                    {
+                                        value: ["<strong>Група № 1</strong> Підвищення кваліфікації з питань забезпечення та організації електронного документування управлінської інформації."]
+                                    } as RowElement,
+                                ]
+                            } as Row,
+
+                            {
+                                elements: [
+                                    {value: ["<strong>3. Курси підвищення кваліфікації з питань захисту інформації в захищеній системі електронного документообігу Міністерства оборони України</strong>"]} as RowElement,
+                                    {
+                                        value: ["<strong>Група № 1</strong> Підвищення кваліфікації з питань забезпечення та організації захисту інформації в захищеній системі електронногодокументообігу Міністерства оборони України."]
+                                    } as RowElement,
+                                ]
+                            } as Row,
+
+                            {
+                                elements: [
+                                    {value: ["<strong>4. Курси підвищення кваліфікації з питань технічного захисту інформації (у сфері відкритої інформації)</strong>"]} as RowElement,
+                                    {
+                                        value: ["<strong>Група № 1</strong> Підвищення кваліфікації з питань технічного захисту інформації (у сфері відкритої інформації)."]
+                                    } as RowElement,
+                                ]
+                            } as Row,
+
+                            {
+                                elements: [
+                                    {
+                                        value: [
+                                            "<strong>5. Курси підвищення кваліфікації з питань технічного захисту інформації та кібернетичної безпеки</strong>"
+                                        ]
+                                    } as RowElement,
+                                    {
+                                        value: [
+                                            "<strong>Група № 1</strong> Підвищення кваліфікації з питань кібернетичної безпеки. ",
+                                            "<strong>Група № 2</strong> Підвищення кваліфікації з питань захисту інформації від витоку технічними каналами та несанкціонованого доступу.",
+                                            "<strong>Група № 3</strong> Підвищення кваліфікації з питань забезпечення та організації захисту інформації в захищеній системі обміну інформації Збройних Сил України та мережі обміну службовою інформації Збройних Сил України.",
+                                            "<strong>Група № 4</strong> Підвищення кваліфікації з питань кібернетичної безпеки та ведення спеціальних дій в кібернетичному просторі."
+                                        ]
+                                    } as RowElement,
+                                ]
+                            } as Row,
+                        ],
+                    } as Table
+                ]
+            } as TextBlock
+        ]
+    } as Unit,
 ]
+
+
+
+
+

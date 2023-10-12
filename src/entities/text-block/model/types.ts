@@ -12,11 +12,15 @@ export type List = {
 }
 export type Table = {
     headers: string[];
-    rows: Row[]
+    rows: Row[];
 }
 
 export type Row = {
-    value: string[]
+    elements: RowElement[]
+}
+
+export type RowElement = {
+    value:  string[]
 }
 
 export type Image = {
