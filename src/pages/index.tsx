@@ -10,6 +10,7 @@ import DepartmentPage from "./Department/DepartmentPage";
 import UnitPage from "./Unit/UnitPage";
 import EntrancePage from "./Entrance/EntrancePage";
 import StudyPage from "./Study/StudyPage";
+import {NewsPage} from "./News/NewsPage";
 
 const HomePage = lazy(() => import("./Home/HomePage"));
 
@@ -24,7 +25,7 @@ export const Routing = () => {
             <Route path={RouterNames.CONTACTS} element={<ContactPage/>}/>
             <Route path={RouterNames.ENTRANTS} element={<EntrancePage/>}/>
             <Route path={RouterNames.STUDY} element={<StudyPage/>}/>
-
+            <Route path={RouterNames.NEWS} element={<NewsPage/>}/>
 
             <Route path={RouterNames.FACULTY + "/:id"} element={<FacultyPage/>}/>
             <Route path={RouterNames.DEPARTMENT + "/:id"} element={<DepartmentPage/>}/>
