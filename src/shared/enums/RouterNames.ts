@@ -8,7 +8,7 @@ export enum RouterNames {
     SCIENCE = "/science",
     FACULTY = "/faculty",
     DEPARTMENT = "/department",
-    UNITS = "/units",
+    UNIT = "/unit",
     COOPERATION = "/cooperation",
     OUR_WINS = "/wins",
     SPECIALITIES = "/specialities",

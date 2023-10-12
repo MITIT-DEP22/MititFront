@@ -7,6 +7,7 @@ import Header from "../widgets/Header/Header";
 
 
 const App = () => {
+    console.log(process.env.REACT_APP_HOST)
     return (
         <>
             <Header/>

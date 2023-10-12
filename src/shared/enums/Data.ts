@@ -5,6 +5,7 @@ import {Superior} from "../../entities/superior";
 import {Department} from "../../entities/department";
 import {Image, TextBlock, List} from "../../entities/text-block";
 import {Row, Table} from "../../entities/text-block/model/types";
+import {Unit} from "../../entities/unit";
 
 export const instituteName = "ВІЙСЬКОВИЙ ІНСТИТУТ\nТЕЛЕКОМУНІКАЦІЙ ТА ІНФОРМАТИЗАЦІЇ\nІМЕНІ ГЕРОЇВ КРУТ"
 export const upperTitle = "АКТУАЛЬНО: Набір на курси лідерства"
@@ -46,16 +47,16 @@ export const headerData = {
         },
         {
             id: 16,
-            title: "Підрозіли", to: RouterNames.UNITS,
+            title: "Підрозіли", to: RouterNames.UNIT,
             sublinks: [
                 {
-                    id: 17, title: "Науковий центр зв’язку та інформатизації", to: RouterNames.UNITS
+                    id: 17, title: "Науковий центр зв’язку та інформатизації", to: RouterNames.UNIT
                 },
                 {
-                    id: 18, title: "Батальйон забезпечення навчального процесу", to: RouterNames.UNITS
+                    id: 18, title: "Батальйон забезпечення навчального процесу", to: RouterNames.UNIT
                 },
                 {
-                    id: 19, title: "5-ті Курси перепідготовки та підвищення кваліфікації", to: RouterNames.UNITS
+                    id: 19, title: "5-ті Курси перепідготовки та підвищення кваліфікації", to: RouterNames.UNIT
                 },
             ]
         },
@@ -1002,16 +1003,16 @@ export const departments: Department[] = [
                     "Після закінчення навчання та складання випускного іспиту присвоюється військове звання „молодший лейтенант запасу” Збройних Сил України."
                 ],
                 images: [
-                    {href:"https://s3-alpha-sig.figma.com/img/b179/34ca/43fa4498829c440415e8de0a23370ee3?Expires=1698019200&Signature=A2u6oAJw~ypnW4Se2Rvz7F-dOEUt5dSSBsQ0RXW7I1Kp8iZ2aBhA5hRbtp-CyVgT5s0xu5H9Q71ebZZMy3ZGBmJiNvFGY2~6DeuZS8cNSYKOfe9GJ5Ugv-RGmSQZWmcFgOvadFxkp6VJdffY1~u2lE2mwyvsmRsXTO5-xJEe7hbFeKv3ir9XKqk~9ddZjc-NY7u8ZACBdQaDZQQrkftO4ZOuSwg~1s18vvG2y-ZGlrU~TsrY~8z1ouxFr7tXzaPtW3QRH~xh-WGknlPWrtytlz6sL0G6hdt7AmcDGlIzue7Nl0lKYefGGR32RKytDzXmf32ZOv6ytLmElxXcH8HXYw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
-                    {href:"https://s3-alpha-sig.figma.com/img/b179/34ca/43fa4498829c440415e8de0a23370ee3?Expires=1698019200&Signature=A2u6oAJw~ypnW4Se2Rvz7F-dOEUt5dSSBsQ0RXW7I1Kp8iZ2aBhA5hRbtp-CyVgT5s0xu5H9Q71ebZZMy3ZGBmJiNvFGY2~6DeuZS8cNSYKOfe9GJ5Ugv-RGmSQZWmcFgOvadFxkp6VJdffY1~u2lE2mwyvsmRsXTO5-xJEe7hbFeKv3ir9XKqk~9ddZjc-NY7u8ZACBdQaDZQQrkftO4ZOuSwg~1s18vvG2y-ZGlrU~TsrY~8z1ouxFr7tXzaPtW3QRH~xh-WGknlPWrtytlz6sL0G6hdt7AmcDGlIzue7Nl0lKYefGGR32RKytDzXmf32ZOv6ytLmElxXcH8HXYw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
-                    {href:"https://s3-alpha-sig.figma.com/img/b179/34ca/43fa4498829c440415e8de0a23370ee3?Expires=1698019200&Signature=A2u6oAJw~ypnW4Se2Rvz7F-dOEUt5dSSBsQ0RXW7I1Kp8iZ2aBhA5hRbtp-CyVgT5s0xu5H9Q71ebZZMy3ZGBmJiNvFGY2~6DeuZS8cNSYKOfe9GJ5Ugv-RGmSQZWmcFgOvadFxkp6VJdffY1~u2lE2mwyvsmRsXTO5-xJEe7hbFeKv3ir9XKqk~9ddZjc-NY7u8ZACBdQaDZQQrkftO4ZOuSwg~1s18vvG2y-ZGlrU~TsrY~8z1ouxFr7tXzaPtW3QRH~xh-WGknlPWrtytlz6sL0G6hdt7AmcDGlIzue7Nl0lKYefGGR32RKytDzXmf32ZOv6ytLmElxXcH8HXYw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
-                    {href:"https://s3-alpha-sig.figma.com/img/b179/34ca/43fa4498829c440415e8de0a23370ee3?Expires=1698019200&Signature=A2u6oAJw~ypnW4Se2Rvz7F-dOEUt5dSSBsQ0RXW7I1Kp8iZ2aBhA5hRbtp-CyVgT5s0xu5H9Q71ebZZMy3ZGBmJiNvFGY2~6DeuZS8cNSYKOfe9GJ5Ugv-RGmSQZWmcFgOvadFxkp6VJdffY1~u2lE2mwyvsmRsXTO5-xJEe7hbFeKv3ir9XKqk~9ddZjc-NY7u8ZACBdQaDZQQrkftO4ZOuSwg~1s18vvG2y-ZGlrU~TsrY~8z1ouxFr7tXzaPtW3QRH~xh-WGknlPWrtytlz6sL0G6hdt7AmcDGlIzue7Nl0lKYefGGR32RKytDzXmf32ZOv6ytLmElxXcH8HXYw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
-                    {href:"https://s3-alpha-sig.figma.com/img/b179/34ca/43fa4498829c440415e8de0a23370ee3?Expires=1698019200&Signature=A2u6oAJw~ypnW4Se2Rvz7F-dOEUt5dSSBsQ0RXW7I1Kp8iZ2aBhA5hRbtp-CyVgT5s0xu5H9Q71ebZZMy3ZGBmJiNvFGY2~6DeuZS8cNSYKOfe9GJ5Ugv-RGmSQZWmcFgOvadFxkp6VJdffY1~u2lE2mwyvsmRsXTO5-xJEe7hbFeKv3ir9XKqk~9ddZjc-NY7u8ZACBdQaDZQQrkftO4ZOuSwg~1s18vvG2y-ZGlrU~TsrY~8z1ouxFr7tXzaPtW3QRH~xh-WGknlPWrtytlz6sL0G6hdt7AmcDGlIzue7Nl0lKYefGGR32RKytDzXmf32ZOv6ytLmElxXcH8HXYw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
-                    {href:"https://s3-alpha-sig.figma.com/img/b179/34ca/43fa4498829c440415e8de0a23370ee3?Expires=1698019200&Signature=A2u6oAJw~ypnW4Se2Rvz7F-dOEUt5dSSBsQ0RXW7I1Kp8iZ2aBhA5hRbtp-CyVgT5s0xu5H9Q71ebZZMy3ZGBmJiNvFGY2~6DeuZS8cNSYKOfe9GJ5Ugv-RGmSQZWmcFgOvadFxkp6VJdffY1~u2lE2mwyvsmRsXTO5-xJEe7hbFeKv3ir9XKqk~9ddZjc-NY7u8ZACBdQaDZQQrkftO4ZOuSwg~1s18vvG2y-ZGlrU~TsrY~8z1ouxFr7tXzaPtW3QRH~xh-WGknlPWrtytlz6sL0G6hdt7AmcDGlIzue7Nl0lKYefGGR32RKytDzXmf32ZOv6ytLmElxXcH8HXYw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href: "https://s3-alpha-sig.figma.com/img/b179/34ca/43fa4498829c440415e8de0a23370ee3?Expires=1698019200&Signature=A2u6oAJw~ypnW4Se2Rvz7F-dOEUt5dSSBsQ0RXW7I1Kp8iZ2aBhA5hRbtp-CyVgT5s0xu5H9Q71ebZZMy3ZGBmJiNvFGY2~6DeuZS8cNSYKOfe9GJ5Ugv-RGmSQZWmcFgOvadFxkp6VJdffY1~u2lE2mwyvsmRsXTO5-xJEe7hbFeKv3ir9XKqk~9ddZjc-NY7u8ZACBdQaDZQQrkftO4ZOuSwg~1s18vvG2y-ZGlrU~TsrY~8z1ouxFr7tXzaPtW3QRH~xh-WGknlPWrtytlz6sL0G6hdt7AmcDGlIzue7Nl0lKYefGGR32RKytDzXmf32ZOv6ytLmElxXcH8HXYw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href: "https://s3-alpha-sig.figma.com/img/b179/34ca/43fa4498829c440415e8de0a23370ee3?Expires=1698019200&Signature=A2u6oAJw~ypnW4Se2Rvz7F-dOEUt5dSSBsQ0RXW7I1Kp8iZ2aBhA5hRbtp-CyVgT5s0xu5H9Q71ebZZMy3ZGBmJiNvFGY2~6DeuZS8cNSYKOfe9GJ5Ugv-RGmSQZWmcFgOvadFxkp6VJdffY1~u2lE2mwyvsmRsXTO5-xJEe7hbFeKv3ir9XKqk~9ddZjc-NY7u8ZACBdQaDZQQrkftO4ZOuSwg~1s18vvG2y-ZGlrU~TsrY~8z1ouxFr7tXzaPtW3QRH~xh-WGknlPWrtytlz6sL0G6hdt7AmcDGlIzue7Nl0lKYefGGR32RKytDzXmf32ZOv6ytLmElxXcH8HXYw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href: "https://s3-alpha-sig.figma.com/img/b179/34ca/43fa4498829c440415e8de0a23370ee3?Expires=1698019200&Signature=A2u6oAJw~ypnW4Se2Rvz7F-dOEUt5dSSBsQ0RXW7I1Kp8iZ2aBhA5hRbtp-CyVgT5s0xu5H9Q71ebZZMy3ZGBmJiNvFGY2~6DeuZS8cNSYKOfe9GJ5Ugv-RGmSQZWmcFgOvadFxkp6VJdffY1~u2lE2mwyvsmRsXTO5-xJEe7hbFeKv3ir9XKqk~9ddZjc-NY7u8ZACBdQaDZQQrkftO4ZOuSwg~1s18vvG2y-ZGlrU~TsrY~8z1ouxFr7tXzaPtW3QRH~xh-WGknlPWrtytlz6sL0G6hdt7AmcDGlIzue7Nl0lKYefGGR32RKytDzXmf32ZOv6ytLmElxXcH8HXYw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href: "https://s3-alpha-sig.figma.com/img/b179/34ca/43fa4498829c440415e8de0a23370ee3?Expires=1698019200&Signature=A2u6oAJw~ypnW4Se2Rvz7F-dOEUt5dSSBsQ0RXW7I1Kp8iZ2aBhA5hRbtp-CyVgT5s0xu5H9Q71ebZZMy3ZGBmJiNvFGY2~6DeuZS8cNSYKOfe9GJ5Ugv-RGmSQZWmcFgOvadFxkp6VJdffY1~u2lE2mwyvsmRsXTO5-xJEe7hbFeKv3ir9XKqk~9ddZjc-NY7u8ZACBdQaDZQQrkftO4ZOuSwg~1s18vvG2y-ZGlrU~TsrY~8z1ouxFr7tXzaPtW3QRH~xh-WGknlPWrtytlz6sL0G6hdt7AmcDGlIzue7Nl0lKYefGGR32RKytDzXmf32ZOv6ytLmElxXcH8HXYw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href: "https://s3-alpha-sig.figma.com/img/b179/34ca/43fa4498829c440415e8de0a23370ee3?Expires=1698019200&Signature=A2u6oAJw~ypnW4Se2Rvz7F-dOEUt5dSSBsQ0RXW7I1Kp8iZ2aBhA5hRbtp-CyVgT5s0xu5H9Q71ebZZMy3ZGBmJiNvFGY2~6DeuZS8cNSYKOfe9GJ5Ugv-RGmSQZWmcFgOvadFxkp6VJdffY1~u2lE2mwyvsmRsXTO5-xJEe7hbFeKv3ir9XKqk~9ddZjc-NY7u8ZACBdQaDZQQrkftO4ZOuSwg~1s18vvG2y-ZGlrU~TsrY~8z1ouxFr7tXzaPtW3QRH~xh-WGknlPWrtytlz6sL0G6hdt7AmcDGlIzue7Nl0lKYefGGR32RKytDzXmf32ZOv6ytLmElxXcH8HXYw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href: "https://s3-alpha-sig.figma.com/img/b179/34ca/43fa4498829c440415e8de0a23370ee3?Expires=1698019200&Signature=A2u6oAJw~ypnW4Se2Rvz7F-dOEUt5dSSBsQ0RXW7I1Kp8iZ2aBhA5hRbtp-CyVgT5s0xu5H9Q71ebZZMy3ZGBmJiNvFGY2~6DeuZS8cNSYKOfe9GJ5Ugv-RGmSQZWmcFgOvadFxkp6VJdffY1~u2lE2mwyvsmRsXTO5-xJEe7hbFeKv3ir9XKqk~9ddZjc-NY7u8ZACBdQaDZQQrkftO4ZOuSwg~1s18vvG2y-ZGlrU~TsrY~8z1ouxFr7tXzaPtW3QRH~xh-WGknlPWrtytlz6sL0G6hdt7AmcDGlIzue7Nl0lKYefGGR32RKytDzXmf32ZOv6ytLmElxXcH8HXYw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
                 ]
             } as TextBlock,
             {
-                textContent:[
+                textContent: [
                     "<strong>Детальну інформацію дивіться:\n</strong>",
                     "Правила прийому громадян України для навчання за програмою підготовки офіцерів запасу на кафедрі військової підготовки Військового інституту телекомунікацій та інформатизації (2019 рік)\n",
                     "Документи (анкети) необхідні для вступу\n",
@@ -1023,4 +1024,41 @@ export const departments: Department[] = [
 
         ]
     } as Department,
+]
+
+export const units: Unit[] = [
+    {
+        headerImg: "https://s3-alpha-sig.figma.com/img/a722/7be7/af0d3e586a0a0040de0d313c62f64a86?Expires=1698019200&Signature=inxRNschpRmzUvtZ5LdN3iTDFt1rybRev3PXwayfP-9ObJ2WZLVHnMQalXxjiq5jddgt40nh6j-9u1zSOZ~rHcyr2NEwPz1KAVyE0vNG~HeZX~6KZMfOVnUFGNbIW0TbZC-KyiIkzDU7aAJSTKIm3SkDF--W4KkNsvwO1KNd~WNqXMfvGMBtZj-GfoOrwYPL61L7snxrOpZC6~Ug0E-0-xGpNWAfqoLbOJ~n9aGILdNdq-gH7h028liZO1zIclPsAoctT065CLiHCmbtfUYOwXJlMhtAFuz4wzhhPqtpxRN6r-cvMXPU6EbYzbF-tHdyz1Chnjf6Apwm0RRc5xGIQg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        title: "Науковий центр зв’язку та інформатизації",
+        titleTextBlock: {
+            textContent: [
+                "Науковий центр зв’язку та інформатизації ВІТІ відповідно до директиви Міністра оборони України від 30.08.07 № 7 визначений головною науковою установою в галузі дослідження проблем розвитку зв'язку та автоматизації управління військами, наукового супроводження розробок техніки зв'язку та автоматизації управління військами. НЦЗІ ВІТІ визначений базовою організацією з військової стандартизації техніки зв'язку і автоматизації управління військами відповідно до Наказу начальника Генерального штабу Збройних Сил України від 08.01.03 № 1."
+            ]
+        } as TextBlock,
+        superior: {
+            position: "Начальник наукового центру зв'язку та інформатизації",
+            rang: "полковник",
+            name: " КОЛАЧОВ Сергій Петрович",
+            img: {href: "https://s3-alpha-sig.figma.com/img/355c/14a8/ed5f3a04159810242d8c7f4daca9b740?Expires=1697414400&Signature=pYbgUtQuj3fOqH2ERhS3vqPvpw6UCjpScaVH-m1qnwgPEFV8Ua7UP30GhmpLaDoJPospS6dJfP-~THZVhvw83f1GGqlrL8C~Y2P3XKP-lnHfh~wqlaYqki1v8THBxeAW5nCqkp3VvXYZbCt8N-6OLV9ShlMi1eqepaEI-nZAF95JdxXEQo6F4Z-nplemCbM2rrQDN2AQQgQh~X2cOC4EN2nCwie6L5mRiuPrjaG1Z5QSiD-aTFRrS0mvW9Sjtw76YIMC-Q7CpWRRAEFc49dv4SxhkTTQirFEJcvOJk3of2qbDTLBlnQ0iu6sJT4WFXfrqdIPKBpWHp1TldlDuX8qvw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+            achievements: [
+                "кандидат технічних наук ",
+                "старший науковий співробітник",
+                "участник бойових дій"
+            ]
+        } as Superior,
+        textBlocks:[
+            {
+                textContent:[
+                    "Основним напрямом діяльності НЦЗІ ВІТІ є виконання НДДКР, відпрацювання оперативних постановок, наукове супроводження та впровадження результатів дослідно-конструкторських робіт.\n",
+                    "Основна мета діяльності НЦЗІ ВІ ТІ- забезпечення реалізації державної політики у сфері науки, науково-технічної, інноваційної діяльності та інтелектуальної власності в системі Міністерства освіти і науки та Міністерства оборони України, інших галузевих міністерств."
+                ],
+                images:[
+                    {href:"https://s3-alpha-sig.figma.com/img/5e4b/6d13/492de43aa40cde2b85a8f1ee49dc0ce7?Expires=1698019200&Signature=hj~ieIjOGPNZ7DBNcyTAkngCuXNgqkJZWrXMGWTAFg6JsH0OYO37O8wgL~r5PG2gCsm-6LwfDs5zWuhKZom-K5pU5tEBLsmCkcJZ~2R61Y0RZxSD21wuokbks3zXO-u2CVzCQFwux0z4eBeO~SpcKxCYcU7tmSqGDmFZExO9c3P-TCJptOzNQ4dwZ2tmp9hMGTZBoQPXQdJRwAIKS6nmdurETsl7OLejjwuPHtOr~J9QJVtLzJSzcVELx02a77nqlR96bYvHBC4IM6gC2Qrl6WnBOY4RnXMHlPHyF7s7NK-oHmxi78k4xWrpYi9Qj7gjadXb2zwc7T6quT1YVyZf5Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+                    {href:""} as Image,
+                ]
+            } as TextBlock
+        ]
+
+
+    } as Unit,
 ]
