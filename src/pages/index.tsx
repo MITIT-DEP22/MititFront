@@ -1,6 +1,6 @@
 import {lazy} from "react";
 import {Route, Routes, Navigate} from "react-router-dom";
-import {RouterNames} from "../shared/enums/RouterNames";
+import {RouterNames} from "shared/enums/RouterNames";
 import {InstitutePage} from "./Institute/InstitutePage";
 import {SuperiorsPage} from "./Superiors/SuperiorsPage";
 import {HistoricalPage} from "./Historical/HistoricalPage";
@@ -11,6 +11,7 @@ import UnitPage from "./Unit/UnitPage";
 import EntrancePage from "./Entrance/EntrancePage";
 import StudyPage from "./Study/StudyPage";
 import {NewsPage} from "./News/NewsPage";
+import SciencePage from "./Science/SciencePage";
 
 const HomePage = lazy(() => import("./Home/HomePage"));
 
@@ -26,6 +27,7 @@ export const Routing = () => {
             <Route path={RouterNames.ENTRANTS} element={<EntrancePage/>}/>
             <Route path={RouterNames.STUDY} element={<StudyPage/>}/>
             <Route path={RouterNames.NEWS} element={<NewsPage/>}/>
+            <Route path={RouterNames.SCIENCE} element={<SciencePage/>}/>
 
             <Route path={RouterNames.FACULTY + "/:id"} element={<FacultyPage/>}/>
             <Route path={RouterNames.DEPARTMENT + "/:id"} element={<DepartmentPage/>}/>
