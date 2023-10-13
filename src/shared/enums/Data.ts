@@ -3,10 +3,12 @@ import {NavLink} from "entities/link";
 import {Faculty} from "entities/faculty";
 import {Superior} from "entities/superior";
 import {Department} from "entities/department";
-import {Image, TextBlock, List} from "../../entities/text-block";
+import {Image, TextBlock, List} from "entities/text-block";
 import {Row, RowElement, Table} from "entities/text-block/model/types";
 import {Unit} from "entities/unit";
-import {AccordionElement} from "../../entities/entrance";
+import {AccordionElement} from "entities/entrance";
+import {WhyMITIT} from "entities/why_mitit";
+
 
 export const instituteName = "ВІЙСЬКОВИЙ ІНСТИТУТ\nТЕЛЕКОМУНІКАЦІЙ ТА ІНФОРМАТИЗАЦІЇ\nІМЕНІ ГЕРОЇВ КРУТ"
 export const upperTitle = "АКТУАЛЬНО: Набір на курси лідерства"
@@ -1977,6 +1979,7 @@ export const entrances: AccordionElement[] = [
 
 ]
 
+
 export const educations: AccordionElement[] = [
     {
         title: "Організація освітньої діяльності",
@@ -2527,6 +2530,196 @@ export const educations: AccordionElement[] = [
         ]
 
     } as AccordionElement,
+]
+export const publicInfo: TextBlock[] = [
+    {
+        oLists: [
+            {
+                items: [
+                    "Реєстр суб'єктів освітньої діяльності\n" +
+                    "<p>Виписка з Єдиного державного реєстру юридичних осіб, фізичних осіб-підприємців та громадських формувань ВІТІ імені Героїв Крут\n</p>" +
+                    "<p>Довідка з відомчого обліку Міністерства оборони України в Єдиному державному реєстрі юридичних осіб, фізичних осіб-підприємців та громадських формувань ВІТІ імені Героїв Крут\n</p>",
+                    "Статут Військового інституту телекомунікацій та інфоматизації імені Героїв Крут (нова редакція)\n",
+                    " Стратегія і перспективні напрями розвитку освітньої, наукової та інноваційної діяльності ВІТІ на період до 2020 року\n",
+                    " Командування інституту",
+                    "Колективний договір ВІТІ імені Героїв Крут на 2019 - 2021 роки Реєстрація: Профспілка працівників ЗСУ\n",
+                    "Колективний договір ВІТІ на 2016 - 2017 роки Зміни та доповнення: 2017 рік 2017 рік 2018 рік\n" +
+                    "<p>Колективний договір ВІТІ ДУТ на 2014 - 2016 роки Зміни та доповнення: 2014 рік 2015 рік 2015 рік\n </p>" +
+                    "<p>Кошторис закладу вищої освіти та всі зміни до нього\n</p>",
+                    "Зведені показники виконання кошторису ВІТІ\n",
+                    " Інформація щодо тендерних процедур\n",
+                    "Державні закупівлі\n",
+                    "Штатний розпис (містить інформацію з обмеженим доступом (п.2.2 наказу Генерального штабу ЗСУ №408 від 22.11.2017 \"Про затвердження Переліку відомостей Збройних Сил України, \n" +
+                    "що становлять службову інформацію\")\n",
+                    "Ліцензія на провадження освітньої діяльності\n",
+                    "Ліцензований обсяг та фактична кількість осіб, які навчаються у закладі освіти (Інформація про кількість осіб, які навчається у Військовому інституті телекомунікацій та інформатизації \n" +
+                    "імені Героїв Крут є інформацію з обмеженим доступом (п.3.27 наказу Генерального штабу ЗСУ №408 від 22.11.2017 \"Про затвердження Переліку відомостей Збройних Сил України, \n" +
+                    "що становлять службову інформацію\")\n",
+                    "Сертифікати про акредитацію освітніх програм\n",
+                    " Освітні програми, що реалізуються в закладі освіти, та перелік освітніх компонентів, що передбачені відповідною освітньою програмою\n",
+                    " Мова (мови) освітнього процесу - державна мова (Відповідно до статті 48 Закону України від 01.07.2014 № 1556-VII \"Про вищу освіту\")\n",
+                    " Система менеджменту якості\n",
+                    " Напрями наукової та/або мистецької діяльності (для закладів вищої освіти) - інформація про напрями наукової та/або мистецької діяльності є інформацію з обмеженим доступом \n" +
+                    "(п.20.6 наказу Генерального штабу ЗСУ №408 від 22.11.2017 \"Про затвердження Переліку відомостей Збройних Сил України, що становлять службову інформацію\")\n",
+                    "Матеріально-технічне забезпечення закладу освіти (згідно з ліцензійними умовами) - відповідно до статті 45 Постанови Кабінету Міністрів України від 10.05.2018 № 347 \"Ліцензійні умови \n" +
+                    "провадження освітньої діяльності\" вищі військові заклади освіти (заклади вищої освіти із специфічними умовами навчання) не висвітлюють відомості про матеріально-технічне забезпечення на електронних ресурсах\n",
+                    "Наявність гуртожитків та вільних місць у них, розмір плати за проживання - Курсанти упродовж всього періоду навчання безкоштовно розміщуються в казармах (спальних приміщеннях, гуртожитках) \n" +
+                    "у порядку, встановленому Статутом внутрішньої служби Збройних Сил України\n",
+                    "Наявність вакантних посад,\n" +
+                    "порядок і умови проведення конкурсу на їх заміщення (у разі їх проведення)\n" +
+                    "Річний звіт про діяльність закладу освіти - Звіт про роботу ВВНЗ (ВНП ВНЗ) за навчальний рік – інформація, яка міститься у Звіті є інформацією з обмеженим доступом згідно п.5.7.ОС \n" +
+                    "Директиви начальника Генеральнго штабу – Головнокомандувача ЗСУ № ДГШ-6 від 06.03.2014 \"Про затвердження Табелю термінових донесень Збройних Сил України з кадрових питань \n" +
+                    "та підготовки військових фахівців\"\n",
+                    "Правила прийому до закладу освіти у відповідному році\n",
+                    " Розмір плати за навчання, підготовку, перепідготовку, підвищення кваліфікації здобувачів освіти - Підготовка здобувачів вищої освіти здійснюється за рахунок коштів державного замовлення\n",
+                    " Перелік додаткових освітніх та інших послуг, їх вартість, порядок надання та оплати\n",
+                    " Положення о преміюванні працівників ВІТІ за загальні результати діяльності\n" +
+                    "<p>Наказ Міністерства оборони України від 13 грудня 2004 року № 608 «Про виплату науковим працівникам Збройних Сил України надбавки за стаж наукової роботи»\n</p>" +
+                    "<p>Наказ Міністерства оборони України від 11 лютого 2008 року № 40 «Про затвердження Інструкції про порядок відбору кандидатів та виплати академічних (соціальних) стипендій курсантам, \n" +
+                    "слухачам і ад’юнктам вищих військових навчальних закладів Збройних Сил України та військових навчальних підрозділів вищих навчальних закладів»\n</p>"
+                ]
+            } as List
+        ]
+    } as TextBlock
+]
+
+export const why_mitit: WhyMITIT[] = [
+    {
+        title: "1.ВІТІ – потужний навчальний заклад у складі 3-х факультетів та 15 кафедр, Наукового центру зв'язку та інформатизації та Військового коледжу сержантського складу.",
+        finalText: "Ти отримаєш диплом бакалавра, магістра в галузі ІТ-технологій та телекомунікацій!"
+    } as WhyMITIT,
+    {
+        title: "2. ВІТІ – міжвидовий військовий навчальний заклад,",
+        titleText: "який розташований в історичному центрі Києва на Печерських пагорбах та має славетні традиції та своїх видатних вихованців. Багато випускників інституту стали провідними військовими фахівцями та генералами.",
+        content: [
+            "Інститут готує офіцерів для Збройних Сил України (Сухопутні війська, Військово-Повітряні та Військово-Морські Сили, Сили спеціальних операцій, Десантно-штурмових військ, Головного управлінння розвідки), Служби безпеки України, Служби зовнішьої розвідки України, Національної гвардії України, Державної прикордонної служби України, Державного космічного агентства України, Державної спеціальної служби транспорту.\n",
+            "Ми навчимо тебе бути професіоналом військової справи, бути сильним, вольовим та хоробрим. У нас ти знайдеш справжніх товаришів.\n",
+        ],
+        finalText: "Ти станеш командиром! Ти можеш стати генералом!",
+        images: [
+            {href: "https://s3-alpha-sig.figma.com/img/8f52/c07a/27af346c7817e036a3d13baeb8943328?Expires=1698019200&Signature=fLaItDJ6SWFWcflhmC4pNh~s7uzgH7kUwTbUFzV34A1X53Vgl8AnJAFtJ4TMnXH4A83lBRptNR4Eo2zalwa~tBQE8Ywrk2gSKAZcM2K-1CN5Ef~VNUecEb8w3ICgZdVvckcri~RkzCOJ-mx4rDKfDa4ytfI3zP-yz1xdXOC0D9Map9t3CvwA5t2I~pPgH~DyO4n-CO-Sie2zhRGxif6TJ5jqK3Ho1O0o9dLbWeCs~IuDIWArVUHRjHPZL44wk~IlUy2MInTRWkJgIuBjfFyeMIOC-~-vd13o-WkEODn2gX6EAY0fJjQKQ7Gxk242JdiIPu-lCTmwnKIdd7zyPV8iTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+            {href: "https://s3-alpha-sig.figma.com/img/8f52/c07a/27af346c7817e036a3d13baeb8943328?Expires=1698019200&Signature=fLaItDJ6SWFWcflhmC4pNh~s7uzgH7kUwTbUFzV34A1X53Vgl8AnJAFtJ4TMnXH4A83lBRptNR4Eo2zalwa~tBQE8Ywrk2gSKAZcM2K-1CN5Ef~VNUecEb8w3ICgZdVvckcri~RkzCOJ-mx4rDKfDa4ytfI3zP-yz1xdXOC0D9Map9t3CvwA5t2I~pPgH~DyO4n-CO-Sie2zhRGxif6TJ5jqK3Ho1O0o9dLbWeCs~IuDIWArVUHRjHPZL44wk~IlUy2MInTRWkJgIuBjfFyeMIOC-~-vd13o-WkEODn2gX6EAY0fJjQKQ7Gxk242JdiIPu-lCTmwnKIdd7zyPV8iTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+        ]
+    } as WhyMITIT,
+    {
+        title: "3. ВІТІ – надає професійну освіту за ступенями вищої освіти магістра",
+        titleText: "за такими сучасними спеціальностями як: комп’ютерні науки та інформаційні технології, комп’ютерна інженерія, телекомунікації та радіотехніка, кібербезпека, озброєння та військова техніка.\n",
+        finalText: "Ти станеш професіоналом в галузі ІТ-технологій та телекомунікацій!",
+        images: [
+            {href: "https://s3-alpha-sig.figma.com/img/8f52/c07a/27af346c7817e036a3d13baeb8943328?Expires=1698019200&Signature=fLaItDJ6SWFWcflhmC4pNh~s7uzgH7kUwTbUFzV34A1X53Vgl8AnJAFtJ4TMnXH4A83lBRptNR4Eo2zalwa~tBQE8Ywrk2gSKAZcM2K-1CN5Ef~VNUecEb8w3ICgZdVvckcri~RkzCOJ-mx4rDKfDa4ytfI3zP-yz1xdXOC0D9Map9t3CvwA5t2I~pPgH~DyO4n-CO-Sie2zhRGxif6TJ5jqK3Ho1O0o9dLbWeCs~IuDIWArVUHRjHPZL44wk~IlUy2MInTRWkJgIuBjfFyeMIOC-~-vd13o-WkEODn2gX6EAY0fJjQKQ7Gxk242JdiIPu-lCTmwnKIdd7zyPV8iTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+            {href: "https://s3-alpha-sig.figma.com/img/8f52/c07a/27af346c7817e036a3d13baeb8943328?Expires=1698019200&Signature=fLaItDJ6SWFWcflhmC4pNh~s7uzgH7kUwTbUFzV34A1X53Vgl8AnJAFtJ4TMnXH4A83lBRptNR4Eo2zalwa~tBQE8Ywrk2gSKAZcM2K-1CN5Ef~VNUecEb8w3ICgZdVvckcri~RkzCOJ-mx4rDKfDa4ytfI3zP-yz1xdXOC0D9Map9t3CvwA5t2I~pPgH~DyO4n-CO-Sie2zhRGxif6TJ5jqK3Ho1O0o9dLbWeCs~IuDIWArVUHRjHPZL44wk~IlUy2MInTRWkJgIuBjfFyeMIOC-~-vd13o-WkEODn2gX6EAY0fJjQKQ7Gxk242JdiIPu-lCTmwnKIdd7zyPV8iTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+        ]
+    } as WhyMITIT,
+    {
+        title: "4.ВІТІ – це база підготовки майбутніх кібервоінів. ",
+        titleText: "Протягом всього терміну навчання ти будеш вивчати сучасні системи захисту інформації, апаратно-програмні засоби CISCO, волоконно-оптичні технології побудови мереж передачі повідомлень.\n",
+        finalText: "Ти зможеш професійно захищати Україну в кіберпросторі!",
+        images: [
+            {href: "https://s3-alpha-sig.figma.com/img/8f52/c07a/27af346c7817e036a3d13baeb8943328?Expires=1698019200&Signature=fLaItDJ6SWFWcflhmC4pNh~s7uzgH7kUwTbUFzV34A1X53Vgl8AnJAFtJ4TMnXH4A83lBRptNR4Eo2zalwa~tBQE8Ywrk2gSKAZcM2K-1CN5Ef~VNUecEb8w3ICgZdVvckcri~RkzCOJ-mx4rDKfDa4ytfI3zP-yz1xdXOC0D9Map9t3CvwA5t2I~pPgH~DyO4n-CO-Sie2zhRGxif6TJ5jqK3Ho1O0o9dLbWeCs~IuDIWArVUHRjHPZL44wk~IlUy2MInTRWkJgIuBjfFyeMIOC-~-vd13o-WkEODn2gX6EAY0fJjQKQ7Gxk242JdiIPu-lCTmwnKIdd7zyPV8iTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+            {href: "https://s3-alpha-sig.figma.com/img/8f52/c07a/27af346c7817e036a3d13baeb8943328?Expires=1698019200&Signature=fLaItDJ6SWFWcflhmC4pNh~s7uzgH7kUwTbUFzV34A1X53Vgl8AnJAFtJ4TMnXH4A83lBRptNR4Eo2zalwa~tBQE8Ywrk2gSKAZcM2K-1CN5Ef~VNUecEb8w3ICgZdVvckcri~RkzCOJ-mx4rDKfDa4ytfI3zP-yz1xdXOC0D9Map9t3CvwA5t2I~pPgH~DyO4n-CO-Sie2zhRGxif6TJ5jqK3Ho1O0o9dLbWeCs~IuDIWArVUHRjHPZL44wk~IlUy2MInTRWkJgIuBjfFyeMIOC-~-vd13o-WkEODn2gX6EAY0fJjQKQ7Gxk242JdiIPu-lCTmwnKIdd7zyPV8iTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+        ]
+    } as WhyMITIT,
+    {
+        title: "5. ВІТІ – це сучасний рівень викладання",
+        titleText: "з використанням інноваційних технологій та сучасних програмних продуктів на базі різноманітних навчальних класів (комп’ютерні класи, спеціалізовані лабораторії, навчально-тренувальний комплекс тощо) з залученням значного наукового потенціалу (15 докторів наук, 12 професорів, 61кандидата наук, 48 доцентів, 2 Заслужених діяча науки та техніки, 1 Заслужений працівник освіти, 1 Лауреат Державної премії України, 1 – академік галузевої академії). Постійний доступ до інститутської локальної мережі а також до мережі Internet дає можливість курсантам опановувати знання на сучасному рівні\n",
+        finalText: "Навчатись дуже цікаво та перспективно.",
+        images: [
+            {href: "https://s3-alpha-sig.figma.com/img/8f52/c07a/27af346c7817e036a3d13baeb8943328?Expires=1698019200&Signature=fLaItDJ6SWFWcflhmC4pNh~s7uzgH7kUwTbUFzV34A1X53Vgl8AnJAFtJ4TMnXH4A83lBRptNR4Eo2zalwa~tBQE8Ywrk2gSKAZcM2K-1CN5Ef~VNUecEb8w3ICgZdVvckcri~RkzCOJ-mx4rDKfDa4ytfI3zP-yz1xdXOC0D9Map9t3CvwA5t2I~pPgH~DyO4n-CO-Sie2zhRGxif6TJ5jqK3Ho1O0o9dLbWeCs~IuDIWArVUHRjHPZL44wk~IlUy2MInTRWkJgIuBjfFyeMIOC-~-vd13o-WkEODn2gX6EAY0fJjQKQ7Gxk242JdiIPu-lCTmwnKIdd7zyPV8iTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+            {href: "https://s3-alpha-sig.figma.com/img/8f52/c07a/27af346c7817e036a3d13baeb8943328?Expires=1698019200&Signature=fLaItDJ6SWFWcflhmC4pNh~s7uzgH7kUwTbUFzV34A1X53Vgl8AnJAFtJ4TMnXH4A83lBRptNR4Eo2zalwa~tBQE8Ywrk2gSKAZcM2K-1CN5Ef~VNUecEb8w3ICgZdVvckcri~RkzCOJ-mx4rDKfDa4ytfI3zP-yz1xdXOC0D9Map9t3CvwA5t2I~pPgH~DyO4n-CO-Sie2zhRGxif6TJ5jqK3Ho1O0o9dLbWeCs~IuDIWArVUHRjHPZL44wk~IlUy2MInTRWkJgIuBjfFyeMIOC-~-vd13o-WkEODn2gX6EAY0fJjQKQ7Gxk242JdiIPu-lCTmwnKIdd7zyPV8iTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+        ]
+    } as WhyMITIT,
+    {
+        title: "",
+        titleText: "",
+        finalText: "",
+        images: [
+            {href: "https://s3-alpha-sig.figma.com/img/8f52/c07a/27af346c7817e036a3d13baeb8943328?Expires=1698019200&Signature=fLaItDJ6SWFWcflhmC4pNh~s7uzgH7kUwTbUFzV34A1X53Vgl8AnJAFtJ4TMnXH4A83lBRptNR4Eo2zalwa~tBQE8Ywrk2gSKAZcM2K-1CN5Ef~VNUecEb8w3ICgZdVvckcri~RkzCOJ-mx4rDKfDa4ytfI3zP-yz1xdXOC0D9Map9t3CvwA5t2I~pPgH~DyO4n-CO-Sie2zhRGxif6TJ5jqK3Ho1O0o9dLbWeCs~IuDIWArVUHRjHPZL44wk~IlUy2MInTRWkJgIuBjfFyeMIOC-~-vd13o-WkEODn2gX6EAY0fJjQKQ7Gxk242JdiIPu-lCTmwnKIdd7zyPV8iTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+            {href: "https://s3-alpha-sig.figma.com/img/8f52/c07a/27af346c7817e036a3d13baeb8943328?Expires=1698019200&Signature=fLaItDJ6SWFWcflhmC4pNh~s7uzgH7kUwTbUFzV34A1X53Vgl8AnJAFtJ4TMnXH4A83lBRptNR4Eo2zalwa~tBQE8Ywrk2gSKAZcM2K-1CN5Ef~VNUecEb8w3ICgZdVvckcri~RkzCOJ-mx4rDKfDa4ytfI3zP-yz1xdXOC0D9Map9t3CvwA5t2I~pPgH~DyO4n-CO-Sie2zhRGxif6TJ5jqK3Ho1O0o9dLbWeCs~IuDIWArVUHRjHPZL44wk~IlUy2MInTRWkJgIuBjfFyeMIOC-~-vd13o-WkEODn2gX6EAY0fJjQKQ7Gxk242JdiIPu-lCTmwnKIdd7zyPV8iTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+        ]
+    } as WhyMITIT,
+    {
+        title: "6. ВІТІ – це можливість підвищити рівень володіння англійською мовою.",
+        titleText: "В інституті створений сучасний лінгафонний клас для поглибленого вивчення англійської мови загального, технічного та військового спрямування.\n",
+        content: [
+            "Курсанти інституту залучаються як перекладачі при проведенні міжнародних навчань, зустрічей з військовослужбовцями країн-членів НАТО.\n",
+            "Випускники інституту беруть участь в міжнародних навчаннях, миротворчих місіях, навчаються у військових коледжах та академіях збройних сил іноземних держав.\n",
+            "При закінченні ти можеш отримати свідоцтво про особистий рівень володіння іноземною мовою стандарту НАТО.\n"
+        ],
+        finalText: "Ти можеш навчитись та вільно спілкуватися іноземною мовою!",
+        images: [
+            {href: "https://s3-alpha-sig.figma.com/img/8f52/c07a/27af346c7817e036a3d13baeb8943328?Expires=1698019200&Signature=fLaItDJ6SWFWcflhmC4pNh~s7uzgH7kUwTbUFzV34A1X53Vgl8AnJAFtJ4TMnXH4A83lBRptNR4Eo2zalwa~tBQE8Ywrk2gSKAZcM2K-1CN5Ef~VNUecEb8w3ICgZdVvckcri~RkzCOJ-mx4rDKfDa4ytfI3zP-yz1xdXOC0D9Map9t3CvwA5t2I~pPgH~DyO4n-CO-Sie2zhRGxif6TJ5jqK3Ho1O0o9dLbWeCs~IuDIWArVUHRjHPZL44wk~IlUy2MInTRWkJgIuBjfFyeMIOC-~-vd13o-WkEODn2gX6EAY0fJjQKQ7Gxk242JdiIPu-lCTmwnKIdd7zyPV8iTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+            {href: "https://s3-alpha-sig.figma.com/img/8f52/c07a/27af346c7817e036a3d13baeb8943328?Expires=1698019200&Signature=fLaItDJ6SWFWcflhmC4pNh~s7uzgH7kUwTbUFzV34A1X53Vgl8AnJAFtJ4TMnXH4A83lBRptNR4Eo2zalwa~tBQE8Ywrk2gSKAZcM2K-1CN5Ef~VNUecEb8w3ICgZdVvckcri~RkzCOJ-mx4rDKfDa4ytfI3zP-yz1xdXOC0D9Map9t3CvwA5t2I~pPgH~DyO4n-CO-Sie2zhRGxif6TJ5jqK3Ho1O0o9dLbWeCs~IuDIWArVUHRjHPZL44wk~IlUy2MInTRWkJgIuBjfFyeMIOC-~-vd13o-WkEODn2gX6EAY0fJjQKQ7Gxk242JdiIPu-lCTmwnKIdd7zyPV8iTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+        ]
+    } as WhyMITIT,
+    {
+        title: "7. ВІТІ – розвиває сучасні наукові школи в галузях інформаційних технологій, електроніки та телекомунікації. ",
+        titleText: "В інституті функціонує ад’юнктура та докторантура з підготовки наукових кадрів вищої кваліфікації та спеціалізована вчена рада щодо захисту кандидатських (докторських) дисертацій з визначеними науковими спеціальностями.\n" +
+            "\n",
+        finalText: "Після закінчення інституту ти можеш навчатись в ад’юнктурі, докторантурі та отримати наукові ступені доктора філософії та доктора наук.",
+        images: [
+            {href: "https://s3-alpha-sig.figma.com/img/8f52/c07a/27af346c7817e036a3d13baeb8943328?Expires=1698019200&Signature=fLaItDJ6SWFWcflhmC4pNh~s7uzgH7kUwTbUFzV34A1X53Vgl8AnJAFtJ4TMnXH4A83lBRptNR4Eo2zalwa~tBQE8Ywrk2gSKAZcM2K-1CN5Ef~VNUecEb8w3ICgZdVvckcri~RkzCOJ-mx4rDKfDa4ytfI3zP-yz1xdXOC0D9Map9t3CvwA5t2I~pPgH~DyO4n-CO-Sie2zhRGxif6TJ5jqK3Ho1O0o9dLbWeCs~IuDIWArVUHRjHPZL44wk~IlUy2MInTRWkJgIuBjfFyeMIOC-~-vd13o-WkEODn2gX6EAY0fJjQKQ7Gxk242JdiIPu-lCTmwnKIdd7zyPV8iTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+            {href: "https://s3-alpha-sig.figma.com/img/8f52/c07a/27af346c7817e036a3d13baeb8943328?Expires=1698019200&Signature=fLaItDJ6SWFWcflhmC4pNh~s7uzgH7kUwTbUFzV34A1X53Vgl8AnJAFtJ4TMnXH4A83lBRptNR4Eo2zalwa~tBQE8Ywrk2gSKAZcM2K-1CN5Ef~VNUecEb8w3ICgZdVvckcri~RkzCOJ-mx4rDKfDa4ytfI3zP-yz1xdXOC0D9Map9t3CvwA5t2I~pPgH~DyO4n-CO-Sie2zhRGxif6TJ5jqK3Ho1O0o9dLbWeCs~IuDIWArVUHRjHPZL44wk~IlUy2MInTRWkJgIuBjfFyeMIOC-~-vd13o-WkEODn2gX6EAY0fJjQKQ7Gxk242JdiIPu-lCTmwnKIdd7zyPV8iTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+        ]
+    } as WhyMITIT,
+    {
+        title: "8. ВІТІ – надає прекрасні умови для заняття спортом.",
+        titleText: "Під керівництвом досвідчених офіцерів-фахівців курсанти покращують особистий рівень фізичної підготовки з бігу та силових вправ. Відпрацьовуються також й воєнно-спортивні види спорту – перетин полоси перешкод, вправи на витривалість з озброєнням.\n",
+        content: [
+            "Кожного року наш інститут представляє команду з військово-спортивного багатоборства, де курсанти показують свої уміння з плавання, бігу та стрільбі з пістолету.\n",
+            "Щорічно відбуваються спартакіади київських ВНЗ з різних видів спорту: плавання, легкої атлетики, баскетболу, шахів, волейболу, футболу, настільному тенісу, армспорту та інше.\n"
+        ],
+        finalText: "Ти будеш добре фізично розвиненим!",
+        images: [
+            {href: "https://s3-alpha-sig.figma.com/img/8f52/c07a/27af346c7817e036a3d13baeb8943328?Expires=1698019200&Signature=fLaItDJ6SWFWcflhmC4pNh~s7uzgH7kUwTbUFzV34A1X53Vgl8AnJAFtJ4TMnXH4A83lBRptNR4Eo2zalwa~tBQE8Ywrk2gSKAZcM2K-1CN5Ef~VNUecEb8w3ICgZdVvckcri~RkzCOJ-mx4rDKfDa4ytfI3zP-yz1xdXOC0D9Map9t3CvwA5t2I~pPgH~DyO4n-CO-Sie2zhRGxif6TJ5jqK3Ho1O0o9dLbWeCs~IuDIWArVUHRjHPZL44wk~IlUy2MInTRWkJgIuBjfFyeMIOC-~-vd13o-WkEODn2gX6EAY0fJjQKQ7Gxk242JdiIPu-lCTmwnKIdd7zyPV8iTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+            {href: "https://s3-alpha-sig.figma.com/img/8f52/c07a/27af346c7817e036a3d13baeb8943328?Expires=1698019200&Signature=fLaItDJ6SWFWcflhmC4pNh~s7uzgH7kUwTbUFzV34A1X53Vgl8AnJAFtJ4TMnXH4A83lBRptNR4Eo2zalwa~tBQE8Ywrk2gSKAZcM2K-1CN5Ef~VNUecEb8w3ICgZdVvckcri~RkzCOJ-mx4rDKfDa4ytfI3zP-yz1xdXOC0D9Map9t3CvwA5t2I~pPgH~DyO4n-CO-Sie2zhRGxif6TJ5jqK3Ho1O0o9dLbWeCs~IuDIWArVUHRjHPZL44wk~IlUy2MInTRWkJgIuBjfFyeMIOC-~-vd13o-WkEODn2gX6EAY0fJjQKQ7Gxk242JdiIPu-lCTmwnKIdd7zyPV8iTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+        ]
+    } as WhyMITIT,
+    {
+        title: "9. ВІТІ – створює умови повноцінного, змістовного проведення вільного часу.",
+        titleText: "Військовий колектив виховує талановитих творчих особистостей, яскраві творчі колективи.\n",
+        content: [
+            "Курсанти інституту постійно беруть участь та займають призові місця у Всеукраїнських конкурсах, олімпіадах, творчих виступах, в міжвишівські КВК.\n",
+            "Під час звільнення та у вихідні дні є можливість знайомства зі столицею, відвідування історичних місць Києва, похід у театри.\n"
+        ],
+        finalText: "Ти маєш можливість розвинутись як особистість.",
+        images: [
+            {href: "https://s3-alpha-sig.figma.com/img/8f52/c07a/27af346c7817e036a3d13baeb8943328?Expires=1698019200&Signature=fLaItDJ6SWFWcflhmC4pNh~s7uzgH7kUwTbUFzV34A1X53Vgl8AnJAFtJ4TMnXH4A83lBRptNR4Eo2zalwa~tBQE8Ywrk2gSKAZcM2K-1CN5Ef~VNUecEb8w3ICgZdVvckcri~RkzCOJ-mx4rDKfDa4ytfI3zP-yz1xdXOC0D9Map9t3CvwA5t2I~pPgH~DyO4n-CO-Sie2zhRGxif6TJ5jqK3Ho1O0o9dLbWeCs~IuDIWArVUHRjHPZL44wk~IlUy2MInTRWkJgIuBjfFyeMIOC-~-vd13o-WkEODn2gX6EAY0fJjQKQ7Gxk242JdiIPu-lCTmwnKIdd7zyPV8iTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+            {href: "https://s3-alpha-sig.figma.com/img/8f52/c07a/27af346c7817e036a3d13baeb8943328?Expires=1698019200&Signature=fLaItDJ6SWFWcflhmC4pNh~s7uzgH7kUwTbUFzV34A1X53Vgl8AnJAFtJ4TMnXH4A83lBRptNR4Eo2zalwa~tBQE8Ywrk2gSKAZcM2K-1CN5Ef~VNUecEb8w3ICgZdVvckcri~RkzCOJ-mx4rDKfDa4ytfI3zP-yz1xdXOC0D9Map9t3CvwA5t2I~pPgH~DyO4n-CO-Sie2zhRGxif6TJ5jqK3Ho1O0o9dLbWeCs~IuDIWArVUHRjHPZL44wk~IlUy2MInTRWkJgIuBjfFyeMIOC-~-vd13o-WkEODn2gX6EAY0fJjQKQ7Gxk242JdiIPu-lCTmwnKIdd7zyPV8iTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+        ]
+    } as WhyMITIT,
+    {
+        title: "10. ВІТІ – заохочує іменними стипендіями. ",
+        titleText: "Крім постійного щомісячного грошового забезпечення, кращі курсанти за результатами навчання та участі в суспільній діяльності інституту заохочуються іменними стипендіями: Президента України, Верховної Ради України, Кабінету Міністрів України, та іншими\n",
+        finalText: "Ти можеш отримувати додаткову стипендію!",
+        images: [
+            {href: "https://s3-alpha-sig.figma.com/img/8f52/c07a/27af346c7817e036a3d13baeb8943328?Expires=1698019200&Signature=fLaItDJ6SWFWcflhmC4pNh~s7uzgH7kUwTbUFzV34A1X53Vgl8AnJAFtJ4TMnXH4A83lBRptNR4Eo2zalwa~tBQE8Ywrk2gSKAZcM2K-1CN5Ef~VNUecEb8w3ICgZdVvckcri~RkzCOJ-mx4rDKfDa4ytfI3zP-yz1xdXOC0D9Map9t3CvwA5t2I~pPgH~DyO4n-CO-Sie2zhRGxif6TJ5jqK3Ho1O0o9dLbWeCs~IuDIWArVUHRjHPZL44wk~IlUy2MInTRWkJgIuBjfFyeMIOC-~-vd13o-WkEODn2gX6EAY0fJjQKQ7Gxk242JdiIPu-lCTmwnKIdd7zyPV8iTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+            {href: "https://s3-alpha-sig.figma.com/img/8f52/c07a/27af346c7817e036a3d13baeb8943328?Expires=1698019200&Signature=fLaItDJ6SWFWcflhmC4pNh~s7uzgH7kUwTbUFzV34A1X53Vgl8AnJAFtJ4TMnXH4A83lBRptNR4Eo2zalwa~tBQE8Ywrk2gSKAZcM2K-1CN5Ef~VNUecEb8w3ICgZdVvckcri~RkzCOJ-mx4rDKfDa4ytfI3zP-yz1xdXOC0D9Map9t3CvwA5t2I~pPgH~DyO4n-CO-Sie2zhRGxif6TJ5jqK3Ho1O0o9dLbWeCs~IuDIWArVUHRjHPZL44wk~IlUy2MInTRWkJgIuBjfFyeMIOC-~-vd13o-WkEODn2gX6EAY0fJjQKQ7Gxk242JdiIPu-lCTmwnKIdd7zyPV8iTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+        ]
+    } as WhyMITIT,
+    {
+        title: "11. Випусники ВІТІ отримують посвідчення водія категорій “В”, “С”",
+        titleText: "Під час основного терміну навчання ти зможеш вивчити складові автомобіля та опанувати його водіння.",
+        finalText: "Ти можеш стати класним водієм!",
+        images: [
+            {href: "https://s3-alpha-sig.figma.com/img/8f52/c07a/27af346c7817e036a3d13baeb8943328?Expires=1698019200&Signature=fLaItDJ6SWFWcflhmC4pNh~s7uzgH7kUwTbUFzV34A1X53Vgl8AnJAFtJ4TMnXH4A83lBRptNR4Eo2zalwa~tBQE8Ywrk2gSKAZcM2K-1CN5Ef~VNUecEb8w3ICgZdVvckcri~RkzCOJ-mx4rDKfDa4ytfI3zP-yz1xdXOC0D9Map9t3CvwA5t2I~pPgH~DyO4n-CO-Sie2zhRGxif6TJ5jqK3Ho1O0o9dLbWeCs~IuDIWArVUHRjHPZL44wk~IlUy2MInTRWkJgIuBjfFyeMIOC-~-vd13o-WkEODn2gX6EAY0fJjQKQ7Gxk242JdiIPu-lCTmwnKIdd7zyPV8iTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+            {href: "https://s3-alpha-sig.figma.com/img/8f52/c07a/27af346c7817e036a3d13baeb8943328?Expires=1698019200&Signature=fLaItDJ6SWFWcflhmC4pNh~s7uzgH7kUwTbUFzV34A1X53Vgl8AnJAFtJ4TMnXH4A83lBRptNR4Eo2zalwa~tBQE8Ywrk2gSKAZcM2K-1CN5Ef~VNUecEb8w3ICgZdVvckcri~RkzCOJ-mx4rDKfDa4ytfI3zP-yz1xdXOC0D9Map9t3CvwA5t2I~pPgH~DyO4n-CO-Sie2zhRGxif6TJ5jqK3Ho1O0o9dLbWeCs~IuDIWArVUHRjHPZL44wk~IlUy2MInTRWkJgIuBjfFyeMIOC-~-vd13o-WkEODn2gX6EAY0fJjQKQ7Gxk242JdiIPu-lCTmwnKIdd7zyPV8iTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+        ]
+    } as WhyMITIT,
+    {
+        title: "12. ВІТІ – це гарант соціального захисту:",
+        content: [
+            "1. Ти навчаєшся тільки на бюджетній формі навчання (за кошти держави);\n",
+            "2. Ти отримуєш щомісячне грошове забезпечення протягом всього терміну навчання, за навчання на «добре» та «відмінно» - підвищене;\n",
+            "3. Тебе повністю забезпечують одягом, харчуванням, місцем для проживання;\n",
+            "4. Весь термін твого навчання зараховується до загальної вислуги років.\n",
+            "Протягом всього терміну військової служби в ЗСУ (інших військових формуваннях) тобі гарантовано отримання стабільного грошового забезпечення!!!"
+        ],
+        images: [
+            {href: "https://s3-alpha-sig.figma.com/img/8f52/c07a/27af346c7817e036a3d13baeb8943328?Expires=1698019200&Signature=fLaItDJ6SWFWcflhmC4pNh~s7uzgH7kUwTbUFzV34A1X53Vgl8AnJAFtJ4TMnXH4A83lBRptNR4Eo2zalwa~tBQE8Ywrk2gSKAZcM2K-1CN5Ef~VNUecEb8w3ICgZdVvckcri~RkzCOJ-mx4rDKfDa4ytfI3zP-yz1xdXOC0D9Map9t3CvwA5t2I~pPgH~DyO4n-CO-Sie2zhRGxif6TJ5jqK3Ho1O0o9dLbWeCs~IuDIWArVUHRjHPZL44wk~IlUy2MInTRWkJgIuBjfFyeMIOC-~-vd13o-WkEODn2gX6EAY0fJjQKQ7Gxk242JdiIPu-lCTmwnKIdd7zyPV8iTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+            {href: "https://s3-alpha-sig.figma.com/img/8f52/c07a/27af346c7817e036a3d13baeb8943328?Expires=1698019200&Signature=fLaItDJ6SWFWcflhmC4pNh~s7uzgH7kUwTbUFzV34A1X53Vgl8AnJAFtJ4TMnXH4A83lBRptNR4Eo2zalwa~tBQE8Ywrk2gSKAZcM2K-1CN5Ef~VNUecEb8w3ICgZdVvckcri~RkzCOJ-mx4rDKfDa4ytfI3zP-yz1xdXOC0D9Map9t3CvwA5t2I~pPgH~DyO4n-CO-Sie2zhRGxif6TJ5jqK3Ho1O0o9dLbWeCs~IuDIWArVUHRjHPZL44wk~IlUy2MInTRWkJgIuBjfFyeMIOC-~-vd13o-WkEODn2gX6EAY0fJjQKQ7Gxk242JdiIPu-lCTmwnKIdd7zyPV8iTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"} as Image,
+        ]
+    } as WhyMITIT,
+
 ]
 
 

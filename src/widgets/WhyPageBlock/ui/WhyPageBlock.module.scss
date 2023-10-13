@@ -1,0 +1,28 @@
+.container {
+  padding: 3vh 15vw 5vh 15vw;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  @media screen and (width < 900px) {
+    padding: 10px;
+    align-items: center;
+  }
+}
+
+.headerContainer {
+  display: grid;
+  @media screen and (width < 900px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  grid-template-columns: 1fr 1fr;
+}
+
+.endText {
+  margin-top: 5vh;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+}
