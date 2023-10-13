@@ -15,7 +15,7 @@ const NavSublinksD: FC<NavSublinksProps> = ({click, link, isMobile, isActive}) =
 
     return (
         <div onMouseLeave={() => setHovered(false)} onMouseOver={() => setHovered(true)}
-             className={`${css.navLinkB} ${isMobile && css.navLinkBMobile} ${isActive && css.navLinkB_active}`}>
+             className={`${css.navLinkB} ${isActive && css.navLinkB_active}`}>
             <span>{link.title}</span>
             {
                 link.sublinks &&
