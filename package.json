@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@kunukn/react-collapse": "^2.2.10",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -15,8 +16,10 @@
     "compose-function": "^3.0.3",
     "dotenv-expand": "^10.0.0",
     "html-react-parser": "4.2.2",
+    "i": "^0.3.7",
     "mobx": "^6.10.2",
     "mobx-react": "^9.0.1",
+    "npm": "^10.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router": "^6.16.0",
