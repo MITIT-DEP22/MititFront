@@ -1671,7 +1671,7 @@ export const entrances: AccordionElement[] = [
             } as TextBlock
         ]
 
-    } as Entrance,
+    } as AccordionElement,
     {
         title: "Навчання в докторантурі та ад'юнктурі",
         textBlocks: [
