@@ -1,0 +1,34 @@
+import React, {FC, useState} from 'react';
+import css from "./InfoAccordion.module.scss";
+import Collapse from "@kunukn/react-collapse";
+import TextBlocks from "shared/ui/TextBlocks/TextBlocks";
+import {Entrance} from "../../../../entities/entrance";
+
+interface InfoAccordion {
+    entrance: Entrance
+}
+
+const InfoAccordion: FC<InfoAccordion> = ({entrance}) => {
+    const [isOpen, setsOpen] = useState(false)
+
+    const toggle = () => {
+        setsOpen(!isOpen)
+    }
+    return (
+        <>
+            <div className={css.toggleContainer}>
+                <p className={css.toggleTitle}>{entrance.title}</p>
+                <button className={`${css.toggleBtn} ${isOpen && css.toggleBtn_active}`} onClick={toggle}>
+                    <i className="bi bi-caret-left"></i>
+                </button>
+            </div>
+            <Collapse transition="height 300ms cubic-bezier(.4, 0, .2, 1)" isOpen={isOpen}
+                      render={() => (
+                          <TextBlocks textBlocks={entrance.textBlocks}/>
+                      )}>
+            </Collapse>
+        </>
+    );
+};
+
+export default InfoAccordion;

@@ -1,0 +1,25 @@
+
+.toggleTitle {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.toggleContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+.toggleBtn {
+  transition-duration: 300ms;
+  border: none;
+  background: transparent;
+  font-size: 32px;
+}
+
+.toggleBtn_active {
+  transform: rotate(-90deg);
+}
+
