@@ -9,7 +9,6 @@ import FacultyPage from "./Faculty/FacultyPage";
 import DepartmentPage from "./Department/DepartmentPage";
 import UnitPage from "./Unit/UnitPage";
 import EntrancePage from "./Entrance/EntrancePage";
-import StudyPage from "./Study/StudyPage";
 import {NewsPage} from "./News/NewsPage";
 import SciencePage from "./Science/SciencePage";
 import {WhyPage} from "./Institute/Why/WhyPage";
@@ -35,7 +34,6 @@ export const Routing = () => {
             <Route path={RouterNames.CONTACTS} element={<ContactPage/>}/>
             <Route path={RouterNames.ENTRANTS} element={<EntrancePage/>}/>
             <Route path={RouterNames.STUDY} element={<EducationPage/>}/>
-            <Route path={RouterNames.STUDY} element={<StudyPage/>}/>
             <Route path={RouterNames.NEWS} element={<NewsPage/>}/>
             <Route path={RouterNames.SCIENCE} element={<SciencePage/>}/>
             <Route path={RouterNames.WHY_MITIT} element={<WhyPage/>}/>
