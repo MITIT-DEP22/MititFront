@@ -8,25 +8,28 @@ interface TablesProps {
 }
 
 const TablesContainer: FC<TablesProps> = ({tables}) => {
+
+
     return (
         <div className={css.tablesContainer}>{
             tables.map(table => (
                     <table className={css.table}>
                         <tr>
                             {table.headers.map(header => (
-                                <td className={css.tableElement}> {header}</td>
+                                <th colSpan={table.rows[0].elements.length}
+                                    className={css.tableElement}> {HTMLReactParser(header)}</th>
                             ))}
                         </tr>
                         {table.rows.map(row => (
-                            <tr>
+                            <tr className={css.row}>
                                 {row.elements.map(item => (
-                                    <td>
+                                    <td className={css.rowElement}>
                                         {
                                             item.value.map(r => (
-                                                <tr>
-                                                    <div
-                                                        className={`${css.tableElement} ${item.value.length > 1 && css.tableElementMany}`}> {HTMLReactParser(r)}</div>
-                                                </tr>
+                                                <div
+                                                    className={`${css.tableElement} ${item.value.length > 1 && css.tableElementMany}`}>
+                                                    {HTMLReactParser(r)}
+                                                </div>
                                             ))
                                         }
                                     </td>

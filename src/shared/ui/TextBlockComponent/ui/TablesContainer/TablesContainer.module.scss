@@ -7,26 +7,27 @@
   }
 }
 
+.row {
+  //border: 1px solid black;
+}
+
+.rowElement {
+  border: 1px solid black;
+  text-align: center;
+}
+
 .table {
   width: 100%;
   border-collapse: collapse;
   border: 1px solid black;
-
-  tr {
-
-    td {
-      text-align: center;
-      border: 1px solid black;
-    }
-  }
-
 }
 
-.tableElement{
-  padding: 15px;
+.tableElement {
+  padding: 20px;
+  text-align: center;
 }
 
-.tableElementMany{
+.tableElementMany {
   border-bottom: 1px solid black;
 }
 
