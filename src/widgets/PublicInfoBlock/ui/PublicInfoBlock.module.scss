@@ -1,0 +1,8 @@
+.container {
+  padding: 3vh 15vw 10vh 15vw;
+
+  @media screen and (width < 900px) {
+    padding: 10px 10px 40px 10px;
+    align-items: center;
+  }
+}
