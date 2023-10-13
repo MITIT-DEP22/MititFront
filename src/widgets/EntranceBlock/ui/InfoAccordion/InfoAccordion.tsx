@@ -15,7 +15,7 @@ const InfoAccordion: FC<InfoAccordion> = ({entrance}) => {
         setsOpen(!isOpen)
     }
     return (
-        <>
+        <div className={css.container}>
             <div className={css.toggleContainer}>
                 <p className={css.toggleTitle}>{entrance.title}</p>
                 <button className={`${css.toggleBtn} ${isOpen && css.toggleBtn_active}`} onClick={toggle}>
@@ -27,7 +27,7 @@ const InfoAccordion: FC<InfoAccordion> = ({entrance}) => {
                           <TextBlocks textBlocks={entrance.textBlocks}/>
                       )}>
             </Collapse>
-        </>
+        </div>
     );
 };
 
