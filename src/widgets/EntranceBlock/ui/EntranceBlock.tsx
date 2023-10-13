@@ -2,7 +2,7 @@ import React from 'react';
 import css from "./EntranceBlock.module.scss"
 import SectionTitle from "shared/ui/SectionTitle/SectionTitle";
 import {entrances} from "shared/enums/Data";
-import InfoAccordion from "./InfoAccordion/InfoAccordion";
+import InfoAccordion from "shared/ui/InfoAccordion/InfoAccordion";
 
 export const EntranceBlock = () => {
 

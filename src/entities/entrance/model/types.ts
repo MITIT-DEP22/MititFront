@@ -1,6 +1,6 @@
 import {TextBlock} from "../../text-block";
 
-export type Entrance = {
+export type AccordionElement = {
     title:string;
     textBlocks: TextBlock[]
 }

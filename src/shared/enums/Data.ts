@@ -6,7 +6,7 @@ import {Department} from "entities/department";
 import {Image, TextBlock, List} from "../../entities/text-block";
 import {Row, RowElement, Table} from "entities/text-block/model/types";
 import {Unit} from "entities/unit";
-import {Entrance} from "../../entities/entrance";
+import {AccordionElement} from "../../entities/entrance";
 
 export const instituteName = "ВІЙСЬКОВИЙ ІНСТИТУТ\nТЕЛЕКОМУНІКАЦІЙ ТА ІНФОРМАТИЗАЦІЇ\nІМЕНІ ГЕРОЇВ КРУТ"
 export const upperTitle = "АКТУАЛЬНО: Набір на курси лідерства"
@@ -1430,7 +1430,7 @@ export const units: Unit[] = [
     } as Unit,
 ]
 
-export const entrances: Entrance[] = [
+export const entrances: AccordionElement[] = [
     {
         title: "Денна форма навчання ВІТІ",
         textBlocks: [
@@ -1543,7 +1543,7 @@ export const entrances: Entrance[] = [
                 ]
             } as TextBlock,
         ]
-    } as Entrance,
+    } as AccordionElement,
     {
         title: "Денна форма навчання ВКСС ВІТІ",
         textBlocks: [
@@ -1606,7 +1606,7 @@ export const entrances: Entrance[] = [
                 ]
             } as TextBlock
         ]
-    } as Entrance,
+    } as AccordionElement,
     {
         title: "Навчання в докторантурі та ад'юнктурі",
         textBlocks: [
@@ -1714,7 +1714,7 @@ export const entrances: Entrance[] = [
             } as TextBlock
 
         ]
-    } as Entrance,
+    } as AccordionElement,
     {
         title: "Підготовка за програмою офіцерів запасу",
         textBlocks: [
@@ -1827,8 +1827,74 @@ export const entrances: Entrance[] = [
             } as TextBlock
         ]
 
-    } as Entrance,
+    } as AccordionElement,
 
+]
+
+export const educations: AccordionElement[] = [
+    {
+        title: "Організація освітньої діяльності",
+        textBlocks: [
+
+        ]
+
+    } as AccordionElement,
+    {
+        title: "Документи освітнього процесу",
+        textBlocks: [
+
+        ]
+
+    } as AccordionElement,
+    {
+        title: "Ліцензія, сертифікати, акредитація",
+        textBlocks: [
+
+        ]
+
+    } as AccordionElement,
+    {
+        title: "Освітні програми",
+        textBlocks: [
+
+        ]
+
+    } as AccordionElement,
+    {
+        title: "Силабуси",
+        textBlocks: [
+
+        ]
+
+    } as AccordionElement,
+    {
+        title: "Методична робота",
+        textBlocks: [
+
+        ]
+
+    } as AccordionElement,
+    {
+        title: "Матеріально-технічна база",
+        textBlocks: [
+
+        ]
+
+    } as AccordionElement,
+    {
+        title: "Дистанціне навчання ВІТІ",
+        textBlocks: [
+
+        ]
+
+    } as AccordionElement,
+    {
+        title: "Бібліотека ВІТІ",
+        textBlocks: [
+
+        ]
+
+    } as AccordionElement,
 ]
 
 
