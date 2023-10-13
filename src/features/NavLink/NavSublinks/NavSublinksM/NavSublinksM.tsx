@@ -3,11 +3,12 @@ import {NavLink} from "entities/link";
 import {Link} from "react-router-dom";
 import css from "./NavSublinksM.module.scss"
 import {model} from "../../../../widgets/Header/model/model";
+import Collapse from "@kunukn/react-collapse";
 
 interface NavSublinksMProps {
     link: NavLink;
     isActive: boolean;
-    goTo: (any:any) => any;
+    goTo: (any: any) => any;
 }
 
 const NavSublinksM: FC<NavSublinksMProps> = ({link, isActive, goTo}) => {
@@ -27,11 +28,16 @@ const NavSublinksM: FC<NavSublinksMProps> = ({link, isActive, goTo}) => {
                         <i style={{fontSize: 24}} className={`bi bi-caret-left`}></i>
                     </div>
                 </div>
-                <div className={`${css.container} ${isOpen && css.container_active}`}>
-                    {link.sublinks?.map(item => (
-                        <Link onClick={()=>goTo(link.to)} className={css.link} to={`${item.to}/${item.id}`}>{item.title}</Link>
-                    ))}
-                </div>
+                <Collapse isOpen={isOpen} transition="height 300ms cubic-bezier(.4, 0, .2, 1)" render={() => (
+                    <div className={css.container}>
+                        {link.sublinks?.map(item => (
+                            <Link onClick={() => goTo(link.to)} className={css.link}
+                                  to={`${item.to}/${item.id}`}>{item.title}</Link>
+                        ))}
+                    </div>
+                )}>
+
+                </Collapse>
             </div>
         );
     }

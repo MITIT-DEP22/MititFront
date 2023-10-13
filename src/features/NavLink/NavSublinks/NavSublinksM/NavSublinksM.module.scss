@@ -1,20 +1,11 @@
 .container {
-  transition-duration: 500ms;
-  height: auto;
-
-  * {
-    display: none;
-  }
-}
-
-.container_active {
-
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   padding-left: 10px;
 
-  * {
-    display: flex;
-  }
 }
+
 
 .title {
   display: flex;
@@ -40,7 +31,6 @@
   padding-bottom: 4px;
 }
 
-.link_active{
+.link_active {
   transition-duration: 500ms;
-  border-bottom: 2px black solid;
 }
