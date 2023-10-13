@@ -14,12 +14,14 @@ const TablesContainer: FC<TablesProps> = ({tables}) => {
         <div className={css.tablesContainer}>{
             tables.map(table => (
                     <table className={css.table}>
-                        <tr>
-                            {table.headers.map(header => (
-                                <th colSpan={table.headers.length !== table.rows[0].elements.length ? table.rows[0].elements.length : 1}
-                                    className={css.header}> {HTMLReactParser(header)}</th>
-                            ))}
-                        </tr>
+                        {table.headers &&
+                            <tr>
+                                {table.headers.map(header => (
+                                    <th colSpan={table.headers.length !== table.rows[0].elements.length ? table.rows[0].elements.length : 1}
+                                        className={css.header}> {HTMLReactParser(header)}</th>
+                                ))}
+                            </tr>
+                        }
                         {table.rows.map(row => (
                             <tr className={css.row}>
                                 {row.elements.map(item => (
