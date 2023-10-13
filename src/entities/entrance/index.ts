@@ -1,0 +1,1 @@
+export type {Entrance} from "./model/types"

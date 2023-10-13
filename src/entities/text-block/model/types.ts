@@ -2,7 +2,8 @@ export type TextBlock = {
     title?: string;
     textContent?: string[];
     images?: Image[];
-    lists?: List[];
+    uLists?: List[];
+    oLists?: List[];
     tables?: Table[];
 }
 

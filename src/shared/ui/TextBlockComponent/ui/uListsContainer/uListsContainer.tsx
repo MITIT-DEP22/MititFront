@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import css from "./ListsContainer.module.scss";
+import css from "./uListsContainer.module.scss";
 import {List} from "entities/text-block";
 import HTMLReactParser from "html-react-parser";
 
@@ -7,7 +7,7 @@ interface ListsProps {
     lists: List[]
 }
 
-const ListsContainer: FC<ListsProps> = ({lists}) => {
+const UListsContainer: FC<ListsProps> = ({lists}) => {
     return (
         <div className={css.listsContainer}>
             {lists?.map(list => (
@@ -24,4 +24,4 @@ const ListsContainer: FC<ListsProps> = ({lists}) => {
     );
 };
 
-export default ListsContainer;
+export default UListsContainer;

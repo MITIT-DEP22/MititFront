@@ -3,9 +3,10 @@ import {TextBlock} from "entities/text-block";
 import css from "./TextBlockComponent.module.scss"
 import Title from "./ui/Title/Title";
 import TextContentContainer from "./ui/TextContentContainer/TextContentContainer";
-import ListsContainer from "./ui/ListsContainer/ListsContainer";
+import UListsContainer from "./ui/uListsContainer/uListsContainer";
 import ImagesContainer from "./ui/ImagesContainer/ImagesContainer";
 import TablesContainer from "./ui/TablesContainer/TablesContainer";
+import OListsContainer from "./ui/oListsContainer/oListsContainer";
 
 interface TextBlockComponentProps {
     textBlock: TextBlock
@@ -22,8 +23,11 @@ const TextBlockComponent: FC<TextBlockComponentProps> = ({textBlock}) => {
                 <TextContentContainer textContent={textBlock.textContent}/>
             }
 
-            {textBlock.lists &&
-                <ListsContainer lists={textBlock.lists}/>
+            {textBlock.uLists &&
+                <UListsContainer lists={textBlock.uLists}/>
+            }
+            {textBlock.oLists &&
+                <OListsContainer lists={textBlock.oLists}/>
             }
 
             {textBlock.images &&
