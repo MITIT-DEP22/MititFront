@@ -16,8 +16,8 @@ const TablesContainer: FC<TablesProps> = ({tables}) => {
                     <table className={css.table}>
                         <tr>
                             {table.headers.map(header => (
-                                <th colSpan={table.rows[0].elements.length}
-                                    className={css.tableElement}> {HTMLReactParser(header)}</th>
+                                <th colSpan={table.headers.length !== table.rows[0].elements.length ? table.rows[0].elements.length : 1}
+                                    className={css.header}> {HTMLReactParser(header)}</th>
                             ))}
                         </tr>
                         {table.rows.map(row => (
