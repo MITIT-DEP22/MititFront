@@ -1,11 +1,11 @@
 import React, {FC, useState} from 'react';
 import css from "./InfoAccordion.module.scss";
 import Collapse from "@kunukn/react-collapse";
-import TextBlocks from "shared/ui/TextBlocks/TextBlocks";
-import {Entrance} from "../../../../entities/entrance";
+import TextBlocks from "../TextBlocks/TextBlocks";
+import {AccordionElement} from "../../../entities/entrance";
 
 interface InfoAccordion {
-    entrance: Entrance
+    entrance: AccordionElement
 }
 
 const InfoAccordion: FC<InfoAccordion> = ({entrance}) => {

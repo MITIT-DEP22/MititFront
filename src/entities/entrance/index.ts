@@ -1,1 +1,1 @@
-export type {Entrance} from "./model/types"
+export type {AccordionElement} from "./model/types";
