@@ -1,4 +1,4 @@
-import React, {lazy} from "react";
+import React, {lazy, useEffect} from "react";
 import {Route, Routes, Navigate} from "react-router-dom";
 import {RouterNames} from "shared/enums/RouterNames";
 import {InstitutePage} from "./Institute/InstitutePage";
@@ -18,7 +18,12 @@ import {HeroesPage} from "./Heroes/HeroesPage";
 
 const HomePage = lazy(() => import("./Home/HomePage"));
 
+
+
 export const Routing = () => {
+
+
+
     return (
         <Routes>
             <Route path={RouterNames.INSTITUTE} element={<InstitutePage/>}/>
