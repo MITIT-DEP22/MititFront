@@ -10,14 +10,14 @@ interface NewsProps {
 
 export const NewsCard: FC<NewsProps> = ({news}) => {
     return (
-        <div className={css.card}>
-            <div className={css.cardDate}>
-                {formatDate(news?.createdAt)}
+            <div className={css.card}>
+                <div className={css.cardDate}>
+                    {formatDate(news?.createdAt)}
+                </div>
+                <div className={css.cardTitle}>
+                    {news?.title}
+                </div>
+                <ImageComponent className={css.cardImg} imgId={news.titleImage?.id}/>
             </div>
-            <div className={css.cardTitle}>
-                {news?.title}
-            </div>
-            <ImageComponent className={css.cardImg} imgId={news.titleImage?.id}/>
-        </div>
     );
 };
