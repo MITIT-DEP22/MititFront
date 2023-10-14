@@ -8,7 +8,7 @@ import {observer} from "mobx-react";
 export const Specialities = observer(() => {
     const {specialities, isLoading} = specialityStore;
     if (isLoading) {
-        return <LoadingSpinner/>;
+        return <LoadingSpinner padding={"5vh 5vw"}/>;
     } else {
         return (
             <div className={css.container}>

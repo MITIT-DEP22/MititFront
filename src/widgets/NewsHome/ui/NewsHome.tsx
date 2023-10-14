@@ -9,7 +9,7 @@ import LoadingSpinner from "shared/ui/LoadingSpinner/LoadingSpinner";
 export const NewsHome = observer(() => {
     const {news, isLoading} = newsStore;
     if (isLoading) {
-        return <LoadingSpinner/>;
+        return <LoadingSpinner padding={"5vh 5vw"}/>;
     } else {
         return (
             <div className={css.container}>
