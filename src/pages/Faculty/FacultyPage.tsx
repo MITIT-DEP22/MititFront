@@ -16,7 +16,7 @@ const FacultyPage = () => {
 
     return (
         <>
-            <PageHead title={"Факультети"} img={faculty?.headerImg}/>
+            <PageHead title={"Факультети"} imgId={faculty?.headerImg?.id}/>
             <FacultyBlock faculty={faculty}/>
         </>
     );

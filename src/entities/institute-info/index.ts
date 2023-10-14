@@ -1,0 +1,1 @@
+export type {InstituteInfo} from "./model/types"

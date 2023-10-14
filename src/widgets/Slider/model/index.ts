@@ -1,24 +1,33 @@
-export interface IButtonDescription {
-    href: string,
-    text: string
-}
-export interface ISliderItem {
-    imageSrc: string,
-    mobileImageSrc?: string,
-    title?: string,
-    text?: string,
-    descriptionButton?: IButtonDescription
-}
+import {SliderItem} from "entities/slider-item";
+import {Image} from "entities/image";
 
-export const sliderItems: ISliderItem[] = [
+
+export const sliderItems: SliderItem[] = [
     {
-        imageSrc: require("../../../assets/slider/slider-image-1.png"),
-        mobileImageSrc: require("../../../assets/slider/slider-image-mobile-1.png"),
+        img: {
+            id: 1,
+            imageFilename: "",
+            contentType: ""
+        } as Image,
+        mobImg: {
+            id: 1,
+            imageFilename: "",
+            contentType: ""
+        } as Image,
         title: "Вступай до ВІТІ!",
         text: "Мрієш стати професіоналом військової справи?"
     },
     {
-        imageSrc: require("../../../assets/slider/slider-image-2.png"),
+        img: {
+            id: 1,
+            imageFilename: "",
+            contentType: ""
+        } as Image,
+        mobImg: {
+            id: 1,
+            imageFilename: "",
+            contentType: ""
+        } as Image,
         title: "Начальник інформаційно-телекомунікаційного вузла",
         text: "Військова професія",
         descriptionButton: {

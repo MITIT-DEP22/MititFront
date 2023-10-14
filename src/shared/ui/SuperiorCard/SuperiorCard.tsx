@@ -1,6 +1,7 @@
 import React, {FC} from 'react';
 import css from "./SuperiorCard.module.scss";
-import {Superior} from "../../../entities/superior";
+import {Superior} from "entities/superior";
+import {ImageComponent} from "features/ImageComponent";
 
 
 interface ChiefCardData {
@@ -13,7 +14,7 @@ const SuperiorCard: FC<ChiefCardData> = ({superior, positionRight}) => {
         <div className={css.chiefCard}>
             {positionRight ? (
                 <>
-                    <img src={superior.img?.href} alt=""/>
+                    <ImageComponent imgId={superior.img.id}/>
                     <div className={`${css.chiefCardText} ${css.leftAlign}`}>
                         <div className={`${positionRight ? css.borderLeft : css.borderRight}`}>
                             <h4 className={css.chiefCardPosition}>{superior.position}</h4>
@@ -37,7 +38,7 @@ const SuperiorCard: FC<ChiefCardData> = ({superior, positionRight}) => {
                         <span className={css.chiefCardDescription}>{superior.achievements}</span>
                         <span className={css.chiefCardPhone}>{superior.telephone}</span>
                     </div>
-                    <img src={superior.img?.href} alt=""/>
+                    <ImageComponent imgId={superior.img.id}/>
                 </>
             )}
         </div>

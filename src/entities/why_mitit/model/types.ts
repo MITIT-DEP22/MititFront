@@ -1,4 +1,4 @@
-import {Image} from "../../text-block";
+import {Image} from "../../image";
 
 export type WhyMITIT = {
     title?: string;

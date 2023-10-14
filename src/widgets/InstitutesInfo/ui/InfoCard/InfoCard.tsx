@@ -2,18 +2,18 @@ import React, {FC} from 'react';
 import TitleWithLine from "shared/ui/TitleWithLine/TitleWithLine";
 import {Link} from "react-router-dom";
 import css from "./InfoCard.module.scss"
+import {InstituteInfo} from "entities/institute-info";
+import {ImageComponent} from "features/ImageComponent";
 
 interface InfoCardProps {
-    link: string;
-    img: string;
-    title: string;
+    info: InstituteInfo
 }
 
-const InfoCard: FC<InfoCardProps> = ({link, img, title}) => {
+const InfoCard: FC<InfoCardProps> = ({info}) => {
     return (
-        <Link to={link} className={css.card}>
-            <img className={css.img} src={img} alt=""/>
-            <TitleWithLine title={title}/>
+        <Link to={info.link} className={css.card}>
+            <ImageComponent imgId={info.img.id}/>
+            <TitleWithLine title={info.title}/>
         </Link>
     );
 };

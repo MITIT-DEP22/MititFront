@@ -1,4 +1,4 @@
-import {RouterNames} from "../../../shared/enums/RouterNames";
+import {RouterNames} from "shared/enums/RouterNames";
 
 export type NavLink = {
     id: number;

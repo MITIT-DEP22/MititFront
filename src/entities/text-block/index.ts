@@ -1,1 +1,1 @@
-export type {TextBlock, Image, List} from "./model/types"
+export type {TextBlock, List} from "./model/types"

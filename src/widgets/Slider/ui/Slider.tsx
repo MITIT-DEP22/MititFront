@@ -3,6 +3,7 @@ import css from "./Slider.module.scss";
 import {sliderItems} from "../model";
 import {Link} from "react-router-dom";
 import Icon from "shared/ui/Icon/Icon";
+import {ftpPath} from "features/ImageComponent/model";
 
 interface SliderProps {
     scrollDown: () => void;
@@ -23,15 +24,15 @@ export const Slider: React.FC<SliderProps> = ({scrollDown}) => {
         <div className={css.slider}>
             {sliderItems.map((item, index) => (
                 <picture
-                    key={item.imageSrc + index}
+                    key={item.img.id + index}
                     className={`${css.sliderPicture} ${index === currentImageIndex ? css.active : ''}`}
                 >
 
-                    {item.mobileImageSrc && (
-                        <source media="(max-width: 420px)" srcSet={item.mobileImageSrc} />
+                    {item.mobImg && (
+                        <source media="(max-width: 420px)" srcSet={ftpPath + item.mobImg.id}/>
                     )}
 
-                    <img className={css.sliderImg} src={item.imageSrc} alt=""/>
+                    <img className={css.sliderImg} src={ftpPath + item.img.id} alt=""/>
 
                     <div className={css.sliderContent}>
                         {item.text && (
@@ -53,7 +54,8 @@ export const Slider: React.FC<SliderProps> = ({scrollDown}) => {
 
             <Icon height={36} iconBootstrap={"bi bi-caret-left"} width={36} className={`${css.prevButton} ${css.left}`}
                   onClick={prevImage}/>
-            <Icon height={36} iconBootstrap={"bi bi-caret-right"} width={36} className={`${css.nextButton} ${css.right}`}
+            <Icon height={36} iconBootstrap={"bi bi-caret-right"} width={36}
+                  className={`${css.nextButton} ${css.right}`}
                   onClick={nextImage}/>
 
             <Icon height={36} iconBootstrap={"bi bi-caret-down"} width={36} className={css.bottomButton}

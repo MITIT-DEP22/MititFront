@@ -1,28 +1,27 @@
-import React, {useEffect, useState} from 'react';
-import {News, NewsApi, NewsCard} from "entities/news";
+import React from 'react';
 import css from "./NewsHome.module.scss"
-import {NewsCardSpecial} from "entities/news/ui/NewsCardSpecial/NewsCardSpecial";
+import {NewsCardSpecial} from "features/NewsCardSpecial/NewsCardSpecial";
+import {observer} from "mobx-react";
+import newsStore from "entities/news/store/news-store";
+import {NewsCard} from "features/NewsCard/NewsCard";
 
-export const NewsHome = () => {
+export const NewsHome = observer(() => {
+    const {news, isLoading} = newsStore;
 
-    const [news, setNews] = useState<News[]>([])
-
-    useEffect(() => {
-        NewsApi.getNews().then((res: any) => {
-            setNews(res.data)
-        }).catch((e: any) => {
-            console.log(e)
-        })
-    }, [])
-
-    return (
-        <div className={css.container}>
-            <NewsCardSpecial news={news[0]}/>
-            <div className={css.subcontainer}>
-                {news.slice(0, 4).map(item => (
-                    <NewsCard news={item}/>
-                ))}
+    if (isLoading) {
+        return <p>Loading...</p>;
+    } else {
+        return (
+            <div className={css.container}>
+                <NewsCardSpecial news={news[0]}/>
+                <div className={css.subcontainer}>
+                    {news.slice(1, 5).map(item => (
+                        <NewsCard news={item}/>
+                    ))}
+                </div>
             </div>
-        </div>
-    );
-};
+        );
+    }
+
+})
+

@@ -1,7 +1,10 @@
+import {Image} from "../../image";
+
 export type News = {
     id: number;
     title: string;
-    img: string;
+    titleImage:Image;
+    img: Image[];
     content: string;
-    date: string;
+    createdAt: string;
 }

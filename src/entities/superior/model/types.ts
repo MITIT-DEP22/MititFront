@@ -1,4 +1,4 @@
-import {Image} from "../../text-block";
+import {Image} from "../../image";
 
 export type Superior ={
     position:string;
@@ -7,6 +7,5 @@ export type Superior ={
     img:Image;
     rang: string,
     telephone?: string,
-
 }
 

@@ -1,0 +1,1 @@
+export type {SliderItem} from "./model/types"

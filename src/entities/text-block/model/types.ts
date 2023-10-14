@@ -1,3 +1,5 @@
+import {Image} from "../../image";
+
 export type TextBlock = {
     title?: string;
     textContent?: string[];
@@ -22,8 +24,4 @@ export type Row = {
 
 export type RowElement = {
     value:  string[]
-}
-
-export type Image = {
-    href: string;
 }

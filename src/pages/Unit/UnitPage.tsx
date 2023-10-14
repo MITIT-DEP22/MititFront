@@ -16,10 +16,10 @@ const UnitPage = () => {
     }, [id]);
 
     return (
-        <div>
-            <PageHead title={"Підрозділи"} img={unit?.headerImg}/>
+        <>
+            <PageHead title={"Підрозділи"} imgId={unit?.headerImg?.id}/>
             <UnitBlock unit={unit}/>
-        </div>
+        </>
     );
 };
 

@@ -15,7 +15,7 @@ const DepartmentPage = () => {
     }, [id]);
     return (
         <>
-            <PageHead title={"Кафедри"} img={department?.headerImg}/>
+            <PageHead title={"Кафедри"} imgId={department?.headerImg?.id}/>
             <DepartmentBlock department={department}/>
         </>
     );
