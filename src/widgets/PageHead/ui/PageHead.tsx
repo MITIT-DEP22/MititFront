@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 import css from "./PageHead.module.scss"
-import {ftpPath} from "../../../features/ImageComponent/model";
+import {ftpPath} from "features/ImageComponent/model";
 
 interface PageHeadProps {
     title: string;

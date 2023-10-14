@@ -21,8 +21,6 @@ const HomePage = lazy(() => import("./Home/HomePage"));
 
 
 export const Routing = () => {
-
-
     return (
         <Routes>
             <Route path={RouterNames.CONTACTS} element={<ContactPage/>}/>

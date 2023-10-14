@@ -1,5 +1,5 @@
 import React from 'react';
-import SectionTitle from "../../../../shared/ui/SectionTitle/SectionTitle";
+import SectionTitle from "shared/ui/SectionTitle/SectionTitle";
 import css from "./Addresses.module.scss"
 import Title from "../Title/Title";
 import AddressDataLi from "./ui/AddressDataLi";
@@ -53,11 +53,8 @@ const Addresses = () => {
                     <div className={css.instruction}>
                         <span>&#9679;</span>{instructionForBecome}
                     </div>
-
                 </div>
-
             </div>
-
         </>
     );
 };

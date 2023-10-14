@@ -1,4 +1,4 @@
-import {action, flow, makeAutoObservable, observable} from 'mobx';
+import {action,  makeAutoObservable, observable} from 'mobx';
 import $api from "shared/api";
 import {News} from "../model/types";
 

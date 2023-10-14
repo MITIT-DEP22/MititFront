@@ -2,7 +2,7 @@ import React from 'react';
 import InfoCard from "./InfoCard/InfoCard";
 import css from "./InstituteInfo.module.scss"
 import {InstituteInfoCards} from "entities/institute-info/api/InstituteInfoApi";
-import SectionTitle from "../../../shared/ui/SectionTitle/SectionTitle";
+import SectionTitle from "shared/ui/SectionTitle/SectionTitle";
 
 
 export const InstituteInfo = () => {

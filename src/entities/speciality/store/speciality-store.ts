@@ -2,7 +2,6 @@ import {action, makeAutoObservable, observable} from "mobx";
 import {Speciality} from "../model/types";
 import $api from "shared/api";
 
-
 class SpecialityStore {
     @observable specialities: Speciality[] = [];
     @observable isLoading = true;

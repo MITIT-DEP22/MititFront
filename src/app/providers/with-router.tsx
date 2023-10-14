@@ -1,6 +1,6 @@
 import React, {Suspense, useEffect} from "react";
 import {BrowserRouter, useLocation} from "react-router-dom";
-import LoadingSpinner from "../../shared/ui/LoadingSpinner/LoadingSpinner";
+import LoadingSpinner from "shared/ui/LoadingSpinner/LoadingSpinner";
 
 function ScrollToTop() {
     const {pathname} = useLocation();

@@ -1,7 +1,7 @@
 import React, {FC, useState} from 'react';
 import {Link} from "react-router-dom";
 import css from "./NavSublinksD.module.scss";
-import {NavLink} from "../../../../entities/link";
+import {NavLink} from "entities/link";
 
 interface NavSublinksProps {
     isMobile?: boolean;

@@ -1,4 +1,4 @@
-import {Month} from "../../../shared/enums/Month";
+import {Month} from "shared/enums/Month";
 
 export function formatDate(date: string) {
     if (date) {

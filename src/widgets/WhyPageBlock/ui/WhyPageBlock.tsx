@@ -3,7 +3,7 @@ import SectionTitle from "shared/ui/SectionTitle/SectionTitle";
 import css from "./WhyPageBlock.module.scss"
 import {why_mitit} from "shared/enums/Data";
 import WhyMititCard from "./TextBlockSpecial/WhyMititCard";
-import {ImageComponent} from "../../../features/ImageComponent";
+import {ImageComponent} from "features/ImageComponent";
 
 export const WhyPageBlock = () => {
     return (

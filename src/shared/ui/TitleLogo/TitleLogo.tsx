@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 import css from "./TitleLogo.module.scss";
-import logo from "../../../assets/logo/logo.png"
+import logo from "assets/logo/logo.png"
 
 interface TitleNameProps extends React.HTMLProps<HTMLElement> {
     value: string;

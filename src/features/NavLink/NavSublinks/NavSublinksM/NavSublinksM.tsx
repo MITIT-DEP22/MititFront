@@ -1,8 +1,7 @@
-import React, {FC, useEffect, useState} from 'react';
+import React, {FC, useState} from 'react';
 import {NavLink} from "entities/link";
 import {Link} from "react-router-dom";
 import css from "./NavSublinksM.module.scss"
-import {model} from "../../../../widgets/Header/model/model";
 import Collapse from "@kunukn/react-collapse";
 
 interface NavSublinksMProps {
@@ -35,9 +34,7 @@ const NavSublinksM: FC<NavSublinksMProps> = ({link, isActive, goTo}) => {
                                   to={`${item.to}/${item.id}`}>{item.title}</Link>
                         ))}
                     </div>
-                )}>
-
-                </Collapse>
+                )}/>
             </div>
         );
     }

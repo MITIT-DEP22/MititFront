@@ -1,6 +1,6 @@
 import React, {FC, useState} from 'react';
 import {ftpPath} from "../model";
-import LoadingSpinner from "../../../shared/ui/LoadingSpinner/LoadingSpinner";
+import LoadingSpinner from "shared/ui/LoadingSpinner/LoadingSpinner";
 
 interface ImageProps extends React.HTMLProps<HTMLElement> {
     imgId: number;
