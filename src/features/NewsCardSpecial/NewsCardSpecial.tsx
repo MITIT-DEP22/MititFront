@@ -17,3 +17,9 @@ export const NewsCardSpecial: FC<NewsProps> = ({news}) => {
         </div>
     );
 };
+
+// <div  className={css.container}>
+//     <img className={css.img} src={news?.img} alt=""/>
+//     <div className={css.date}>{formatDate(news?.date)}</div>
+//     <div className={css.title}>{news?.title}</div>
+// </div>

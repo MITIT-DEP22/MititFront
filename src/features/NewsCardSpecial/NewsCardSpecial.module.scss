@@ -7,11 +7,7 @@
   margin: 0 auto;
   @media screen and (width > 768px){
     width:100%;
-    height: 100%;
-  }
-
-  @media screen and (width < 768px){
-    width: 100vw;
+    height: fit-content;
   }
 }
 
@@ -22,7 +18,7 @@
 
 .date {
   position: absolute;
-  bottom: 6%;
+  bottom: 10%;
   left: 2%;
   z-index: 10;
   color:  #F3F3F3;

@@ -8,8 +8,8 @@ import {Row, RowElement, Table} from "entities/text-block/model/types";
 import {Unit} from "entities/unit";
 import {AccordionElement} from "entities/entrance";
 import {WhyMITIT} from "entities/why_mitit";
-import {Image} from "../../entities/image";
-import {Speciality} from "../../entities/speciality";
+import {Image} from "entities/image";
+import {Speciality} from "entities/speciality";
 
 
 export const instituteName = "ВІЙСЬКОВИЙ ІНСТИТУТ\nТЕЛЕКОМУНІКАЦІЙ ТА ІНФОРМАТИЗАЦІЇ\nІМЕНІ ГЕРОЇВ КРУТ"
@@ -3472,73 +3472,73 @@ export const why_mitit: WhyMITIT[] = [
     } as WhyMITIT,
 
 ]
-
-export const specialities: Speciality[] = [
-    {
-        id: 1,
-        title: "Компʼютерні науки",
-        description: "Математичне, інформаційне і програмне забезпечення військових інформаційних систем",
-        img: {
-            id: 1,
-            contentType: "",
-            imageFilename: ""
-        } as Image,
-    },
-    {
-        id: 2,
-        title: "Кібербезпека",
-        description: "Захист інформації та кібернетична безпека в інформаційно-телекомунікаційних системах",
-        img: {
-            id: 1,
-            contentType: "",
-            imageFilename: ""
-        } as Image,
-    },
-    {
-        id: 3,
-        title: "Інформаційні системи та технології",
-        description: "Автоматизовані системи управління військами та озброєнням",
-        img: {
-            id: 1,
-            contentType: "",
-            imageFilename: ""
-        } as Image,
-    },
-    {
-        id: 4,
-        title: "Телекомунікації та радіотехніка",
-        description: "Системи військового зв’язку",
-        img:
-            {
-                id: 1,
-                contentType: "",
-                imageFilename: ""
-            } as Image,
-    },
-    {
-        id: 5,
-        title: "Військове управління (за видами збройних сил)",
-        description: "Управління діями підрозділів зв’язку",
-        img: {
-            id: 1,
-            contentType: "",
-            imageFilename: ""
-        } as Image,
-    },
-    {
-        id: 6,
-        title: "Озброєння та військова техніка",
-        description: "Радіоелектронні інформаційні системи, оперативна техніка та спецозброєння",
-        img: {
-            id: 1,
-            contentType: "",
-            imageFilename: ""
-        } as Image,
-    },
-]
-
-
-
-
-
-
+//
+// export const specialities: Speciality[] = [
+//     {
+//         id: 1,
+//         title: "Компʼютерні науки",
+//         description: "Математичне, інформаційне і програмне забезпечення військових інформаційних систем",
+//         images: {
+//             id: 1,
+//             contentType: "",
+//             imageFilename: ""
+//         } as Image,
+//     },
+//     {
+//         id: 2,
+//         title: "Кібербезпека",
+//         description: "Захист інформації та кібернетична безпека в інформаційно-телекомунікаційних системах",
+//         images: {
+//             id: 1,
+//             contentType: "",
+//             imageFilename: ""
+//         } as Image,
+//     },
+//     {
+//         id: 3,
+//         title: "Інформаційні системи та технології",
+//         description: "Автоматизовані системи управління військами та озброєнням",
+//         images: {
+//             id: 1,
+//             contentType: "",
+//             imageFilename: ""
+//         } as Image,
+//     },
+//     {
+//         id: 4,
+//         title: "Телекомунікації та радіотехніка",
+//         description: "Системи військового зв’язку",
+//         images:
+//             {
+//                 id: 1,
+//                 contentType: "",
+//                 imageFilename: ""
+//             } as Image,
+//     },
+//     {
+//         id: 5,
+//         title: "Військове управління (за видами збройних сил)",
+//         description: "Управління діями підрозділів зв’язку",
+//         images: {
+//             id: 1,
+//             contentType: "",
+//             imageFilename: ""
+//         } as Image,
+//     },
+//     {
+//         id: 6,
+//         title: "Озброєння та військова техніка",
+//         description: "Радіоелектронні інформаційні системи, оперативна техніка та спецозброєння",
+//         images: {
+//             id: 1,
+//             contentType: "",
+//             imageFilename: ""
+//         } as Image,
+//     },
+// ]
+//
+//
+//
+//
+//
+//

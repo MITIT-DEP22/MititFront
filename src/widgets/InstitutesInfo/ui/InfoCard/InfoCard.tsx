@@ -12,7 +12,7 @@ interface InfoCardProps {
 const InfoCard: FC<InfoCardProps> = ({info}) => {
     return (
         <Link to={info.link} className={css.card}>
-            <ImageComponent imgId={info.img.id}/>
+            <ImageComponent className={css.img} imgId={info.img.id}/>
             <TitleWithLine title={info.title}/>
         </Link>
     );

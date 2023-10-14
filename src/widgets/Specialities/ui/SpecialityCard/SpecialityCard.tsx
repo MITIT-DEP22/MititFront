@@ -3,8 +3,8 @@ import css from "./SpecialityCard.module.scss"
 import {Link} from "react-router-dom";
 import {RouterNames} from "shared/enums/RouterNames";
 import TitleWithLine from "shared/ui/TitleWithLine/TitleWithLine";
-import {Speciality} from "../../../../entities/speciality";
-import {ImageComponent} from "../../../../features/ImageComponent";
+import {Speciality} from "entities/speciality";
+import {ImageComponent} from "features/ImageComponent";
 
 
 interface SpecialityCardProps {
@@ -14,7 +14,7 @@ interface SpecialityCardProps {
 const SpecialityCard: FC<SpecialityCardProps> = ({speciality}) => {
     return (
         <div className={css.card}>
-            <ImageComponent imgId={speciality.img.id}/>
+            <ImageComponent className={css.cardImg} imgId={speciality.titleImage.id}/>
             <TitleWithLine title={speciality.title}/>
             <p className={css.cardDescription}>{speciality.description}</p>
             <div className={css.detailsContainer}>

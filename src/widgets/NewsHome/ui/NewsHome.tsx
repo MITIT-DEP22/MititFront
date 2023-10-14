@@ -4,17 +4,19 @@ import {NewsCardSpecial} from "features/NewsCardSpecial/NewsCardSpecial";
 import {observer} from "mobx-react";
 import newsStore from "entities/news/store/news-store";
 import {NewsCard} from "features/NewsCard/NewsCard";
+import LoadingSpinner from "shared/ui/LoadingSpinner/LoadingSpinner";
 
 export const NewsHome = observer(() => {
     const {news, isLoading} = newsStore;
-
     if (isLoading) {
-        return <p>Loading...</p>;
+        return <LoadingSpinner/>;
     } else {
         return (
             <div className={css.container}>
-                <NewsCardSpecial news={news[0]}/>
-                <div className={css.subcontainer}>
+                <div className={css.subcontainer1}>
+                    <NewsCardSpecial news={news[0]}/>
+                </div>
+                <div className={css.subcontainer2}>
                     {news.slice(1, 5).map(item => (
                         <NewsCard news={item}/>
                     ))}
@@ -22,6 +24,5 @@ export const NewsHome = observer(() => {
             </div>
         );
     }
-
 })
 

@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import css from "./NewsCard.module.scss"
-import {formatDate} from "../../entities/news/lib/formatDate";
-import {News} from "../../entities/news/model/types";
+import {formatDate} from "entities/news/lib/formatDate";
+import {News} from "entities/news/model/types";
 import {ImageComponent} from "../ImageComponent";
 
 interface NewsProps {
@@ -17,7 +17,7 @@ export const NewsCard: FC<NewsProps> = ({news}) => {
             <div className={css.cardTitle}>
                 {news?.title}
             </div>
-            <ImageComponent imgId={news.titleImage?.id}/>
+            <ImageComponent className={css.cardImg} imgId={news.titleImage?.id}/>
         </div>
     );
 };
