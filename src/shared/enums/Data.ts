@@ -10,8 +10,7 @@ import {AccordionElement} from "entities/entrance";
 import {WhyMITIT} from "entities/why_mitit";
 import {Image} from "entities/image";
 import {Speciality} from "entities/speciality";
-
-
+// some changes
 export const instituteName = "ВІЙСЬКОВИЙ ІНСТИТУТ\nТЕЛЕКОМУНІКАЦІЙ ТА ІНФОРМАТИЗАЦІЇ\nІМЕНІ ГЕРОЇВ КРУТ"
 export const upperTitle = "АКТУАЛЬНО: Набір на курси лідерства"
 
