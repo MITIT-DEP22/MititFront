@@ -2,7 +2,7 @@ import React from 'react';
 import {PageHead} from "widgets/PageHead";
 import {ScienceBlock} from "widgets/ScienceBlock";
 
-const SciencePage = () => {
+ const SciencePage = () => {
     return (
         <>
             <PageHead title={"наука"} imgId={1}/>
@@ -11,4 +11,4 @@ const SciencePage = () => {
     );
 };
 
-export default SciencePage;
+export default SciencePage

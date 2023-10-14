@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
-import {News} from "../../entities/news/model/types";
+import {News} from "entities/news/model/types";
 import css from "./NewsCardSpecial.module.scss"
-import {formatDate} from "../../entities/news/lib/formatDate";
+import {formatDate} from "entities/news/lib/formatDate";
 import {ImageComponent} from "../ImageComponent";
 
 interface NewsProps {
@@ -18,8 +18,3 @@ export const NewsCardSpecial: FC<NewsProps> = ({news}) => {
     );
 };
 
-// <div  className={css.container}>
-//     <img className={css.img} src={news?.img} alt=""/>
-//     <div className={css.date}>{formatDate(news?.date)}</div>
-//     <div className={css.title}>{news?.title}</div>
-// </div>

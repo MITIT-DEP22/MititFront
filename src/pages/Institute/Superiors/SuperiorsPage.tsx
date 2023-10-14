@@ -3,7 +3,7 @@ import {PageHead} from "widgets/PageHead";
 import {SuperiorsBlock} from "widgets/SuperiorsBlock";
 
 
-export const SuperiorsPage = () => {
+ const SuperiorsPage = () => {
     return (
         <>
             <PageHead title={"Керівний склад"} imgId={1}/>
@@ -11,3 +11,5 @@ export const SuperiorsPage = () => {
         </>
     );
 };
+
+export default SuperiorsPage

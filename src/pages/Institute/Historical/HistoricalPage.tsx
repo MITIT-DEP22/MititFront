@@ -4,7 +4,7 @@ import {HistoricalReference} from "../../../widgets/HistoricalReference"
 import SectionTitle from "../../../shared/ui/SectionTitle/SectionTitle";
 
 
-export const HistoricalPage = () => {
+ const HistoricalPage = () => {
     return (
         <>
             <PageHead title={"Історична довідка"} imgId={1}/>
@@ -12,3 +12,4 @@ export const HistoricalPage = () => {
         </>
     );
 };
+export default HistoricalPage

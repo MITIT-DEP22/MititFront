@@ -2,7 +2,7 @@ import React from 'react';
 import {PageHead} from "../../widgets/PageHead";
 import {EntranceBlock} from "../../widgets/EntranceBlock";
 
-const EntrancePage = () => {
+ const EntrancePage = () => {
     return (
         <>
             <PageHead title={"Вступникам"} imgId={1}/>
@@ -11,4 +11,4 @@ const EntrancePage = () => {
     );
 };
 
-export default EntrancePage;
+export default EntrancePage

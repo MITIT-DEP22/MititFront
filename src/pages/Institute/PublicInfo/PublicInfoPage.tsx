@@ -2,7 +2,7 @@ import React from 'react';
 import {PageHead} from "widgets/PageHead";
 import {PublicInfoBlock} from "widgets/PublicInfoBlock";
 
-const PublicInfoPage = () => {
+ const PublicInfoPage = () => {
     return (
         <>
             <PageHead title={"Публічна інформація"}  imgId={1}/>
@@ -11,4 +11,4 @@ const PublicInfoPage = () => {
     );
 };
 
-export default PublicInfoPage;
+export default PublicInfoPage

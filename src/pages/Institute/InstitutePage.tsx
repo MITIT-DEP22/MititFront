@@ -4,7 +4,7 @@ import {InstituteInfo} from "widgets/InstitutesInfo";
 import SectionTitle from "shared/ui/SectionTitle/SectionTitle";
 
 
-export const InstitutePage = () => {
+ const InstitutePage = () => {
     return (
         <>
             <PageHead title={"Інститут"} imgId={1}/>
@@ -12,3 +12,4 @@ export const InstitutePage = () => {
         </>
     );
 };
+export default InstitutePage

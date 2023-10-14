@@ -5,7 +5,7 @@ import {FacultyBlock} from "widgets/FacultyBlock";
 import {Faculty} from "entities/faculty";
 import {faculties} from "shared/enums/Data"
 
-const FacultyPage = () => {
+ const FacultyPage = () => {
 
     const {id} = useParams()
     const [faculty, setFaculty] = useState<Faculty>({} as Faculty)
@@ -22,4 +22,4 @@ const FacultyPage = () => {
     );
 };
 
-export default FacultyPage;
+export default FacultyPage

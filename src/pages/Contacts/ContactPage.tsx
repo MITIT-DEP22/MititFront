@@ -2,7 +2,7 @@ import React from 'react';
 import {PageHead} from "widgets/PageHead";
 import {Contacts} from "widgets/Contacts";
 
-const ContactPage = () => {
+ const ContactPage = () => {
     return (
         <>
             <PageHead title={"Контакти"} imgId={1}/>
@@ -11,4 +11,4 @@ const ContactPage = () => {
     );
 };
 
-export default ContactPage;
+export default ContactPage

@@ -5,7 +5,7 @@ import {units} from "shared/enums/Data";
 import {Unit} from "entities/unit";
 import {UnitBlock} from "widgets/UnitBlock";
 
-const UnitPage = () => {
+ const UnitPage = () => {
 
     const {id} = useParams()
     const [unit, setUnit] = useState<Unit>({} as Unit)
@@ -22,5 +22,4 @@ const UnitPage = () => {
         </>
     );
 };
-
-export default UnitPage;
+ export default UnitPage

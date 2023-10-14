@@ -5,7 +5,7 @@ import {NewsHome} from "widgets/NewsHome";
 import {Specialities} from "widgets/Specialities";
 import SectionTitle from "shared/ui/SectionTitle/SectionTitle";
 
-const HomePage = () => {
+ const HomePage = () => {
     const scroll = () => {
         window.scrollTo({
             top: window.innerHeight,
@@ -25,4 +25,4 @@ const HomePage = () => {
     );
 };
 
-export default HomePage;
+ export default  HomePage
