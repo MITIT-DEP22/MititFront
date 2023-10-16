@@ -4,18 +4,16 @@ import LoadingSpinner from "shared/ui/LoadingSpinner/LoadingSpinner";
 
 interface ImageProps extends React.HTMLProps<HTMLElement> {
     imgId: number;
-    updateParentState?: () => void;
+    onLoaded?: () => void;
 }
 
-export const ImageComponent: FC<ImageProps> = ({imgId, className, updateParentState}) => {
+export const ImageComponent: FC<ImageProps> = ({imgId, className, onLoaded}) => {
 
     const [isLoading, setIsLoading] = useState(true);
 
     const handleImageLoad = () => {
-        if(updateParentState){
-            updateParentState();
-        }
         setIsLoading(false);
+        onLoaded && onLoaded()
     };
 
     const handleImageError = () => {

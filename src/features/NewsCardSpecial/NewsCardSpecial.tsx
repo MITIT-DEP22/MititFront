@@ -11,21 +11,20 @@ interface NewsProps {
 
 export const NewsCardSpecial: FC<NewsProps> = ({news}) => {
 
-    const [isLoading, setIsLoading] = useState(true);
-    const updateIsLoading = () => {
-        setIsLoading(false);
-    };
-    useEffect(() => {
-        console.log(news.titleImage.id)
-    }, []);
+    const [isLoading, setIsLoading] = useState<boolean>(true);
+
+    const onLoad = () => {
+        setIsLoading(false)
+    }
 
     return (
-        <div className={css.container}>
-            <ImageComponent updateParentState={updateIsLoading} className={css.img}
-                            imgId={news?.titleImage?.id}/>
-            <div className={css.date}>{formatDate(news?.createdAt)}</div>
-            <div className={css.title}>{news?.title}</div>
-        </div>
+        isLoading ? <LoadingSpinner/> :
+            <div className={css.container}>
+                <ImageComponent onLoaded={onLoad} className={css.img}
+                                imgId={news?.titleImage?.id}/>
+                <div className={css.date}>{formatDate(news?.createdAt)}</div>
+                <div className={css.title}>{news?.title}</div>
+            </div>
     )
 
 };
