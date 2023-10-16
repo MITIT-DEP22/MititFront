@@ -1,9 +1,10 @@
 import React from 'react';
+import BlockContainer from "shared/ui/BlockContainer/BlockContainer";
 
 export const HeroesBlock = () => {
     return (
-        <div>
+        <BlockContainer>
             HeroesBlock
-        </div>
+        </BlockContainer>
     );
 };

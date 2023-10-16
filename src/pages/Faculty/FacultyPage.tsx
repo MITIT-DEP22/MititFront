@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {useParams} from "react-router";
-import {PageHead} from "../../widgets/PageHead";
+import {PageHead} from "../../shared/ui/PageHead";
 import {FacultyBlock} from "widgets/FacultyBlock";
 import {Faculty} from "entities/faculty";
 import {faculties} from "shared/enums/Data"

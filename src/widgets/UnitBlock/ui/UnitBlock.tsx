@@ -5,6 +5,7 @@ import SuperiorCard from "shared/ui/SuperiorCard/SuperiorCard";
 import TextBlockComponent from "shared/ui/TextBlockComponent/TextBlockComponent";
 import TextBlocks from "shared/ui/TextBlocks/TextBlocks";
 import css from "./UnitBlock.module.scss"
+import BlockContainer from "../../../shared/ui/BlockContainer/BlockContainer";
 
 interface UnitProps {
     unit: Unit;
@@ -12,7 +13,7 @@ interface UnitProps {
 
 export const UnitBlock: FC<UnitProps> = ({unit}) => {
     return (
-        <div className={css.container}>
+        <BlockContainer>
             <SectionTitle title={unit.title}/>
             {unit.titleTextBlock &&
                 <TextBlockComponent textBlock={unit.titleTextBlock}/>
@@ -21,6 +22,6 @@ export const UnitBlock: FC<UnitProps> = ({unit}) => {
                 <SuperiorCard positionRight={true} superior={unit?.superior}/>
             }
             <TextBlocks textBlocks={unit.textBlocks}/>
-        </div>
+        </BlockContainer>
     );
 };

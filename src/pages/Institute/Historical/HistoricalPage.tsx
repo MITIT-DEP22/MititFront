@@ -1,7 +1,6 @@
 import React from 'react';
-import {PageHead} from "../../../widgets/PageHead";
-import {HistoricalReference} from "../../../widgets/HistoricalReference"
-import SectionTitle from "../../../shared/ui/SectionTitle/SectionTitle";
+import {PageHead} from "shared/ui/PageHead";
+import {HistoricalReference} from "widgets/HistoricalReference"
 
 
  const HistoricalPage = () => {

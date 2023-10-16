@@ -4,15 +4,14 @@ import SectionTitle from "shared/ui/SectionTitle/SectionTitle";
 import TextBlocks from "shared/ui/TextBlocks/TextBlocks";
 import TextBlockComponent from "shared/ui/TextBlockComponent/TextBlockComponent";
 import SuperiorCard from "shared/ui/SuperiorCard/SuperiorCard";
-import css from "./DepartmentBlock.module.scss"
-
+import BlockContainer from "shared/ui/BlockContainer/BlockContainer";
 interface DepartmentProps {
     department: Department;
 }
 
 const DepartmentBlock: FC<DepartmentProps> = ({department}) => {
     return (
-        <div className={css.container}>
+        <BlockContainer>
             <SectionTitle title={department?.title}/>
             {department?.titleTextBlock &&
                 <TextBlockComponent textBlock={department?.titleTextBlock}/>
@@ -21,7 +20,7 @@ const DepartmentBlock: FC<DepartmentProps> = ({department}) => {
                 <SuperiorCard positionRight={true} superior={department?.superior}/>
             }
             <TextBlocks textBlocks={department?.textBlocks}/>
-        </div>
+        </BlockContainer>
     );
 };
 

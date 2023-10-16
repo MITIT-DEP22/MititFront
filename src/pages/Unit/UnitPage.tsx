@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {useParams} from "react-router";
-import {PageHead} from "widgets/PageHead";
+import {PageHead} from "shared/ui/PageHead";
 import {units} from "shared/enums/Data";
 import {Unit} from "entities/unit";
 import {UnitBlock} from "widgets/UnitBlock";

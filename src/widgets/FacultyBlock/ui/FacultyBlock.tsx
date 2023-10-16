@@ -8,6 +8,7 @@ import Specialities from "./Specialities/Specialities";
 import Departments from "./Departments/Departments";
 import {CompositionOfSuperiors} from "../../CompositionOfSuperiors";
 import TextBlocks from "shared/ui/TextBlocks/TextBlocks";
+import BlockContainer from "shared/ui/BlockContainer/BlockContainer";
 
 
 interface FacultyProps {
@@ -16,7 +17,7 @@ interface FacultyProps {
 
 export const FacultyBlock: FC<FacultyProps> = ({faculty}) => {
     return (
-        <div className={css.container}>
+        <BlockContainer>
             <SectionTitle title={faculty.title}/>
             <Description value={faculty.description}/>
 
@@ -30,6 +31,6 @@ export const FacultyBlock: FC<FacultyProps> = ({faculty}) => {
             {faculty.textBlocks &&
                 <TextBlocks textBlocks={faculty.textBlocks}/>
             }
-        </div>
+        </BlockContainer>
     );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import {PageHead} from "../../widgets/PageHead";
+import {PageHead} from "../../shared/ui/PageHead";
 import {NewsBlock} from "../../widgets/NewsBlock";
 
  const NewsPage = () => {

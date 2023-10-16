@@ -1,6 +1,6 @@
 import React from 'react';
-import {PageHead} from "widgets/PageHead";
-import {InstituteInfo} from "widgets/InstitutesInfo";
+import {PageHead} from "shared/ui/PageHead";
+import {InstituteBlock} from "widgets/InstituteBlock";
 import SectionTitle from "shared/ui/SectionTitle/SectionTitle";
 
 
@@ -8,7 +8,7 @@ import SectionTitle from "shared/ui/SectionTitle/SectionTitle";
     return (
         <>
             <PageHead title={"Інститут"} imgId={1}/>
-            <InstituteInfo/>
+            <InstituteBlock/>
         </>
     );
 };

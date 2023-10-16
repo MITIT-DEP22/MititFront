@@ -1,9 +1,10 @@
 import React from 'react';
+import BlockContainer from "shared/ui/BlockContainer/BlockContainer";
 
 export const NewsBlock = () => {
     return (
-        <div>
+        <BlockContainer>
             NewsBlock
-        </div>
+        </BlockContainer>
     );
 };

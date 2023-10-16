@@ -1,9 +1,6 @@
 import React from 'react';
-import {Slider} from "widgets/Slider";
-import {AdditionalLinks} from "widgets/AdditionalLinks";
-import {NewsHome} from "widgets/NewsHome";
-import {Specialities} from "widgets/Specialities";
-import SectionTitle from "shared/ui/SectionTitle/SectionTitle";
+import {Slider} from "widgets/HomeBlock/ui/Slider";
+import {HomeBlock} from "../../widgets/HomeBlock";
 
  const HomePage = () => {
     const scroll = () => {
@@ -16,11 +13,7 @@ import SectionTitle from "shared/ui/SectionTitle/SectionTitle";
     return (
         <>
             <Slider scrollDown={scroll}/>
-            <SectionTitle margin={"25px 0 0 0"} title={"Хроніка"}/>
-            <NewsHome/>
-            <SectionTitle title={"Спеціальності підготовки"}/>
-            <Specialities/>
-            <AdditionalLinks/>
+            <HomeBlock/>
         </>
     );
 };

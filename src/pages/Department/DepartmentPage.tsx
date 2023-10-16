@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {PageHead} from "../../widgets/PageHead";
+import {PageHead} from "../../shared/ui/PageHead";
 import {useParams} from "react-router";
 import {Department} from "../../entities/department";
 import {departments} from "../../shared/enums/Data";
