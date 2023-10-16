@@ -14,7 +14,7 @@ import {
 import MiddleHistoryBlock from "./MiddleHistoryBlock/MiddleHistoryBlock";
 import DecreeBlock from "./DecreeBlock/DecreeBlock";
 import AdditionForHistory from "./AdditionForHistory/AdditionForHistory";
-import SectionTitle from "../../../shared/ui/SectionTitle/SectionTitle";
+import SectionTitle from "shared/ui/SectionTitle/SectionTitle";
 import React from "react";
 
 

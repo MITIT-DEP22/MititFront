@@ -16,9 +16,9 @@ const InfoAccordion: FC<InfoAccordion> = ({entrance}) => {
     }
     return (
         <div className={css.container}>
-            <div className={css.toggleContainer}>
+            <div onClick={toggle} className={css.toggleContainer}>
                 <p className={css.toggleTitle}>{entrance.title}</p>
-                <button className={`${css.toggleBtn} ${isOpen && css.toggleBtn_active}`} onClick={toggle}>
+                <button className={`${css.toggleBtn} ${isOpen && css.toggleBtn_active}`}>
                     <i className="bi bi-caret-left"></i>
                 </button>
             </div>

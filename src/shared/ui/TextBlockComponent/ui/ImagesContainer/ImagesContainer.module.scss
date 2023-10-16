@@ -1,10 +1,10 @@
 
 .imagesContainer {
-  padding: 0 5%;
   width: 100%;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
+
   @media screen and (width < 900px) {
     display: flex;
     flex-wrap: wrap;
@@ -13,7 +13,10 @@
 
 }
 
-
+.element {
+  display: flex;
+  justify-content: center;
+}
 
 .img {
   margin-top: 20px;
