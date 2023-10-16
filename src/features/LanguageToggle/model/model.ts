@@ -1,7 +1,7 @@
 import {makeAutoObservable, observable} from 'mobx';
 
 class LanguageToggle {
-    activeLanguage: string = "ua";
+    activeLanguage = localStorage.getItem("lang")? localStorage.getItem("lang") : "ua";
 
     constructor() {
         makeAutoObservable(this, {
