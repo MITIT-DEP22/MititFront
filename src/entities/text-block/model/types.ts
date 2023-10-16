@@ -7,6 +7,13 @@ export type TextBlock = {
     uLists?: List[];
     oLists?: List[];
     tables?: Table[];
+    imageTextRows?: ImageTextRow[];
+}
+
+export type ImageTextRow = {
+    image: Image;
+    text: string;
+    imgLeft:boolean;
 }
 
 export type List = {
@@ -23,5 +30,5 @@ export type Row = {
 }
 
 export type RowElement = {
-    value:  string[]
+    value: string[]
 }

@@ -7,6 +7,7 @@ import UListsContainer from "./ui/uListsContainer/uListsContainer";
 import ImagesContainer from "./ui/ImagesContainer/ImagesContainer";
 import TablesContainer from "./ui/TablesContainer/TablesContainer";
 import OListsContainer from "./ui/oListsContainer/oListsContainer";
+import ImageTextRowsContainer from "./ui/ImageTextRow/ImageTextRowsContainer";
 
 interface TextBlockComponentProps {
     textBlock: TextBlock
@@ -36,6 +37,10 @@ const TextBlockComponent: FC<TextBlockComponentProps> = ({textBlock}) => {
 
             {textBlock.tables &&
                 <TablesContainer tables={textBlock.tables}/>
+            }
+
+            {textBlock.imageTextRows &&
+                <ImageTextRowsContainer imageTextRows={textBlock.imageTextRows}/>
             }
         </div>
     )
