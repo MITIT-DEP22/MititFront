@@ -1,6 +1,5 @@
 $primary: #355C40;
 $secondary: #0E3719;
-$white: #fff;
 $green: #0E3719;
 .inputContainer {
   position: relative;
@@ -16,7 +15,7 @@ $green: #0E3719;
   border-bottom: 2px solid $green;
   outline: 0;
   font-size: 1.3rem;
-  color: $white;
+  color: black;
   padding: 7px 0;
   background: transparent;
   transition: border-color 0.2s;
@@ -56,6 +55,17 @@ $green: #0E3719;
   border-width: 3px;
   border-image: linear-gradient(to right, $primary,$secondary);
   border-image-slice: 1;
+}
+
+.inputMain:focus + .inputLabel,
+.inputMain:valid + .inputLabel {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: $primary;
+  font-weight: 700;
 }
 
 .form__field{

@@ -33,6 +33,11 @@
   background: linear-gradient(112deg, #355C40 7.61%, #0E3719 92.39%);
   color: white;
   cursor: pointer;
+  border: none;
+}
+
+.footerButton:hover {
+  border: 1px black groove;
 }
 
 .footerGreenContainer {
