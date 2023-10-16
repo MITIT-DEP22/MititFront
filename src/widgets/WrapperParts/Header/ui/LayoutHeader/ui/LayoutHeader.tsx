@@ -5,11 +5,12 @@ import {LanguageToggle} from "features/LanguageToggle";
 import TitleLogo from "shared/ui/TitleLogo/TitleLogo"
 import {observer} from "mobx-react";
 import {model} from "../../../model/model"
-import {useLocation} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import {headerData, instituteName} from "shared/enums/Data";
 import Search from "../../Search/Search";
 import NavSublinksD from "features/NavLink/NavSublinks/NavSublinksD/NavSublinksD";
 import SocialLinkIcon from "../../SocialLink/SocialLinkIcon";
+import {RouterNames} from "../../../../../../shared/enums/RouterNames";
 
 
 export const LayoutHeader = observer(() => {
@@ -51,7 +52,9 @@ export const LayoutHeader = observer(() => {
             </div>
 
             <div className={css.headerBottomContainer}>
-                <TitleLogo value={instituteName}/>
+                <Link className={css.logoLink} to={RouterNames.HOME} onClick={() => model.changeLink(RouterNames.HOME)}>
+                    <TitleLogo  value={instituteName}/>
+                </Link>
                 <div className={css.linksContainer}>
                     {headerData.linksB.map(item => (
                         item.sublinks ?

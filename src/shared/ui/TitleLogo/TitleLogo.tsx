@@ -15,7 +15,7 @@ const TitleLogo: FC<TitleNameProps> = ({value, logoSize, withTitle}) => {
         withTitle = true;
     }
     return (
-        <Link className={css.titleName} to={RouterNames.HOME}>
+
             <div className={css.containerTitleLogo}>
                 <img style={{width: logoSize, height: "100%"}} className={css.logo} src={logo} alt=""/>
                 {
@@ -25,7 +25,6 @@ const TitleLogo: FC<TitleNameProps> = ({value, logoSize, withTitle}) => {
                  </pre>
                 }
             </div>
-        </Link>
     );
 };
 

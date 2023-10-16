@@ -9,6 +9,8 @@ import {LanguageToggle} from "features/LanguageToggle";
 import Search from "../../../Search/Search";
 import NavSublinksM from "features/NavLink/NavSublinks/NavSublinksM/NavSublinksM";
 import SocialLinkIcon from "../../../SocialLink/SocialLinkIcon";
+import {RouterNames} from "shared/enums/RouterNames";
+import {Link} from "react-router-dom";
 
 interface SidebarProps {
     isOpen: boolean;
@@ -24,10 +26,10 @@ const Sidebar: FC<SidebarProps> = observer(({isOpen, close}) => {
     return (
         <div className={`${css.container} ${isOpen && css.active}`}>
             <div className={`${css.menu} ${isOpen && css.menuActive}`}>
-                <div className={css.logoContainer}>
+                <Link to={RouterNames.HOME} onClick={() => goTo(RouterNames.HOME)} className={css.logoContainer}>
                     <TitleLogo logoSize={"25vw"} withTitle={false} value={instituteName}/>
                     <span>{instituteName}</span>
-                </div>
+                </Link>
 
                 {headerData.linksT.map((item) => (
                     <NavLinkT isMobile={true} link={item}
