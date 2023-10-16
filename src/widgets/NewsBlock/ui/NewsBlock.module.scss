@@ -1,0 +1,14 @@
+.container {
+  margin-top: 5vh;
+  display: flex;
+  gap: 5%;
+  flex-wrap: wrap;
+}
+
+.container > *{
+  margin-top: 5vh;
+}
+
+.blockContainer {
+  padding: 5vh;
+}

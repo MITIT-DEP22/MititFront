@@ -1,4 +1,4 @@
-import {action,  makeAutoObservable, observable} from 'mobx';
+import {action, makeAutoObservable, observable} from 'mobx';
 import $api from "shared/api";
 import {News} from "../model/types";
 import {logRoles} from "@testing-library/react";
@@ -6,6 +6,8 @@ import {logRoles} from "@testing-library/react";
 class NewsStore {
     @observable news: News[] = [];
     @observable isLoading = true;
+    @observable page: number = 0;
+    @observable countPages: number = 0;
 
     constructor() {
         makeAutoObservable(this);
@@ -13,10 +15,23 @@ class NewsStore {
     }
 
     @action
+    changePage(page: number) {
+        this.page = page
+        this.isLoading = true
+        this.loadNews()
+    }
+
+    @action
     async loadNews() {
         try {
-            $api.get<News[]>('/news').then(res => {
-                this.news = res.data
+            $api.get('/news', {
+                params: {
+                    size: 1,
+                    page: this.page
+                }
+            }).then(res => {
+                this.news = res.data.content
+                this.countPages = res.data.totalPages
             }).finally(() => {
                 this.isLoading = false;
             });

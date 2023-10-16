@@ -1,0 +1,35 @@
+.container {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.paginationBtn{
+  color:black;
+  height: 35px;
+  width: 30px;
+  border-radius: 5px;
+  border:none
+
+}
+
+.paginationBtn_active{
+  background: linear-gradient(#335a3e, #174022);
+  border: none;
+
+  color: white;
+
+
+  &:hover {
+    scale: 1.1;
+    transition-duration: 200ms;
+    cursor: pointer;
+  }
+}
+
+.separator {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
