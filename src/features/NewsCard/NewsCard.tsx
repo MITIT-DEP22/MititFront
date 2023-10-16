@@ -6,11 +6,12 @@ import {ImageComponent} from "../ImageComponent";
 
 interface NewsProps {
     news: News;
+    width?:string;
 }
 
-export const NewsCard: FC<NewsProps> = ({news}) => {
+export const NewsCard: FC<NewsProps> = ({news, width}) => {
     return (
-            <div className={css.card}>
+            <div style={{width:width}} className={css.card}>
                 <div className={css.cardDate}>
                     {formatDate(news?.createdAt)}
                 </div>
