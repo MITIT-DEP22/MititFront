@@ -1,6 +1,7 @@
 import {action,  makeAutoObservable, observable} from 'mobx';
 import $api from "shared/api";
 import {News} from "../model/types";
+import {logRoles} from "@testing-library/react";
 
 class NewsStore {
     @observable news: News[] = [];
