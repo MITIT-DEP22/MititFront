@@ -57,6 +57,8 @@ export const Routing = () => {
             <Route path={RouterNames.DEPARTMENT + "/:id"} element={<DepartmentPage/>}/>
             <Route path={RouterNames.UNIT + "/:id"} element={<UnitPage/>}/>
 
+
+            <Route path={RouterNames.NOT_FOUND} element={<div>404</div>}/>
             <Route path="*" element={<Navigate to="/"/>}/>
         </Routes>
     );

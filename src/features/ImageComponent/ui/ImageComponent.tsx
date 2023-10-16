@@ -1,5 +1,6 @@
-import React, {FC, useEffect, useState} from 'react';
+import React, {FC, useState} from 'react';
 import {ftpPath} from "../model";
+import css from "./ImageComponent.module.scss"
 import LoadingSpinner from "shared/ui/LoadingSpinner/LoadingSpinner";
 
 interface ImageProps extends React.HTMLProps<HTMLElement> {
@@ -27,7 +28,7 @@ export const ImageComponent: FC<ImageProps> = ({imgId, className, onLoaded}) => 
                 style={{display: isLoading ? 'none' : 'block'}}
                 onLoad={handleImageLoad}
                 onError={handleImageError}
-                className={className}
+                className={`${className} ${css.img}`}
                 src={ftpPath + imgId}
                 alt=""/>
         </>

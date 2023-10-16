@@ -16,5 +16,6 @@ export enum RouterNames {
     WHY_MITIT = "/institute/why",
     HISTORY = "/institute/history",
     PUBLIC_INFO = "/institute/public",
-    HEROES = "/institute/heroes"
+    HEROES = "/institute/heroes",
+    NOT_FOUND = "/404"
 }

@@ -1,16 +1,17 @@
 import React, {FC} from 'react';
 import css from "./Sidebar.module.scss"
-import {headerData, instituteName} from "shared/enums/Data";
-import {NavLinkB, NavLinkT} from "features/NavLink";
+import {instituteName, links} from "shared/enums/Data";
 import {observer} from "mobx-react";
 import {model} from "../../../../model/model";
 import TitleLogo from "shared/ui/TitleLogo/TitleLogo";
 import {LanguageToggle} from "features/LanguageToggle";
 import Search from "../../../Search/Search";
-import NavSublinksM from "features/NavLink/NavSublinks/NavSublinksM/NavSublinksM";
 import SocialLinkIcon from "../../../SocialLink/SocialLinkIcon";
 import {RouterNames} from "shared/enums/RouterNames";
 import {Link} from "react-router-dom";
+import {headerData} from "../../../../model";
+import {NavLinkB, NavLinkT} from "features/NavLink";
+import NavSubLinksM from "features/NavLink/NavSublinks/NavSublinksM/NavSubLinksM";
 
 interface SidebarProps {
     isOpen: boolean;
@@ -31,7 +32,7 @@ const Sidebar: FC<SidebarProps> = observer(({isOpen, close}) => {
                     <span>{instituteName}</span>
                 </Link>
 
-                {headerData.linksT.map((item) => (
+                {links.linksT.map((item) => (
                     <NavLinkT isMobile={true} link={item}
                               click={() => {
                                   goTo(item.to)
@@ -39,9 +40,9 @@ const Sidebar: FC<SidebarProps> = observer(({isOpen, close}) => {
                               isActive={model.pathname.includes(item.to)}/>
                 ))}
 
-                {headerData.linksB.map((item) => (
-                    item.sublinks ?
-                        <NavSublinksM goTo={goTo} isActive={model.pathname.includes(item.to)} link={item}/>
+                {links.linksB.map((item) => (
+                    item.subLinks ?
+                        <NavSubLinksM goTo={goTo} isActive={model.pathname.includes(item.to)} link={item}/>
                         :
                         <NavLinkB isMobile={true} link={item}
                                   click={() => {

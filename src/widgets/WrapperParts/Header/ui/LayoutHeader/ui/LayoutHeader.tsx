@@ -1,21 +1,20 @@
 import React, {useEffect, useState} from 'react';
 import css from "./LayoutHeader.module.scss"
-import {NavLinkB, NavLinkT} from "features/NavLink";
 import {LanguageToggle} from "features/LanguageToggle";
 import TitleLogo from "shared/ui/TitleLogo/TitleLogo"
 import {observer} from "mobx-react";
 import {model} from "../../../model/model"
 import {Link, useLocation} from "react-router-dom";
-import {headerData, instituteName} from "shared/enums/Data";
+import {instituteName, links} from "shared/enums/Data";
 import Search from "../../Search/Search";
-import NavSublinksD from "features/NavLink/NavSublinks/NavSublinksD/NavSublinksD";
 import SocialLinkIcon from "../../SocialLink/SocialLinkIcon";
-import {RouterNames} from "../../../../../../shared/enums/RouterNames";
-
+import {RouterNames} from "shared/enums/RouterNames";
+import {headerData} from "../../../model";
+import {NavLinkB, NavLinkT} from "../../../../../../features/NavLink";
+import NavSubLinksD from "features/NavLink/NavSublinks/NavSublinksD/NavSubLinksD"
 
 export const LayoutHeader = observer(() => {
     const {pathname} = useLocation()
-
     const [topPosition, setTopPosition] = useState(30)
 
 
@@ -43,7 +42,7 @@ export const LayoutHeader = observer(() => {
                     <LanguageToggle/>
                 </div>
                 <div className={css.linksContainer}>
-                    {headerData.linksT.map(item => (
+                    {links.linksT.map(item => (
                         <NavLinkT isActive={model.pathname.includes(item.to)}
                                   click={() => model.changeLink(item.to)}
                                   link={item}/>
@@ -53,12 +52,12 @@ export const LayoutHeader = observer(() => {
 
             <div className={css.headerBottomContainer}>
                 <Link className={css.logoLink} to={RouterNames.HOME} onClick={() => model.changeLink(RouterNames.HOME)}>
-                    <TitleLogo  value={instituteName}/>
+                    <TitleLogo value={instituteName}/>
                 </Link>
                 <div className={css.linksContainer}>
-                    {headerData.linksB.map(item => (
-                        item.sublinks ?
-                            <NavSublinksD link={item} isActive={model.pathname.includes(item.to)}
+                    {links.linksB.map(item => (
+                        item.subLinks ?
+                            <NavSubLinksD link={item} isActive={model.pathname.includes(item.to)}
                                           click={() => model.changeLink(item.to)}/>
                             :
                             <NavLinkB click={() => model.changeLink(item.to)}

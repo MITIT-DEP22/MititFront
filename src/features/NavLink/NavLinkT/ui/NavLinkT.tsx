@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import {Link} from "react-router-dom";
 import css from "./NavLinkT.module.scss"
-import {NavLink} from "entities/link";
+import {NavLink} from "../../../../widgets/WrapperParts/Header/model/types";
 
 interface NavLinkProps extends React.HTMLProps<HTMLElement> {
     isMobile?: boolean;

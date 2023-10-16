@@ -1,5 +1,4 @@
 import {RouterNames} from "./RouterNames";
-import {NavLink} from "entities/link";
 import {Faculty} from "entities/faculty";
 import {Superior} from "entities/superior";
 import {Department} from "entities/department";
@@ -11,32 +10,33 @@ import {WhyMITIT} from "entities/why_mitit";
 import {Image} from "entities/image";
 import {Speciality} from "entities/speciality";
 import {SocialLink} from "../../entities/social-link";
+import {NavLink} from "../../widgets/WrapperParts/Header/model/types";
+
 export const instituteName = "ВІЙСЬКОВИЙ ІНСТИТУТ\nТЕЛЕКОМУНІКАЦІЙ ТА ІНФОРМАТИЗАЦІЇ\nІМЕНІ ГЕРОЇВ КРУТ"
 export const upperTitle = "АКТУАЛЬНО: Набір на курси лідерства"
 
-export const headerData = {
+export const links = {
     linksT: [
-        {id: 0, title: "Інститут", to: RouterNames.INSTITUTE},
-        {id: 1, title: "Вступникам", to: RouterNames.ENTRANTS},
-        {id: 2, title: "Навчання", to: RouterNames.STUDY},
-        {id: 3, title: "Контакти", to: RouterNames.CONTACTS},
+        {title: "Інститут", to: RouterNames.INSTITUTE},
+        {title: "Вступникам", to: RouterNames.ENTRANTS},
+        {title: "Навчання", to: RouterNames.STUDY},
+        {title: "Контакти", to: RouterNames.CONTACTS},
     ] as NavLink[],
 
     linksB: [
-        {id: 4, title: "Новини", to: RouterNames.NEWS},
-        {id: 5, title: "Наука", to: RouterNames.SCIENCE},
+        {title: "Новини", to: RouterNames.NEWS},
+        {title: "Наука", to: RouterNames.SCIENCE},
         {
-            id: 6,
             title: "Факультети", to: RouterNames.FACULTY,
-            sublinks: [
-                {id: 7, title: "Факультет телекомунікаційних систем", to: RouterNames.FACULTY},
+            subLinks: [
+                {id: 1, title: "Факультет телекомунікаційних систем", to: RouterNames.FACULTY},
                 {id: 8, title: "Факультет інформаційних технологій", to: RouterNames.FACULTY},
                 {id: 9, title: "Факультет бойового застосування систем управління та звʼязку", to: RouterNames.FACULTY},
             ]
         },
         {
             title: "Кафедри", to: RouterNames.DEPARTMENT,
-            sublinks: [
+            subLinks: [
                 {id: 10, title: "Кафедра загально-військових дисциплін", to: RouterNames.DEPARTMENT},
                 {id: 11, title: "Кафедра іноземних мов", to: RouterNames.DEPARTMENT},
                 {
@@ -52,7 +52,7 @@ export const headerData = {
         {
             id: 16,
             title: "Підрозіли", to: RouterNames.UNIT,
-            sublinks: [
+            subLinks: [
                 {
                     id: 17, title: "Науковий центр зв’язку та інформатизації", to: RouterNames.UNIT
                 },
@@ -64,16 +64,16 @@ export const headerData = {
                 },
             ]
         },
-        {id: 20, title: "Співробітництво", to: RouterNames.COOPERATION},
-        {id: 21, title: "Наші перемоги", to: RouterNames.OUR_WINS}
+        {title: "Співробітництво", to: RouterNames.COOPERATION},
+        {title: "Наші перемоги", to: RouterNames.OUR_WINS}
     ] as NavLink[],
 
     icons: [
-        {iconBootstrap: "bi bi-instagram", height: 25, width: 25, to:"https://www.instagram.com/viti_krut/"},
-        {iconBootstrap: "bi bi-telegram", height: 25, width: 25,to:"https://t.me/+8801LI0j47FmNTFi"},
-        {iconBootstrap: "bi bi-facebook", height: 25, width: 25,to:"https://www.facebook.com/viti.edu.ua/"},
-        {iconBootstrap: "bi bi-youtube", height: 25, width: 25,to:"https://www.youtube.com/@user-yq1xr5sl6v"},
-        {iconBootstrap: "bi bi-tiktok", height: 25, width: 25,to:"https://www.tiktok.com/@viti_krut?_t=8ZUHTA4Hyis"}
+        {iconBootstrap: "bi bi-instagram", height: 25, width: 25, to: "https://www.instagram.com/viti_krut/"},
+        {iconBootstrap: "bi bi-telegram", height: 25, width: 25, to: "https://t.me/+8801LI0j47FmNTFi"},
+        {iconBootstrap: "bi bi-facebook", height: 25, width: 25, to: "https://www.facebook.com/viti.edu.ua/"},
+        {iconBootstrap: "bi bi-youtube", height: 25, width: 25, to: "https://www.youtube.com/@user-yq1xr5sl6v"},
+        {iconBootstrap: "bi bi-tiktok", height: 25, width: 25, to: "https://www.tiktok.com/@viti_krut?_t=8ZUHTA4Hyis"}
     ] as SocialLink[]
 }
 
@@ -3737,9 +3737,7 @@ export const sciences: AccordionElement[] = [
     {
         title: "Ад'юнктура і докторантура",
         textBlocks: [
-            {
-
-            } as TextBlock
+            {} as TextBlock
         ]
 
     } as AccordionElement,
@@ -3917,18 +3915,14 @@ export const sciences: AccordionElement[] = [
     {
         title: "Збірники наукових праць",
         textBlocks: [
-            {
-
-            } as TextBlock
+            {} as TextBlock
         ]
 
     } as AccordionElement,
     {
         title: "Наукова робота здобувачів вищої освіти",
         textBlocks: [
-            {
-
-            } as TextBlock
+            {} as TextBlock
         ]
 
     } as AccordionElement,
@@ -3987,7 +3981,7 @@ export const sciences: AccordionElement[] = [
                 imageTextRows: [
                     {
                         image: {
-                            id:1
+                            id: 1
                         },
                         text: "<strong>НАТО TIDE Hackathon 2020: курсанти ВІТІ посіли друге місце на міжнародних" +
                             " змаганнях із програмування</strong>",
@@ -4001,9 +3995,7 @@ export const sciences: AccordionElement[] = [
     {
         title: "Наукометричні міжнародні бази даних",
         textBlocks: [
-            {
-
-            } as TextBlock
+            {} as TextBlock
         ]
 
     } as AccordionElement

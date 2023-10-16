@@ -1,23 +1,22 @@
 import React, {FC, useState} from 'react';
-import {NavLink} from "entities/link";
-import {Link} from "react-router-dom";
-import css from "./NavSublinksM.module.scss"
+import css from "./NavSubLinksM.module.scss"
 import Collapse from "@kunukn/react-collapse";
+import {NavLink, SubLink} from "../../../../widgets/WrapperParts/Header/model/types";
+import {Link} from "react-router-dom";
 
-interface NavSublinksMProps {
-    link: NavLink;
+interface NavSubLinksMProps {
     isActive: boolean;
+    link:NavLink;
     goTo: (any: any) => any;
 }
 
-const NavSublinksM: FC<NavSublinksMProps> = ({link, isActive, goTo}) => {
+const NavSubLinksM: FC<NavSubLinksMProps> = ({isActive, goTo, link}) => {
 
         const [isOpen, setIsOpen] = useState(false)
 
         const openLinks = () => {
             setIsOpen(!isOpen)
         }
-
 
         return (
             <div onClick={openLinks}>
@@ -29,7 +28,7 @@ const NavSublinksM: FC<NavSublinksMProps> = ({link, isActive, goTo}) => {
                 </div>
                 <Collapse isOpen={isOpen} transition="height 300ms cubic-bezier(.4, 0, .2, 1)" render={() => (
                     <div className={css.container}>
-                        {link.sublinks?.map(item => (
+                        {link.subLinks?.map(item => (
                             <Link onClick={() => goTo(link.to)} className={css.link}
                                   to={`${item.to}/${item.id}`}>{item.title}</Link>
                         ))}
@@ -40,4 +39,4 @@ const NavSublinksM: FC<NavSublinksMProps> = ({link, isActive, goTo}) => {
     }
 ;
 
-export default NavSublinksM;
+export default NavSubLinksM;

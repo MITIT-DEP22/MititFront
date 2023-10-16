@@ -32,7 +32,6 @@ class NewsStore {
             }).then(res => {
                 this.news = res.data.content
                 this.countPages = res.data.totalPages
-                console.log(res)
             }).finally(() => {
                 this.isLoading = false;
             });
