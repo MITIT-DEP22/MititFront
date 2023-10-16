@@ -1,8 +1,10 @@
-.container {
-  width: 100%;
+.cardContainer{
+  margin-top: 25px;
   display: flex;
-  justify-content: space-around;
-  padding: 0 5%;
-  gap: 3%;
   flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.container{
+  padding: 5vh;
 }

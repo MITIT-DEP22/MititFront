@@ -13,9 +13,9 @@ const OListsContainer: FC<ListsProps> = ({lists}) => {
             {lists?.map(list => (
                 <div>
                     <p className={css.listTitle}>{list.title && HTMLReactParser(list?.title)}</p>
-                    <ol  type={"a"} className={css.list}>
+                    <ol  type={"1"} className={css.list}>
                         {list.items.map((i,index) => (
-                            <li className={css.listItem}>{index+1}.  {HTMLReactParser(i)}</li>
+                            <li className={css.listItem}>{HTMLReactParser(i)}</li>
                         ))}
                     </ol>
                 </div>

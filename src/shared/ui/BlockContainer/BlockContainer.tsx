@@ -1,12 +1,12 @@
 import React, {FC} from 'react';
 import css from "./BlockContainer.module.scss"
-interface BlockContainerProps{
+interface BlockContainerProps extends React.HTMLProps<HTMLElement> {
     children:React.ReactNode;
 }
 
-const BlockContainer:FC<BlockContainerProps> = ({children}) => {
+const BlockContainer:FC<BlockContainerProps> = ({children, className}) => {
     return (
-        <div className={css.container}>
+        <div className={`${className ? className : css.container}`}>
             {children}
         </div>
     );

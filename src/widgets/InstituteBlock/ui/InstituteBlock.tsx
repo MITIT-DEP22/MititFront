@@ -8,9 +8,9 @@ import BlockContainer from "shared/ui/BlockContainer/BlockContainer";
 
 export const InstituteBlock = () => {
     return (
-        <BlockContainer>
+        <BlockContainer className={css.container}>
             <SectionTitle  title={"Інститут"}/>
-            <div className={css.container}>
+            <div className={css.cardContainer}>
                 {InstituteInfoCards.map(item => (
                     <InfoCard info={item}/>
                 ))}
