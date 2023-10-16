@@ -1,3 +1,34 @@
 .container{
+  width: 100%;
 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.subContainer {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  p {
+    width: 45%;
+  }
+
+  img {
+    width: 45%;
+  }
+
+  @media screen and (width < 900px) {
+    flex-direction: column;
+    img {
+      order: 2;
+      width: 300px;
+    }
+    p {
+      width: 80%;
+    }
+  }
 }

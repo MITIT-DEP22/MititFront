@@ -14,12 +14,12 @@ const ImageTextRowsContainer: FC<ImageTextRowProps> = ({imageTextRows}) => {
             {imageTextRows.map(item => (
                 item.imgLeft
                     ?
-                    <div className={css.subcontainer}>
+                    <div className={css.subContainer}>
                         <ImageComponent imgId={item.image.id}/>
                         <p>{HTMLReactParser(item.text)}</p>
                     </div>
                     :
-                    <div className={css.subcontainer}>
+                    <div className={css.subContainer}>
                         <p>{HTMLReactParser(item.text)}</p>
                         <ImageComponent imgId={item.image.id}/>
                     </div>
