@@ -10,6 +10,7 @@ import {AccordionElement} from "entities/entrance";
 import {WhyMITIT} from "entities/why_mitit";
 import {Image} from "entities/image";
 import {Speciality} from "entities/speciality";
+import {SocialLink} from "../../entities/social-link";
 export const instituteName = "ВІЙСЬКОВИЙ ІНСТИТУТ\nТЕЛЕКОМУНІКАЦІЙ ТА ІНФОРМАТИЗАЦІЇ\nІМЕНІ ГЕРОЇВ КРУТ"
 export const upperTitle = "АКТУАЛЬНО: Набір на курси лідерства"
 
@@ -73,7 +74,7 @@ export const headerData = {
         {iconBootstrap: "bi bi-facebook", height: 25, width: 25,to:"https://www.facebook.com/viti.edu.ua/"},
         {iconBootstrap: "bi bi-youtube", height: 25, width: 25,to:"https://www.youtube.com/@user-yq1xr5sl6v"},
         {iconBootstrap: "bi bi-tiktok", height: 25, width: 25,to:"https://www.tiktok.com/@viti_krut?_t=8ZUHTA4Hyis"}
-    ]
+    ] as SocialLink[]
 }
 
 export const faculties: Faculty[] = [

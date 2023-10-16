@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import css from "./LayoutHeader.module.scss"
 import {NavLinkB, NavLinkT} from "features/NavLink";
-import Icon from "shared/ui/Icon/Icon";
 import {LanguageToggle} from "features/LanguageToggle";
 import TitleLogo from "shared/ui/TitleLogo/TitleLogo"
 import {observer} from "mobx-react";
@@ -10,6 +9,7 @@ import {useLocation} from "react-router-dom";
 import {headerData, instituteName} from "shared/enums/Data";
 import Search from "../../Search/Search";
 import NavSublinksD from "features/NavLink/NavSublinks/NavSublinksD/NavSublinksD";
+import SocialLinkIcon from "../../SocialLink/SocialLinkIcon";
 
 
 export const LayoutHeader = observer(() => {
@@ -37,9 +37,7 @@ export const LayoutHeader = observer(() => {
             <div style={{top: `${topPosition}px`}} className={css.headerTopContainer}>
                 <div className={css.iconsContainer}>
                     {headerData.icons.map(item => (
-                        <a className={css.socLink} href={item.to}>
-                            <Icon height={item.height} width={item.width} iconBootstrap={item.iconBootstrap}/>
-                        </a>
+                        <SocialLinkIcon link={item}/>
                     ))}
                     <LanguageToggle/>
                 </div>

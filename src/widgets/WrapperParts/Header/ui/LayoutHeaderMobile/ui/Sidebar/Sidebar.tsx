@@ -1,14 +1,14 @@
 import React, {FC} from 'react';
 import css from "./Sidebar.module.scss"
-import {headerData, instituteName} from "../../../../../../../shared/enums/Data";
-import {NavLinkB, NavLinkT} from "../../../../../../../features/NavLink";
+import {headerData, instituteName} from "shared/enums/Data";
+import {NavLinkB, NavLinkT} from "features/NavLink";
 import {observer} from "mobx-react";
 import {model} from "../../../../model/model";
 import TitleLogo from "shared/ui/TitleLogo/TitleLogo";
-import Icon from "../../../../../../../shared/ui/Icon/Icon";
-import {LanguageToggle} from "../../../../../../../features/LanguageToggle";
+import {LanguageToggle} from "features/LanguageToggle";
 import Search from "../../../Search/Search";
-import NavSublinksM from "../../../../../../../features/NavLink/NavSublinks/NavSublinksM/NavSublinksM";
+import NavSublinksM from "features/NavLink/NavSublinks/NavSublinksM/NavSublinksM";
+import SocialLinkIcon from "../../../SocialLink/SocialLinkIcon";
 
 interface SidebarProps {
     isOpen: boolean;
@@ -38,7 +38,7 @@ const Sidebar: FC<SidebarProps> = observer(({isOpen, close}) => {
 
                 {headerData.linksB.map((item) => (
                     item.sublinks ?
-                        <NavSublinksM goTo={goTo}  isActive={model.pathname.includes(item.to)} link={item}/>
+                        <NavSublinksM goTo={goTo} isActive={model.pathname.includes(item.to)} link={item}/>
                         :
                         <NavLinkB isMobile={true} link={item}
                                   click={() => {
@@ -49,7 +49,7 @@ const Sidebar: FC<SidebarProps> = observer(({isOpen, close}) => {
 
                 <div className={css.iconsContainer}>
                     {headerData.icons.map(item => (
-                        <Icon height={item.height} width={item.width} iconBootstrap={item.iconBootstrap}/>
+                        <SocialLinkIcon link={item}/>
                     ))}
                 </div>
 
