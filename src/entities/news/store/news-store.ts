@@ -26,12 +26,13 @@ class NewsStore {
         try {
             $api.get('/news', {
                 params: {
-                    size: 1,
+                    size: 9,
                     page: this.page
                 }
             }).then(res => {
                 this.news = res.data.content
                 this.countPages = res.data.totalPages
+                console.log(res)
             }).finally(() => {
                 this.isLoading = false;
             });

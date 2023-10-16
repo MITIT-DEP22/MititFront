@@ -1,8 +1,8 @@
 .container {
   margin-top: 5vh;
   display: flex;
-  gap: 5%;
   flex-wrap: wrap;
+  gap: 5%;
 }
 
 .container > *{
@@ -11,4 +11,8 @@
 
 .blockContainer {
   padding: 5vh;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
