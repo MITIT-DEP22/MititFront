@@ -1,14 +1,23 @@
 import React from 'react';
 import SectionTitle from "shared/ui/SectionTitle/SectionTitle";
 import {CompositionOfSuperiors} from "../../CompositionOfSuperiors";
-import {superiors} from "shared/enums/Data";
 import BlockContainer from "shared/ui/BlockContainer/BlockContainer";
+import superiorStore from "entities/superior/store/superior-store";
+import LoadingSpinner from "shared/ui/LoadingSpinner/LoadingSpinner";
+import {observer} from "mobx-react";
 
-export const SuperiorsBlock = () => {
+export const SuperiorsBlock = observer(() => {
+    const {superiors, isLoading} = superiorStore
+
     return (
         <BlockContainer>
-            <SectionTitle title={"Керівний склад"}/>
-            <CompositionOfSuperiors superiors={superiors}/>
+            {isLoading ? <LoadingSpinner/>
+                :
+                <>
+                    <SectionTitle title={"Керівний склад"}/>
+                    <CompositionOfSuperiors superiors={superiors}/>
+                </>
+            }
         </BlockContainer>
     );
-};
+});
