@@ -26,6 +26,7 @@ const Sidebar: FC<SidebarProps> = observer(({isOpen, close}) => {
             <div className={`${css.menu} ${isOpen && css.menuActive}`}>
                 <div className={css.logoContainer}>
                     <TitleLogo logoSize={"25vw"} withTitle={false} value={instituteName}/>
+                    <span>{instituteName}</span>
                 </div>
 
                 {headerData.linksT.map((item) => (
@@ -49,7 +50,7 @@ const Sidebar: FC<SidebarProps> = observer(({isOpen, close}) => {
 
                 <div className={css.iconsContainer}>
                     {headerData.icons.map(item => (
-                        <SocialLinkIcon link={item}/>
+                        <SocialLinkIcon color={"black"} link={item}/>
                     ))}
                 </div>
 
