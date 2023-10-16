@@ -14,16 +14,20 @@ const SuperiorCard: FC<ChiefCardData> = ({superior, positionRight}) => {
         <div className={css.chiefCard}>
             {positionRight ? (
                 <>
-                    <ImageComponent imgId={superior.img.id}/>
+                    <ImageComponent imgId={superior?.image?.id}/>
                     <div className={`${css.chiefCardText} ${css.leftAlign}`}>
                         <div className={`${positionRight ? css.borderLeft : css.borderRight}`}>
                             <h4 className={css.chiefCardPosition}>{superior.position}</h4>
                         </div>
                         <h6 className={css.chiefCardRangAndName}>
-                            {superior.rang} {superior.name}
+                            {superior.militaryRank} {superior.fullName}
                         </h6>
-                        <span className={css.chiefCardDescription}>{superior.achievements}</span>
-                        <span className={css.chiefCardPhone}>{superior.telephone}</span>
+                        {superior.achievements?.map(item => (
+                            <span>{item}</span>
+                        ))
+                        }
+                        <span className={css.chiefCardDescription}></span>
+                        <span className={css.chiefCardPhone}>{superior.phoneNumber}</span>
                     </div>
                 </>
             ) : (
@@ -33,12 +37,12 @@ const SuperiorCard: FC<ChiefCardData> = ({superior, positionRight}) => {
                             <h4 className={css.chiefCardPosition}>{superior.position}</h4>
                         </div>
                         <h6 className={css.chiefCardRangAndName}>
-                            {superior.rang} {superior.name}
+                            {superior.militaryRank} {superior.fullName}
                         </h6>
                         <span className={css.chiefCardDescription}>{superior.achievements}</span>
-                        <span className={css.chiefCardPhone}>{superior.telephone}</span>
+                        <span className={css.chiefCardPhone}>{superior.phoneNumber}</span>
                     </div>
-                    <ImageComponent imgId={superior.img.id}/>
+                    <ImageComponent imgId={superior.image.id}/>
                 </>
             )}
         </div>

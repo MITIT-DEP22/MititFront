@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import {PageHead} from "../../shared/ui/PageHead";
+import {PageHead} from "shared/ui/PageHead";
 import {useParams} from "react-router";
-import {Department} from "../../entities/department";
-import {departments} from "../../shared/enums/Data";
-import DepartmentBlock from "../../widgets/DepartmentBlock/DepartmentBlock";
+import {Department} from "entities/department";
+import {departments} from "shared/enums/Data";
+import DepartmentBlock from "widgets/DepartmentBlock/DepartmentBlock";
 
  const DepartmentPage = () => {
 
