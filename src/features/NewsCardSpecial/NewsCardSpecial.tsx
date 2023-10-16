@@ -13,18 +13,20 @@ export const NewsCardSpecial: FC<NewsProps> = ({news}) => {
 
     const [isLoading, setIsLoading] = useState<boolean>(true);
 
-    const onLoad = () => {
+    const onLoadImage = () => {
         setIsLoading(false)
     }
 
     return (
-        isLoading ? <LoadingSpinner/> :
-            <div className={css.container}>
-                <ImageComponent onLoaded={onLoad} className={css.img}
+        <>
+            {isLoading && <LoadingSpinner/>}
+            <div style={isLoading ? {display:'none'} : {display:"block"}} className={css.container} >
+                <ImageComponent onLoaded={onLoadImage} className={css.img}
                                 imgId={news?.titleImage?.id}/>
                 <div className={css.date}>{formatDate(news?.createdAt)}</div>
                 <div className={css.title}>{news?.title}</div>
             </div>
+        </>
     )
 
 };
