@@ -26,7 +26,7 @@ export const FacultyBlock: FC<FacultyProps> = ({faculty}) => {
             </div>
 
             <Branches branches={faculty.branches}/>
-            <Specialities specialities={faculty.specialities}/>
+            <Specialities specialities={faculty.specialties}/>
             <Departments departments={faculty.departments}/>
             {faculty.textBlocks &&
                 <TextBlocks textBlocks={faculty.textBlocks}/>

@@ -19,7 +19,7 @@ const FacultyPage = observer(() => {
             <LoadingSpinner/> : (
                 faculty ?
                     <>
-                        <PageHead title={"Факультети"} imgId={faculty?.headerImg?.id}/>
+                        <PageHead title={"Факультети"} imgId={faculty?.headerImage?.id}/>
                         <FacultyBlock faculty={faculty}/>
                     </>
                     : <Navigate to={RouterNames.NOT_FOUND}/>)

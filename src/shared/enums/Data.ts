@@ -81,7 +81,7 @@ export const faculties: Faculty[] = [
     {
         id: 7,
         title: "Факультет телекомунікаційних систем",
-        headerImg: {
+        headerImage: {
             id: 1,
             contentType: "",
             imageFilename: ""
@@ -132,7 +132,7 @@ export const faculties: Faculty[] = [
         branches: [
             "Електроніка та телекомунікації"
         ],
-        specialities: [
+        specialties: [
             {
                 title: "Телекомунікації та радіотехніка",
             } as Speciality
@@ -401,7 +401,7 @@ export const faculties: Faculty[] = [
     {
         id: 8,
         title: "Факультет інформаційних технологій",
-        headerImg: {
+        headerImage: {
             id: 1,
             contentType: "",
             imageFilename: ""
@@ -453,7 +453,7 @@ export const faculties: Faculty[] = [
         branches: [
             "Електроніка та телекомунікації"
         ],
-        specialities: [
+        specialties: [
             {
                 title: "Телекомунікації та радіотехніка"
             } as Speciality
@@ -698,7 +698,7 @@ export const faculties: Faculty[] = [
     {
         id: 9,
         title: "Факультет бойового застосування систем управління та зв'язку",
-        headerImg: {
+        headerImage: {
             id: 1,
             contentType: "",
             imageFilename: ""
@@ -749,7 +749,7 @@ export const faculties: Faculty[] = [
         branches: [
             "Електроніка та телекомунікації"
         ],
-        specialities: [
+        specialties: [
             {
                 title: "Телекомунікації та радіотехніка"
             } as Speciality

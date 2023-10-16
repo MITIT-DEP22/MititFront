@@ -7,11 +7,11 @@ import {Speciality} from "../../speciality";
 export type Faculty = {
     id:number;
     title: string;
-    headerImg:Image;
+    headerImage:Image;
     description: string;
     superiors: Superior[];
     branches:string[];
-    specialities:Speciality[];
+    specialties:Speciality[];
     departments:Department[];
     textBlocks?:TextBlock[];
 }
