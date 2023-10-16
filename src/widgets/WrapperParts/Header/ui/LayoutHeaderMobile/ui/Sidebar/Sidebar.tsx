@@ -4,7 +4,7 @@ import {headerData, instituteName} from "../../../../../../../shared/enums/Data"
 import {NavLinkB, NavLinkT} from "../../../../../../../features/NavLink";
 import {observer} from "mobx-react";
 import {model} from "../../../../model/model";
-import TitleLogo from "../../../../../../../shared/ui/TitleLogo/TitleLogo";
+import TitleLogo from "shared/ui/TitleLogo/TitleLogo";
 import Icon from "../../../../../../../shared/ui/Icon/Icon";
 import {LanguageToggle} from "../../../../../../../features/LanguageToggle";
 import Search from "../../../Search/Search";
