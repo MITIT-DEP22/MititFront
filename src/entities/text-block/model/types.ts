@@ -3,9 +3,9 @@ import {Image} from "../../image";
 export type TextBlock = {
     title?: string;
     textContent?: string[];
-    images?: Image[];
     uLists?: List[];
     oLists?: List[];
+    images?: Image[];
     tables?: Table[];
     imageTextRows?: ImageTextRow[];
 }
