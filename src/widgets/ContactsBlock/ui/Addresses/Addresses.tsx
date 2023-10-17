@@ -3,6 +3,9 @@ import SectionTitle from "shared/ui/SectionTitle/SectionTitle";
 import css from "./Addresses.module.scss"
 import Title from "../Title/Title";
 import AddressDataLi from "./ui/AddressDataLi";
+import {ImageComponent} from "features/ImageComponent";
+import $api from "../../../../shared/api";
+import {faculties} from "../../../../shared/enums/Data";
 
 const address = "01011, м. Київ, вул. Московська, 45/1"
 
@@ -30,7 +33,6 @@ const addressesData = [
     },
 ]
 
-const img = require("assets/logo/logo.png")
 const instructionForBecome = "Залізничний вокзал Київ-Пасажирський, метро “Вокзальна”, їхати до станції метро “Театральна”, \n" +
     "перехід на станцію метро “Золоті ворота”, їхати до станції метро “Печерська”"
 
@@ -40,7 +42,7 @@ const Addresses = () => {
         <>
             <SectionTitle title={"Адреса"}/>
             <div className={css.container}>
-                <img className={css.img} src={img} alt=""/>
+                <ImageComponent className={css.img} imgId={155} alt=""/>
                 <div className={css.addressesContainer}>
                     <ul>
                         <li>{address}</li>
@@ -55,6 +57,15 @@ const Addresses = () => {
                     </div>
                 </div>
             </div>
+            <button onClick={() => {
+                console.log(faculties[0])
+                $api.post("/faculties", faculties[0], {
+                    headers: {
+                        "Content-Type":"multipart/form-data"
+                    }
+                })
+            }}>sadasmdjkans
+            </button>
         </>
     );
 };

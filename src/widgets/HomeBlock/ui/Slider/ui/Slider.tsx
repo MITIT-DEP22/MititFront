@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import css from "./Slider.module.scss";
 import {sliderItems} from "../model";
 import {Link} from "react-router-dom";
-import Icon from "../../../../../shared/ui/Icon/Icon";
-import {ftpPath} from "../../../../../features/ImageComponent/model";
+import Icon from "shared/ui/Icon/Icon";
+import {ftpPath} from "features/ImageComponent/model";
 
 interface SliderProps {
     scrollDown: () => void;

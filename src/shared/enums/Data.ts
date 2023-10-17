@@ -9,8 +9,9 @@ import {AccordionElement} from "entities/entrance";
 import {WhyMITIT} from "entities/why_mitit";
 import {Image} from "entities/image";
 import {Speciality} from "entities/speciality";
-import {SocialLink} from "../../entities/social-link";
-import {NavLink} from "../../widgets/WrapperParts/Header/model/types";
+import {SocialLink} from "entities/social-link";
+import {NavLink} from "widgets/WrapperParts/Header/model/types";
+
 
 export const instituteName = "ВІЙСЬКОВИЙ ІНСТИТУТ\nТЕЛЕКОМУНІКАЦІЙ ТА ІНФОРМАТИЗАЦІЇ\nІМЕНІ ГЕРОЇВ КРУТ"
 export const upperTitle = "АКТУАЛЬНО: Набір на курси лідерства"
@@ -77,327 +78,322 @@ export const links = {
     ] as SocialLink[]
 }
 
-export const faculties: Faculty[] = [
+export const faculties = [
     {
-        id: 7,
         title: "Факультет телекомунікаційних систем",
-        headerImage: {
-            id: 1,
-            contentType: "",
-            imageFilename: ""
-        } as Image,
-        description: "<strong>Факультет Телекомунікаційних систем</strong> Військового інституту телекомунікацій та інформатизації імені Героїв Крут є одним з основних організаційних і навчально-наукових структурних підрозділів інституту, який об'єднує кафедри, підрозділи курсантів.\n\nОсновною метою діяльності факультету є забезпечення умов, необхідних для здійснення освітньої діяльності, яка відповідає стандартам вищої освіти та забезпечує пдготовку, згідно з державним замовленням, висококвалфікованих військових фахівців на рівнях вищої освіти перший (бакалаврський) рівень, другий (магістерський) рівень та фахівців заочної форми навчання з числа військовослужбовців за контрактом.",
-        superiors: [
-            {
-                fullName: "полковник РИБКА Євгеній Миколайович",
-                position: "Начальник факультету",
-                achievements: [
-                    "лицар ордена Богдана Хмельницького III ступеня",
-                    "учасник бойових дій"
-                ],
-                image: {
-                    id: 1,
-                    contentType: "",
-                    imageFilename: ""
-                } as Image,
-            } as Superior,
-            {
-                fullName: "підполковник ЛЕБІДЬ Євген Віцентович",
-                position: "Заступник начальника факультету з навчальної\n" +
-                    "та наукової роботи - начальник навчальної частини",
-                achievements: [
-                    "кандидат технічних наук",
-                    "учасник бойових дій"
-                ],
-                image: {
-                    id: 1,
-                    contentType: "",
-                    imageFilename: ""
-                } as Image,
-            } as Superior,
-            {
-                fullName: "підполковник ЛАНКО Антон Вікторович",
-                position: "Заступник начальника факультету\n" +
-                    "з морально-психологічного забезпечення",
-                achievements: [
-                    "учасник бойових дій"
-                ],
-                image: {
-                    id: 1,
-                    contentType: "",
-                    imageFilename: ""
-                } as Image
-            } as Superior,
-        ],
+        headerImage: "",
+        description: "<strong>Факультет Телекомунікаційних систем</strong> Військового інституту телекомунікацій та інформатизації імені Героїв Крут є одним з основних організаційних і навчально-наукових структурних підрозділів інституту, який об'єднує кафедри, підрозділи курсантів. <br> <br>Основною метою діяльності факультету є забезпечення умов, необхідних для здійснення освітньої діяльності, яка відповідає стандартам вищої освіти та забезпечує пдготовку, згідно з державним замовленням, висококвалфікованих військових фахівців на рівнях вищої освіти перший (бакалаврський) рівень, другий (магістерський) рівень та фахівців заочної форми навчання з числа військовослужбовців за контрактом.",
+        // superiors: [
+        //     {
+        //         fullName: "полковник РИБКА Євгеній Миколайович",
+        //         position: "Начальник факультету",
+        //         achievements: [
+        //             "лицар ордена Богдана Хмельницького III ступеня",
+        //             "учасник бойових дій"
+        //         ],
+        //         image: {
+        //             id: 1,
+        //             contentType: "",
+        //             imageFilename: ""
+        //         } as Image,
+        //     } as Superior,
+        //     {
+        //         fullName: "підполковник ЛЕБІДЬ Євген Віцентович",
+        //         position: "Заступник начальника факультету з навчальної\n" +
+        //             "та наукової роботи - начальник навчальної частини",
+        //         achievements: [
+        //             "кандидат технічних наук",
+        //             "учасник бойових дій"
+        //         ],
+        //         image: {
+        //             id: 1,
+        //             contentType: "",
+        //             imageFilename: ""
+        //         } as Image,
+        //     } as Superior,
+        //     {
+        //         fullName: "підполковник ЛАНКО Антон Вікторович",
+        //         position: "Заступник начальника факультету\n" +
+        //             "з морально-психологічного забезпечення",
+        //         achievements: [
+        //             "учасник бойових дій"
+        //         ],
+        //         image: {
+        //             id: 1,
+        //             contentType: "",
+        //             imageFilename: ""
+        //         } as Image
+        //     } as Superior,
+        // ],
         branches: [
             "Електроніка та телекомунікації"
         ],
-        specialties: [
-            {
-                title: "Телекомунікації та радіотехніка",
-            } as Speciality
-        ],
-        departments: [
-            {
-                title: "Кафедра \"ПОБУДОВИ ТЕЛЕКОМУНІКАЦІЙНИХ СИСТЕМ\"",
-                description: "Кафедра здійснює підготовку курсантів інституту з фундаментальних дисциплін щодо будови, функціонування та супроводження сучасних інформаційно-телекомунікаційних систем за всіма спеціальностями.",
-                superior: {
-                    position: "Начальник кафедри",
-                    fullName: "полковник КУЗАВКОВ Василь Вікторович",
-                    achievements: [
-                        "доктор технічних наук",
-                        "доцент"
-                    ],
-                    image: {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    }
-                } as Superior
-
-            } as Department,
-            {
-                title: "Кафедра \"РАДІО - ТА СУПУТНИКОВОГО ЗВ’ЯЗКУ\"",
-                description: "Призначена для теоретичної та практичної підготовки військових фахівців для управління діями підрозділів із засобами радіозв'язку.",
-                superior: {
-                    position: "Начальник кафедри",
-                    fullName: "полковник ГУРСЬКИЙ Тарас Григорович",
-                    achievements: [
-                        "кандидат технічних наук", "доцент", "учасник бойових дій"
-                    ],
-                    image: {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    }
-                } as Superior
-
-            } as Department,
-            {
-                title: "Кафедра \"ТРАНСПОРТНИХ МЕРЕЖ\"",
-                description: "Призначена для теоретичної та практичної підготовки офіцерських кадрів, які спроможні до впровадження новітніх телекомунікаційних технологій у діяльність органів військового управління.",
-                superior: {
-                    position: "Начальник кафедри",
-                    fullName: "полковник ГУРЖІЙ Павло Миколайович",
-                    achievements: [
-                        "кандидат технічних наук", "учасник бойових дій"
-                    ],
-                    image: {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image
-                } as Superior
-
-            } as Department,
-        ],
-        textBlocks: [
-            {
-                title: "НАВЧАЛЬНИЙ ТА НАУКОВИЙ ПРОЦЕС",
-                textContent: [
-                    "На факультеті потужний науково-педагогічний потенціал, сучасна навчально-матеріальна база, комп’ютерні та спеціалізовані класи. Лекційні аудиторії оснащені новітньою телекомунікаційною технікою та засобами зв’язку. Серед курсантів факультету навчаються іменні стипендіати премій Президента України, Верховної Ради України, Кабінету Міністрів України і переможці конкурсів наукових робіт в різних галузях знань.\n"
-                ],
-                uLists: [
-                    {
-                        title: "На факультеті організована робота:\n",
-                        items: [
-                            "підготовки воєнно-наукового товариства (ВНТ) курсантів;",
-                            "підготовки ад'юнктів до захисту дисертаційних робіт."
-                        ]
-                    } as List
-                ]
-            } as TextBlock,
-            {
-                textContent: [
-                    "Факультет приймає активну участь в винахідницькій та раціоналізаторській роботі, представники від факультету беруть участь у міжнародних навчаннях."
-                ]
-            } as TextBlock,
-            {
-                title: "НАВЧАЛЬНО-МАТЕРІАЛЬНА БАЗА",
-                images: [
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                ]
-            } as TextBlock,
-            {
-                title: "КУРСАНТСЬКИЙ ПОБУТ",
-                images: [
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                ]
-            } as TextBlock,
-            {
-                title: "НАВЧАЛЬНІ ЗАНЯТТЯ",
-                textContent: [
-                    "Військовослужбовці, які навчаються на факультеті мають статус курсанта та отримують грошове забезпечення. Курсантам, які навчаються на «добре» та «відмінно» нараховується підвищене грошове забезпечення. Випускники факультету після закінчення навчання отримують диплом державного зразка, первинне офіцерське звання «лейтенант» та обов’язкове (гарантоване державним замовленням) призначення на первинну офіцерську посаду."
-                ],
-                images: [
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                ]
-            } as TextBlock,
-            {
-                title: "ВИХОВНА РОБОТА",
-                textContent: [
-                    "Факультетом створені всі умови для всебічного розвитку особистості. Курсанти постійно відвідують театри, кінотеатри, картинні галереї, музеї, пам’ятки вітчизняної історичної та культурної спадщини."
-                ],
-                images: [
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                ]
-            } as TextBlock,
-            {
-                title: "ФІЗИЧНА ПІДГОТОВКА І СПОРТ",
-                textContent: [
-                    "Особлива увага приділяється розвитку фізичної культури та спорту. Особовий склад факультету має можливість відвідувати різноманітні спортивні секції, гуртки та басейн."
-                ],
-                images: [
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                    {
-                        id: 1,
-                        contentType: "",
-                        imageFilename: ""
-                    } as Image,
-                ]
-            } as TextBlock,
-        ]
-    } as Faculty,
+        // specialties: [
+        //     {
+        //         title: "Телекомунікації та радіотехніка",
+        //     } as Speciality
+        // ],
+        // departments: [
+        //     {
+        //         title: "Кафедра \"ПОБУДОВИ ТЕЛЕКОМУНІКАЦІЙНИХ СИСТЕМ\"",
+        //         description: "Кафедра здійснює підготовку курсантів інституту з фундаментальних дисциплін щодо будови, функціонування та супроводження сучасних інформаційно-телекомунікаційних систем за всіма спеціальностями.",
+        //         superior: {
+        //             position: "Начальник кафедри",
+        //             fullName: "полковник КУЗАВКОВ Василь Вікторович",
+        //             achievements: [
+        //                 "доктор технічних наук",
+        //                 "доцент"
+        //             ],
+        //             image: {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             }
+        //         } as Superior
+        //
+        //     } as Department,
+        //     {
+        //         title: "Кафедра \"РАДІО - ТА СУПУТНИКОВОГО ЗВ’ЯЗКУ\"",
+        //         description: "Призначена для теоретичної та практичної підготовки військових фахівців для управління діями підрозділів із засобами радіозв'язку.",
+        //         superior: {
+        //             position: "Начальник кафедри",
+        //             fullName: "полковник ГУРСЬКИЙ Тарас Григорович",
+        //             achievements: [
+        //                 "кандидат технічних наук", "доцент", "учасник бойових дій"
+        //             ],
+        //             image: {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             }
+        //         } as Superior
+        //
+        //     } as Department,
+        //     {
+        //         title: "Кафедра \"ТРАНСПОРТНИХ МЕРЕЖ\"",
+        //         description: "Призначена для теоретичної та практичної підготовки офіцерських кадрів, які спроможні до впровадження новітніх телекомунікаційних технологій у діяльність органів військового управління.",
+        //         superior: {
+        //             position: "Начальник кафедри",
+        //             fullName: "полковник ГУРЖІЙ Павло Миколайович",
+        //             achievements: [
+        //                 "кандидат технічних наук", "учасник бойових дій"
+        //             ],
+        //             image: {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image
+        //         } as Superior
+        //
+        //     } as Department,
+        // ],
+        // textBlocks: [
+        //     {
+        //         title: "НАВЧАЛЬНИЙ ТА НАУКОВИЙ ПРОЦЕС",
+        //         textContent: [
+        //             "На факультеті потужний науково-педагогічний потенціал, сучасна навчально-матеріальна база, комп’ютерні та спеціалізовані класи. Лекційні аудиторії оснащені новітньою телекомунікаційною технікою та засобами зв’язку. Серед курсантів факультету навчаються іменні стипендіати премій Президента України, Верховної Ради України, Кабінету Міністрів України і переможці конкурсів наукових робіт в різних галузях знань.\n"
+        //         ],
+        //         uLists: [
+        //             {
+        //                 title: "На факультеті організована робота:\n",
+        //                 items: [
+        //                     "підготовки воєнно-наукового товариства (ВНТ) курсантів;",
+        //                     "підготовки ад'юнктів до захисту дисертаційних робіт."
+        //                 ]
+        //             } as List
+        //         ]
+        //     } as TextBlock,
+        //     {
+        //         textContent: [
+        //             "Факультет приймає активну участь в винахідницькій та раціоналізаторській роботі, представники від факультету беруть участь у міжнародних навчаннях."
+        //         ]
+        //     } as TextBlock,
+        //     {
+        //         title: "НАВЧАЛЬНО-МАТЕРІАЛЬНА БАЗА",
+        //         images: [
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //         ]
+        //     } as TextBlock,
+        //     {
+        //         title: "КУРСАНТСЬКИЙ ПОБУТ",
+        //         images: [
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //         ]
+        //     } as TextBlock,
+        //     {
+        //         title: "НАВЧАЛЬНІ ЗАНЯТТЯ",
+        //         textContent: [
+        //             "Військовослужбовці, які навчаються на факультеті мають статус курсанта та отримують грошове забезпечення. Курсантам, які навчаються на «добре» та «відмінно» нараховується підвищене грошове забезпечення. Випускники факультету після закінчення навчання отримують диплом державного зразка, первинне офіцерське звання «лейтенант» та обов’язкове (гарантоване державним замовленням) призначення на первинну офіцерську посаду."
+        //         ],
+        //         images: [
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //         ]
+        //     } as TextBlock,
+        //     {
+        //         title: "ВИХОВНА РОБОТА",
+        //         textContent: [
+        //             "Факультетом створені всі умови для всебічного розвитку особистості. Курсанти постійно відвідують театри, кінотеатри, картинні галереї, музеї, пам’ятки вітчизняної історичної та культурної спадщини."
+        //         ],
+        //         images: [
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //         ]
+        //     } as TextBlock,
+        //     {
+        //         title: "ФІЗИЧНА ПІДГОТОВКА І СПОРТ",
+        //         textContent: [
+        //             "Особлива увага приділяється розвитку фізичної культури та спорту. Особовий склад факультету має можливість відвідувати різноманітні спортивні секції, гуртки та басейн."
+        //         ],
+        //         images: [
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //             {
+        //                 id: 1,
+        //                 contentType: "",
+        //                 imageFilename: ""
+        //             } as Image,
+        //         ]
+        //     } as TextBlock,
+        // ]
+    },
     {
         id: 8,
         title: "Факультет інформаційних технологій",

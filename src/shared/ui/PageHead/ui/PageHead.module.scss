@@ -58,11 +58,14 @@
   }
 }
 
-@keyframes skeleton-loading {
-  0% {
-    background-color: hsl(200, 20%, 65%);
-  }
-  100% {
-    background-color: hsl(200, 20%, 95%);
-  }
+.scrollDown{
+    z-index: 2;
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+    font-size: 50px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
