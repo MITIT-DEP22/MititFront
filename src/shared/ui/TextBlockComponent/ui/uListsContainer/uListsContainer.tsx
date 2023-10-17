@@ -15,7 +15,7 @@ const UListsContainer: FC<ListsProps> = ({lists}) => {
                     <p className={css.listTitle}>{list.title && HTMLReactParser(list?.title)}</p>
                     <ul className={css.list}>
                         {list.items.map(i => (
-                            <li className={css.listItem}>{i}</li>
+                            <li className={css.listItem}>{HTMLReactParser(i)}</li>
                         ))}
                     </ul>
                 </div>

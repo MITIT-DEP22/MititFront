@@ -7,6 +7,7 @@ export const ContactsBlock = () => {
         <div className={css.container}>
             <HotLines/>
             <Addresses/>
+
         </div>
     );
 };

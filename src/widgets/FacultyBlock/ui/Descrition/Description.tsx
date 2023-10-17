@@ -9,7 +9,6 @@ interface DescriptionProps {
 const Description: FC<DescriptionProps> = ({value}) => {
     return (
         <div className={css.container}>
-
             {value && HTMLReactParser(value)}
         </div>
     );

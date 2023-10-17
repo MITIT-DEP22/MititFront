@@ -5,7 +5,7 @@ import {EducationBlock} from "widgets/EducationBlock";
 export const EducationPage = () => {
     return (
         <>
-            <PageHead title={"Навчання"} imgId={1}/>
+            <PageHead title={"Навчання"} imgId={149}/>
             <EducationBlock/>
         </>
     );

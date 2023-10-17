@@ -6,7 +6,7 @@ import {observer} from "mobx-react";
 const NewsPage = observer(() => {
     return (
         <>
-            <PageHead title={"Новини"} imgId={1}/>
+            <PageHead title={"Новини"} imgId={153}/>
             <NewsBlock/>
         </>
     );

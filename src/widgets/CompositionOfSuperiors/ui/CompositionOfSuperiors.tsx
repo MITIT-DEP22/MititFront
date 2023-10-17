@@ -5,10 +5,11 @@ import {Superior} from "entities/superior";
 import {FC} from "react";
 
 
-interface SuperiorsCompositionProps{
-    superiors:Superior[]
+interface SuperiorsCompositionProps {
+    superiors: Superior[]
 }
-export const CompositionOfSuperiors:FC<SuperiorsCompositionProps> = observer(({superiors}) => {
+
+export const CompositionOfSuperiors: FC<SuperiorsCompositionProps> = observer(({superiors}) => {
     return (
         <div className={css.compositionCards}>
             {superiors?.map((item, index) => (

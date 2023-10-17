@@ -16,7 +16,6 @@ export const ImageComponent: FC<ImageProps> = ({imgId, className, onLoaded}) => 
         onLoaded && onLoaded()
     };
 
-
     const handleImageError = () => {
         setIsLoading(false);
     };

@@ -6,7 +6,7 @@ import {SuperiorsBlock} from "widgets/SuperiorsBlock";
  const SuperiorsPage = () => {
     return (
         <>
-            <PageHead title={"Керівний склад"} imgId={1}/>
+            <PageHead title={"Керівний склад"} imgId={151}/>
             <SuperiorsBlock/>
         </>
     );

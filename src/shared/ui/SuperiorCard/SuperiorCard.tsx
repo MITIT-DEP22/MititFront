@@ -23,7 +23,7 @@ const SuperiorCard: FC<ChiefCardData> = ({superior, positionRight}) => {
                             {superior.militaryRank} {superior.fullName}
                         </h6>
                         {superior.achievements?.map(item => (
-                            <span>{item}</span>
+                            <p>{item}</p>
                         ))
                         }
                         <span className={css.chiefCardDescription}></span>
@@ -39,7 +39,9 @@ const SuperiorCard: FC<ChiefCardData> = ({superior, positionRight}) => {
                         <h6 className={css.chiefCardRangAndName}>
                             {superior.militaryRank} {superior.fullName}
                         </h6>
-                        <span className={css.chiefCardDescription}>{superior.achievements}</span>
+                        {superior.achievements?.map(item => (
+                            <p>{item}</p>
+                        ))}
                         <span className={css.chiefCardPhone}>{superior.phoneNumber}</span>
                     </div>
                     <ImageComponent imgId={superior.image.id}/>

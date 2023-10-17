@@ -1,5 +1,6 @@
 import React, {FC} from 'react';
 import css from "./Title.module.scss";
+import HTMLReactParser from "html-react-parser";
 
 interface TitleProps{
     title:string;
@@ -7,7 +8,7 @@ interface TitleProps{
 const Title:FC<TitleProps> = ({title}) => {
     return (
         <>
-            <p className={css.title}>{title}</p>
+            <p className={css.title}>{HTMLReactParser(title)}</p>
         </>
     );
 };

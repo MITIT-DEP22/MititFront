@@ -5,7 +5,7 @@ import {ContactsBlock} from "widgets/ContactsBlock";
  const ContactPage = () => {
     return (
         <>
-            <PageHead title={"Контакти"} imgId={1}/>
+            <PageHead title={"Контакти"} imgId={150}/>
             <ContactsBlock/>
         </>
     );
