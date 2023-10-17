@@ -57,15 +57,6 @@ const Addresses = () => {
                     </div>
                 </div>
             </div>
-            <button onClick={() => {
-                console.log(faculties[0])
-                $api.post("/faculties", faculties[0], {
-                    headers: {
-                        "Content-Type":"multipart/form-data"
-                    }
-                })
-            }}>sadasmdjkans
-            </button>
         </>
     );
 };

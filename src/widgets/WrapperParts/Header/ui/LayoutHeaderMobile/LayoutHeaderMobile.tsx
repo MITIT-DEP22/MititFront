@@ -1,10 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import css from "./LayoutHeaderMobile.module.scss"
-import TitleLogo from "../../../../../shared/ui/TitleLogo/TitleLogo";
+import TitleLogo from "shared/ui/TitleLogo/TitleLogo";
 import Sidebar from "./ui/Sidebar/Sidebar";
-import {instituteName} from "../../../../../shared/enums/Data";
-import Search from "../Search/Search";
-
+import {instituteName} from "shared/enums/Data";
 
 const LayoutHeaderMobile = () => {
 
