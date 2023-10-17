@@ -1,4 +1,5 @@
 import {Image} from "../../image";
+import {Superior} from "../../superior";
 
 export type TextBlock = {
     title?: string;
@@ -8,6 +9,7 @@ export type TextBlock = {
     images?: Image[];
     tables?: Table[];
     imageTextRows?: ImageTextRow[];
+    superiors?:Superior[];
 }
 
 export type ImageTextRow = {

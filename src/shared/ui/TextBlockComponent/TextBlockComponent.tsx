@@ -8,6 +8,8 @@ import ImagesContainer from "./ui/ImagesContainer/ImagesContainer";
 import TablesContainer from "./ui/TablesContainer/TablesContainer";
 import OListsContainer from "./ui/oListsContainer/oListsContainer";
 import ImageTextRowsContainer from "./ui/ImageTextRow/ImageTextRowsContainer";
+import {CompositionOfSuperiors} from "./ui/CompositionOfSuperiors";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 interface TextBlockComponentProps {
     textBlock: TextBlock
@@ -17,7 +19,7 @@ const TextBlockComponent: FC<TextBlockComponentProps> = ({textBlock}) => {
     return (
         <div className={css.container}>
             {textBlock.title &&
-                <Title title={textBlock.title}/>
+                <SectionTitle title={textBlock.title}/>
             }
 
             {textBlock.textContent &&
@@ -41,6 +43,10 @@ const TextBlockComponent: FC<TextBlockComponentProps> = ({textBlock}) => {
 
             {textBlock.imageTextRows &&
                 <ImageTextRowsContainer imageTextRows={textBlock.imageTextRows}/>
+            }
+
+            {textBlock.superiors &&
+                <CompositionOfSuperiors superiors={textBlock.superiors}/>
             }
         </div>
     )

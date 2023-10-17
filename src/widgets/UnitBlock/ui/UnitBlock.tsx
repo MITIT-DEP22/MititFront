@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import {Unit} from "entities/unit";
 import SectionTitle from "shared/ui/SectionTitle/SectionTitle";
-import SuperiorCard from "shared/ui/SuperiorCard/SuperiorCard";
+import SuperiorCard from "../../../shared/ui/TextBlockComponent/ui/SuperiorCard/SuperiorCard";
 import TextBlockComponent from "shared/ui/TextBlockComponent/TextBlockComponent";
 import TextBlocks from "shared/ui/TextBlocks/TextBlocks";
 import css from "./UnitBlock.module.scss"

@@ -5,10 +5,10 @@ import TextBlocks from "../TextBlocks/TextBlocks";
 import {AccordionElement} from "entities/entrance";
 
 interface InfoAccordion {
-    entrance: AccordionElement
+    item: AccordionElement
 }
 
-const InfoAccordion: FC<InfoAccordion> = ({entrance}) => {
+const InfoAccordion: FC<InfoAccordion> = ({item}) => {
     const [isOpen, setsOpen] = useState(false)
 
     const toggle = () => {
@@ -17,14 +17,14 @@ const InfoAccordion: FC<InfoAccordion> = ({entrance}) => {
     return (
         <div className={css.container}>
             <div onClick={toggle} className={css.toggleContainer}>
-                <p className={css.toggleTitle}>{entrance.title}</p>
+                <p className={css.toggleTitle}>{item.title}</p>
                 <button className={`${css.toggleBtn} ${isOpen && css.toggleBtn_active}`}>
                     <i className="bi bi-caret-left"></i>
                 </button>
             </div>
             <Collapse transition="height 300ms cubic-bezier(.4, 0, .2, 1)" isOpen={isOpen}
                       render={() => (
-                          <TextBlocks textBlocks={entrance.textBlocks}/>
+                          <TextBlocks textBlocks={item.textBlocks}/>
                       )}>
             </Collapse>
         </div>

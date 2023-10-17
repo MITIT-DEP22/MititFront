@@ -9,7 +9,7 @@ export const ScienceBlock = () => {
         <BlockContainer>
             <SectionTitle title={"Наука"}/>
             {sciences.map(science => (
-                <InfoAccordion entrance={science}/>
+                <InfoAccordion item={science}/>
             ))}
         </BlockContainer>
     );

@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import css from "./SuperiorCard.module.scss";
-import {Superior} from "entities/superior";
-import {ImageComponent} from "features/ImageComponent";
+import {Superior} from "../../../../../entities/superior";
+import {ImageComponent} from "../../../../../features/ImageComponent";
 
 
 interface ChiefCardData {

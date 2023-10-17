@@ -3,7 +3,7 @@ import {Department} from "entities/department";
 import SectionTitle from "shared/ui/SectionTitle/SectionTitle";
 import TextBlocks from "shared/ui/TextBlocks/TextBlocks";
 import TextBlockComponent from "shared/ui/TextBlockComponent/TextBlockComponent";
-import SuperiorCard from "shared/ui/SuperiorCard/SuperiorCard";
+import SuperiorCard from "../../shared/ui/TextBlockComponent/ui/SuperiorCard/SuperiorCard";
 import BlockContainer from "shared/ui/BlockContainer/BlockContainer";
 interface DepartmentProps {
     department: Department;

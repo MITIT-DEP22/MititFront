@@ -6,7 +6,7 @@ import Description from "./Descrition/Description";
 import Branches from "./Branches/Branches";
 import Specialities from "./Specialities/Specialities";
 import Departments from "./Departments/Departments";
-import {CompositionOfSuperiors} from "../../CompositionOfSuperiors";
+import {CompositionOfSuperiors} from "../../../shared/ui/TextBlockComponent/ui/CompositionOfSuperiors";
 import TextBlocks from "shared/ui/TextBlocks/TextBlocks";
 import BlockContainer from "shared/ui/BlockContainer/BlockContainer";
 
