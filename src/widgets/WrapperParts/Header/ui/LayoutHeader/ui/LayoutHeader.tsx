@@ -3,7 +3,7 @@ import css from "./LayoutHeader.module.scss"
 import {LanguageToggle} from "features/LanguageToggle";
 import TitleLogo from "shared/ui/TitleLogo/TitleLogo"
 import {observer} from "mobx-react";
-import {model} from "../../../model/model"
+import {headerStore} from "../../../model/headerStore"
 import {Link, useLocation} from "react-router-dom";
 import {instituteName, links} from "shared/enums/Data";
 import Search from "../../Search/Search";
@@ -24,7 +24,7 @@ export const LayoutHeader = observer(() => {
             window.addEventListener('scroll', handleScroll);
         }
         window.addEventListener('scroll', handleScroll);
-        model.changeLink(pathname)
+        headerStore.changeLink(pathname)
 
         return () => {
             window.removeEventListener("scroll", handleScroll)
@@ -43,25 +43,25 @@ export const LayoutHeader = observer(() => {
                 </div>
                 <div className={css.linksContainer}>
                     {links.linksT.map(item => (
-                        <NavLinkT isActive={model.pathname.includes(item.to)}
-                                  click={() => model.changeLink(item.to)}
+                        <NavLinkT isActive={headerStore.pathname.includes(item.to)}
+                                  click={() => headerStore.changeLink(item.to)}
                                   link={item}/>
                     ))}
                 </div>
             </div>
 
             <div className={css.headerBottomContainer}>
-                <Link className={css.logoLink} to={RouterNames.HOME} onClick={() => model.changeLink(RouterNames.HOME)}>
+                <Link className={css.logoLink} to={RouterNames.HOME} onClick={() => headerStore.changeLink(RouterNames.HOME)}>
                     <TitleLogo value={instituteName}/>
                 </Link>
                 <div className={css.linksContainer}>
                     {links.linksB.map(item => (
                         item.subLinks ?
-                            <NavSubLinksD link={item} isActive={model.pathname.includes(item.to)}
-                                          click={() => model.changeLink(item.to)}/>
+                            <NavSubLinksD link={item} isActive={headerStore.pathname.includes(item.to)}
+                                          click={() => headerStore.changeLink(item.to)}/>
                             :
-                            <NavLinkB click={() => model.changeLink(item.to)}
-                                      isActive={model.pathname.includes(item.to)}
+                            <NavLinkB click={() => headerStore.changeLink(item.to)}
+                                      isActive={headerStore.pathname.includes(item.to)}
                                       link={item}/>
                     ))}
                     <Search color={"#fefefe"}/>

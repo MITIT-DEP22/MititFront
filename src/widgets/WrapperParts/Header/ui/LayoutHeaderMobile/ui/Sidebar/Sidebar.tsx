@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 import css from "./Sidebar.module.scss"
 import {instituteName, links} from "shared/enums/Data";
 import {observer} from "mobx-react";
-import {model} from "../../../../model/model";
+import {headerStore} from "../../../../model/headerStore";
 import TitleLogo from "shared/ui/TitleLogo/TitleLogo";
 import {LanguageToggle} from "features/LanguageToggle";
 import Search from "../../../Search/Search";
@@ -20,7 +20,7 @@ interface SidebarProps {
 
 const Sidebar: FC<SidebarProps> = observer(({isOpen, close}) => {
     const goTo = (to: string) => {
-        model.changeLink(to)
+        headerStore.changeLink(to)
         close()
     }
 
@@ -37,18 +37,18 @@ const Sidebar: FC<SidebarProps> = observer(({isOpen, close}) => {
                               click={() => {
                                   goTo(item.to)
                               }}
-                              isActive={model.pathname.includes(item.to)}/>
+                              isActive={headerStore.pathname.includes(item.to)}/>
                 ))}
 
                 {links.linksB.map((item) => (
                     item.subLinks ?
-                        <NavSubLinksM goTo={goTo} isActive={model.pathname.includes(item.to)} link={item}/>
+                        <NavSubLinksM goTo={goTo} isActive={headerStore.pathname.includes(item.to)} link={item}/>
                         :
                         <NavLinkB isMobile={true} link={item}
                                   click={() => {
                                       goTo(item.to)
                                   }}
-                                  isActive={model.pathname.includes(item.to)}/>
+                                  isActive={headerStore.pathname.includes(item.to)}/>
                 ))}
 
                 <div className={css.iconsContainer}>
