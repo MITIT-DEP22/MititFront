@@ -4,7 +4,7 @@ import {Image} from "../../entities/image";
 import {Page} from "../../entities/page";
 import {RouterNames} from "../enums/RouterNames";
 
-export const secondFacultyPage: Page = {
+export const faculty2Page: Page = {
     titleImage: {id: 1} as Image,
     title: "Факультети",
     name: RouterNames.FACULTY_2.name,
@@ -22,37 +22,43 @@ export const secondFacultyPage: Page = {
         {
             superiors: [
                 {
-                    position: "<strong>Начальник факультету</strong>",
+                    position: "Начальник факультету",
                     fullName: "ОЛЕКСЕНКО Віталій Петрович",
                     achievements: [
                         "учасник бойових дій"
                     ],
                     image: {
-                        id: 1
+                        id: 1,
+                        contentType: "",
+                        imageFilename: ""
                     },
                     militaryRank: "полковник"
                 } as Superior,
                 {
-                    position: "<strong>Заступник начальника факультету з навчальної та наукової роботи - начальник" +
-                        " навчальної частини</strong>",
+                    position: "Заступник начальника факультету з навчальної та наукової роботи - начальник" +
+                        " навчальної частини",
                     fullName: "ТРОЦЬКО Олександр Олександрович",
                     achievements: [
                         "кандидат технічних наук",
                         "доцент"
                     ],
                     image: {
-                        id: 1
+                        id: 1,
+                        contentType: "",
+                        imageFilename: ""
                     },
                     militaryRank: "підполковник"
                 } as Superior,
                 {
-                    position: "<strong>Заступник начальника факультету з морально-психологічного забезпечення</strong>",
+                    position: "Заступник начальника факультету з морально-психологічного забезпечення",
                     fullName: "ГЕСЬ Євгеній Анатолійович",
                     achievements: [
                         "учасник бойових дій"
                     ],
                     image: {
-                        id: 1
+                        id: 1,
+                        contentType: "",
+                        imageFilename: ""
                     },
                     militaryRank: "підполковник"
                 } as Superior,
@@ -124,45 +130,51 @@ export const secondFacultyPage: Page = {
                         "Кафедра \"АВТОМАТИЗОВАНИХ СИСТЕМ УПРАВЛІННЯ\"",
                         "Наукова та науково-технічна діяльність кафедри спрямована на дослідження та вдосконалення побудови сучасних інформаційно-обчислювальних мереж, розроблення теоретичних і прикладних засад інтелектуального управління потоками даних з урахуванням досвіду проведення антитерористичної операції на сході країни для створення новітніх систем мобільних радіомереж автоматизованого управління військами."
                     ],
-                    position: "<strong>Начальник кафедри</strong>",
-                    fullName: "<strong>СОВА Олег Ярославович</strong>",
+                    position: "Начальник кафедри",
+                    fullName: "СОВА Олег Ярославович",
                     achievements: [
                         "доктор технічних наук",
                         "старший науковий співробітник",
                         "учасник бойових дій"
                     ],
                     image: {
-                        id: 1
+                        id: 1,
+                        contentType: "",
+                        imageFilename: ""
                     },
-                    militaryRank: "<strong>полковник</strong>",
+                    militaryRank: "полковник",
                 } as Superior,
                 {
                     textContent: [
                         "Кафедра \"КОМП’ЮТЕРНИХ ІНФОРМАЦІЙНИХ ТЕХНОЛОГІЙ\"",
                         "Наукова та науково-технічна діяльність кафедри спрямована на дослідження закономірностей побудови інформаційних комунікацій та розроблення теоретичних і прикладних засад побудови і впровадження інтелектуальних інформаційних технологій з урахуванням досвіду проведення антитерористичної операції на сході країни для створення новітніх систем накопичування, переробки, збереження інформації та систем управління військами та зброєю."
                     ],
-                    position: "<strong>Начальник кафедри</strong>",
-                    fullName: "<strong>БОВДА Едуард Миколайович</strong>",
+                    position: "Начальник кафедри",
+                    fullName: "БОВДА Едуард Миколайович",
                     achievements: [
-                        "кандидат технічних нау",
+                        "кандидат технічних наук",
                         "доцент"
                     ],
                     image: {
-                        id: 1
+                        id: 1,
+                        contentType: "",
+                        imageFilename: ""
                     },
-                    militaryRank: "<strong>полковник</strong>",
+                    militaryRank: "полковник",
                 } as Superior,
                 {
                     textContent: [
                         "Кафедра \"ТЕХНІЧНОГО ТА МЕТРОЛОГІЧНОГО ЗАБЕЗПЕЧЕННЯ\"",
                         "Кафедра забезпечує фундаментальну технічну та метрологічну підготовку курсантів (студентів, слухачів). Процес навчання тісно пов’язаний з характером їх майбутньої професійної діяльності. Кафедра здійснює підготовку водіїв транспортних засобів категорій “В”, “С” з числа курсантів Інституту; надання воєнно-наукового супроводу, розробки та випробування телекомунікаційних засобів та АСУ польової компоненти системи військового зв’язку."
                     ],
-                    position: "<strong>Начальник кафедри</strong>",
-                    fullName: "<strong>Гриценок Константин Миколайович</strong>",
+                    position: "Начальник кафедри",
+                    fullName: "Гриценок Константин Миколайович",
                     image: {
-                        id: 1
+                        id: 1,
+                        contentType: "",
+                        imageFilename: ""
                     },
-                    militaryRank: "<strong>полковник</strong>",
+                    militaryRank: "полковник",
                 } as Superior,
             ]
         } as TextBlock,
@@ -175,10 +187,14 @@ export const secondFacultyPage: Page = {
         {
             images: [
                 {
-                    id: 1
+                    id: 1,
+                    contentType: "",
+                    imageFilename: ""
                 } as Image,
                 {
-                    id: 1
+                    id: 1,
+                    contentType: "",
+                    imageFilename: ""
                 } as Image
             ]
         } as TextBlock,
@@ -203,10 +219,14 @@ export const secondFacultyPage: Page = {
         {
             images: [
                 {
-                    id: 1
+                    id: 1,
+                    contentType: "",
+                    imageFilename: ""
                 } as Image,
                 {
-                    id: 1
+                    id: 1,
+                    contentType: "",
+                    imageFilename: ""
                 } as Image
             ]
         } as TextBlock,
@@ -218,10 +238,14 @@ export const secondFacultyPage: Page = {
         {
             images: [
                 {
-                    id: 1
+                    id: 1,
+                    contentType: "",
+                    imageFilename: ""
                 } as Image,
                 {
-                    id: 1
+                    id: 1,
+                    contentType: "",
+                    imageFilename: ""
                 } as Image
             ]
         } as TextBlock,
@@ -229,7 +253,9 @@ export const secondFacultyPage: Page = {
             imageTextRows: [
                 {
                     image: {
-                        id: 1
+                        id: 1,
+                        contentType: "",
+                        imageFilename: ""
                     },
                     text: "Курсанти та студенти, що навчаються за напрямком підготовки на факультеті є лауреатами та призерами Всеукраїнських та інститутських конкурсів студентських робіт.",
                     imgLeft: false
@@ -263,10 +289,14 @@ export const secondFacultyPage: Page = {
         {
             images: [
                 {
-                    id: 1
+                    id: 1,
+                    contentType: "",
+                    imageFilename: ""
                 } as Image,
                 {
-                    id: 1
+                    id: 1,
+                    contentType: "",
+                    imageFilename: ""
                 } as Image
             ]
         } as TextBlock,
@@ -278,10 +308,14 @@ export const secondFacultyPage: Page = {
         {
             images: [
                 {
-                    id: 1
+                    id: 1,
+                    contentType: "",
+                    imageFilename: ""
                 } as Image,
                 {
-                    id: 1
+                    id: 1,
+                    contentType: "",
+                    imageFilename: ""
                 } as Image
             ]
         } as TextBlock,
@@ -293,16 +327,24 @@ export const secondFacultyPage: Page = {
         {
             images: [
                 {
-                    id: 1
+                    id: 1,
+                    contentType: "",
+                    imageFilename: ""
                 } as Image,
                 {
-                    id: 1
+                    id: 1,
+                    contentType: "",
+                    imageFilename: ""
                 } as Image,
                 {
-                    id: 1
+                    id: 1,
+                    contentType: "",
+                    imageFilename: ""
                 } as Image,
                 {
-                    id: 1
+                    id: 1,
+                    contentType: "",
+                    imageFilename: ""
                 } as Image
             ]
         } as TextBlock,
@@ -314,10 +356,14 @@ export const secondFacultyPage: Page = {
         {
             images: [
                 {
-                    id: 1
+                    id: 1,
+                    contentType: "",
+                    imageFilename: ""
                 } as Image,
                 {
-                    id: 1
+                    id: 1,
+                    contentType: "",
+                    imageFilename: ""
                 } as Image
             ]
         } as TextBlock,
