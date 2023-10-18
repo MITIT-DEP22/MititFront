@@ -14,4 +14,11 @@
   align-self: end;
 }
 
+@media (max-width: 900px) {
+  .compositionCards {
+    align-self: center;
+    padding: 0;
+  }
+}
+
 

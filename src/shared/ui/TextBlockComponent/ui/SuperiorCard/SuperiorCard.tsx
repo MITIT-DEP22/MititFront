@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import css from "./SuperiorCard.module.scss";
-import {Superior} from "../../../../../entities/superior";
-import {ImageComponent} from "../../../../../features/ImageComponent";
+import {Superior} from "entities/superior";
+import {ImageComponent} from "features/ImageComponent";
 import HTMLReactParser from "html-react-parser";
 
 
@@ -17,6 +17,9 @@ const SuperiorCard: FC<ChiefCardData> = ({superior, positionRight}) => {
                 <>
                     <ImageComponent imgId={superior?.image?.id}/>
                     <div className={css.chiefCardTextContainer}>
+                        <div className={`${css.chiefCardTextAbout} ${css.leftAlign}`}>
+                            {superior.textContent}
+                        </div>
                         <div className={`${css.chiefCardText} ${css.leftAlign}`}>
                             <div className={`${positionRight ? css.borderLeft : css.borderRight}`}>
                                 <h4 className={css.chiefCardPosition}>{HTMLReactParser(superior.position)}</h4>
@@ -36,7 +39,7 @@ const SuperiorCard: FC<ChiefCardData> = ({superior, positionRight}) => {
             ) : (
                 <>
                     <div className={`${css.chiefCardTextContainer}`}>
-                        <div className={css.chiefCardTextAbout}>
+                        <div className={`${css.chiefCardTextAbout} ${css.rightAlign}`}>
                             {superior.textContent}
                         </div>
                         <div className={`${css.chiefCardText} ${css.rightAlign}`}>
