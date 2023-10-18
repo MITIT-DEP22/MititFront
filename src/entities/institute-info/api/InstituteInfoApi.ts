@@ -6,7 +6,7 @@ export const InstituteInfoCards = [
     {
         title: "Чому ВІТІ?",
         img: {
-            id: 143,
+            id: 1,
             contentType: "",
             imageFilename: ""
         } as Image,
@@ -16,7 +16,7 @@ export const InstituteInfoCards = [
     {
         title: "Історична довідка",
         img: {
-            id: 144,
+            id: 1,
             contentType: "",
             imageFilename: ""
         } as Image,
@@ -26,7 +26,7 @@ export const InstituteInfoCards = [
     {
         title: "Керівний склад",
         img: {
-            id: 145,
+            id: 1,
             contentType: "",
             imageFilename: ""
         } as Image,
@@ -35,7 +35,7 @@ export const InstituteInfoCards = [
     {
         title: "Публічна інформація",
         img: {
-            id: 146,
+            id: 1,
             contentType: "",
             imageFilename: ""
         } as Image,
@@ -44,7 +44,7 @@ export const InstituteInfoCards = [
     {
         title: "Герої не вмирають",
         img: {
-            id: 147,
+            id: 1,
             contentType: "",
             imageFilename: ""
         } as Image,

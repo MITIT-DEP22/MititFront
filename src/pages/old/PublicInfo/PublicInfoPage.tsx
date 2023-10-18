@@ -1,6 +1,6 @@
 import React from 'react';
 import {PageHead} from "../../../shared/ui/PageHead";
-import {PublicInfoBlock} from "../../../widgets/PublicInfoBlock";
+import {PublicInfoBlock} from "../../../widgets/old/PublicInfoBlock";
 
  const PublicInfoPage = () => {
     return (

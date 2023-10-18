@@ -48,6 +48,7 @@ const TextBlockComponent: FC<TextBlockComponentProps> = ({textBlock}) => {
             {textBlock.superiors &&
                 <CompositionOfSuperiors superiors={textBlock.superiors}/>
             }
+
         </div>
     )
 }

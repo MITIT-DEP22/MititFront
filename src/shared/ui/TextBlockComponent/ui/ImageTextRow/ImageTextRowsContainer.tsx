@@ -3,6 +3,7 @@ import {ImageTextRow} from "entities/text-block/model/types";
 import css from "./ImageTextRow.module.scss"
 import {ImageComponent} from "features/ImageComponent";
 import HTMLReactParser from "html-react-parser";
+import TextBlocks from "../../../TextBlocks/TextBlocks";
 
 interface ImageTextRowProps {
     imageTextRows: ImageTextRow[];

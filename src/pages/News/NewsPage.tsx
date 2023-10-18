@@ -6,7 +6,8 @@ import $api from "shared/api";
 import {TextBlock} from "../../entities/text-block";
 import {AccordionElement} from "../../entities/entrance";
 import {Page} from "../../entities/page";
-import {secondFacultyPage} from "../../shared/enums/faculty2Page";
+import {secondFacultyPage} from "../../shared/data/faculty2Page";
+import {contactsPage} from "../../shared/data/contactsPage";
 
 const NewsPage = observer(() => {
 
@@ -20,7 +21,8 @@ const NewsPage = observer(() => {
         //         })
         //     })
         // })
-        sendPage(secondFacultyPage)
+        // sendPage(secondFacultyPage)
+        sendPage(contactsPage)
     }
 
     const sendPage = async (page: Page) => {

@@ -2,6 +2,7 @@ import React, {FC} from 'react';
 import css from "./SuperiorCard.module.scss";
 import {Superior} from "../../../../../entities/superior";
 import {ImageComponent} from "../../../../../features/ImageComponent";
+import HTMLReactParser from "html-react-parser";
 
 
 interface ChiefCardData {
@@ -16,12 +17,9 @@ const SuperiorCard: FC<ChiefCardData> = ({superior, positionRight}) => {
                 <>
                     <ImageComponent imgId={superior?.image?.id}/>
                     <div className={css.chiefCardTextContainer}>
-                        <div>
-
-                        </div>
                         <div className={`${css.chiefCardText} ${css.leftAlign}`}>
                             <div className={`${positionRight ? css.borderLeft : css.borderRight}`}>
-                                <h4 className={css.chiefCardPosition}>{superior.position}</h4>
+                                <h4 className={css.chiefCardPosition}>{HTMLReactParser(superior.position)}</h4>
                             </div>
                             <h6 className={css.chiefCardRangAndName}>
                                 {superior.militaryRank} {superior.fullName}
@@ -43,7 +41,7 @@ const SuperiorCard: FC<ChiefCardData> = ({superior, positionRight}) => {
                         </div>
                         <div className={`${css.chiefCardText} ${css.rightAlign}`}>
                             <div className={`${positionRight ? css.borderLeft : css.borderRight}`}>
-                                <h4 className={css.chiefCardPosition}>{superior.position}</h4>
+                                <h4 className={css.chiefCardPosition}>{HTMLReactParser(superior.position)}</h4>
                             </div>
                             <h6 className={css.chiefCardRangAndName}>
                                 {superior.militaryRank} {superior.fullName}

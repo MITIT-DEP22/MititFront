@@ -1,6 +1,6 @@
 import React from 'react';
 import {PageHead} from "../../../shared/ui/PageHead";
-import {ScienceBlock} from "../../../widgets/ScienceBlock";
+import {ScienceBlock} from "../../../widgets/old/ScienceBlock";
 
 const SciencePage = () => {
     return (

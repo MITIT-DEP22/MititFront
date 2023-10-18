@@ -25,7 +25,7 @@ export const links = {
         {title: "Новини", to: RouterNames.NEWS.to},
         {title: "Наука", to: RouterNames.SCIENCE.to},
         {
-            title: "Факультети", to: "/",
+            title: "Факультети", to: "/faculty",
             subLinks: [
                 {title: "Факультет телекомунікаційних систем", to: RouterNames.FACULTY_1.to},
                 {title: "Факультет інформаційних технологій", to: RouterNames.FACULTY_2.to},
@@ -36,22 +36,22 @@ export const links = {
             ]
         },
         {
-            title: "Кафедри", to: RouterNames.DEPARTMENT.to,
+            title: "Кафедри", to:"/department",
             subLinks: [
-                {id: 10, title: "Кафедра загально-військових дисциплін", to: RouterNames.DEPARTMENT.to},
-                {id: 11, title: "Кафедра іноземних мов", to: RouterNames.DEPARTMENT.to},
+                {id: 10, title: "Кафедра загально-військових дисциплін", to: RouterNames.DEPARTMENT_1.to},
+                {id: 11, title: "Кафедра іноземних мов", to: RouterNames.DEPARTMENT_2.to},
                 {
                     id: 12,
                     title: "Кафедра фізичного виховання, спеціальної фізичної підготовки і спорту",
-                    to: RouterNames.DEPARTMENT.to
+                    to: RouterNames.DEPARTMENT_3.to
                 },
-                {id: 13, title: "Кафедра військово-гуманітарних дисциплін", to: RouterNames.DEPARTMENT.to},
-                {id: 14, title: "Кафедра математики та фізики", to: RouterNames.DEPARTMENT.to},
-                {id: 15, title: "Кафедра військової підготовки", to: RouterNames.DEPARTMENT.to},
+                {id: 13, title: "Кафедра військово-гуманітарних дисциплін", to: RouterNames.DEPARTMENT_4.to},
+                {id: 14, title: "Кафедра математики та фізики", to: RouterNames.DEPARTMENT_5.to},
+                {id: 15, title: "Кафедра військової підготовки", to: RouterNames.DEPARTMENT_6.to},
             ]
         },
         {
-            title: "Підрозіли", to: RouterNames.UNIT.to,
+            title: "Підрозіли", to: "/unit",
             subLinks: [
                 {
                     id: 17, title: "Науковий центр зв’язку та інформатизації", to: RouterNames.UNIT.to
@@ -956,7 +956,6 @@ export const departments: Department[] = [
             contentType: "",
             imageFilename: ""
         } as Image,
-        title: "Кафедра загальної тактики",
         titleTextBlock: {
             textContent: [
                 "Кафедра загальної тактики є базовим структурним підрозділ інституту що провадить освітню, методичну та наукову діяльність за всіма спеціальностями та спеціалізаціями підготовки курсантів (слухачів, студентів).\n"

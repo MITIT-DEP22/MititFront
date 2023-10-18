@@ -14,7 +14,15 @@ export const RouterNames = {
     FACULTY_2:{to: "/page/faculty2", name:"faculty2"},
     FACULTY_3:{to: "/page/faculty3", name:"faculty3"},
 
-    DEPARTMENT:{to: "/page/department", name:"department"},
+    DEPARTMENT_1:{to: "/page/department1", name:"department1"},
+    DEPARTMENT_2:{to: "/page/department2", name:"department2"},
+    DEPARTMENT_3:{to: "/page/department3", name:"department3"},
+    DEPARTMENT_4:{to: "/page/department4", name:"department4"},
+    DEPARTMENT_5:{to: "/page/department5", name:"department5"},
+    DEPARTMENT_6:{to: "/page/department6", name:"department6"},
+
+
+
     UNIT:{to: "/page/unit", name:"unit"},
     COOPERATION:{to: "/page/cooperation", name:"cooperation"},
     OUR_WINS:{to: "/page/wins", name:"our_wins"},

@@ -1,6 +1,6 @@
 import React from 'react';
 import {PageHead} from "../../../shared/ui/PageHead";
-import {EntranceBlock} from "../../../widgets/EntranceBlock";
+import {EntranceBlock} from "../../../widgets/old/EntranceBlock";
 
  const EntrancePage = () => {
     return (

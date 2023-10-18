@@ -3,7 +3,7 @@ import {useParams} from "react-router";
 import {PageHead} from "shared/ui/PageHead";
 import {units} from "shared/enums/Data";
 import {Unit} from "entities/unit";
-import {UnitBlock} from "widgets/UnitBlock";
+import {UnitBlock} from "widgets/old/UnitBlock";
 
  const UnitPage = () => {
 
