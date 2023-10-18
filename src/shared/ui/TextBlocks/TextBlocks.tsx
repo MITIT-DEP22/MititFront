@@ -11,7 +11,7 @@ const TextBlocks: FC<TextBlocksProps> = ({textBlocks}) => {
     return (
         <div className={css.container}>
             {textBlocks?.map(item => (
-                <TextBlockComponent textBlock={item}/>
+                <TextBlockComponent key={`${item.title}_${item.id}`} textBlock={item}/>
             ))}
         </div>
     );

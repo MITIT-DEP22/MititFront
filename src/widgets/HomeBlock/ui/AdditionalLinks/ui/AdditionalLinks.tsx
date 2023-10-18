@@ -27,7 +27,7 @@ export const AdditionalLinks = () => {
     return (
         <div className={css.container}>
             {links.map(item => (
-                <AdditionalLink img={item.img} link={item.link} title={item.title}/>
+                <AdditionalLink key={`${item.link}_${item.title}`} img={item.img} link={item.link} title={item.title}/>
             ))}
         </div>
     );

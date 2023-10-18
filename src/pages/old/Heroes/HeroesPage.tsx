@@ -1,6 +1,6 @@
 import React from 'react';
-import {PageHead} from "shared/ui/PageHead";
-import {HeroesBlock} from "widgets/HeroesBlock";
+import {PageHead} from "../../../shared/ui/PageHead";
+import {HeroesBlock} from "../../../widgets/HeroesBlock";
 
  const HeroesPage = () => {
     return (

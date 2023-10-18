@@ -27,7 +27,7 @@ const Sidebar: FC<SidebarProps> = observer(({isOpen, close}) => {
     return (
         <div className={`${css.container} ${isOpen && css.active}`}>
             <div className={`${css.menu} ${isOpen && css.menuActive}`}>
-                <Link to={RouterNames.HOME} onClick={() => goTo(RouterNames.HOME)} className={css.logoContainer}>
+                <Link to={RouterNames.HOME.to} onClick={() => goTo(RouterNames.HOME.to)} className={css.logoContainer}>
                     <TitleLogo logoSize={"25vw"} withTitle={false} value={instituteName}/>
                     <span>{instituteName}</span>
                 </Link>

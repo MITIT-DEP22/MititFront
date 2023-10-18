@@ -1,33 +1,40 @@
 import React, {useEffect} from 'react';
 import {PageHead} from "shared/ui/PageHead";
 import TextBlocks from "shared/ui/TextBlocks/TextBlocks";
-import pageStore from "./model/pageStore";
 import LoadingSpinner from "shared/ui/LoadingSpinner/LoadingSpinner";
 import {observer} from "mobx-react";
 import BlockContainer from "shared/ui/BlockContainer/BlockContainer";
 import InfoAccordion from "shared/ui/InfoAccordion/InfoAccordion";
-import {useLocation} from "react-router-dom";
+import {useParams} from "react-router";
+import pageStore from "entities/page/store/pageStore";
 
 const UniversalPage = observer(() => {
-    const {pathname} = useLocation()
-    const {isLoading, page} = pageStore;
+
+    const {currentPage, isLoading} = pageStore;
+    const {name} = useParams()
+
     useEffect(() => {
-        pageStore.getPageLocal(pathname)
-    }, [pathname]);
+        if (!isLoading && name) {
+            pageStore.changeCurrentPage(name)
+            console.log(JSON.stringify(pageStore.currentPage))
+        }
+    }, [isLoading, name]);
 
 
     return (
         <>
-            {isLoading ? <LoadingSpinner/> :
+            {isLoading ?
+                <LoadingSpinner spinnerWidth={"100px"} spinnerHeight={"100px"} padding={"30%"}/>
+                :
                 <>
-                    <PageHead title={page.title} imgId={0}/>
+                    <PageHead title={currentPage?.title} imgId={currentPage?.titleImage?.id}/>
                     <BlockContainer>
-                        {page.textBlocks &&
-                            <TextBlocks textBlocks={page.textBlocks}/>
+                        {currentPage?.textBlocks &&
+                            <TextBlocks textBlocks={currentPage?.textBlocks}/>
                         }
 
-                        {page.accordionElements &&
-                            page.accordionElements.map(item => (
+                        {currentPage?.accordionElements &&
+                            currentPage?.accordionElements.map(item => (
                                 <InfoAccordion item={item}/>
                             ))
                         }

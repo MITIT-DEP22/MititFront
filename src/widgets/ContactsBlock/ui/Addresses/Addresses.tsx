@@ -4,8 +4,6 @@ import css from "./Addresses.module.scss"
 import Title from "../Title/Title";
 import AddressDataLi from "./ui/AddressDataLi";
 import {ImageComponent} from "features/ImageComponent";
-import $api from "../../../../shared/api";
-import {faculties} from "../../../../shared/enums/Data";
 
 const address = "01011, м. Київ, вул. Московська, 45/1"
 

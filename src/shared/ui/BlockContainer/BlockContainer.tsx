@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import css from "./BlockContainer.module.scss"
 interface BlockContainerProps extends React.HTMLProps<HTMLElement> {
-    children:React.ReactNode;
+    children?:React.ReactNode;
 }
 
 const BlockContainer:FC<BlockContainerProps> = ({children, className}) => {

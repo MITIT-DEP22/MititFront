@@ -2,6 +2,7 @@ import {Image} from "../../image";
 import {Superior} from "../../superior";
 
 export type TextBlock = {
+    id?:number;
     title?: string;
     textContent?: string[];
     uLists?: List[];

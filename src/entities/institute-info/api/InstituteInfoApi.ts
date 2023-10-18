@@ -10,7 +10,7 @@ export const InstituteInfoCards = [
             contentType: "",
             imageFilename: ""
         } as Image,
-        link: RouterNames.WHY_MITIT
+        link: RouterNames.WHY_MITIT.to
     } as InstituteInfo,
 
     {
@@ -20,7 +20,7 @@ export const InstituteInfoCards = [
             contentType: "",
             imageFilename: ""
         } as Image,
-        link: RouterNames.HISTORY
+        link: RouterNames.HISTORY.to
     } as InstituteInfo,
 
     {
@@ -30,7 +30,7 @@ export const InstituteInfoCards = [
             contentType: "",
             imageFilename: ""
         } as Image,
-        link: RouterNames.CHIEFS
+        link: RouterNames.SUPERIORS.to
     } as InstituteInfo,
     {
         title: "Публічна інформація",
@@ -39,7 +39,7 @@ export const InstituteInfoCards = [
             contentType: "",
             imageFilename: ""
         } as Image,
-        link: RouterNames.PUBLIC_INFO
+        link: RouterNames.PUBLIC_INFO.to
     } as InstituteInfo,
     {
         title: "Герої не вмирають",
@@ -48,6 +48,6 @@ export const InstituteInfoCards = [
             contentType: "",
             imageFilename: ""
         } as Image,
-        link: RouterNames.HEROES
+        link: RouterNames.HEROES.to
     } as InstituteInfo,
 ]

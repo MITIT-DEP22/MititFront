@@ -1,6 +1,6 @@
 import React from 'react';
-import {PageHead} from "shared/ui/PageHead";
-import {SuperiorsBlock} from "widgets/SuperiorsBlock";
+import {PageHead} from "../../../shared/ui/PageHead";
+import {SuperiorsBlock} from "../../../widgets/SuperiorsBlock";
 
 
  const SuperiorsPage = () => {

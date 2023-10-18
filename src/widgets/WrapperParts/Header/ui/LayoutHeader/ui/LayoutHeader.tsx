@@ -37,13 +37,13 @@ export const LayoutHeader = observer(() => {
             <div style={{top: `${topPosition}px`}} className={css.headerTopContainer}>
                 <div className={css.iconsContainer}>
                     {headerData.icons.map(item => (
-                        <SocialLinkIcon link={item}/>
+                        <SocialLinkIcon key={`${item.iconBootstrap}_${item.to}`} link={item}/>
                     ))}
                     <LanguageToggle/>
                 </div>
                 <div className={css.linksContainer}>
                     {links.linksT.map(item => (
-                        <NavLinkT isActive={headerStore.pathname.includes(item.to)}
+                        <NavLinkT key={`${item.title}_${item.to}`} isActive={headerStore.pathname.includes(item.to)}
                                   click={() => headerStore.changeLink(item.to)}
                                   link={item}/>
                     ))}
@@ -51,16 +51,16 @@ export const LayoutHeader = observer(() => {
             </div>
 
             <div className={css.headerBottomContainer}>
-                <Link className={css.logoLink} to={RouterNames.HOME} onClick={() => headerStore.changeLink(RouterNames.HOME)}>
+                <Link className={css.logoLink} to={RouterNames.HOME.to} onClick={() => headerStore.changeLink(RouterNames.HOME.to)}>
                     <TitleLogo value={instituteName}/>
                 </Link>
                 <div className={css.linksContainer}>
                     {links.linksB.map(item => (
                         item.subLinks ?
-                            <NavSubLinksD link={item} isActive={headerStore.pathname.includes(item.to)}
+                            <NavSubLinksD key={`${item.title}_${item.to}`} link={item} isActive={headerStore.pathname.includes(item.to)}
                                           click={() => headerStore.changeLink(item.to)}/>
                             :
-                            <NavLinkB click={() => headerStore.changeLink(item.to)}
+                            <NavLinkB key={`${item.title}_${item.to}`} click={() => headerStore.changeLink(item.to)}
                                       isActive={headerStore.pathname.includes(item.to)}
                                       link={item}/>
                     ))}

@@ -1,13 +1,12 @@
-import {RouterNames} from "../../../../shared/enums/RouterNames";
 
 export type SubLink = {
     id:number;
     title:string;
-    to:RouterNames;
+    to:string;
 }
 
 export type NavLink = {
     title:string;
     subLinks:SubLink[];
-    to:RouterNames;
+    to:string;
 }

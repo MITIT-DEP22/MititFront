@@ -4,5 +4,5 @@ import {RouterNames} from "shared/enums/RouterNames";
 export type InstituteInfo = {
     title: string,
     img:Image;
-    link: RouterNames
+    link: string;
 }

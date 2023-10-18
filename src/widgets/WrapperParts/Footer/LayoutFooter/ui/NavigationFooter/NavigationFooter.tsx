@@ -11,8 +11,8 @@ const NavigationFooter: FC<NavigationElement> = ({title, value}) => {
     return (
         <div className={css.navigationContainer}>
             <span className={css.navigationTitle}>{title}</span>
-            {value.map(el => (
-                <Link to={'/'} className={css.navigationElement}>{el.title}</Link>
+            {value.map((el,index) => (
+                <Link  key={`${el.title}_${index}`} to={'/'} className={css.navigationElement}>{el.title}</Link>
             ))}
         </div>
     );

@@ -12,7 +12,7 @@ export const InstituteBlock = () => {
             <SectionTitle  title={"Інститут"}/>
             <div className={css.cardContainer}>
                 {InstituteInfoCards.map(item => (
-                    <InfoCard info={item}/>
+                    <InfoCard key={`${item.title}_${item.link}`} info={item}/>
                 ))}
             </div>
         </BlockContainer>

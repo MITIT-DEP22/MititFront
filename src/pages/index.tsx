@@ -2,18 +2,18 @@ import React, {lazy} from "react";
 import {Route, Routes, Navigate} from "react-router-dom";
 import {RouterNames} from "shared/enums/RouterNames";
 import ContactPage from "./Contacts/ContactPage";
-import EntrancePage from "./Entrance/EntrancePage";
-import EducationPage from "./Education/EducationPage";
-import SciencePage from "./Science/SciencePage";
+import EntrancePage from "./old/Entrance/EntrancePage";
+import EducationPage from "./old/Education/EducationPage";
+import SciencePage from "./old/Science/SciencePage";
 import InstitutePage from "./Institute/InstitutePage";
-import SuperiorsPage from "./Institute/Superiors/SuperiorsPage";
+import SuperiorsPage from "./old/Superiors/SuperiorsPage";
 import HistoricalPage from "./Institute/Historical/HistoricalPage";
 import WhyPage from "./Institute/Why/WhyPage";
-import PublicInfoPage from "./Institute/PublicInfo/PublicInfoPage";
-import HeroesPage from "./Institute/Heroes/HeroesPage";
+import PublicInfoPage from "./old/PublicInfo/PublicInfoPage";
+import HeroesPage from "./old/Heroes/HeroesPage";
 import HomePage from "./Home/HomePage";
 import NewsPage from "./News/NewsPage";
-import FacultyPage from "./Faculty/FacultyPage";
+import FacultyPage from "./old/Faculty/FacultyPage";
 import DepartmentPage from "./Department/DepartmentPage";
 import UnitPage from "./Unit/UnitPage";
 import UniversalPage from "./UniversalPage/UniversalPage";
@@ -40,11 +40,11 @@ export const Routing = () => {
     return (
         <Routes>
 
-            <Route path={RouterNames.HOME} element={<HomePage/>}/>
-            <Route path={RouterNames.INSTITUTE} element={<InstitutePage/>}/>
-            <Route path={RouterNames.NEWS} element={<NewsPage/>}/>
+            <Route path={RouterNames.HOME.to} element={<HomePage/>}/>
+            <Route path={RouterNames.INSTITUTE.to} element={<InstitutePage/>}/>
+            <Route path={RouterNames.NEWS.to} element={<NewsPage/>}/>
 
-            <Route path={"/page/*"} element={<UniversalPage/>}/>
+            <Route path={"/page/:name"} element={<UniversalPage/>}/>
             {/*<Route path={RouterNames.ENTRANTS} element={<EntrancePage/>}/>*/}
             {/*<Route path={RouterNames.STUDY} element={<EducationPage/>}/>*/}
             {/*<Route path={RouterNames.SCIENCE} element={<SciencePage/>}/>*/}
@@ -57,7 +57,7 @@ export const Routing = () => {
             {/*<Route path={RouterNames.DEPARTMENT + "/:id"} element={<DepartmentPage/>}/>*/}
             {/*<Route path={RouterNames.UNIT + "/:id"} element={<UnitPage/>}/>*/}
 
-            <Route path={RouterNames.NOT_FOUND} element={<div>404</div>}/>
+            <Route path={RouterNames.NOT_FOUND.to} element={<div>404</div>}/>
             <Route path="*" element={<Navigate to="/"/>}/>
         </Routes>
     );
