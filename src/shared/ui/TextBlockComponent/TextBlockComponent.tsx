@@ -1,7 +1,6 @@
 import React, {FC} from 'react';
 import {TextBlock} from "entities/text-block";
 import css from "./TextBlockComponent.module.scss"
-import Title from "./ui/Title/Title";
 import TextContentContainer from "./ui/TextContentContainer/TextContentContainer";
 import UListsContainer from "./ui/uListsContainer/uListsContainer";
 import ImagesContainer from "./ui/ImagesContainer/ImagesContainer";

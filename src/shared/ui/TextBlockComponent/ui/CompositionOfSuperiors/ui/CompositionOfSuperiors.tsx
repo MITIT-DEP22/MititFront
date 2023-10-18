@@ -1,5 +1,5 @@
 import {observer} from "mobx-react";
-import SuperiorCard from '../../SuperiorCard/SuperiorCard'
+import SuperiorCard from './SuperiorCard/SuperiorCard'
 import css from "./CompositionOfSuperiors.module.scss"
 import {Superior} from "entities/superior";
 import {FC} from "react";

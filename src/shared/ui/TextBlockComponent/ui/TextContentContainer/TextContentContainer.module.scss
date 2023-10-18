@@ -1,5 +1,6 @@
 .contentContainer {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 25px;
 }
@@ -9,6 +10,3 @@
 
 }
 
-.textContent p{
-  color:red
-}

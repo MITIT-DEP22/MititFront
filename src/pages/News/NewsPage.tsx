@@ -8,6 +8,8 @@ import {AccordionElement} from "../../entities/entrance";
 import {Page} from "../../entities/page";
 import {secondFacultyPage} from "../../shared/data/faculty2Page";
 import {contactsPage} from "../../shared/data/contactsPage";
+import {department1Page} from "../../shared/data/departments/department1Page";
+import {department2Page} from "../../shared/data/departments/department2Page";
 
 const NewsPage = observer(() => {
 
@@ -22,7 +24,8 @@ const NewsPage = observer(() => {
         //     })
         // })
         // sendPage(secondFacultyPage)
-        sendPage(contactsPage)
+        // sendPage(contactsPage)
+        sendPage(department2Page)
     }
 
     const sendPage = async (page: Page) => {

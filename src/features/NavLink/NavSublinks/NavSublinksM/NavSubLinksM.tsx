@@ -30,7 +30,7 @@ const NavSubLinksM: FC<NavSubLinksMProps> = ({isActive, goTo, link}) => {
                     <div className={css.container}>
                         {link.subLinks?.map(item => (
                             <Link onClick={() => goTo(link.to)} className={css.link}
-                                  to={`${item.to}/${item.id}`}>{item.title}</Link>
+                                  to={item.to}>{item.title}</Link>
                         ))}
                     </div>
                 )}/>
