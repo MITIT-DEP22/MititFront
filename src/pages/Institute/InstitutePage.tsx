@@ -6,7 +6,7 @@ import {InstituteBlock} from "widgets/InstituteBlock";
  const InstitutePage = () => {
     return (
         <>
-            <PageHead title={"Інститут"} imgId={137}/>
+            <PageHead title={"Інститут"} imgId={1}/>
             <InstituteBlock/>
         </>
     );

@@ -6,10 +6,10 @@ import $api from "shared/api";
 import {TextBlock} from "../../entities/text-block";
 import {AccordionElement} from "../../entities/entrance";
 import {Page} from "../../entities/page";
-import {secondFacultyPage} from "../../shared/data/faculty2Page";
-import {contactsPage} from "../../shared/data/contactsPage";
-import {department1Page} from "../../shared/data/departments/department1Page";
-import {department2Page} from "../../shared/data/departments/department2Page";
+import {department3Page} from "../../shared/data/departments/department3Page";
+import {department4Page} from "../../shared/data/departments/department4Page";
+import {department5Page} from "../../shared/data/departments/department5Page";
+import {department6Page} from "../../shared/data/departments/department6Page";
 
 const NewsPage = observer(() => {
 
@@ -25,7 +25,13 @@ const NewsPage = observer(() => {
         // })
         // sendPage(secondFacultyPage)
         // sendPage(contactsPage)
-        sendPage(department2Page)
+        // sendPage(department2Page)
+        // sendPage(department3Page)
+        sendPage(department4Page).then(()=>{
+            sendPage(department5Page).then(()=>{
+                sendPage(department6Page)
+            })
+        })
     }
 
     const sendPage = async (page: Page) => {

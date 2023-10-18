@@ -1,8 +1,8 @@
-import {RouterNames} from "../enums/RouterNames";
-import {Image} from "../../entities/image";
-import {Superior} from "../../entities/superior";
-import {TextBlock} from "../../entities/text-block";
-import {Page} from "../../entities/page";
+import {RouterNames} from "../../enums/RouterNames";
+import {Image} from "../../../entities/image";
+import {Superior} from "../../../entities/superior";
+import {TextBlock} from "../../../entities/text-block";
+import {Page} from "../../../entities/page";
 
 export const faculty1Page = {
     title: "Факультети",

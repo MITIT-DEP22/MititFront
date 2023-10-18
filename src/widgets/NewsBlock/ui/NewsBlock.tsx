@@ -9,9 +9,7 @@ import css from "./NewsBlock.module.scss"
 import Pagination from "./Pagination/Pagination";
 
 export const NewsBlock = observer(() => {
-
     const {news, isLoading} = newsStore
-
     return (
         <BlockContainer className={css.blockContainer}>
             <SectionTitle title={"Новини"}/>

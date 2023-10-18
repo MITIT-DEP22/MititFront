@@ -6,7 +6,7 @@ import {HistoricalReference} from "widgets/old/HistoricalReference"
  const HistoricalPage = () => {
     return (
         <>
-            <PageHead title={"Історична довідка"} imgId={142}/>
+            <PageHead title={"Історична довідка"} imgId={1}/>
             <HistoricalReference/>
         </>
     );

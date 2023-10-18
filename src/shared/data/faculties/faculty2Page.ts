@@ -1,8 +1,8 @@
-import {List, TextBlock} from "../../entities/text-block";
-import {Superior} from "../../entities/superior";
-import {Image} from "../../entities/image";
-import {Page} from "../../entities/page";
-import {RouterNames} from "../enums/RouterNames";
+import {List, TextBlock} from "../../../entities/text-block";
+import {Superior} from "../../../entities/superior";
+import {Image} from "../../../entities/image";
+import {Page} from "../../../entities/page";
+import {RouterNames} from "../../enums/RouterNames";
 
 export const secondFacultyPage: Page = {
     titleImage: {id: 1} as Image,

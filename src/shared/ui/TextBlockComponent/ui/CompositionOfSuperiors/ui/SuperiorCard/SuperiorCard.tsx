@@ -22,7 +22,7 @@ const SuperiorCard: FC<ChiefCardData> = ({superior, positionRight}) => {
                                 <h4 className={css.chiefCardPosition}>{HTMLReactParser(superior.position)}</h4>
                             </div>
                             <h6 className={css.chiefCardRangAndName}>
-                                {superior.militaryRank} {superior.fullName}
+                                {HTMLReactParser(superior.militaryRank)} {HTMLReactParser(superior.fullName)}
                             </h6>
                             {superior.achievements?.map(item => (
                                 <p>{item}</p>
@@ -44,7 +44,7 @@ const SuperiorCard: FC<ChiefCardData> = ({superior, positionRight}) => {
                                 <h4 className={css.chiefCardPosition}>{HTMLReactParser(superior.position)}</h4>
                             </div>
                             <h6 className={css.chiefCardRangAndName}>
-                                {superior.militaryRank} {superior.fullName}
+                                {HTMLReactParser(superior.militaryRank)} {HTMLReactParser(superior.fullName)}
                             </h6>
                             {superior.achievements?.map(item => (
                                 <p>{item}</p>
