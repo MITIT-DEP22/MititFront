@@ -14,6 +14,18 @@
 
 }
 
+.chiefCardTextAbout {
+  font-size: 14px;
+}
+
+.chiefCardTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  width: 415px;
+}
+
 .chiefCardText {
   display: flex;
   flex-direction: column;

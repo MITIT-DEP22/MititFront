@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionTitle from "shared/ui/SectionTitle/SectionTitle";
-import {CompositionOfSuperiors} from "../../../shared/ui/TextBlockComponent/ui/CompositionOfSuperiors";
+import {CompositionOfSuperiors} from "shared/ui/TextBlockComponent/ui/CompositionOfSuperiors";
 import BlockContainer from "shared/ui/BlockContainer/BlockContainer";
 import superiorStore from "entities/superior/store/superior-store";
 import LoadingSpinner from "shared/ui/LoadingSpinner/LoadingSpinner";
