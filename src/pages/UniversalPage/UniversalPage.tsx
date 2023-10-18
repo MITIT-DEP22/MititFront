@@ -32,7 +32,6 @@ const UniversalPage = observer(() => {
                         {currentPage?.textBlocks &&
                             <TextBlocks textBlocks={currentPage?.textBlocks}/>
                         }
-
                         {currentPage?.accordionElements &&
                             currentPage?.accordionElements.map(item => (
                                 <InfoAccordion item={item}/>

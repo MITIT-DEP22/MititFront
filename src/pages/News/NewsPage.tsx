@@ -3,23 +3,24 @@ import {PageHead} from "shared/ui/PageHead";
 import {NewsBlock} from "widgets/NewsBlock";
 import {observer} from "mobx-react";
 import $api from "shared/api";
-import {educationsPage, entrancesPage, publicInfoPage, sciencesPage, superiorsPage} from "shared/enums/Data";
 import {TextBlock} from "../../entities/text-block";
 import {AccordionElement} from "../../entities/entrance";
 import {Page} from "../../entities/page";
+import {secondFacultyPage} from "../../shared/enums/faculty2Page";
 
 const NewsPage = observer(() => {
 
     const sendAllPages = () => {
-        sendPage(superiorsPage).then(() => {
-            sendPage(entrancesPage).then(() => {
-                sendPage(educationsPage).then(() => {
-                    sendPage(publicInfoPage).then(() => {
-                        sendPage(sciencesPage)
-                    })
-                })
-            })
-        })
+        // sendPage(superiorsPage).then(() => {
+        //     sendPage(entrancesPage).then(() => {
+        //         sendPage(educationsPage).then(() => {
+        //             sendPage(publicInfoPage).then(() => {
+        //                 sendPage(sciencesPage)
+        //             })
+        //         })
+        //     })
+        // })
+        sendPage(secondFacultyPage)
     }
 
     const sendPage = async (page: Page) => {
