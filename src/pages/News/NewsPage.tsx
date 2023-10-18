@@ -10,6 +10,8 @@ import {department3Page} from "../../shared/data/departments/department3Page";
 import {department4Page} from "../../shared/data/departments/department4Page";
 import {department5Page} from "../../shared/data/departments/department5Page";
 import {department6Page} from "../../shared/data/departments/department6Page";
+import {faculty2Page} from "../../shared/data/faculties/faculty2Page";
+import {contactsPage} from "../../shared/data/contactsPage";
 
 const NewsPage = observer(() => {
 

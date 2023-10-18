@@ -2,6 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: max-content;
   gap: 30px;
 
   img {
@@ -101,8 +103,16 @@
       height: 327px;
     }
   }
-  .chiefCardText {
+  .chiefCardTextContainer{
     width: 216px;
+    height: max-content;
+  }
+  .chiefCardTextAbout {
+      width: 100%;
+      height: max-content;
+  }
+  .chiefCardText {
+    width: 100%;
     height: max-content;
   }
   .chiefCardPosition {
