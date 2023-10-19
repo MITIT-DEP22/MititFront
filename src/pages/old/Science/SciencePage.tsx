@@ -5,7 +5,7 @@ import {ScienceBlock} from "../../../widgets/old/ScienceBlock";
 const SciencePage = () => {
     return (
         <>
-            <PageHead title={"наука"} imgId={154}/>
+            {/*<PageHead title={"наука"} imgId={154}/>*/}
             <ScienceBlock/>
         </>
     );

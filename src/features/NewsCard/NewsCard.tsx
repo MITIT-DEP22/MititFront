@@ -3,6 +3,7 @@ import css from "./NewsCard.module.scss"
 import {formatDate} from "entities/news/lib/formatDate";
 import {News} from "entities/news/model/types";
 import {ImageComponent} from "../ImageComponent";
+import HTMLReactParser from "html-react-parser";
 
 interface NewsProps {
     news: News;
@@ -16,7 +17,7 @@ export const NewsCard: FC<NewsProps> = ({news, width}) => {
                     {formatDate(news?.createdAt)}
                 </div>
                 <div className={css.cardTitle}>
-                    {news?.title}
+                    {HTMLReactParser(news?.title)}
                 </div>
                 <div style={{display:"none"}}>
                     {news.id}

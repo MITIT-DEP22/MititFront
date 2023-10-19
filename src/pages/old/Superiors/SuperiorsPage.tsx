@@ -5,7 +5,7 @@ import {PageHead} from "../../../shared/ui/PageHead";
  const SuperiorsPage = () => {
     return (
         <>
-            <PageHead title={"Керівний склад"} imgId={151}/>
+            {/*<PageHead title={"Керівний склад"} imgId={151}/>*/}
             {/*<SuperiorsBlock/>*/}
         </>
     );

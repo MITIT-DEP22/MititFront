@@ -91,9 +91,8 @@ const NewsPage = observer(() => {
 
     return (
         <>
-            <PageHead title={"Новини"} imgId={153}/>
+            <PageHead  title={"Новини"} imgId={16245}/>
             <NewsBlock/>
-
             <button onClick={() => {
                 sendAllPages()
             }}>sendPage

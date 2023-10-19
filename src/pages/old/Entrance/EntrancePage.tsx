@@ -5,7 +5,7 @@ import {EntranceBlock} from "../../../widgets/old/EntranceBlock";
  const EntrancePage = () => {
     return (
         <>
-            <PageHead title={"Вступникам"} imgId={148}/>
+            {/*<PageHead title={"Вступникам"} imgId={148}/>*/}
             <EntranceBlock/>
         </>
     );

@@ -5,7 +5,7 @@ import {PublicInfoBlock} from "../../../widgets/old/PublicInfoBlock";
  const PublicInfoPage = () => {
     return (
         <>
-            <PageHead title={"Публічна інформація"}  imgId={139}/>
+            {/*<PageHead title={"Публічна інформація"}  imgId={139}/>*/}
             <PublicInfoBlock/>
         </>
     );

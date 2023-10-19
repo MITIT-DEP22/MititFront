@@ -5,7 +5,7 @@ import {HeroesBlock} from "../../../widgets/old/HeroesBlock";
  const HeroesPage = () => {
     return (
         <>
-            <PageHead title={"Герої не вмирають"} imgId={152}/>
+            {/*<PageHead title={"Герої не вмирають"} imgId={152}/>*/}
             <HeroesBlock/>
         </>
     );

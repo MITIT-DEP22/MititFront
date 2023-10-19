@@ -13,6 +13,7 @@ class PageStore {
         titleImage: {id: 1} as Image
     } as Page;
     @observable isLoading: boolean = true;
+    @observable titleImageIsLoading:boolean = true;
     @observable pages: Page[] = [];
 
     constructor() {

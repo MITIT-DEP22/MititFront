@@ -13,10 +13,10 @@ const UniversalPage = observer(() => {
     const {currentPage, isLoading} = pageStore;
     const {name} = useParams()
 
+
     useEffect(() => {
         if (!isLoading && name) {
             pageStore.changeCurrentPage(name)
-            console.log(JSON.stringify(pageStore.currentPage))
         }
     }, [isLoading, name]);
 

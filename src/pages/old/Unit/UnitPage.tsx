@@ -17,7 +17,7 @@ import {UnitBlock} from "../../../widgets/old/UnitBlock";
 
     return (
         <>
-            <PageHead title={"Підрозділи"} imgId={unit?.headerImg?.id}/>
+            {/*<PageHead title={"Підрозділи"} imgId={unit?.headerImg?.id}/>*/}
             <UnitBlock unit={unit}/>
         </>
     );
