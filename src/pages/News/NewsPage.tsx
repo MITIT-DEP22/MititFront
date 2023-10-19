@@ -33,9 +33,9 @@ const NewsPage = observer(() => {
         // })
         // sendPage(faculty1Page)
         // sendPage(unit1Page).then(() => {
-        //     sendPage(unit2Page).then(() => [
+        //     sendPage(unit2Page).then(() => {
         //         sendPage(unit3Page)
-        //     ])
+        //     })
         // })
 
     }
