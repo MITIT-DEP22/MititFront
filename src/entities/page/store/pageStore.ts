@@ -5,13 +5,7 @@ import {Page} from "../model/types";
 import {Image} from "../../image";
 
 class PageStore {
-    @observable currentPage: Page = {
-        title: "",
-        name: "",
-        textBlocks: [],
-        accordionElements: [],
-        titleImage: {id: 1} as Image
-    } as Page;
+    @observable currentPage: Page = {} as Page;
     @observable isLoading: boolean = true;
     @observable titleImageIsLoading:boolean = true;
     @observable pages: Page[] = [];

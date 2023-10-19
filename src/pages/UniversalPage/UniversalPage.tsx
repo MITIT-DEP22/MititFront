@@ -27,7 +27,9 @@ const UniversalPage = observer(() => {
                 <LoadingSpinner spinnerWidth={"100px"} spinnerHeight={"100px"} padding={"30%"}/>
                 :
                 <>
-                    <PageHead title={currentPage?.title} imgId={currentPage?.titleImage?.id}/>
+                    {currentPage?.titleImage?.id &&
+                        <PageHead title={currentPage?.title} imgId={currentPage?.titleImage?.id}/>
+                    }
                     <BlockContainer>
                         {currentPage?.textBlocks &&
                             <TextBlocks textBlocks={currentPage?.textBlocks}/>
