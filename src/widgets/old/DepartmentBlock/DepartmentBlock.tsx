@@ -1,10 +1,10 @@
 import React, {FC} from 'react';
-import {Department} from "entities/department";
-import SectionTitle from "shared/ui/SectionTitle/SectionTitle";
-import TextBlocks from "shared/ui/TextBlocks/TextBlocks";
-import TextBlockComponent from "shared/ui/TextBlockComponent/TextBlockComponent";
-import SuperiorCard from "../../shared/ui/TextBlockComponent/ui/CompositionOfSuperiors/ui/SuperiorCard/SuperiorCard";
-import BlockContainer from "shared/ui/BlockContainer/BlockContainer";
+import {Department} from "../../../entities/department";
+import SectionTitle from "../../../shared/ui/SectionTitle/SectionTitle";
+import TextBlocks from "../../../shared/ui/TextBlocks/TextBlocks";
+import TextBlockComponent from "../../../shared/ui/TextBlockComponent/TextBlockComponent";
+import SuperiorCard from "../../../shared/ui/TextBlockComponent/ui/CompositionOfSuperiors/ui/SuperiorCard/SuperiorCard";
+import BlockContainer from "../../../shared/ui/BlockContainer/BlockContainer";
 interface DepartmentProps {
     department: Department;
 }
