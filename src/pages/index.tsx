@@ -10,7 +10,6 @@ import UniversalPage from "./UniversalPage/UniversalPage";
 export const Routing = () => {
     return (
         <Routes>
-
             <Route path={RouterNames.HOME.to} element={<HomePage/>}/>
             <Route path={RouterNames.INSTITUTE.to} element={<InstitutePage/>}/>
             <Route path={RouterNames.NEWS.to} element={<NewsPage/>}/>

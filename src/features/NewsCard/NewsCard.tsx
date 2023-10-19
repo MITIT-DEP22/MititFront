@@ -18,6 +18,9 @@ export const NewsCard: FC<NewsProps> = ({news, width}) => {
                 <div className={css.cardTitle}>
                     {news?.title}
                 </div>
+                <div style={{display:"none"}}>
+                    {news.id}
+                </div>
                 <ImageComponent className={css.cardImg} imgId={news.titleImage?.id}/>
             </div>
     );

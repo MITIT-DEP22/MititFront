@@ -9,6 +9,7 @@ import {Page} from "entities/page";
 import {unit1Page} from "../../shared/data/units/unit1";
 import {unit2Page} from "../../shared/data/units/unit2";
 import {unit3Page} from "../../shared/data/units/unit3";
+import {heroesPage} from "../../shared/data/institute/heroesPage";
 
 const NewsPage = observer(() => {
 
@@ -37,6 +38,8 @@ const NewsPage = observer(() => {
         //         sendPage(unit3Page)
         //     })
         // })
+
+        sendPage(heroesPage)
 
     }
 

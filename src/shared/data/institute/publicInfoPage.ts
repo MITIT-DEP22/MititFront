@@ -1,7 +1,7 @@
-import {Page} from "../../entities/page";
-import {Image} from "../../entities/image";
-import {RouterNames} from "../enums/RouterNames";
-import {List} from "../../entities/text-block";
+import {Page} from "../../../entities/page";
+import {Image} from "../../../entities/image";
+import {RouterNames} from "../../enums/RouterNames";
+import {List} from "../../../entities/text-block";
 
 export const publicInfoPage: Page = {
     title: "Публічна інформація",
