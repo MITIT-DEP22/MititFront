@@ -33,7 +33,7 @@ export const faculty1Page = {
                         contentType: "",
                         imageFilename: ""
                     } as Image,
-                    militaryRank: 'полковник '
+                    militaryRank: 'полковник'
                 } as Superior,
                 {
                     fullName: "ЛЕБІДЬ Євген Віцентович",

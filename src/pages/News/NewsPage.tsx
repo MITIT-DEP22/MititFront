@@ -6,6 +6,9 @@ import $api from "shared/api";
 import {TextBlock} from "entities/text-block";
 import {AccordionElement} from "entities/entrance";
 import {Page} from "entities/page";
+import {unit1Page} from "../../shared/data/units/unit1";
+import {unit2Page} from "../../shared/data/units/unit2";
+import {unit3Page} from "../../shared/data/units/unit3";
 
 const NewsPage = observer(() => {
 
@@ -29,6 +32,12 @@ const NewsPage = observer(() => {
         //     })
         // })
         // sendPage(faculty1Page)
+        // sendPage(unit1Page).then(() => {
+        //     sendPage(unit2Page).then(() => [
+        //         sendPage(unit3Page)
+        //     ])
+        // })
+
     }
 
     const sendPage = async (page: Page) => {

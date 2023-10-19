@@ -54,13 +54,13 @@ export const links = {
             title: "Підрозіли", to: "/unit",
             subLinks: [
                 {
-                    id: 17, title: "Науковий центр зв’язку та інформатизації", to: RouterNames.UNIT.to
+                    id: 17, title: "Науковий центр зв’язку та інформатизації", to: RouterNames.UNIT_1.to
                 },
                 {
-                    id: 18, title: "Батальйон забезпечення навчального процесу", to: RouterNames.UNIT.to
+                    id: 18, title: "Батальйон забезпечення навчального процесу", to: RouterNames.UNIT_2.to
                 },
                 {
-                    id: 19, title: "5-ті Курси перепідготовки та підвищення кваліфікації", to: RouterNames.UNIT.to
+                    id: 19, title: "5-ті Курси перепідготовки та підвищення кваліфікації", to: RouterNames.UNIT_3.to
                 },
             ]
         },
