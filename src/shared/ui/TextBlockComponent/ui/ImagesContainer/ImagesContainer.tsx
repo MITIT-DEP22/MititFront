@@ -11,8 +11,8 @@ const ImagesContainer: FC<ImagesProps> = ({images}) => {
     return (
         <div className={css.imagesContainer}>
             {images?.map(img => (
-                <div className={css.element}>
-                    <ImageComponent className={css.img} imgId={img.id}/>
+                <div key={`image_${img.id}`} className={css.element}>
+                    <ImageComponent  className={css.img} imgId={img.id}/>
                 </div>
             ))}
         </div>

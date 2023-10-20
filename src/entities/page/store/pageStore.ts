@@ -2,7 +2,6 @@ import {action, makeAutoObservable, observable} from "mobx";
 import $api from "../../../shared/api";
 import {AccordionElement} from "../../entrance";
 import {Page} from "../model/types";
-import {Image} from "../../image";
 
 class PageStore {
     @observable currentPage: Page = {} as Page;
