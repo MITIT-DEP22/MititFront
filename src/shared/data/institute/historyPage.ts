@@ -1,8 +1,8 @@
-import {Page} from "../../../entities/page";
+import {Page} from "entities/page";
 import {RouterNames} from "../../enums/RouterNames";
-import {Image} from "../../../entities/image";
-import {List, TextBlock} from "../../../entities/text-block";
-import {ImageTextRow} from "../../../entities/text-block/model/types";
+import {Image} from "entities/image";
+import {List, TextBlock} from "entities/text-block";
+import {ImageTextRow} from "entities/text-block/model/types";
 
 export const historyPage: Page = {
     name: RouterNames.HISTORY.name,
