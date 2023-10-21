@@ -21,7 +21,7 @@ const ImageTextRowsContainer: FC<ImageTextRowProps> = ({imageTextRows}) => {
                     </div>
                     :
                     <div className={css.subContainer}>
-                        <p>{HTMLReactParser(item.text)}</p>
+                        <p style={{textAlign: "right"}}>{HTMLReactParser(item.text)}</p>
                         <ImageComponent imgId={item.image.id}/>
                     </div>
             ))}
