@@ -5,7 +5,7 @@ import {List, TextBlock} from "../../../entities/text-block";
 import {Superior} from "../../../entities/superior";
 
 export const faculty3Page = {
-    titleImage: {id: 1} as Image,
+    titleImage: {id: 16259} as Image,
     title: "Факультети",
     name: RouterNames.FACULTY_3.name,
     textBlocks: [
@@ -26,7 +26,7 @@ export const faculty3Page = {
                         "учасник бойових дій"
                     ],
                     image: {
-                        id: 1,
+                        id: 16416,
                         contentType: "",
                         imageFilename: ""
                     } as Image,
@@ -40,7 +40,7 @@ export const faculty3Page = {
                         "учасник бойових дій"
                     ],
                     image: {
-                        id: 1,
+                        id: 16417,
                         contentType: "",
                         imageFilename: ""
                     } as Image,
@@ -53,7 +53,7 @@ export const faculty3Page = {
                         "учасник бойових дій"
                     ],
                     image: {
-                        id: 1,
+                        id: 16418,
                         contentType: "",
                         imageFilename: ""
                     } as Image,
@@ -76,12 +76,12 @@ export const faculty3Page = {
         {
             images: [
                 {
-                    id: 1,
+                    id: 16419,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16420,
                     contentType: "",
                     imageFilename: ""
                 } as Image
@@ -107,7 +107,7 @@ export const faculty3Page = {
                         "учасник бойових дій"
                     ],
                     image: {
-                        id: 1,
+                        id: 16421,
                         contentType: "",
                         imageFilename: ""
                     } as Image,
@@ -134,32 +134,32 @@ export const faculty3Page = {
         {
             images: [
                 {
-                    id: 1,
+                    id: 16422,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16423,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16424,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16425,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16426,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16427,
                     contentType: "",
                     imageFilename: ""
                 } as Image
@@ -180,7 +180,7 @@ export const faculty3Page = {
                         "учасник бойових дій"
                     ],
                     image: {
-                        id: 1,
+                        id: 16428,
                         contentType: "",
                         imageFilename: ""
                     } as Image,
@@ -210,32 +210,32 @@ export const faculty3Page = {
         {
             images: [
                 {
-                    id: 1,
+                    id: 16429,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16430,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16431,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16432,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16433,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16434,
                     contentType: "",
                     imageFilename: ""
                 } as Image
@@ -256,7 +256,7 @@ export const faculty3Page = {
                         "учасник бойових дій"
                     ],
                     image: {
-                        id: 1,
+                        id: 16435,
                         contentType: "",
                         imageFilename: ""
                     } as Image,
@@ -279,22 +279,22 @@ export const faculty3Page = {
         {
             images: [
                 {
-                    id: 1,
+                    id: 16436,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16437,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16438,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16439,
                     contentType: "",
                     imageFilename: ""
                 } as Image
@@ -351,12 +351,12 @@ export const faculty3Page = {
         {
             images: [
                 {
-                    id: 1,
+                    id: 16440,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16441,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
@@ -365,12 +365,22 @@ export const faculty3Page = {
         {
             uLists: [
                 {
-                    title: "",
+                    title: "З метою вищевказаного на кафедрах факультету створені і функціонують:",
                     items: [
-                        "",
-                        "",
-                        "",
-                        "",
+                        "аудиторія експлуатації засобів ІТС;",
+                        "аудиторія бойового застосування інформаційно-телекомунікаційних вузлів та організації зв’язку;",
+                        "аудиторія тактики та військової топографії;",
+                        "аудиторія бойового застосування інформаційних систем тактичної ланки управління;",
+                        "навчально-тренувальний комплекс (КСП мб, ПУ омбр, ПУ ОТУ, макет місцевості та робочі місця посадових осіб ПУ);",
+                        "спеціальний клас комплексів обробки інформації;",
+                        "спеціалізовані аудиторії підготовки операторів БпЛА;",
+                        "технічна майстерня обслуговування БпЛА;",
+                        "лабораторія досліджень засобів БпЛА;",
+                        "лабораторія спец поліграфії;",
+                        "лабораторія фізико-хімічних процесів;",
+                        "навчально-тренувальний комплекс системи захищеного обміну інформацією та мережі обміну службової інформації;",
+                        "клас технічного захисту інформації в якому розгорнуто атестований об’єкт інформаційної діяльності 2 категорії;",
+                        "елементи сучасного навчально-тренувального комплексу захисту інформації та кібернетичної безпеки – кіберполігону."
                     ]
                 } as List
             ]
@@ -378,52 +388,52 @@ export const faculty3Page = {
         {
             images: [
                 {
-                    id: 1,
+                    id: 16442,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16443,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16444,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16445,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16446,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16447,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16448,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16449,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16450,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16451,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
@@ -437,32 +447,32 @@ export const faculty3Page = {
         {
             images: [
                 {
-                    id: 1,
+                    id: 16452,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16453,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16454,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16455,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16456,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16457,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
@@ -476,42 +486,42 @@ export const faculty3Page = {
         {
             images: [
                 {
-                    id: 1,
+                    id: 16458,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16459,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16460,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16461,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16462,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16463,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16464,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16465,
                     contentType: "",
                     imageFilename: ""
                 } as Image,

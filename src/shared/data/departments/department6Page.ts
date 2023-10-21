@@ -1,10 +1,10 @@
-import {Image} from "../../../entities/image";
+import {Image} from "entities/image";
 import {RouterNames} from "../../enums/RouterNames";
-import {List, TextBlock} from "../../../entities/text-block";
+import {List, TextBlock} from "entities/text-block";
 
 export const department6Page = {
     title: "Кафедри",
-    titleImage: {id: 1} as Image,
+    titleImage: {id: 16258} as Image,
     name: RouterNames.DEPARTMENT_6.name,
     textBlocks: [
         {
@@ -66,32 +66,32 @@ export const department6Page = {
             ],
             images: [
                 {
-                    id: 1,
+                    id: 16488,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16490,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16491,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16492,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16493,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16494,
                     contentType: "",
                     imageFilename: ""
                 } as Image,

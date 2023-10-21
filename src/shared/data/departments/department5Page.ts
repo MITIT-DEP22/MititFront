@@ -5,7 +5,7 @@ import {TextBlock} from "../../../entities/text-block";
 
 export const department5Page = {
     title: "Кафедри",
-    titleImage: {id: 1} as Image,
+    titleImage: {id: 16257} as Image,
     name: RouterNames.DEPARTMENT_5.name,
     textBlocks: [
         {
@@ -15,7 +15,7 @@ export const department5Page = {
             ],
             superiors: [{
                 image: {
-                    id: 1,
+                    id: 16487,
                     contentType: "",
                     imageFilename: ""
                 } as Image,

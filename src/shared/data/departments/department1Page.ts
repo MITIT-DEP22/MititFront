@@ -5,7 +5,7 @@ import {List, TextBlock} from "../../../entities/text-block";
 import {Superior} from "../../../entities/superior";
 
 export const department1Page: Page = {
-    titleImage: {id: 1} as Image,
+    titleImage: {id: 16253} as Image,
     title: "Кафедри",
     name: RouterNames.DEPARTMENT_1.name,
     textBlocks: [
@@ -39,7 +39,7 @@ export const department1Page: Page = {
                 ],
                 position: "Начальник кафедри",
                 image: {
-                    id: 1,
+                    id: 16466,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
@@ -52,32 +52,32 @@ export const department1Page: Page = {
             ],
             images: [
                 {
-                    id: 1,
+                    id: 16467,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16468,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16469,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16470,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16471,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16472,
                     contentType: "",
                     imageFilename: ""
                 } as Image,

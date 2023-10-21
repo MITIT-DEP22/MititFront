@@ -7,7 +7,7 @@ import {Row, RowElement, Table} from "../../../entities/text-block/model/types";
 
 export const department2Page: Page = {
     title: "Кафедри",
-    titleImage: {id: 1} as Image,
+    titleImage: {id: 16254} as Image,
     name: RouterNames.DEPARTMENT_2.name,
     textBlocks: [
         {
@@ -102,22 +102,22 @@ export const department2Page: Page = {
             ],
             images: [
                 {
-                    id: 1,
+                    id: 16473,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16474,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16475,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16476,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
