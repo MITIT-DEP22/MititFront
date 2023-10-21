@@ -3,6 +3,8 @@ import css from "./LayoutHeaderMobile.module.scss"
 import TitleLogo from "shared/ui/TitleLogo/TitleLogo";
 import Sidebar from "./ui/Sidebar/Sidebar";
 import {instituteName} from "shared/enums/Data";
+import {Link} from "react-router-dom";
+import {RouterNames} from "../../../../../shared/enums/RouterNames";
 
 const LayoutHeaderMobile = () => {
 
@@ -47,9 +49,9 @@ const LayoutHeaderMobile = () => {
     return (
         <>
             <div style={{top: `${topPosition}px`}} className={css.mobileHeader}>
-                <div className={css.logoContainer}>
+                <Link to={RouterNames.HOME.to} className={css.logoContainer}>
                     <TitleLogo logoSize={"10vh"} value={instituteName}/>
-                </div>
+                </Link>
                 <button className={css.openSidebar} onClick={openSidebar}>
                     <i className="bi bi-list"></i>
                 </button>

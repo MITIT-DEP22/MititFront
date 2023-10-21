@@ -1,16 +1,20 @@
 import React, {useState} from 'react';
 import css from "./Slider.module.scss";
-import {sliderItems} from "../model";
 import {Link} from "react-router-dom";
 import Icon from "shared/ui/Icon/Icon";
 import {ftpPath} from "features/ImageComponent/model";
 import Skeleton from "../../../../../shared/ui/Skeleton/Skeleton";
+import sliderStore from "../../../../../entities/slider-item/store/sliderStore";
+import {observer} from "mobx-react";
 
 interface SliderProps {
     scrollDown: () => void;
 }
 
-export const Slider: React.FC<SliderProps> = ({scrollDown}) => {
+export const Slider: React.FC<SliderProps> = observer( ({scrollDown}) => {
+
+
+    const {sliderItems, isLoading} = sliderStore
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     const nextImage = () => {
@@ -21,21 +25,23 @@ export const Slider: React.FC<SliderProps> = ({scrollDown}) => {
         setCurrentImageIndex((prevIndex) => (prevIndex - 1 + sliderItems.length) % sliderItems.length);
     };
 
-    const [isLoading, setIsLoading] = useState(true)
+    const [imageIsLoading, setImageIsLoading] = useState(true)
 
     return (
         <div className={css.slider}>
-            {sliderItems.map((item, index) => (
+
+            {!isLoading && sliderItems.map((item, index) => (
                 <picture
-                    key={item.img.id + index}
+                    key={item.image.id + index}
                     className={`${css.sliderPicture} ${index === currentImageIndex ? css.active : ''}`}
                 >
 
-                    {item.mobImg && (
-                        <source media="(max-width: 420px)" srcSet={ftpPath + item.mobImg.id}/>
+                    {item.mobileImage && (
+                        <source media="(max-width: 420px)" srcSet={ftpPath + item.mobileImage.id}/>
                     )}
 
-                    <img style={{display:isLoading ? "none" : "block"}} onLoad={()=>setIsLoading(false)} className={css.sliderImg} src={ftpPath + item.img.id} alt=""/>
+                    <img style={{display: imageIsLoading ? "none" : "block"}} onLoad={() => setImageIsLoading(false)}
+                         className={css.sliderImg} src={ftpPath + item.image.id} alt=""/>
                     <Skeleton className={css.skeleton}/>
                     <div className={css.sliderContent}>
                         {item.text && (
@@ -65,4 +71,4 @@ export const Slider: React.FC<SliderProps> = ({scrollDown}) => {
                   onClick={scrollDown}/>
         </div>
     );
-};
+});
