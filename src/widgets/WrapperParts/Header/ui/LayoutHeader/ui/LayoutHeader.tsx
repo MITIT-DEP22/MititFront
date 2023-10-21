@@ -36,14 +36,14 @@ export const LayoutHeader = observer(() => {
         <div className={css.container}>
             <div style={{top: `${topPosition}px`}} className={css.headerTopContainer}>
                 <div className={css.iconsContainer}>
-                    {headerData.icons.map(item => (
-                        <SocialLinkIcon key={`${item.iconBootstrap}_${item.to}`} link={item}/>
+                    {headerData.icons.map((item,index) => (
+                        <SocialLinkIcon key={`${item.iconBootstrap}_${index}`} link={item}/>
                     ))}
                     <LanguageToggle/>
                 </div>
                 <div className={css.linksContainer}>
-                    {links.linksT.map(item => (
-                        <NavLinkT key={`${item.title}_${item.to}`} isActive={headerStore.pathname.includes(item.to)}
+                    {links.linksT.map((item,index) => (
+                        <NavLinkT key={`nav-link-t_${index}`} isActive={headerStore.pathname.includes(item.to)}
                                   click={() => headerStore.changeLink(item.to)}
                                   link={item}/>
                     ))}
@@ -51,16 +51,21 @@ export const LayoutHeader = observer(() => {
             </div>
 
             <div className={css.headerBottomContainer}>
-                <Link className={css.logoLink} to={RouterNames.HOME.to} onClick={() => headerStore.changeLink(RouterNames.HOME.to)}>
-                    <TitleLogo value={instituteName}/>
-                </Link>
-                <div className={css.linksContainer}>
-                    {links.linksB.map(item => (
+                <div className={css.logoContainer}>
+                    <Link className={css.logoLink} to={RouterNames.HOME.to}
+                          onClick={() => headerStore.changeLink(RouterNames.HOME.to)}>
+                        <TitleLogo value={instituteName}/>
+                    </Link>
+                </div>
+
+                <div className={css.linksContainer2}>
+                    {links.linksB.map((item,index) => (
                         item.subLinks ?
-                            <NavSubLinksD key={`${item.title}_${item.to}`} link={item} isActive={headerStore.pathname.includes(item.to)}
+                            <NavSubLinksD key={`nav-sublink-d_${index}`} link={item}
+                                          isActive={headerStore.pathname.includes(item.to)}
                                           click={() => headerStore.changeLink(item.to)}/>
                             :
-                            <NavLinkB key={`${item.title}_${item.to}`} click={() => headerStore.changeLink(item.to)}
+                            <NavLinkB key={`nav-link-b_${index}`} click={() => headerStore.changeLink(item.to)}
                                       isActive={headerStore.pathname.includes(item.to)}
                                       link={item}/>
                     ))}

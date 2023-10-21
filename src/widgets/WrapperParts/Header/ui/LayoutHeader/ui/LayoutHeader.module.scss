@@ -12,7 +12,7 @@
   }
 }
 
-.logoLink{
+.logoLink {
   text-decoration: none;
 }
 
@@ -24,27 +24,24 @@
   background: rgba(30, 30, 30, 0.25);
   backdrop-filter: blur(5px);
   box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.5);
-  padding: 18px 10%;
+  padding: 18px 5%;
   align-items: center;
   color: white;
   justify-content: space-between;
   gap: 26px;
   transition-duration: 400ms;
-
-
 }
 
 .headerBottomContainer {
   display: flex;
-  top: 10vh;
+  top: 11vh;
   width: 100%;
   position: absolute;
   z-index: -10;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 10%;
-  gap: 26px;
+  padding: 16px 5%;
 
   @media screen and (width > 900px) {
     display: flex;
@@ -65,8 +62,21 @@
   display: flex;
   justify-content: end;
   flex-wrap: wrap;
-  gap: min(20px, 2vw);
+  gap: min(20px, 1vw);
   align-items: center;
+}
+
+.linksContainer2 {
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+  gap: min(20px, 1vw);
+  align-items: center;
+  width: 55%;
+}
+
+.logoContainer{
+  width: 45%;
 }
 
 

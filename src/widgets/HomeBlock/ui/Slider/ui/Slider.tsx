@@ -3,15 +3,15 @@ import css from "./Slider.module.scss";
 import {Link} from "react-router-dom";
 import Icon from "shared/ui/Icon/Icon";
 import {ftpPath} from "features/ImageComponent/model";
-import Skeleton from "../../../../../shared/ui/Skeleton/Skeleton";
-import sliderStore from "../../../../../entities/slider-item/store/sliderStore";
+import Skeleton from "shared/ui/Skeleton/Skeleton";
+import sliderStore from "entities/slider-item/store/sliderStore";
 import {observer} from "mobx-react";
 
 interface SliderProps {
     scrollDown: () => void;
 }
 
-export const Slider: React.FC<SliderProps> = observer( ({scrollDown}) => {
+export const Slider: React.FC<SliderProps> = observer(({scrollDown}) => {
 
 
     const {sliderItems, isLoading} = sliderStore
@@ -39,10 +39,9 @@ export const Slider: React.FC<SliderProps> = observer( ({scrollDown}) => {
                     {item.mobileImage && (
                         <source media="(max-width: 420px)" srcSet={ftpPath + item.mobileImage.id}/>
                     )}
-
+                    {imageIsLoading && <Skeleton className={css.skeleton}/>}
                     <img style={{display: imageIsLoading ? "none" : "block"}} onLoad={() => setImageIsLoading(false)}
                          className={css.sliderImg} src={ftpPath + item.image.id} alt=""/>
-                    <Skeleton className={css.skeleton}/>
                     <div className={css.sliderContent}>
                         {item.text && (
                             <div className={css.sliderDescription}>{item.text}</div>
