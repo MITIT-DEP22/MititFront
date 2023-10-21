@@ -15,3 +15,9 @@
   align-items: center;
   gap: 8px;
 }
+
+.skeleton{
+  width: min(100px, 10vw);
+  height: min(100px, 10vw);
+  border-radius: 100%;
+}

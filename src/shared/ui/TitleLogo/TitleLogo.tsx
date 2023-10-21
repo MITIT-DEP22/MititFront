@@ -1,8 +1,9 @@
-import React, {FC} from 'react';
+import React, {FC, useState} from 'react';
 import css from "./TitleLogo.module.scss";
 import logo from "assets/logo/logo.png"
 import {Link} from "react-router-dom";
 import {RouterNames} from "../../enums/RouterNames";
+import Skeleton from "../Skeleton/Skeleton";
 
 interface TitleNameProps extends React.HTMLProps<HTMLElement> {
     value: string;
@@ -14,10 +15,13 @@ const TitleLogo: FC<TitleNameProps> = ({value, logoSize, withTitle}) => {
     if (withTitle === undefined) {
         withTitle = true;
     }
+    const [isLoading, setIsLoading] = useState(true)
+
     return (
 
             <div className={css.containerTitleLogo}>
-                <img style={{width: logoSize, height: "100%"}} className={css.logo} src={logo} alt=""/>
+                {isLoading && <Skeleton className={css.skeleton}/>}
+                <img onLoad={()=>setIsLoading(false)} style={{width: logoSize, height: "100%", display:isLoading ? "none" : "block"}} className={css.logo} src={logo} alt=""/>
                 {
                     withTitle &&
                     <pre className={css.titleName}>
