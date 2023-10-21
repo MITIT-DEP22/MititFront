@@ -57,6 +57,7 @@ class PageStore {
             this.pages = pages;
         }).catch(e => {
             console.log(e)
+            window.location.replace("/")
         }).then(() => {
             this.isLoading = false
         })
