@@ -2,9 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  background: rgba(0, 0, 0, 0.5);
-  margin: 0 auto;
   @media screen and (width > 768px){
     width:100%;
     height: fit-content;
@@ -13,27 +10,19 @@
 
 
 .img {
-  width: 100%;
   z-index: -10;
 }
 
 .date {
-  position: absolute;
-  bottom: 10%;
-  left: 2%;
-  z-index: 10;
-  color:  #F3F3F3;
-  font-size: 14px;
+  color:  black;
+  font-size: 20px;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .title {
-  position: absolute;
-  bottom: 2%;
-  left: 2%;
-  z-index: 10;
-
-  color:  #F3F3F3;
-  font-size: 14px;
+  color:  black;
+  font-size: 20px;
   font-weight: 700;
+  margin-bottom: 10px;
 }
