@@ -40,7 +40,7 @@ const NewsPage = observer(() => {
         //     })
         // })
 
-        sendPage(historyPage)
+        // sendPage(historyPage)
 
     }
 
