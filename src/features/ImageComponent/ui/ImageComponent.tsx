@@ -1,7 +1,6 @@
 import React, {FC, useState} from 'react';
 import {ftpPath} from "../model";
 import css from "./ImageComponent.module.scss"
-import LoadingSpinner from "shared/ui/LoadingSpinner/LoadingSpinner";
 import Skeleton from "shared/ui/Skeleton/Skeleton";
 
 interface ImageProps extends React.HTMLProps<HTMLElement> {
