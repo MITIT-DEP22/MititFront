@@ -14,7 +14,7 @@ export const PageHead: FC<PageHeadProps> = ({title, imgId}) => {
 
     const scroll = () => {
         window.scrollTo({
-            top: window.innerHeight - 100,
+            top: window.innerHeight - 62,
             behavior: 'smooth',
         });
     };

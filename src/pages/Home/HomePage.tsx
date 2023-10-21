@@ -5,7 +5,7 @@ import {HomeBlock} from "../../widgets/HomeBlock";
  const HomePage = () => {
     const scroll = () => {
         window.scrollTo({
-            top: window.innerHeight,
+            top: window.innerHeight - 62,
             behavior: 'smooth',
         });
     };
