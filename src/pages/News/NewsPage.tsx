@@ -6,38 +6,75 @@ import $api from "shared/api";
 import {TextBlock} from "entities/text-block";
 import {AccordionElement} from "entities/entrance";
 import {Page} from "entities/page";
+import {superiorsPage} from "../../shared/data/institute/superiorsPage";
+import {entrancesPage} from "../../shared/data/entrancePage";
+import {educationsPage} from "../../shared/data/educationPage";
+import {publicInfoPage} from "../../shared/data/institute/publicInfoPage";
+import {sciencesPage} from "../../shared/data/sciencePage";
+import {contactsPage} from "../../shared/data/contactsPage";
+import {heroesPage} from "../../shared/data/institute/heroesPage";
+import {historyPage} from "../../shared/data/institute/historyPage";
+import {whyMITITPage} from "../../shared/data/institute/whyMITITPage";
+import {unit1Page} from "../../shared/data/units/unit1";
+import {unit2Page} from "../../shared/data/units/unit2";
+import {unit3Page} from "../../shared/data/units/unit3";
+import {faculty1Page} from "../../shared/data/faculties/faculty1Page";
+import {faculty2Page} from "../../shared/data/faculties/faculty2Page";
+import {faculty3Page} from "../../shared/data/faculties/faculty3Page";
+import {department1Page} from "../../shared/data/departments/department1Page";
+import {department6Page} from "../../shared/data/departments/department6Page";
+import {department5Page} from "../../shared/data/departments/department5Page";
+import {department4Page} from "../../shared/data/departments/department4Page";
+import {department3Page} from "../../shared/data/departments/department3Page";
+import {department2Page} from "../../shared/data/departments/department2Page";
 
 const NewsPage = observer(() => {
 
-    const sendAllPages = () => {
-        // sendPage(superiorsPage).then(() => {
-        //     sendPage(entrancesPage).then(() => {
-        //         sendPage(educationsPage).then(() => {
-        //             sendPage(publicInfoPage).then(() => {
-        //                 sendPage(sciencesPage)
-        //             })
-        //         })
-        //     })
-        // })
-        // sendPage(secondFacultyPage)
-        // sendPage(contactsPage)
-        // sendPage(department2Page)
-        // sendPage(department3Page)
-        // sendPage(department4Page).then(()=>{
-        //     sendPage(department5Page).then(()=>{
-        //         sendPage(department6Page)
-        //     })
-        // })
-        // sendPage(faculty1Page)
-        // sendPage(unit1Page).then(() => {
-        //     sendPage(unit2Page).then(() => {
-        //         sendPage(unit3Page)
-        //     })
-        // })
-
-        // sendPage(historyPage)
-
-    }
+    // const sendAllPages = () => {
+    //     sendPage(superiorsPage).then(() => {
+    //         sendPage(entrancesPage).then(() => {
+    //             sendPage(educationsPage).then(() => {
+    //                 sendPage(publicInfoPage).then(() => {
+    //                     sendPage(sciencesPage).then(()=>{
+    //                         sendPage(contactsPage).then(()=>{
+    //                             sendPage(heroesPage).then(()=>{
+    //                                 sendPage(historyPage).then(()=>{
+    //                                     sendPage(whyMITITPage).then(()=>{
+    //                                         sendPage(unit1Page).then(()=>{
+    //                                             sendPage(unit2Page).then(()=>{
+    //                                                 sendPage(unit3Page).then(()=>{
+    //                                                     sendPage(faculty1Page).then(()=>{
+    //                                                         sendPage(faculty2Page).then(()=>{
+    //                                                             sendPage(faculty3Page).then(()=>{
+    //                                                                 sendPage(department1Page).then(()=>{
+    //                                                                     sendPage(department2Page).then(()=>{
+    //                                                                         sendPage(department3Page).then(()=>{
+    //                                                                             sendPage(department4Page).then(()=>{
+    //                                                                                 sendPage(department5Page).then(()=>{
+    //                                                                                     sendPage(department6Page).then(()=>{
+    //
+    //                                                                                     })
+    //                                                                                 })
+    //                                                                             })
+    //                                                                         })
+    //                                                                     })
+    //                                                                 })
+    //                                                             })
+    //                                                         })
+    //                                                     })
+    //                                                 })
+    //                                             })
+    //                                         })
+    //                                     })
+    //                                 })
+    //                             })
+    //                         })
+    //                     })
+    //                 })
+    //             })
+    //         })
+    //     })
+    // }
 
     const sendPage = async (page: Page) => {
         try {
@@ -89,10 +126,10 @@ const NewsPage = observer(() => {
         <>
             <PageHead  title={"Новини"} imgId={16245}/>
             <NewsBlock/>
-            <button onClick={() => {
-                sendAllPages()
-            }}>sendPage
-            </button>
+            {/*<button onClick={() => {*/}
+            {/*    sendAllPages()*/}
+            {/*}}>sendPage*/}
+            {/*</button>*/}
         </>
     );
 });
