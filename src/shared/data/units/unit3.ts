@@ -7,7 +7,7 @@ import {Row, RowElement, Table} from "../../../entities/text-block/model/types";
 export const unit3Page = {
     title: "Підрозділи",
     name: RouterNames.UNIT_3.name,
-    titleImage: {id: 1} as Image,
+    titleImage: {id: 16263} as Image,
     textBlocks: [
         {
             title: "5-ті Курси перепідготовки та підвищення кваліфікації"
@@ -23,7 +23,7 @@ export const unit3Page = {
                     fullName: "КРАВЧЕНКО Олексій Олександрович",
                     position: "Начальник 5 курсів перепідготовки та підвищення кваліфікації",
                     image: {
-                        id: 1,
+                        id: 16350,
                         contentType: "",
                         imageFilename: ""
                     } as Image,
@@ -127,42 +127,42 @@ export const unit3Page = {
         {
             images: [
                 {
-                    id: 1,
+                    id: 16351,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16352,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16353,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16354,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16355,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16356,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16357,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16358,
                     contentType: "",
                     imageFilename: ""
                 } as Image,

@@ -7,7 +7,7 @@ import {ImageTextRow} from "../../entities/text-block/model/types";
 
 export const sciencesPage: Page = {
     title: "Наука",
-    titleImage: {id: 1} as Image,
+    titleImage: {id: 16246} as Image,
     name: RouterNames.SCIENCE.name,
     textBlocks: [
         {
@@ -41,16 +41,16 @@ export const sciencesPage: Page = {
                         ],
                         images: [
                             {
-                                id: 1,
+                                id: 16312,
                             } as Image,
                             {
-                                id: 1,
+                                id: 16313,
                             } as Image,
                             {
-                                id: 1,
+                                id: 16314,
                             } as Image,
                             {
-                                id: 1,
+                                id: 16315,
                             } as Image,
                         ]
                     } as TextBlock,
@@ -67,10 +67,10 @@ export const sciencesPage: Page = {
                         ],
                         images: [
                             {
-                                id: 1,
+                                id: 16316,
                             } as Image,
                             {
-                                id: 1,
+                                id: 16317,
                             } as Image
                         ]
 
@@ -100,10 +100,10 @@ export const sciencesPage: Page = {
                         ],
                         images: [
                             {
-                                id: 1,
+                                id: 16318,
                             } as Image,
                             {
-                                id: 1,
+                                id: 16319,
                             } as Image
                         ],
                     } as TextBlock,
@@ -127,10 +127,10 @@ export const sciencesPage: Page = {
                         ],
                         images: [
                             {
-                                id: 1,
+                                id: 16320,
                             } as Image,
                             {
-                                id: 1,
+                                id: 16321,
                             } as Image
                         ],
                     } as TextBlock,
@@ -176,10 +176,10 @@ export const sciencesPage: Page = {
                         ],
                         images: [
                             {
-                                id: 1,
+                                id: 16322,
                             } as Image,
                             {
-                                id: 1,
+                                id: 16323,
                             } as Image
                         ]
                     } as TextBlock,
@@ -192,10 +192,10 @@ export const sciencesPage: Page = {
                         ],
                         images: [
                             {
-                                id: 1,
+                                id: 16324,
                             } as Image,
                             {
-                                id: 1,
+                                id: 16325,
                             } as Image
                         ]
                     } as TextBlock,
@@ -243,16 +243,16 @@ export const sciencesPage: Page = {
                     ],
                     images: [
                         {
-                            id: 1
+                            id: 16326
                         } as Image,
                         {
-                            id: 1
+                            id: 16327
                         } as Image
                     ],
                     imageTextRows: [
                         {
                             image: {
-                                id: 1
+                                id: 16328
                             },
                             text: "Головою спеціалізованої вченої ради призначено <strong>доктора технічних наук," +
                                 " професора" +
@@ -261,7 +261,7 @@ export const sciencesPage: Page = {
                         } as ImageTextRow,
                         {
                             image: {
-                                id: 1
+                                id: 16329
                             },
                             text: "Заступником голови спеціалізованої вченої ради призначено <strong>доктора технічних" +
                                 " наук," +
@@ -270,7 +270,7 @@ export const sciencesPage: Page = {
                         } as ImageTextRow,
                         {
                             image: {
-                                id: 1
+                                id: 16330
                             },
                             text: "Вченим секретарем спеціалізованої вченої ради призначено кандидата <strong>технічних" +
                                 " наук," +
@@ -411,10 +411,10 @@ export const sciencesPage: Page = {
                 {
                     images: [
                         {
-                            id: 1
+                            id: 16331
                         } as Image,
                         {
-                            id: 1
+                            id: 16332
                         } as Image
                     ]
                 } as TextBlock,
@@ -433,10 +433,10 @@ export const sciencesPage: Page = {
                     ],
                     images: [
                         {
-                            id: 1
+                            id: 16333
                         } as Image,
                         {
-                            id: 1
+                            id: 16334
                         } as Image
                     ]
                 } as TextBlock,
@@ -446,16 +446,16 @@ export const sciencesPage: Page = {
                     ],
                     images: [
                         {
-                            id: 1
+                            id: 16335
                         } as Image,
                         {
-                            id: 1
+                            id: 16336
                         } as Image
                     ],
                     imageTextRows: [
                         {
                             image: {
-                                id: 1
+                                id: 16337
                             },
                             text: "<strong>НАТО TIDE Hackathon 2020: курсанти ВІТІ посіли друге місце на міжнародних змаганнях із програмування</strong>",
                             imgLeft: false

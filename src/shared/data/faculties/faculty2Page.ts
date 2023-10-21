@@ -5,7 +5,7 @@ import {Page} from "../../../entities/page";
 import {RouterNames} from "../../enums/RouterNames";
 
 export const faculty2Page: Page = {
-    titleImage: {id: 1} as Image,
+    titleImage: {id: 16251} as Image,
     title: "Факультети",
     name: RouterNames.FACULTY_2.name,
     textBlocks: [
@@ -56,7 +56,7 @@ export const faculty2Page: Page = {
                         "учасник бойових дій"
                     ],
                     image: {
-                        id: 1,
+                        id: 16397,
                         contentType: "",
                         imageFilename: ""
                     },
@@ -156,7 +156,7 @@ export const faculty2Page: Page = {
                         "доцент"
                     ],
                     image: {
-                        id: 1,
+                        id: 16398,
                         contentType: "",
                         imageFilename: ""
                     },
@@ -187,12 +187,12 @@ export const faculty2Page: Page = {
         {
             images: [
                 {
-                    id: 1,
+                    id: 16399,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16400,
                     contentType: "",
                     imageFilename: ""
                 } as Image
@@ -219,12 +219,12 @@ export const faculty2Page: Page = {
         {
             images: [
                 {
-                    id: 1,
+                    id: 16401,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16402,
                     contentType: "",
                     imageFilename: ""
                 } as Image
@@ -238,12 +238,12 @@ export const faculty2Page: Page = {
         {
             images: [
                 {
-                    id: 1,
+                    id: 16403,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16404,
                     contentType: "",
                     imageFilename: ""
                 } as Image
@@ -253,7 +253,7 @@ export const faculty2Page: Page = {
             imageTextRows: [
                 {
                     image: {
-                        id: 1,
+                        id: 16405,
                         contentType: "",
                         imageFilename: ""
                     },
@@ -289,12 +289,12 @@ export const faculty2Page: Page = {
         {
             images: [
                 {
-                    id: 1,
+                    id: 16406,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16407,
                     contentType: "",
                     imageFilename: ""
                 } as Image
@@ -308,12 +308,12 @@ export const faculty2Page: Page = {
         {
             images: [
                 {
-                    id: 1,
+                    id: 16408,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16409,
                     contentType: "",
                     imageFilename: ""
                 } as Image
@@ -327,22 +327,22 @@ export const faculty2Page: Page = {
         {
             images: [
                 {
-                    id: 1,
+                    id: 16410,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16411,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16412,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16413,
                     contentType: "",
                     imageFilename: ""
                 } as Image
@@ -356,12 +356,12 @@ export const faculty2Page: Page = {
         {
             images: [
                 {
-                    id: 1,
+                    id: 16414,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16415,
                     contentType: "",
                     imageFilename: ""
                 } as Image

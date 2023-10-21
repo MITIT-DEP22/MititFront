@@ -7,7 +7,7 @@ import {ImageTextRow} from "../../entities/text-block/model/types";
 export const contactsPage: Page = {
     name: RouterNames.CONTACTS.name,
     title: "контакти",
-    titleImage: {id: 1} as Image,
+    titleImage: {id: 16252} as Image,
     textBlocks: [
         {
             title: "Гаряча лінія",
@@ -48,7 +48,7 @@ export const contactsPage: Page = {
             title: "Адреса",
             imageTextRows: [
                 {
-                    image: {id: 1} as Image,
+                    image: {id: 16338} as Image,
                     text: `
                        <span> 01011, м. Київ, вул. Московська, 45/1</span>
                         <br>

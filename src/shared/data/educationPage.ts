@@ -7,7 +7,7 @@ import {AccordionElement} from "../../entities/entrance";
 export const educationsPage: Page = {
     name: RouterNames.STUDY.name,
     title: "Навчання",
-    titleImage: {id: 1} as Image,
+    titleImage: {id: 16249} as Image,
     textBlocks: [
         {
             title: "Навчання"

@@ -5,7 +5,7 @@ import {Image} from "../../../entities/image";
 export const superiorsPage: Page = {
     name: RouterNames.SUPERIORS.name,
     title: "керівний склад",
-    titleImage: {id: 1} as Image,
+    titleImage: {id: 16247} as Image,
     textBlocks: [
         {
             title: "Керівний склад"
@@ -13,7 +13,7 @@ export const superiorsPage: Page = {
         {
             superiors: [{
                 image: {
-                    id: 1,
+                    id: 16359,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
@@ -27,7 +27,7 @@ export const superiorsPage: Page = {
             },
                 {
                     image: {
-                        id: 1,
+                        id: 16360,
                         contentType: "",
                         imageFilename: ""
                     } as Image,
@@ -41,7 +41,7 @@ export const superiorsPage: Page = {
                 },
                 {
                     image: {
-                        id: 1,
+                        id: 16361,
                         contentType: "",
                         imageFilename: ""
                     } as Image,
@@ -56,7 +56,7 @@ export const superiorsPage: Page = {
                 },
                 {
                     image: {
-                        id: 1,
+                        id: 16362,
                         contentType: "",
                         imageFilename: ""
                     } as Image,
@@ -71,7 +71,7 @@ export const superiorsPage: Page = {
                 },
                 {
                     image: {
-                        id: 1,
+                        id: 16363,
                         contentType: "",
                         imageFilename: ""
                     } as Image,
@@ -85,7 +85,7 @@ export const superiorsPage: Page = {
                 },
                 {
                     image: {
-                        id: 1,
+                        id: 16364,
                         contentType: "",
                         imageFilename: ""
                     } as Image,
@@ -99,7 +99,7 @@ export const superiorsPage: Page = {
                 },
                 {
                     image: {
-                        id: 1,
+                        id: 16365,
                         contentType: "",
                         imageFilename: ""
                     } as Image,

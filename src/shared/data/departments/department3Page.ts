@@ -6,7 +6,7 @@ import {Superior} from "../../../entities/superior";
 
 export  const department3Page: Page = {
     title: "Кафедри",
-    titleImage: {id: 1} as Image,
+    titleImage: {id: 16255} as Image,
     name: RouterNames.DEPARTMENT_3.name,
     textBlocks: [
         {
@@ -40,7 +40,7 @@ export  const department3Page: Page = {
                 militaryRank: "полковник",
                 position: "Начальник кафедри",
                 image: {
-                    id: 1,
+                    id: 16477,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
@@ -68,22 +68,22 @@ export  const department3Page: Page = {
             ],
             images: [
                 {
-                    id: 1,
+                    id: 16478,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16479,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16480,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16481,
                     contentType: "",
                     imageFilename: ""
                 } as Image,

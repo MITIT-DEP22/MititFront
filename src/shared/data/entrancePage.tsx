@@ -8,7 +8,7 @@ import {AccordionElement} from "../../entities/entrance";
 export const entrancesPage: Page = {
     name: RouterNames.ENTRANTS.name,
     title: "Вступникам",
-    titleImage: {id: 1} as Image,
+    titleImage: {id: 16248} as Image,
     textBlocks: [
         {
             title: "Вступникам"

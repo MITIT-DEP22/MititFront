@@ -6,7 +6,7 @@ import {Superior} from "entities/superior";
 export const unit2Page = {
     title: "Підрозділи",
     name: RouterNames.UNIT_2.name,
-    titleImage: {id: 1} as Image,
+    titleImage: {id: 16262} as Image,
     textBlocks: [
         {
             title: "Батальйон забезпечення навчального процесу"
@@ -25,7 +25,7 @@ export const unit2Page = {
                         "участник бойових дій"
                     ],
                     image: {
-                        id: 1,
+                        id: 16343,
                         contentType: "",
                         imageFilename: ""
                     } as Image,
@@ -76,32 +76,32 @@ export const unit2Page = {
         {
             images: [
                 {
-                    id: 1,
+                    id: 16344,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16345,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16346,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16347,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16348,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16349,
                     contentType: "",
                     imageFilename: ""
                 } as Image,

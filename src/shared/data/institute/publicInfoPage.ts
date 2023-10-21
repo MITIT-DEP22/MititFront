@@ -5,7 +5,7 @@ import {List} from "../../../entities/text-block";
 
 export const publicInfoPage: Page = {
     title: "Публічна інформація",
-    titleImage: {id: 1} as Image,
+    titleImage: {id: 16250} as Image,
     name: RouterNames.PUBLIC_INFO.name,
     textBlocks: [
         {

@@ -6,7 +6,7 @@ import {List, TextBlock} from "../../../entities/text-block";
 
 export const department4Page: Page = {
     title: "Кафедри",
-    titleImage: {id: 1} as Image,
+    titleImage: {id: 16256} as Image,
     name: RouterNames.DEPARTMENT_4.name,
     textBlocks: [
         {
@@ -25,7 +25,7 @@ export const department4Page: Page = {
                     "кандидат технічних наук"
                 ],
                 image: {
-                    id: 1,
+                    id: 16482,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
@@ -67,22 +67,22 @@ export const department4Page: Page = {
         {
             images: [
                 {
-                    id: 1,
+                    id: 16483,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16484,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16485,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
                 {
-                    id: 1,
+                    id: 16486,
                     contentType: "",
                     imageFilename: ""
                 } as Image,
