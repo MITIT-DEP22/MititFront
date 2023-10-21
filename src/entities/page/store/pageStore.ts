@@ -6,7 +6,7 @@ import {Page} from "../model/types";
 class PageStore {
     @observable currentPage: Page = {} as Page;
     @observable isLoading: boolean = true;
-    @observable titleImageIsLoading:boolean = true;
+    @observable titleImageIsLoading: boolean = true;
     @observable pages: Page[] = [];
 
     constructor() {
@@ -33,9 +33,9 @@ class PageStore {
                 tempPage.textBlocks = [];
 
                 for (let i = 0; i < data.textBlocks.length; i++) {
-                    tempPage.textBlocks.push(JSON.parse(data.textBlocks[i].jsonContent));
+                    tempPage.textBlocks.push(JSON.parse(data.textBlocks[i].jsonContent))
+                    tempPage.textBlocks[i].id = data.textBlocks[i].id;
                 }
-
                 tempPage.accordionElements = [];
 
                 for (let i = 0; i < data.accordionElements.length; i++) {
@@ -47,11 +47,11 @@ class PageStore {
 
                     for (let j = 0; j < data.accordionElements[i].textBlocks.length; j++) {
                         accordionElement.textBlocks.push(JSON.parse(data.accordionElements[i].textBlocks[j].jsonContent));
+                        accordionElement.textBlocks[j].id = data.accordionElements[i].textBlocks[j].id;
                     }
 
                     tempPage.accordionElements.push(accordionElement);
                 }
-
                 pages.push(tempPage);
             }
             this.pages = pages;

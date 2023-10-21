@@ -13,7 +13,7 @@ export const Specialities = observer(() => {
         return (
             <div className={css.container}>
                 {specialities.map(item => (
-                    <SpecialityCard speciality={item}/>
+                    <SpecialityCard key={`speciality_card_${item.id}`} speciality={item}/>
                 ))}
             </div>
         );

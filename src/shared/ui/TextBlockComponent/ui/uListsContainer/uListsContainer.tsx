@@ -4,18 +4,19 @@ import {List} from "entities/text-block";
 import HTMLReactParser from "html-react-parser";
 
 interface ListsProps {
-    lists: List[]
+    lists: List[];
+    id?:number;
 }
 
-const UListsContainer: FC<ListsProps> = ({lists}) => {
+const UListsContainer: FC<ListsProps> = ({lists,id}) => {
     return (
         <div className={css.listsContainer}>
-            {lists?.map(list => (
-                <div>
+            {lists?.map((list,index) => (
+                <div key={`u-list_${index}_${id}`}>
                     <p className={css.listTitle}>{list.title && HTMLReactParser(list?.title)}</p>
                     <ul className={css.list}>
-                        {list.items.map(i => (
-                            <li className={css.listItem}>{HTMLReactParser(i)}</li>
+                        {list.items.map((i, index2) => (
+                            <li key={`u-list_${index}_item_${index2}_${id}`} className={css.listItem}>{HTMLReactParser(i)}</li>
                         ))}
                     </ul>
                 </div>

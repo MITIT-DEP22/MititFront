@@ -8,9 +8,10 @@ import HTMLReactParser from "html-react-parser";
 interface ChiefCardData {
     superior: Superior;
     positionRight?: boolean;
+    id?: number;
 }
 
-const SuperiorCard: FC<ChiefCardData> = ({superior, positionRight}) => {
+const SuperiorCard: FC<ChiefCardData> = ({superior, positionRight, id}) => {
     return (
         <div className={css.chiefCard}>
             {positionRight ? (
@@ -27,8 +28,8 @@ const SuperiorCard: FC<ChiefCardData> = ({superior, positionRight}) => {
                             <h6 className={css.chiefCardRangAndName}>
                                 {HTMLReactParser(superior.militaryRank)} {HTMLReactParser(superior.fullName)}
                             </h6>
-                            {superior.achievements?.map(item => (
-                                <p>{item}</p>
+                            {superior.achievements?.map((item, index) => (
+                                <p key={`superior-card_${id}_achievement_${index}`}>{item}</p>
                             ))
                             }
                             <span className={css.chiefCardDescription}></span>
@@ -49,8 +50,8 @@ const SuperiorCard: FC<ChiefCardData> = ({superior, positionRight}) => {
                             <h6 className={css.chiefCardRangAndName}>
                                 {HTMLReactParser(superior.militaryRank)} {HTMLReactParser(superior.fullName)}
                             </h6>
-                            {superior.achievements?.map(item => (
-                                <p>{item}</p>
+                            {superior.achievements?.map((item, index) => (
+                                <p key={`superior-card_${id}_achievement_${index}`}>{item}</p>
                             ))
                             }
                             <span className={css.chiefCardDescription}></span>

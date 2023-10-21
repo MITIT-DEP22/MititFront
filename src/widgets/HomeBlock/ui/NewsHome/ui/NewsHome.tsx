@@ -18,7 +18,7 @@ export const NewsHome = observer(() => {
                 </div>
                 <div className={css.subcontainer2}>
                     {news.slice(1, 5).map(item => (
-                        <NewsCard news={item}/>
+                        <NewsCard key={`news_card_home_${item.id}`} news={item}/>
                     ))}
                 </div>
             </div>

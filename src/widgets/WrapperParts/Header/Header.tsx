@@ -8,7 +8,9 @@ import {useLocation} from "react-router-dom";
 
 
 const Header = () => {
+
     headerStore.changeLink(useLocation().pathname)
+
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     useEffect(() => {

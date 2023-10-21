@@ -7,21 +7,22 @@ import TextBlocks from "../../../TextBlocks/TextBlocks";
 
 interface ImageTextRowProps {
     imageTextRows: ImageTextRow[];
+    id?:number;
 }
 
-const ImageTextRowsContainer: FC<ImageTextRowProps> = ({imageTextRows}) => {
+const ImageTextRowsContainer: FC<ImageTextRowProps> = ({imageTextRows, id}) => {
     return (
         <div className={css.container}>
-            {imageTextRows.map(item => (
+            {imageTextRows.map((item,index) => (
                 item.imgLeft
                     ?
-                    <div className={css.subContainer}>
+                    <div key={`image-text-row_${index}_${id}`} className={css.subContainer}>
                         <ImageComponent imgId={item.image.id}/>
-                        <p>{HTMLReactParser(item.text)}</p>
+                        <div>{HTMLReactParser(item.text)}</div>
                     </div>
                     :
-                    <div className={css.subContainer}>
-                        <p style={{textAlign: "right"}}>{HTMLReactParser(item.text)}</p>
+                    <div  key={`image-text-row_${index}_${id}`} className={css.subContainer}>
+                        <div style={{textAlign: "right"}}>{HTMLReactParser(item.text)}</div>
                         <ImageComponent imgId={item.image.id}/>
                     </div>
             ))}

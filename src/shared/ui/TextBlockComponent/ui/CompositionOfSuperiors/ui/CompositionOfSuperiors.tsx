@@ -7,16 +7,17 @@ import {FC} from "react";
 
 interface SuperiorsCompositionProps {
     superiors: Superior[]
+    id?:number;
 }
 
-export const CompositionOfSuperiors: FC<SuperiorsCompositionProps> = observer(({superiors}) => {
+export const CompositionOfSuperiors: FC<SuperiorsCompositionProps> = observer(({superiors,id}) => {
     return (
         <div className={css.compositionCards}>
             {superiors?.map((item, index) => (
                 index % 2 ?
-                    <SuperiorCard key={index} superior={item} positionRight={false}/>
+                    <SuperiorCard key={`superior-card_${index}_${id}`} superior={item} positionRight={false}/>
                     :
-                    <SuperiorCard key={index} superior={item} positionRight={true}/>
+                    <SuperiorCard key={`superior-card_${index}_${id}`} superior={item} positionRight={true}/>
             ))}
         </div>
     )

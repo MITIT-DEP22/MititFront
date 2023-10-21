@@ -6,11 +6,6 @@ import $api from "shared/api";
 import {TextBlock} from "entities/text-block";
 import {AccordionElement} from "entities/entrance";
 import {Page} from "entities/page";
-import {unit1Page} from "../../shared/data/units/unit1";
-import {unit2Page} from "../../shared/data/units/unit2";
-import {unit3Page} from "../../shared/data/units/unit3";
-import {heroesPage} from "../../shared/data/institute/heroesPage";
-import {historyPage} from "../../shared/data/institute/historyPage";
 
 const NewsPage = observer(() => {
 

@@ -36,7 +36,7 @@ const UniversalPage = observer(() => {
                         }
                         {currentPage?.accordionElements &&
                             currentPage?.accordionElements.map(item => (
-                                <InfoAccordion item={item}/>
+                                <InfoAccordion key={`accordion_item_${item.id}`} item={item}/>
                             ))
                         }
                     </BlockContainer>

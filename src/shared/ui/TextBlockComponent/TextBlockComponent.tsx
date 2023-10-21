@@ -18,34 +18,34 @@ const TextBlockComponent: FC<TextBlockComponentProps> = ({textBlock}) => {
     return (
         <div className={css.container}>
             {textBlock.title &&
-                <SectionTitle title={textBlock.title}/>
+                <SectionTitle  title={textBlock.title}/>
             }
 
             {textBlock.textContent &&
-                <TextContentContainer textContent={textBlock.textContent}/>
+                <TextContentContainer  id={textBlock.id} textContent={textBlock.textContent}/>
             }
 
             {textBlock.uLists &&
-                <UListsContainer lists={textBlock.uLists}/>
+                <UListsContainer  id={textBlock.id} lists={textBlock.uLists}/>
             }
             {textBlock.oLists &&
-                <OListsContainer lists={textBlock.oLists}/>
+                <OListsContainer  id={textBlock.id} lists={textBlock.oLists}/>
             }
 
             {textBlock.images &&
-                <ImagesContainer images={textBlock.images}/>
+                <ImagesContainer  id={textBlock.id} images={textBlock.images}/>
             }
 
             {textBlock.tables &&
-                <TablesContainer tables={textBlock.tables}/>
+                <TablesContainer  id={textBlock.id} tables={textBlock.tables}/>
             }
 
             {textBlock.imageTextRows &&
-                <ImageTextRowsContainer imageTextRows={textBlock.imageTextRows}/>
+                <ImageTextRowsContainer  id={textBlock.id} imageTextRows={textBlock.imageTextRows}/>
             }
 
             {textBlock.superiors &&
-                <CompositionOfSuperiors superiors={textBlock.superiors}/>
+                <CompositionOfSuperiors id={textBlock.id} superiors={textBlock.superiors}/>
             }
 
         </div>

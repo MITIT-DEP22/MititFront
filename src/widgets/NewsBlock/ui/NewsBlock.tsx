@@ -18,7 +18,7 @@ export const NewsBlock = observer(() => {
                 isLoading ? <LoadingSpinner/> :
                     <div className={css.container}>
                         {news.map(item => (
-                            <NewsCard width={"400px"} news={item}/>
+                            <NewsCard key={`news_card_${item.id}`} width={"400px"} news={item}/>
                         ))}
                     </div>
             }
