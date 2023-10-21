@@ -4,6 +4,7 @@ import {sliderItems} from "../model";
 import {Link} from "react-router-dom";
 import Icon from "shared/ui/Icon/Icon";
 import {ftpPath} from "features/ImageComponent/model";
+import Skeleton from "../../../../../shared/ui/Skeleton/Skeleton";
 
 interface SliderProps {
     scrollDown: () => void;
@@ -20,6 +21,8 @@ export const Slider: React.FC<SliderProps> = ({scrollDown}) => {
         setCurrentImageIndex((prevIndex) => (prevIndex - 1 + sliderItems.length) % sliderItems.length);
     };
 
+    const [isLoading, setIsLoading] = useState(true)
+
     return (
         <div className={css.slider}>
             {sliderItems.map((item, index) => (
@@ -32,8 +35,8 @@ export const Slider: React.FC<SliderProps> = ({scrollDown}) => {
                         <source media="(max-width: 420px)" srcSet={ftpPath + item.mobImg.id}/>
                     )}
 
-                    <img className={css.sliderImg} src={ftpPath + item.img.id} alt=""/>
-
+                    <img style={{display:isLoading ? "none" : "block"}} onLoad={()=>setIsLoading(false)} className={css.sliderImg} src={ftpPath + item.img.id} alt=""/>
+                    <Skeleton className={css.skeleton}/>
                     <div className={css.sliderContent}>
                         {item.text && (
                             <div className={css.sliderDescription}>{item.text}</div>
