@@ -5,6 +5,7 @@ import {formatDate} from "entities/news/lib/formatDate";
 import {ImageComponent} from "../ImageComponent";
 import LoadingSpinner from "shared/ui/LoadingSpinner/LoadingSpinner";
 import Skeleton from "../../shared/ui/Skeleton/Skeleton";
+import HTMLReactParser from "html-react-parser";
 
 interface NewsProps {
     news: News;
@@ -12,19 +13,12 @@ interface NewsProps {
 
 export const NewsCardSpecial: FC<NewsProps> = ({news}) => {
 
-    const [isLoading, setIsLoading] = useState<boolean>(true);
-
-    const onLoadImage = () => {
-        setIsLoading(false)
-    }
-
     return (
         <>
-            {isLoading && <LoadingSpinner/>}
-            <div style={isLoading ? {display:'none'} : {display:"block"}} className={css.container} >
+            <div className={css.container}>
                 <div className={css.date}>{formatDate(news?.createdAt)}</div>
-                <div className={css.title}>{news?.title}</div>
-                <ImageComponent onLoaded={onLoadImage} className={css.img}
+                <div className={css.title}>{HTMLReactParser(news?.title)}</div>
+                <ImageComponent className={css.img}
                                 imgId={news?.titleImage?.id}/>
             </div>
         </>

@@ -1,9 +1,8 @@
 import {action, makeAutoObservable, observable} from 'mobx';
 import $api from "shared/api";
 import {News} from "../model/types";
-import axios from "axios";
 
-class NewsStore {
+class NewsPageStore {
     @observable news: News[] = [];
     @observable isLoading = true;
     @observable page: number = 0;
@@ -58,6 +57,6 @@ class NewsStore {
     }
 }
 
-const newsStore = new NewsStore();
+const newsStore = new NewsPageStore();
 
 export default newsStore;

@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  padding: 5vh 5vw;
+
+}
+
+.contentContainer {
+  margin-top: 5vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media screen and (width < 900px) {
+    grid-template-columns: 1fr;
+  }
+
+
+  * {
+    align-self: start
+  }
+}
+
+.textContainer {
+  margin-top: 5vh;
+}
+
+.date{
+  font-weight: 700;
+  text-align: right;
+  margin: 15px;
+}

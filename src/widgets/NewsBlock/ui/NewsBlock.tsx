@@ -2,7 +2,7 @@ import React from 'react';
 import BlockContainer from "shared/ui/BlockContainer/BlockContainer";
 import SectionTitle from "shared/ui/SectionTitle/SectionTitle";
 import {observer} from "mobx-react";
-import newsStore from "entities/news/store/news-store";
+import newsStore from "../../../entities/news/store/news-page-store";
 import LoadingSpinner from "shared/ui/LoadingSpinner/LoadingSpinner";
 import {NewsCard} from "features/NewsCard/NewsCard";
 import css from "./NewsBlock.module.scss"

@@ -2,7 +2,7 @@ import React from 'react';
 import css from "./NewsHome.module.scss"
 import {NewsCardSpecial} from "features/NewsCardSpecial/NewsCardSpecial";
 import {observer} from "mobx-react";
-import newsStore from "entities/news/store/news-store";
+import newsStore from "../../../../../entities/news/store/news-page-store";
 import {NewsCard} from "features/NewsCard/NewsCard";
 import LoadingSpinner from "shared/ui/LoadingSpinner/LoadingSpinner";
 

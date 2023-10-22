@@ -22,7 +22,7 @@ export const ImageComponent: FC<ImageProps> = ({imgId, className, onLoaded}) => 
 
     return (
         <>
-            {isLoading && <Skeleton className={css.skeletonSize}/>}
+            {isLoading && <Skeleton className={`${css.skeletonSize}`}/>}
             <img key={`image_${imgId}`}
                 style={{display: isLoading ? 'none' : 'block'}}
                 onLoad={handleImageLoad}

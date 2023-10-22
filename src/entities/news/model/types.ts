@@ -4,7 +4,7 @@ export type News = {
     id: number;
     title: string;
     titleImage:Image;
-    img: Image[];
-    content: string;
+    images: Image[];
+    contents: string[];
     createdAt: string;
 }

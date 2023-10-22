@@ -4,6 +4,8 @@ import {formatDate} from "entities/news/lib/formatDate";
 import {News} from "entities/news/model/types";
 import {ImageComponent} from "../ImageComponent";
 import HTMLReactParser from "html-react-parser";
+import {Link} from "react-router-dom";
+import {RouterNames} from "../../shared/enums/RouterNames";
 
 interface NewsProps {
     news: News;
@@ -12,7 +14,7 @@ interface NewsProps {
 
 export const NewsCard: FC<NewsProps> = ({news, width}) => {
     return (
-            <div style={{width:width}} className={css.card}>
+            <Link to={`${RouterNames.NEWS.to}/${news.id}`} style={{width:width}} className={css.card}>
                 <div className={css.cardDate}>
                     {formatDate(news?.createdAt)}
                 </div>
@@ -23,6 +25,6 @@ export const NewsCard: FC<NewsProps> = ({news, width}) => {
                     {news.id}
                 </div>
                 <ImageComponent className={css.cardImg} imgId={news.titleImage?.id}/>
-            </div>
+            </Link>
     );
 };

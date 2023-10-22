@@ -22,7 +22,7 @@ const InfoAccordion: FC<InfoAccordion> = ({item}) => {
                     <i className="bi bi-caret-left"></i>
                 </button>
             </div>
-            <Collapse transition="height 300ms cubic-bezier(.4, 0, .2, 1)" isOpen={isOpen}
+            <Collapse className={css.collapse} transition="height 300ms cubic-bezier(.4, 0, .2, 1)" isOpen={isOpen}
                       render={() => (
                           <TextBlocks textBlocks={item.textBlocks}/>
                       )}>

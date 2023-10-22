@@ -27,6 +27,7 @@ import {department5Page} from "../../shared/data/departments/department5Page";
 import {department4Page} from "../../shared/data/departments/department4Page";
 import {department3Page} from "../../shared/data/departments/department3Page";
 import {department2Page} from "../../shared/data/departments/department2Page";
+import DownloadBtn from "../../features/DownloadBtn/DownloadBtn";
 
 const NewsPage = observer(() => {
 
@@ -130,6 +131,8 @@ const NewsPage = observer(() => {
             {/*    sendAllPages()*/}
             {/*}}>sendPage*/}
             {/*</button>*/}
+
+            {/*<DownloadBtn/>*/}
         </>
     );
 });

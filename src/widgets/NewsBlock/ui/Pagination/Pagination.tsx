@@ -1,6 +1,6 @@
 import React from 'react';
 import css from "./Pagination.module.scss"
-import newsStore from "entities/news/store/news-store";
+import newsStore from "../../../../entities/news/store/news-page-store";
 import {observer} from "mobx-react";
 import {observe} from "mobx";
 
@@ -64,7 +64,7 @@ const Pagination = observer(() => {
             }
         }
 
-        for (let i = startPage; i <= endPage; i++) {
+        for (let i = startPage; i <= endPage-1; i++) {
             pageNumbers.push(i);
         }
 
