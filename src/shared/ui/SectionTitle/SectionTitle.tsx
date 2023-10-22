@@ -11,7 +11,7 @@ const SectionTitle: FC<SectionTitleProps> = ({title, margin}) => {
     return (
         <div style={{margin: margin}} className={css.titleContainer}>
             <p className={css.title}>
-                {title}
+                {title && HTMLReactParser(title)}
             </p>
         </div>
     );
