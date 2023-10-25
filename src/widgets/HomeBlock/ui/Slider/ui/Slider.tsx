@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import Icon from "shared/ui/Icon/Icon";
 import {ftpPath} from "features/ImageComponent/model";
 import Skeleton from "shared/ui/Skeleton/Skeleton";
-import sliderStore from "entities/slider-item/store/sliderStore";
+import sliderStore from "../../../../../entities/slider-item/store/sliderStore";
 import {observer} from "mobx-react";
 
 interface SliderProps {

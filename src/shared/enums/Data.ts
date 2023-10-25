@@ -57,7 +57,17 @@ export const links = {
                 },
             ]
         },
-        {title: "Співробітництво", to: RouterNames.COOPERATION.to},
+        {
+            title: "Співробітництво", to: "/cooperation",
+            subLinks: [
+                {
+                    title: "Міжнародне співробітництво", to: RouterNames.COOPERATION_INTERNATIONAL.to
+                },
+                {
+                    title: "Внутрішнє співробітництво", to: RouterNames.COOPERATION_INSIDE.to
+                },
+            ]
+        },
         {title: "Наші перемоги", to: RouterNames.OUR_WINS.to}
     ] as NavLink[],
 
