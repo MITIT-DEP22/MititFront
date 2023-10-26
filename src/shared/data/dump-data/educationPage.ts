@@ -1,8 +1,8 @@
-import {Page} from "../../entities/page";
-import {RouterNames} from "../enums/RouterNames";
-import {Image} from "../../entities/image";
-import {List, TextBlock} from "../../entities/text-block";
-import {AccordionElement} from "../../entities/entrance";
+import {Page} from "../../../entities/page";
+import {RouterNames} from "../../enums/RouterNames";
+import {Image} from "../../../entities/image";
+import {List, TextBlock} from "../../../entities/text-block";
+import {AccordionElement} from "../../../entities/entrance";
 
 export const educationsPage: Page = {
     name: RouterNames.STUDY.name,

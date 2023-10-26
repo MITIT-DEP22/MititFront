@@ -11,12 +11,11 @@
 
 .logoContainer {
   text-decoration: none;
-  color:black;
-  margin: 10px;
+  color: black;
   display: flex;
   align-items: center;
-  gap: 5px;
-  font-size: 11px;
+  font-size: 12px;
+  gap: 2%;
 }
 
 
@@ -58,13 +57,13 @@
   justify-content: space-around;
 }
 
-.close{
+.close {
   position: absolute;
   right: -20vw;
 }
 
-.close_active{
-  right:0;
+.close_active {
+  right: 0;
   z-index: 50;
   height: 100vh;
   width: 20vw;

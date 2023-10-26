@@ -3,6 +3,7 @@
   font-size: min(14px, 3vw);
   font-weight: 700;
   text-decoration: none;
+  margin-left: 2%;
 }
 
 .logo {
@@ -11,12 +12,12 @@
 }
 
 .containerTitleLogo {
+  overflow-wrap: break-word;
   display: flex;
   align-items: center;
-  gap: 8px;
 }
 
-.skeleton{
+.skeleton {
   width: min(100px, 10vw);
   height: min(100px, 10vw);
   border-radius: 100%;

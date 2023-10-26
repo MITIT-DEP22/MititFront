@@ -1,12 +1,12 @@
-import {Image} from "../../../entities/image";
-import {RouterNames} from "../../enums/RouterNames";
-import {Superior} from "../../../entities/superior";
-import {TextBlock} from "../../../entities/text-block";
+import {Image} from "../../../../entities/image";
+import {RouterNames} from "../../../enums/RouterNames";
+import {Superior} from "../../../../entities/superior";
+import {TextBlock} from "../../../../entities/text-block";
 
 export const department5Page = {
     title: "Кафедри",
     titleImage: {id: 16257} as Image,
-    name: RouterNames.DEPARTMENT_5.name,
+    name: RouterNames.DEPARTMENTS.subLinks[4].name,
     textBlocks: [
         {
             title: "Кафедра математики та фізики",

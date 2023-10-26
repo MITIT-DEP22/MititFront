@@ -1,6 +1,6 @@
 import {makeAutoObservable, observable} from 'mobx';
 
-class LanguageToggle {
+class LanguageToggleStore {
     activeLanguage = localStorage.getItem("lang")? localStorage.getItem("lang") : "ua";
 
     constructor() {
@@ -15,4 +15,4 @@ class LanguageToggle {
     }
 }
 
-export const model = new LanguageToggle();
+export const languageToggleStore = new LanguageToggleStore();

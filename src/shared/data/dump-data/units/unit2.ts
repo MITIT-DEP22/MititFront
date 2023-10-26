@@ -1,11 +1,11 @@
-import {RouterNames} from "../../enums/RouterNames";
-import {Image} from "entities/image";
-import {List, TextBlock} from "entities/text-block";
-import {Superior} from "entities/superior";
+import {RouterNames} from "../../../enums/RouterNames";
+import {Image} from "../../../../entities/image";
+import {List, TextBlock} from "../../../../entities/text-block";
+import {Superior} from "../../../../entities/superior";
 
 export const unit2Page = {
     title: "Підрозділи",
-    name: RouterNames.UNIT_2.name,
+    name: RouterNames.UNITS.subLinks[1].name,
     titleImage: {id: 16262} as Image,
     textBlocks: [
         {

@@ -1,6 +1,6 @@
-import {Page} from "../../../entities/page";
-import {RouterNames} from "../../enums/RouterNames";
-import {Image} from "../../../entities/image";
+import {Page} from "../../../../entities/page";
+import {RouterNames} from "../../../enums/RouterNames";
+import {Image} from "../../../../entities/image";
 
 export const superiorsPage: Page = {
     name: RouterNames.SUPERIORS.name,

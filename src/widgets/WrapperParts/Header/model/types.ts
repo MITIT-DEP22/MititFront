@@ -1,12 +1,15 @@
 
 export type SubLink = {
-    id:number;
-    title:string;
+    titleUA:string;
+    titleENG:string
     to:string;
+    name:string;
 }
 
 export type NavLink = {
-    title:string;
+    titleUA:string;
+    titleENG:string;
     subLinks:SubLink[];
     to:string;
+    name:string;
 }

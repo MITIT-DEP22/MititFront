@@ -1,12 +1,12 @@
-import {RouterNames} from "../../enums/RouterNames";
-import {Image} from "../../../entities/image";
-import {TextBlock} from "../../../entities/text-block";
-import {Superior} from "../../../entities/superior";
-import {Row, RowElement, Table} from "../../../entities/text-block/model/types";
+import {RouterNames} from "../../../enums/RouterNames";
+import {Image} from "../../../../entities/image";
+import {TextBlock} from "../../../../entities/text-block";
+import {Superior} from "../../../../entities/superior";
+import {Row, RowElement, Table} from "../../../../entities/text-block/model/types";
 
 export const unit3Page = {
     title: "Підрозділи",
-    name: RouterNames.UNIT_3.name,
+    name: RouterNames.UNITS.subLinks[2].name,
     titleImage: {id: 16263} as Image,
     textBlocks: [
         {

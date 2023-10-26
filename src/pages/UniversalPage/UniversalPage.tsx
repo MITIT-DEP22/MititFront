@@ -7,7 +7,7 @@ import BlockContainer from "shared/ui/BlockContainer/BlockContainer";
 import InfoAccordion from "shared/ui/InfoAccordion/InfoAccordion";
 import {useParams} from "react-router";
 import pageStore from "../../entities/page/store/pageStore";
-import {cooperationPage} from "../../shared/data/cooperationPage";
+import {cooperationPage} from "../../shared/data/dump-data/cooperationPage";
 
 const UniversalPage = observer(() => {
 

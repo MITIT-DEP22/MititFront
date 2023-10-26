@@ -1,11 +1,11 @@
-import {Page} from "../../entities/page";
-import {RouterNames} from "../enums/RouterNames";
-import {Image} from "../../entities/image";
-import {ImageTextRow} from "../../entities/text-block/model/types";
+import {Page} from "../../../entities/page";
+import {RouterNames} from "../../enums/RouterNames";
+import {Image} from "../../../entities/image";
+import {ImageTextRow} from "../../../entities/text-block/model/types";
 
 export const cooperationPage: Page = {
     title: "Співробітництво",
-    name: RouterNames.COOPERATION_INTERNATIONAL.name,
+    name: RouterNames.COOPERATION.subLinks[0].name,
     titleImage: {id: 16537} as Image,
     textBlocks: [
         {

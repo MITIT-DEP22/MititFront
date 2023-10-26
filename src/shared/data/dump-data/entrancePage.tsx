@@ -1,9 +1,9 @@
-import {Page} from "../../entities/page";
-import {RouterNames} from "../enums/RouterNames";
-import {Image} from "../../entities/image";
-import {List, TextBlock} from "../../entities/text-block";
-import {Row, RowElement, Table} from "../../entities/text-block/model/types";
-import {AccordionElement} from "../../entities/entrance";
+import {Page} from "../../../entities/page";
+import {RouterNames} from "../../enums/RouterNames";
+import {Image} from "../../../entities/image";
+import {List, TextBlock} from "../../../entities/text-block";
+import {Row, RowElement, Table} from "../../../entities/text-block/model/types";
+import {AccordionElement} from "../../../entities/entrance";
 
 export const entrancesPage: Page = {
     name: RouterNames.ENTRANTS.name,

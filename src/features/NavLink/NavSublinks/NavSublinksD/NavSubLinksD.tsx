@@ -2,6 +2,8 @@ import React, {FC, useState} from 'react';
 import {Link} from "react-router-dom";
 import css from "./NavSublinksD.module.scss";
 import {NavLink} from "../../../../widgets/WrapperParts/Header/model/types";
+import {observer} from "mobx-react";
+import {languageToggleStore} from "../../../LanguageToggle/model/languageToggleStore";
 
 interface NavSubLinksProps {
     isMobile?: boolean;
@@ -10,27 +12,27 @@ interface NavSubLinksProps {
     click: (any: any) => any;
 }
 
-const NavSubLinksD: FC<NavSubLinksProps> = ({click, link, isMobile, isActive}) => {
+const NavSubLinksD: FC<NavSubLinksProps> = observer(({click, link, isMobile, isActive}) => {
     const [isHovered, setHovered] = useState(false)
-
+    const {activeLanguage} = languageToggleStore
     return (
         <div onMouseLeave={() => setHovered(false)} onMouseOver={() => setHovered(true)}
              className={`${css.navLinkB} ${isActive && css.navLinkB_active}`}>
-            <span>{link.title}</span>
+            <span>{activeLanguage == "ua" ? link.titleUA : link.titleENG}</span>
             {
                 link.subLinks &&
                 <>
                     <div className={`${css.triangle} ${isHovered && css.triangle_active}`}/>
                     <div className={`${css.sublinksContainer} ${isHovered && css.sublinksContainer_active}`}>
-                        {link.subLinks.map((item) => (
-                            <Link key={`${item.id}_${item.title}`} onClick={click} className={css.sublink}
-                                  to={item.to}>{item.title}</Link>
+                        {link.subLinks.map((item, index) => (
+                            <Link key={`${index}_${item.titleUA}`} onClick={click} className={css.sublink}
+                                  to={item.to}>{activeLanguage == "ua" ? item.titleUA : item.titleENG}</Link>
                         ))}
                     </div>
                 </>
             }
         </div>
     );
-};
+});
 
 export default NavSubLinksD;

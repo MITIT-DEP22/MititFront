@@ -1,11 +1,11 @@
-import {Image} from "entities/image";
-import {RouterNames} from "../../enums/RouterNames";
-import {List, TextBlock} from "entities/text-block";
+import {Image} from "../../../../entities/image";
+import {RouterNames} from "../../../enums/RouterNames";
+import {List, TextBlock} from "../../../../entities/text-block";
 
 export const department6Page = {
     title: "Кафедри",
     titleImage: {id: 16258} as Image,
-    name: RouterNames.DEPARTMENT_6.name,
+    name: RouterNames.DEPARTMENTS.subLinks[5].name,
     textBlocks: [
         {
             title: "Кафедра військової підготовки",

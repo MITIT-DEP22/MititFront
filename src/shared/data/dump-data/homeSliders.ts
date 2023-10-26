@@ -1,6 +1,6 @@
-import {SliderItem} from "../../entities/slider-item";
-import {Image} from "../../entities/image";
-import {ButtonDescription} from "../../entities/slider-item/model/types";
+import {SliderItem} from "../../../entities/slider-item";
+import {Image} from "../../../entities/image";
+import {ButtonDescription} from "../../../entities/slider-item/model/types";
 
 export const homeSliders: SliderItem[] = [
     {

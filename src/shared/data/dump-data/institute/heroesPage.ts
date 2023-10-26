@@ -1,7 +1,7 @@
-import {Page} from "../../../entities/page";
-import {Image} from "../../../entities/image";
-import {RouterNames} from "../../enums/RouterNames";
-import {ImageTextRow, List} from "../../../entities/text-block/model/types";
+import {Page} from "../../../../entities/page";
+import {Image} from "../../../../entities/image";
+import {RouterNames} from "../../../enums/RouterNames";
+import {ImageTextRow, List} from "../../../../entities/text-block/model/types";
 
 export const heroesPage: Page = {
     title: "Герої не вмирають",

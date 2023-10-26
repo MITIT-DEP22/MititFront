@@ -1,8 +1,8 @@
-import {Page} from "../../entities/page";
-import {RouterNames} from "../enums/RouterNames";
-import {Image} from "../../entities/image";
-import {List} from "../../entities/text-block";
-import {ImageTextRow} from "../../entities/text-block/model/types";
+import {Page} from "../../../entities/page";
+import {RouterNames} from "../../enums/RouterNames";
+import {Image} from "../../../entities/image";
+import {List} from "../../../entities/text-block";
+import {ImageTextRow} from "../../../entities/text-block/model/types";
 
 export const contactsPage: Page = {
     name: RouterNames.CONTACTS.name,

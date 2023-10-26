@@ -1,14 +1,14 @@
-import {Page} from "../../../entities/page";
-import {Image} from "../../../entities/image";
-import {RouterNames} from "../../enums/RouterNames";
-import {Superior} from "../../../entities/superior";
-import {TextBlock} from "../../../entities/text-block";
-import {Row, RowElement, Table} from "../../../entities/text-block/model/types";
+import {Page} from "../../../../entities/page";
+import {Image} from "../../../../entities/image";
+import {RouterNames} from "../../../enums/RouterNames";
+import {Superior} from "../../../../entities/superior";
+import {TextBlock} from "../../../../entities/text-block";
+import {Row, RowElement, Table} from "../../../../entities/text-block/model/types";
 
 export const department2Page: Page = {
     title: "Кафедри",
     titleImage: {id: 16254} as Image,
-    name: RouterNames.DEPARTMENT_2.name,
+    name: RouterNames.DEPARTMENTS.subLinks[1].name,
     textBlocks: [
         {
             title: "Кафедра Іноземних мов",

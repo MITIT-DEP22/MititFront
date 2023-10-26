@@ -1,12 +1,12 @@
-import {Image} from "entities/image";
-import {RouterNames} from "shared/enums/RouterNames";
-import {Superior} from "entities/superior";
-import {List, TextBlock} from "entities/text-block";
-import {Page} from "entities/page";
+import {Image} from "../../../../entities/image";
+import {RouterNames} from "../../../enums/RouterNames";
+import {Superior} from "../../../../entities/superior";
+import {List, TextBlock} from "../../../../entities/text-block";
+import {Page} from "../../../../entities/page";
 
 export const faculty1Page = {
     title: "Факультети",
-    name: RouterNames.FACULTY_1.name,
+    name: RouterNames.FACULTIES.subLinks[0].name,
     titleImage: {id: 16260} as Image,
     textBlocks: [
         {

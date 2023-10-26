@@ -1,9 +1,9 @@
-import {Page} from "../../entities/page";
-import {Image} from "../../entities/image";
-import {RouterNames} from "../enums/RouterNames";
-import {List, TextBlock} from "../../entities/text-block";
-import {AccordionElement} from "../../entities/entrance";
-import {ImageTextRow} from "../../entities/text-block/model/types";
+import {Page} from "../../../entities/page";
+import {Image} from "../../../entities/image";
+import {RouterNames} from "../../enums/RouterNames";
+import {List, TextBlock} from "../../../entities/text-block";
+import {AccordionElement} from "../../../entities/entrance";
+import {ImageTextRow} from "../../../entities/text-block/model/types";
 
 export const sciencesPage: Page = {
     title: "Наука",
