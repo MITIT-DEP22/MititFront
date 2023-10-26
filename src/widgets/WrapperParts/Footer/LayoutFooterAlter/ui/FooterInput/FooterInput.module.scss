@@ -71,3 +71,9 @@ $green: #0E3719;
 .form__field{
   &:required,&:invalid { box-shadow:none; }
 }
+
+@media (max-width: 510px) {
+  .inputContainer  {
+    width: 100%;
+  }
+}
