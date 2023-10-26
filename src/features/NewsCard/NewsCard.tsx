@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import css from "./NewsCard.module.scss"
-import {formatDate} from "entities/news/lib/formatDate";
-import {News} from "entities/news/model/types";
+import {formatDate} from "../../entities/news/lib/formatDate";
+import {News} from "../../entities/news/model/types";
 import {ImageComponent} from "../ImageComponent";
 import HTMLReactParser from "html-react-parser";
 import {Link} from "react-router-dom";

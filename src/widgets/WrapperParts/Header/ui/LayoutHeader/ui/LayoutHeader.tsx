@@ -10,7 +10,7 @@ import Search from "../../Search/Search";
 import SocialLinkIcon from "../../SocialLink/SocialLinkIcon";
 import {RouterNames} from "shared/enums/RouterNames";
 import {headerData} from "../../../model";
-import {NavLinkB, NavLinkT} from "../../../../../../features/NavLink";
+import {NavLinkB, NavLinkT} from "features/NavLink";
 import NavSubLinksD from "features/NavLink/NavSublinks/NavSublinksD/NavSubLinksD"
 
 export const LayoutHeader = observer(() => {

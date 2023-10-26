@@ -70,6 +70,7 @@
 }
 
 .previewElement {
+  pointer-events: none;
   height: 100px;
   width: 200px;
   @media screen and (width < 900px) {

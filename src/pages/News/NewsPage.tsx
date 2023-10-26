@@ -28,54 +28,75 @@ import {department4Page} from "../../shared/data/departments/department4Page";
 import {department3Page} from "../../shared/data/departments/department3Page";
 import {department2Page} from "../../shared/data/departments/department2Page";
 import DownloadBtn from "../../features/DownloadBtn/DownloadBtn";
+import {cooperationPage} from "../../shared/data/cooperationPage";
+import {homeSliders} from "../../shared/data/homeSliders";
 
 const NewsPage = observer(() => {
 
-    // const sendAllPages = () => {
-    //     sendPage(superiorsPage).then(() => {
-    //         sendPage(entrancesPage).then(() => {
-    //             sendPage(educationsPage).then(() => {
-    //                 sendPage(publicInfoPage).then(() => {
-    //                     sendPage(sciencesPage).then(()=>{
-    //                         sendPage(contactsPage).then(()=>{
-    //                             sendPage(heroesPage).then(()=>{
-    //                                 sendPage(historyPage).then(()=>{
-    //                                     sendPage(whyMITITPage).then(()=>{
-    //                                         sendPage(unit1Page).then(()=>{
-    //                                             sendPage(unit2Page).then(()=>{
-    //                                                 sendPage(unit3Page).then(()=>{
-    //                                                     sendPage(faculty1Page).then(()=>{
-    //                                                         sendPage(faculty2Page).then(()=>{
-    //                                                             sendPage(faculty3Page).then(()=>{
-    //                                                                 sendPage(department1Page).then(()=>{
-    //                                                                     sendPage(department2Page).then(()=>{
-    //                                                                         sendPage(department3Page).then(()=>{
-    //                                                                             sendPage(department4Page).then(()=>{
-    //                                                                                 sendPage(department5Page).then(()=>{
-    //                                                                                     sendPage(department6Page).then(()=>{
-    //
-    //                                                                                     })
-    //                                                                                 })
-    //                                                                             })
-    //                                                                         })
-    //                                                                     })
-    //                                                                 })
-    //                                                             })
-    //                                                         })
-    //                                                     })
-    //                                                 })
-    //                                             })
-    //                                         })
-    //                                     })
-    //                                 })
-    //                             })
-    //                         })
-    //                     })
-    //                 })
-    //             })
-    //         })
-    //     })
-    // }
+    const sendAllPages = () => {
+        sendPage(superiorsPage).then(() => {
+            sendPage(entrancesPage).then(() => {
+                sendPage(educationsPage).then(() => {
+                    sendPage(publicInfoPage).then(() => {
+                        sendPage(sciencesPage).then(() => {
+                            sendPage(contactsPage).then(() => {
+                                sendPage(heroesPage).then(() => {
+                                    sendPage(historyPage).then(() => {
+                                        sendPage(whyMITITPage).then(() => {
+                                            sendPage(unit1Page).then(() => {
+                                                sendPage(unit2Page).then(() => {
+                                                    sendPage(unit3Page).then(() => {
+                                                        sendPage(faculty1Page).then(() => {
+                                                            sendPage(faculty2Page).then(() => {
+                                                                sendPage(faculty3Page).then(() => {
+                                                                    sendPage(department1Page).then(() => {
+                                                                        sendPage(department2Page).then(() => {
+                                                                            sendPage(department3Page).then(() => {
+                                                                                sendPage(department4Page).then(() => {
+                                                                                    sendPage(department5Page).then(() => {
+                                                                                        sendPage(department6Page).then(() => {
+                                                                                            sendPage(cooperationPage)
+                                                                                        })
+                                                                                    })
+                                                                                })
+                                                                            })
+                                                                        })
+                                                                    })
+                                                                })
+                                                            })
+                                                        })
+                                                    })
+                                                })
+                                            })
+                                        })
+                                    })
+                                })
+                            })
+                        })
+                    })
+                })
+            })
+        })
+    }
+
+    const counter = 0;
+    const sendSliders = (index: number) => {
+        $api.post("/slider-items", {
+            title: homeSliders[index].title,
+            text: homeSliders[index].text,
+            imageId: homeSliders[index].image.id,
+            mobileImageId: homeSliders[index].mobileImage?.id,
+            sliderDescriptionButton: {
+                href: "",
+                text: ""
+            }
+        }).then(res => {
+            console.log(res)
+            homeSliders[index++] && sendSliders(index)
+        }).catch(e => {
+            console.log(e)
+        })
+    }
 
     const sendPage = async (page: Page) => {
         try {
@@ -125,14 +146,19 @@ const NewsPage = observer(() => {
 
     return (
         <>
-            <PageHead  title={"Новини"} imgId={16245}/>
+            <PageHead title={"Новини"} imgId={16245}/>
             <NewsBlock/>
             {/*<button onClick={() => {*/}
             {/*    sendAllPages()*/}
             {/*}}>sendPage*/}
             {/*</button>*/}
 
-            {/*<DownloadBtn/>*/}
+            {/*<button onClick={() => {*/}
+            {/*    sendSliders(counter)*/}
+            {/*}}>sendSliders*/}
+            {/*</button>*/}
+
+            <DownloadBtn/>
         </>
     );
 });

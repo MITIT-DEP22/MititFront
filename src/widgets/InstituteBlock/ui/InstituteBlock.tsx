@@ -1,10 +1,9 @@
 import React from 'react';
 import InfoCard from "./InfoCard/InfoCard";
 import css from "./InstituteBlock.module.scss"
-import {InstituteInfoCards} from "entities/institute-info/api/InstituteInfoApi";
+import {InstituteInfoCards} from "../../../entities/institute-info/api/InstituteInfoApi";
 import SectionTitle from "shared/ui/SectionTitle/SectionTitle";
 import BlockContainer from "shared/ui/BlockContainer/BlockContainer";
-
 
 export const InstituteBlock = () => {
     return (

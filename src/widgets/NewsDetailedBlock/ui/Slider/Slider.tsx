@@ -1,4 +1,4 @@
-import React, {FC, useEffect, useState} from 'react';
+import React, {FC, useEffect, useRef, useState} from 'react';
 import {Image} from "../../../../entities/image";
 import {ImageComponent} from "../../../../features/ImageComponent";
 import css from "./Slider.module.scss"
@@ -25,6 +25,32 @@ const Slider: FC<SliderProps> = observer(({images}) => {
             setOnChange(false)
         }, 400)
     }
+
+    const [dragging, setDragging] = useState(false);
+    const [startX, setStartX] = useState(0);
+    const [scrollLeft, setScrollLeft] = useState(0);
+    const containerRef = useRef(null);
+
+    const handleMouseDown = (e: any) => {
+        setDragging(true);
+        // @ts-ignore
+        setStartX(e.pageX - containerRef.current.offsetLeft);
+        // @ts-ignore
+        setScrollLeft(containerRef.current.scrollLeft);
+    };
+
+    const handleMouseUp = () => {
+        setDragging(false);
+    };
+
+    const handleMouseMove = (e: any) => {
+        if (!dragging) return;
+        // @ts-ignore
+        const x = e.pageX - containerRef.current.offsetLeft;
+        const walk = x - startX;
+        // @ts-ignore
+        containerRef.current.scrollLeft = scrollLeft - walk;
+    };
 
     const scrollOnActive = () => {
         if (document.getElementById("preview-container")) {
@@ -68,7 +94,11 @@ const Slider: FC<SliderProps> = observer(({images}) => {
                     <i className="bi bi-caret-right"></i>
                 </button>
             </div>
-            <div id={"preview-container"} className={css.previewContainer}>
+            <div ref={containerRef}
+                 onMouseDown={handleMouseDown}
+                 onMouseUp={handleMouseUp}
+                 onMouseMove={handleMouseMove}
+                 id={"preview-container"} className={css.previewContainer}>
                 {
                     images?.map(item => (
                         <button onClick={() => {
@@ -76,8 +106,8 @@ const Slider: FC<SliderProps> = observer(({images}) => {
                             setCurrentImage(item)
                         }} className={css.imgBtn}>
                             <ImageComponent key={`slider-img-news-page_${item.id}`}
-                                className={`${css.previewElement} ${item?.id === currentImage?.id && css.imgBtn_active}`}
-                                imgId={item?.id}/>
+                                            className={`${css.previewElement} ${item?.id === currentImage?.id && css.imgBtn_active}`}
+                                            imgId={item?.id}/>
                         </button>
                     ))
                 }
