@@ -16,11 +16,20 @@
   border-bottom: 2px #000000 groove;
 }
 
+.winsText {
+  display: flex;
+  max-width: 1358px;
+  width: 100%;
+  justify-content: start;
+}
+
 .winsContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 18px;
+  max-width: 1358px;
+  width: 100%;
 }
 
 .winsSlider {
@@ -29,7 +38,13 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  width: 100%;
+  max-width: 1000px;
   height: 484px;
+}
+
+.winsSliderImg_change{
+  opacity: 0;
 }
 
 .winsArrowLeft {
@@ -52,18 +67,58 @@
   cursor: pointer;
 }
 
-.winsSliderElement {
+.winsSliderElements {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  overflow: scroll;
+  padding: 0 10px;
+  justify-content: center;
+  width: 100%;
+  max-width: 340px;
+  box-shadow: inset 0 0 10px 2px #333;
+  border-radius: 5px;
 }
 
 .winsImage {
-  width: 1100px;
+  width: 100%;
   height: 100%;
 }
 
 .winsImageSlider {
   width: 320px;
   height: 66px;
+}
+
+.imgBtn {
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.imgBtn_active {
+  opacity: 0.1;
+}
+
+@media (max-width: 800px) {
+  .winsSliderElements{
+    display: none;
+  }
+}
+
+.winsMore {
+  display: flex;
+  max-width: 1358px;
+  width: 100%;
+  justify-content: end;
+  cursor: pointer;
+}
+
+.winsBack {
+  display: flex;
+  max-width: 1100px;
+  width: 100%;
+  justify-content: start;
+  cursor: pointer;
 }
