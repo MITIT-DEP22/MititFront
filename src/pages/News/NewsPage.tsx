@@ -97,6 +97,25 @@ const NewsPage = observer(() => {
         })
     }
 
+    // const counter2 = 0
+    // const sendSpecialities = (index:number) => {
+    //     $api.post("/specialties", {
+    //         title: specialities[index].title,
+    //         description: specialities[index].description,
+    //         titleImage: specialities[index].titleImage.id,
+    //         mobileImageId: homeSliders[index].mobileImage?.id,
+    //         sliderDescriptionButton: {
+    //             href: "",
+    //             text: ""
+    //         }
+    //     }).then(res => {
+    //         console.log(res)
+    //         homeSliders[index++] && sendSliders(index)
+    //     }).catch(e => {
+    //         console.log(e)
+    //     })
+    // }
+
     const sendPage = async (page: Page) => {
         try {
             const [accordionElementIdList, textBlockIdList] = await Promise.all([
