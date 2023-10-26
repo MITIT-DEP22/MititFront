@@ -5,7 +5,7 @@ export type ButtonDescription = {
     text: string
 }
 export type SliderItem = {
-    id:number;
+    id?:number;
     image: Image,
     mobileImage?: Image,
     title?: string,

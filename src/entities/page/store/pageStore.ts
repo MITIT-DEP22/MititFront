@@ -19,7 +19,6 @@ class PageStore {
         this.currentPage = this.pages.filter(item => item.name === name)[0]
     }
 
-
     @action
     async loadAllPages() {
         $api.get(`/pages`).then(response => {

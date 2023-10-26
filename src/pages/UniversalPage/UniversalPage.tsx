@@ -40,8 +40,6 @@ const UniversalPage = observer(() => {
                                 <InfoAccordion key={`accordion_item_${item.id}`} item={item}/>
                             ))
                         }
-
-                        <TextBlocks textBlocks={cooperationPage.textBlocks}/>
                     </BlockContainer>
                 </>
             }

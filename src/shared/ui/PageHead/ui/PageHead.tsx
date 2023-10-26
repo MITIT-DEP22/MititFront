@@ -37,7 +37,6 @@ export const PageHead: FC<PageHeadProps> = ({title, imgId}) => {
                           onClick={scroll}/>
                 </div>
             }
-
             <div className={`${css.container}  ${isLoading && css.none}`}>
                 <p className={css.title}>{title}</p>
                 <img className={css.img} onLoad={handleImageLoad} src={ftpPath + imgId} alt=""/>

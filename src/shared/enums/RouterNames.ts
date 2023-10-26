@@ -26,7 +26,7 @@ export const RouterNames = {
     UNIT_2: {to: "/page/unit2", name: "unit2"},
     UNIT_3: {to: "/page/unit3", name: "unit3"},
 
-    COOPERATION_INTERNATIONAL: {to: "/page/cooperation-international", name: "cooperation_international"},
+    COOPERATION_INTERNATIONAL: {to: "/page/cooperation_international", name: "cooperation_international"},
     COOPERATION_INSIDE: {to: "/page/cooperation-inside", name: "cooperation_inside"},
 
     OUR_WINS: {to: "/page/wins", name: "our_wins"},
