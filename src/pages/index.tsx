@@ -6,6 +6,7 @@ import HomePage from "./Home/HomePage";
 import NewsPage from "./News/NewsPage";
 import UniversalPage from "./UniversalPage/UniversalPage";
 import NewsDetailedPage from "./NewsDetailed/NewsDetailedPage";
+import WinsPage from "./Wins/WinsPage";
 
 
 export const Routing = () => {
@@ -15,6 +16,7 @@ export const Routing = () => {
             <Route path={RouterNames.INSTITUTE.to} element={<InstitutePage/>}/>
             <Route path={RouterNames.NEWS.to} element={<NewsPage/>}/>
             <Route path={RouterNames.NEWS.to + "/:id"} element={<NewsDetailedPage/>}/>
+            <Route path={RouterNames.OUR_WINS.to} element={<WinsPage/>}/>
 
             <Route path={"/page/:name"} element={<UniversalPage/>}/>
 
