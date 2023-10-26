@@ -24,7 +24,7 @@
   background: rgba(30, 30, 30, 0.25);
   backdrop-filter: blur(5px);
   box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.5);
-  padding: 18px 5%;
+  padding: 16px 5%;
   align-items: center;
   color: white;
   justify-content: space-between;
@@ -54,6 +54,7 @@
 
 .iconsContainer {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 15px;
 }
