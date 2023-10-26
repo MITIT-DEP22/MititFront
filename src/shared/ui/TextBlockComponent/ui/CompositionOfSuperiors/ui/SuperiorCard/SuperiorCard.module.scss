@@ -15,6 +15,9 @@
 
 .chiefCardTextAbout {
   font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .chiefCardTextContainer {
@@ -103,13 +106,13 @@
       height: 327px;
     }
   }
-  .chiefCardTextContainer{
+  .chiefCardTextContainer {
     width: 216px;
     height: max-content;
   }
   .chiefCardTextAbout {
-      width: 100%;
-      height: max-content;
+    width: 100%;
+    height: max-content;
   }
   .chiefCardText {
     width: 100%;

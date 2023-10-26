@@ -10,9 +10,10 @@ import HTMLReactParser from "html-react-parser";
 interface TitleNameProps extends React.HTMLProps<HTMLElement> {
     logoSize?: string;
     withTitle?: boolean;
+    color?: string;
 }
 
-const TitleLogo: FC<TitleNameProps> = observer(({logoSize, withTitle}) => {
+const TitleLogo: FC<TitleNameProps> = observer(({logoSize, color, withTitle}) => {
             if (withTitle === undefined) {
                 withTitle = true;
             }
@@ -27,7 +28,7 @@ const TitleLogo: FC<TitleNameProps> = observer(({logoSize, withTitle}) => {
                          src={logo} alt=""/>
                     {
                         withTitle &&
-                        <span className={css.titleName}>
+                        <span style={{color: color}} className={css.titleName}>
                             {HTMLReactParser(activeLanguage == "ua" ? instituteName.ua : instituteName.eng)}
                         </span>
                     }

@@ -25,14 +25,12 @@ const Sidebar: FC<SidebarProps> = observer(({isOpen, close}) => {
         headerStore.changeLink(to)
         close()
     }
-    const {activeLanguage} = languageToggleStore
 
     return (
         <div className={`${css.container} ${isOpen && css.active}`}>
             <div className={`${css.menu} ${isOpen && css.menuActive}`}>
                 <Link to={RouterNames.HOME.to} onClick={() => goTo(RouterNames.HOME.to)} className={css.logoContainer}>
-                    <TitleLogo logoSize={"25vw"} withTitle={false}/>
-                    <span>{HTMLReactParser(activeLanguage == "ua" ? instituteName.ua : instituteName.eng)}</span>
+                    <TitleLogo color={"black"} logoSize={"25vw"}/>
                 </Link>
 
                 {links.linksT.map((item: any, index) => (

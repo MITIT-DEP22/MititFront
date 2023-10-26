@@ -19,7 +19,9 @@ const SuperiorCard: FC<ChiefCardData> = ({superior, positionRight, id}) => {
                     <ImageComponent imgId={superior?.image?.id}/>
                     <div className={css.chiefCardTextContainer}>
                         <div className={`${css.chiefCardTextAbout} ${css.leftAlign}`}>
-                            {superior.textContent}
+                            {superior.textContent?.map((item,index)=>(
+                                <p key={`superior_text-about_${index}_${id}`}>{HTMLReactParser(item)}</p>
+                            ))}
                         </div>
                         <div className={`${css.chiefCardText} ${css.leftAlign}`}>
                             <div className={`${positionRight ? css.borderLeft : css.borderRight}`}>
@@ -41,7 +43,9 @@ const SuperiorCard: FC<ChiefCardData> = ({superior, positionRight, id}) => {
                 <>
                     <div className={`${css.chiefCardTextContainer}`}>
                         <div className={`${css.chiefCardTextAbout} ${css.rightAlign}`}>
-                            {superior.textContent}
+                            {superior.textContent?.map((item,index)=>(
+                                <p key={`superior_text-about_${index}_${id}`}>{HTMLReactParser(item)}</p>
+                            ))}
                         </div>
                         <div className={`${css.chiefCardText} ${css.rightAlign}`}>
                             <div className={`${positionRight ? css.borderLeft : css.borderRight}`}>
