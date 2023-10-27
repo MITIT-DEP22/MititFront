@@ -1,4 +1,4 @@
-import {NavLink, SubLink} from "../../widgets/WrapperParts/Header/model/types";
+import { SubLink} from "../../widgets/WrapperParts/Header/model/types";
 
 export const RouterNames = {
     HOME: {to: "/", name: "home", titleUA: "Головна", titleENG: "Main"} ,

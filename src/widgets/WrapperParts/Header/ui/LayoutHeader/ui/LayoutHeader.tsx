@@ -5,11 +5,10 @@ import TitleLogo from "shared/ui/TitleLogo/TitleLogo"
 import {observer} from "mobx-react";
 import {headerStore} from "../../../model/headerStore"
 import {Link, useLocation} from "react-router-dom";
-import {instituteName, links, socialIcons} from "shared/enums/Data";
+import { links, socialIcons} from "shared/enums/Data";
 import Search from "../../Search/Search";
 import SocialLinkIcon from "../../SocialLink/SocialLinkIcon";
 import { RouterNames} from "shared/enums/RouterNames";
-import {headerData} from "../../../model";
 import {NavLinkB, NavLinkT} from "features/NavLink";
 import NavSubLinksD from "features/NavLink/NavSublinks/NavSublinksD/NavSubLinksD"
 

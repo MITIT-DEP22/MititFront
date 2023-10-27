@@ -12,10 +12,10 @@ export const upperTitle = "АКТУАЛЬНО: Набір на курси лід
 
 export const links = {
     linksT: [
-        RouterNames.INSTITUTE,
-        RouterNames.ENTRANTS,
-        RouterNames.STUDY,
-        RouterNames.CONTACTS
+    RouterNames.INSTITUTE,
+    RouterNames.ENTRANTS,
+    RouterNames.STUDY,
+    RouterNames.CONTACTS
     ] as NavLink[],
     linksB: [
         RouterNames.NEWS,
