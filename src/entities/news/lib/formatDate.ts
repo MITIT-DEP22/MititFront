@@ -7,6 +7,7 @@ export function formatDate(date: any) {
             return `${temp[2].split("T")[0]} ${Month[Number(temp[1])]} ${temp[0]}`
         } else {
             return ""
+            //test2
         }
     } catch (e) {
         console.log(e)
