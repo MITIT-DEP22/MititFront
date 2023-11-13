@@ -2,10 +2,10 @@ import React, {useState} from 'react';
 import css from "./Slider.module.scss";
 import {Link} from "react-router-dom";
 import Icon from "shared/ui/Icon/Icon";
-import {ftpPath} from "features/ImageComponent/model";
 import Skeleton from "shared/ui/Skeleton/Skeleton";
 import sliderStore from "../../../../../entities/slider-item/store/sliderStore";
 import {observer} from "mobx-react";
+import {API_URL} from "../../../../../shared/api";
 
 interface SliderProps {
     scrollDown: () => void;
@@ -37,11 +37,11 @@ export const Slider: React.FC<SliderProps> = observer(({scrollDown}) => {
                 >
 
                     {item.mobileImage && (
-                        <source media="(max-width: 420px)" srcSet={ftpPath + item.mobileImage.id}/>
+                        <source media="(max-width: 420px)" srcSet={API_URL+"/images/" + item.mobileImage.id}/>
                     )}
                     {imageIsLoading && <Skeleton className={css.skeleton}/>}
                     <img style={{display: imageIsLoading ? "none" : "block"}} onLoad={() => setImageIsLoading(false)}
-                         className={css.sliderImg} src={ftpPath + item.image.id} alt=""/>
+                         className={css.sliderImg} src={API_URL+"/images/"  + item.image.id} alt=""/>
                     <div className={css.sliderContent}>
                         {item.text && (
                             <div className={css.sliderDescription}>{item.text}</div>
