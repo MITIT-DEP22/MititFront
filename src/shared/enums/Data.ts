@@ -7,7 +7,7 @@ export const instituteName = {
     ua:"ВІЙСЬКОВИЙ ІНСТИТУТ<br>ТЕЛЕКОМУНІКАЦІЙ ТА ІНФОРМАТИЗАЦІЇ<br>ІМЕНІ ГЕРОЇВ КРУТ",
     eng:"Military Institute<br> of Telecommunication and Information Technologies<br> named after Heroes of Krut"
 }
-export const upperTitle = "АКТУАЛЬНО: Набір на курси лідерства"
+export const upperTitle = "BETA-version"
 
 
 export const links = {
