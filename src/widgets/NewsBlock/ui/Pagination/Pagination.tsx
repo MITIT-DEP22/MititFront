@@ -6,13 +6,13 @@ import ReactPaginate from "react-paginate";
 
 const Pagination = observer(() => {
 
-    const {countPages, changePage} = newsStore
+    const {countPages} = newsStore
     return (
         <ReactPaginate className={css.container}
                        breakLabel="..."
                        nextLabel=">"
                        onPageChange={(selectedItem) => {
-                           changePage(selectedItem.selected);
+                           newsStore.changePage(selectedItem.selected);
                        }}
                        activeClassName={css.paginationBtn_active}
                        pageRangeDisplayed={5}
