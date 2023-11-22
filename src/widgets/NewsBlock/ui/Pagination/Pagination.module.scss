@@ -6,7 +6,7 @@
   list-style-type: none;
 }
 
-.container > *{
+.link{
   color:black;
   height: 35px;
   width: 30px;
@@ -26,6 +26,8 @@
   }
 
 }
+
+
 
 .paginationBtn_active{
   background: linear-gradient(#335a3e, #174022);

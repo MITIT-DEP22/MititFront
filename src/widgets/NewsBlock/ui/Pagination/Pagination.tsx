@@ -14,8 +14,13 @@ const Pagination = observer(() => {
                        onPageChange={(selectedItem) => {
                            newsStore.changePage(selectedItem.selected);
                        }}
+                       breakClassName={css.separator}
+                       pageClassName={css.link}
+                       nextLinkClassName={css.link}
+                       previousClassName={css.link}
+                       marginPagesDisplayed={1}
                        activeClassName={css.paginationBtn_active}
-                       pageRangeDisplayed={5}
+                       pageRangeDisplayed={4}
                        pageCount={countPages}
                        previousLabel="<"
                        renderOnZeroPageCount={null}
