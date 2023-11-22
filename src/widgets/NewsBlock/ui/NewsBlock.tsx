@@ -24,7 +24,6 @@ export const NewsBlock = observer(() => {
                     </div>
             }
             <Pagination/>
-
         </BlockContainer>
     );
 });
