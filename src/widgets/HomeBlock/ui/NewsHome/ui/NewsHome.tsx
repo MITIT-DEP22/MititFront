@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import css from "./NewsHome.module.scss"
 import {NewsCardSpecial} from "features/NewsCardSpecial/NewsCardSpecial";
 import {observer} from "mobx-react";
@@ -8,6 +8,12 @@ import LoadingSpinner from "shared/ui/LoadingSpinner/LoadingSpinner";
 
 export const NewsHome = observer(() => {
     const {news, isLoading} = newsStore;
+
+    useEffect(() => {
+        newsStore.page = 0
+        newsStore.loadNews()
+    }, []);
+
     if (isLoading) {
         return <LoadingSpinner padding={"5vh 5vw"}/>;
     } else {

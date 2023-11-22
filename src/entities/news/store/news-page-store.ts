@@ -11,7 +11,6 @@ class NewsPageStore {
     constructor() {
         makeAutoObservable(this);
         this.loadNews = this.debounce(this.loadNews, 1000);
-        this.loadNews();
     }
 
     // @ts-ignore
@@ -39,6 +38,7 @@ class NewsPageStore {
     @action
     loadNews() {
         try {
+            this.isLoading = true
             $api.get('/news', {
                 params: {
                     size: 9,
