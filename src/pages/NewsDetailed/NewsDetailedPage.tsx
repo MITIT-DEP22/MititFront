@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import {useParams} from "react-router";
 import {observer} from "mobx-react";
 import newsDetailedStore from "../../entities/news/store/news-detailed-store";
-import {PageHead} from "../../shared/ui/PageHead";
+import {PageHead} from "../../widgets/PageHead";
 import NewsDetailedBlock from "../../widgets/NewsDetailedBlock/NewsDetailedBlock";
 import LoadingSpinner from "../../shared/ui/LoadingSpinner/LoadingSpinner";
 

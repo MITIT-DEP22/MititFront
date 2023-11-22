@@ -1,6 +1,6 @@
-import {Superior} from "../../superior";
-import {Image} from "../../image";
-import {TextBlock} from "../../text-block";
+import {Superior} from "../../../superior";
+import {Image} from "../../../image";
+import {TextBlock} from "../../../text-block";
 
 export type Unit = {
     id: number;

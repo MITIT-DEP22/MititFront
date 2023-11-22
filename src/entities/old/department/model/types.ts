@@ -1,6 +1,6 @@
-import {Superior} from "../../superior";
-import {TextBlock} from "../../text-block";
-import {Image} from "../../image";
+import {Superior} from "../../../superior";
+import {TextBlock} from "../../../text-block";
+import {Image} from "../../../image";
 
 export type Department = {
     id:number;

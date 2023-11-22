@@ -1,6 +1,6 @@
 import React from 'react';
 import {useParams} from "react-router";
-import {PageHead} from "../../../shared/ui/PageHead";
+import {PageHead} from "../../../widgets/PageHead";
 import {FacultyBlock} from "../../../widgets/old/FacultyBlock";
 import {observer} from "mobx-react";
 import LoadingSpinner from "../../../shared/ui/LoadingSpinner/LoadingSpinner";

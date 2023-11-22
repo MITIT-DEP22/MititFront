@@ -1,6 +1,6 @@
 import {action, makeAutoObservable, observable} from "mobx";
 import $api from "../../../shared/api";
-import {AccordionElement} from "../../entrance";
+import {AccordionElement} from "../../accordion-element";
 import {Page} from "../model/types";
 
 class PageStore {

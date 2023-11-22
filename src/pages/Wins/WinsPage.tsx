@@ -1,5 +1,5 @@
 import React from 'react';
-import {PageHead} from "shared/ui/PageHead";
+import {PageHead} from "widgets/PageHead";
 import {WinsBlock} from "../../widgets/WinsBlock";
 import {Wins} from "../../entities/wins";
 

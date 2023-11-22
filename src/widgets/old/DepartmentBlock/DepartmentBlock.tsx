@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import {Department} from "../../../entities/department";
+import {Department} from "../../../entities/old/department";
 import SectionTitle from "../../../shared/ui/SectionTitle/SectionTitle";
 import TextBlocks from "../../../shared/ui/TextBlocks/TextBlocks";
 import TextBlockComponent from "../../../shared/ui/TextBlockComponent/TextBlockComponent";

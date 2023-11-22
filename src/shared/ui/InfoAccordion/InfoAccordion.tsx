@@ -2,7 +2,7 @@ import React, {FC, useState} from 'react';
 import css from "./InfoAccordion.module.scss";
 import Collapse from "@kunukn/react-collapse";
 import TextBlocks from "../TextBlocks/TextBlocks";
-import {AccordionElement} from "entities/entrance";
+import {AccordionElement} from "entities/accordion-element";
 
 interface InfoAccordion {
     item: AccordionElement

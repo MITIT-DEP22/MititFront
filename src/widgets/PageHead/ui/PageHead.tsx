@@ -1,7 +1,7 @@
 import React, {FC, useEffect, useState} from 'react';
 import css from "./PageHead.module.scss"
-import Icon from "../../Icon/Icon";
-import {API_URL, IMAGES_PATH} from "../../../api";
+import Icon from "../../../shared/ui/Icon/Icon";
+import {API_URL, IMAGES_PATH} from "../../../shared/api";
 
 interface PageHeadProps {
     title: string;

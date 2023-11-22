@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useParams} from "react-router";
-import {PageHead} from "../../../shared/ui/PageHead";
-import {Unit} from "../../../entities/unit";
+import {PageHead} from "../../../widgets/PageHead";
+import {Unit} from "../../../entities/old/unit";
 import {UnitBlock} from "../../../widgets/old/UnitBlock";
 
  const UnitPage = () => {

@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import {Unit} from "../../../../entities/unit";
+import {Unit} from "../../../../entities/old/unit";
 import SectionTitle from "../../../../shared/ui/SectionTitle/SectionTitle";
 import SuperiorCard from "../../../../shared/ui/TextBlockComponent/ui/CompositionOfSuperiors/ui/SuperiorCard/SuperiorCard";
 import TextBlockComponent from "../../../../shared/ui/TextBlockComponent/TextBlockComponent";

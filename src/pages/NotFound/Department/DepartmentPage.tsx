@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import {PageHead} from "../../../shared/ui/PageHead";
+import {PageHead} from "../../../widgets/PageHead";
 import {useParams} from "react-router";
-import {Department} from "../../../entities/department";
+import {Department} from "../../../entities/old/department";
 import DepartmentBlock from "../../../widgets/old/DepartmentBlock/DepartmentBlock";
 
  const DepartmentPage = () => {

@@ -1,8 +1,8 @@
-import {Superior} from "../../superior";
+import {Superior} from "../../../superior";
 import {Department} from "../../department";
-import {TextBlock} from "../../text-block";
-import {Image} from "../../image";
-import {Speciality} from "../../speciality";
+import {TextBlock} from "../../../text-block";
+import {Image} from "../../../image";
+import {Speciality} from "../../../speciality";
 
 export type Faculty = {
     id:number;

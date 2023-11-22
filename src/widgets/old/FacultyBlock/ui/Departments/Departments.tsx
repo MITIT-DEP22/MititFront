@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import {Department} from "../../../../../entities/department";
+import {Department} from "../../../../../entities/old/department";
 import SuperiorCard from "../../../../../shared/ui/TextBlockComponent/ui/CompositionOfSuperiors/ui/SuperiorCard/SuperiorCard";
 import css from "./Departments.module.scss"
 import DepartmentCard from "./ui/DepartmentCard";

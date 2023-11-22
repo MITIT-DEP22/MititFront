@@ -1,6 +1,6 @@
 import {Image} from "../../image";
 import {TextBlock} from "../../text-block";
-import {AccordionElement} from "../../entrance";
+import {AccordionElement} from "../../accordion-element";
 
 export type Page = {
     name:string;

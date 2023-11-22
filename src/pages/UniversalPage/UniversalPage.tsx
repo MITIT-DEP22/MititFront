@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {PageHead} from "shared/ui/PageHead";
+import {PageHead} from "widgets/PageHead";
 import TextBlocks from "shared/ui/TextBlocks/TextBlocks";
 import LoadingSpinner from "shared/ui/LoadingSpinner/LoadingSpinner";
 import {observer} from "mobx-react";

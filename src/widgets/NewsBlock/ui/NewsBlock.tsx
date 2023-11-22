@@ -23,6 +23,7 @@ export const NewsBlock = observer(() => {
                     </div>
             }
             <Pagination/>
+            <a href="http://192.168.0.157:8082/api/v1/files/1">file</a>
         </BlockContainer>
     );
 });

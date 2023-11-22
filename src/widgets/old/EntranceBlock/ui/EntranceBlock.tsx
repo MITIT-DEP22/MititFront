@@ -6,8 +6,8 @@ export const EntranceBlock = () => {
     return (
         <BlockContainer>
             {/*<SectionTitle title={"Вступникам"}/>*/}
-            {/*{entrances.map(entrance => (*/}
-            {/*        <InfoAccordion entrance={entrance}/>*/}
+            {/*{entrances.map(accordion-element => (*/}
+            {/*        <InfoAccordion accordion-element={accordion-element}/>*/}
             {/*))}*/}
         </BlockContainer>
     );

@@ -3,7 +3,7 @@ import {RouterNames} from "../../enums/RouterNames";
 import {Image} from "../../../entities/image";
 import {List, TextBlock} from "../../../entities/text-block";
 import {Row, RowElement, Table} from "../../../entities/text-block/model/types";
-import {AccordionElement} from "../../../entities/entrance";
+import {AccordionElement} from "../../../entities/accordion-element";
 
 export const entrancesPage: Page = {
     name: RouterNames.ENTRANTS.name,

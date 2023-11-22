@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import css from "./Faculty.module.scss"
 import SectionTitle from "../../../../shared/ui/SectionTitle/SectionTitle";
-import {Faculty} from "../../../../entities/faculty";
+import {Faculty} from "../../../../entities/old/faculty";
 import Description from "./Descrition/Description";
 import Branches from "./Branches/Branches";
 import Specialities from "./Specialities/Specialities";
