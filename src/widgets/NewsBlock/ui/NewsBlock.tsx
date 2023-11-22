@@ -7,6 +7,7 @@ import LoadingSpinner from "shared/ui/LoadingSpinner/LoadingSpinner";
 import {NewsCard} from "features/NewsCard/NewsCard";
 import css from "./NewsBlock.module.scss"
 import Pagination from "./Pagination/Pagination";
+import ReactPaginate from "react-paginate";
 
 export const NewsBlock = observer(() => {
     const {news, isLoading} = newsStore
@@ -23,7 +24,7 @@ export const NewsBlock = observer(() => {
                     </div>
             }
             <Pagination/>
-            <a href="http://192.168.0.157:8082/api/v1/files/1">file</a>
+
         </BlockContainer>
     );
 });

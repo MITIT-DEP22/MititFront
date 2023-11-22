@@ -3,6 +3,7 @@
   display: flex;
   gap: 5px;
   justify-content: center;
+  list-style-type: none;
 }
 
 .container > *{
@@ -11,11 +12,15 @@
   width: 30px;
   border-radius: 5px;
   border:none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     scale: 1.05;
     transition-duration: 200ms;
     cursor: pointer;
+    background: #a1a1a1;
   }
 
 }
@@ -23,7 +28,6 @@
 .paginationBtn_active{
   background: linear-gradient(#335a3e, #174022);
   border: none;
-
   color: white;
 
 }
@@ -33,3 +37,4 @@
   flex-direction: column;
   justify-content: end;
 }
+
