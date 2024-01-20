@@ -22,7 +22,7 @@ export const FacultyBlock: FC<FacultyProps> = ({faculty}) => {
             <Description value={faculty.description}/>
 
             <div className={css.superiorContainer}>
-                <CompositionOfSuperiors superiors={faculty.superiors}/>
+                {/*<CompositionOfSuperiors superiors={faculty.superiors}/>*/}
             </div>
 
             <Branches branches={faculty.branches}/>

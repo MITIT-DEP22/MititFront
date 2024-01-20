@@ -9,6 +9,7 @@ import OListsContainer from "./ui/oListsContainer/oListsContainer";
 import ImageTextRowsContainer from "./ui/ImageTextRow/ImageTextRowsContainer";
 import {CompositionOfSuperiors} from "./ui/CompositionOfSuperiors";
 import SectionTitle from "../SectionTitle/SectionTitle";
+import FileElementComponent from "./ui/FileElement/FileElementComponent";
 
 interface TextBlockComponentProps {
     textBlock: TextBlock
@@ -18,34 +19,39 @@ const TextBlockComponent: FC<TextBlockComponentProps> = ({textBlock}) => {
     return (
         <div className={css.container}>
             {textBlock.title &&
-                <SectionTitle  title={textBlock.title}/>
+                <SectionTitle id={textBlock.id} title={textBlock.title}/>
             }
 
             {textBlock.textContent &&
-                <TextContentContainer  id={textBlock.id} textContent={textBlock.textContent}/>
+                <TextContentContainer id={textBlock.id} textContent={textBlock.textContent}/>
             }
 
-            {textBlock.uLists &&
-                <UListsContainer  id={textBlock.id} lists={textBlock.uLists}/>
+            {textBlock.uList &&
+                <UListsContainer id={textBlock.id} list={textBlock.uList}/>
             }
-            {textBlock.oLists &&
-                <OListsContainer  id={textBlock.id} lists={textBlock.oLists}/>
+
+            {textBlock.oList &&
+                <OListsContainer id={textBlock.id} list={textBlock.oList}/>
             }
 
             {textBlock.images &&
-                <ImagesContainer  id={textBlock.id} images={textBlock.images}/>
+                <ImagesContainer id={textBlock.id} images={textBlock.images}/>
             }
 
-            {textBlock.tables &&
-                <TablesContainer  id={textBlock.id} tables={textBlock.tables}/>
+            {textBlock.table &&
+                <TablesContainer id={textBlock.id} table={textBlock.table}/>
             }
 
-            {textBlock.imageTextRows &&
-                <ImageTextRowsContainer  id={textBlock.id} imageTextRows={textBlock.imageTextRows}/>
+            {textBlock.imageTextRow &&
+                <ImageTextRowsContainer id={textBlock.id} imageTextRow={textBlock.imageTextRow}/>
             }
 
-            {textBlock.superiors &&
-                <CompositionOfSuperiors id={textBlock.id} superiors={textBlock.superiors}/>
+            {textBlock.superior &&
+                <CompositionOfSuperiors id={textBlock.id} superior={textBlock.superior}/>
+            }
+
+            {textBlock.fileElement &&
+                <FileElementComponent id={textBlock.id} fileElement={textBlock.fileElement}/>
             }
 
         </div>

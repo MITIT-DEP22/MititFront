@@ -1,22 +1,27 @@
 import {Image} from "../../image";
 import {Superior} from "../../superior";
 
+
 export type TextBlock = {
-    id?:number;
     title?: string;
-    textContent?: string[];
-    uLists?: List[];
-    oLists?: List[];
+    textContent?: string;
+    uList?: List;
+    oList?: List;
     images?: Image[];
-    tables?: Table[];
-    imageTextRows?: ImageTextRow[];
-    superiors?:Superior[];
+    table?: Table;
+    imageTextRow?: ImageTextRow;
+    superior?: Superior;
+    orderNumber: number;
+    isFromAccordion: boolean;
+    fileElement: FileElement;
+    type: string;
+    id?: number;
 }
 
 export type ImageTextRow = {
     image: Image;
     text: string;
-    imgLeft:boolean;
+    imgLeft: boolean;
 }
 
 export type List = {
@@ -34,4 +39,11 @@ export type Row = {
 
 export type RowElement = {
     value: string[]
+}
+
+export type FileElement = {
+    id: number;
+    title?: string;
+    image: Image;
+    fileId:number;
 }

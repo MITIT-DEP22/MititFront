@@ -1,3 +1,43 @@
+//
+//.tablesContainer {
+//  overflow-x: scroll;
+//
+//  @media screen and (width < 900px) {
+//    width: 90vw;
+//  }
+//}
+//
+//.row {
+//  //border: 1px solid black;
+//}
+//
+//.rowElement {
+//  border: 1px solid black;
+//  text-align: center;
+//}
+//
+//.table {
+//  width: 100%;
+//  border-collapse: collapse;
+//  border: 1px solid black;
+//}
+//
+//.tableElement {
+//  padding: 20px;
+//  text-align: center;
+//}
+//
+//.header{
+//  padding: 20px;
+//  text-align: center;
+//  border: 1px solid black;
+//}
+//
+//.tableElementMany {
+//  border-bottom: 1px solid black;
+//}
+//
+//
 
 .tablesContainer {
   overflow-x: scroll;
@@ -8,18 +48,24 @@
 }
 
 .row {
-  //border: 1px solid black;
+  display: flex;
+  justify-content: center;
 }
 
 .rowElement {
   border: 1px solid black;
   text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .table {
   width: 100%;
   border-collapse: collapse;
   border: 1px solid black;
+  display: flex;
+  flex-direction: column;
 }
 
 .tableElement {

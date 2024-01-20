@@ -3,9 +3,10 @@ import {TextBlock} from "../../text-block";
 import {AccordionElement} from "../../accordion-element";
 
 export type Page = {
-    name:string;
+    id:number;
+    name: string;
     titleImage: Image;
-    title:string;
-    textBlocks?: TextBlock[];
-    accordionElements?:AccordionElement[];
+    title: string;
+    textBlocks: TextBlock[];
+    accordionElements: AccordionElement[];
 }

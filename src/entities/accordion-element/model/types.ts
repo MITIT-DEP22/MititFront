@@ -1,7 +1,9 @@
 import {TextBlock} from "../../text-block";
 
 export type AccordionElement = {
-    id:number;
-    title:string;
+    type: string;
+    id: number;
+    title: string;
     textBlocks: TextBlock[]
+    orderNumber: number;
 }

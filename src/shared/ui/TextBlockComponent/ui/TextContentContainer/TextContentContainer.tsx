@@ -4,17 +4,18 @@ import HTMLReactParser from "html-react-parser";
 
 
 interface TextContentProps {
-    textContent: string[]
-    id?:number;
+    textContent: string
+    id?: number;
 }
 
 const TextContentContainer: FC<TextContentProps> = ({textContent, id}) => {
     return (
-        <div className={css.contentContainer}>
-            {textContent?.map((item,index) => (
-                <div key={`text-content_${index}_${id}`} className={css.textContent}>{HTMLReactParser(item)}</div>
-            ))}
-        </div>
+        <>
+            <div className={css.contentContainer}>
+                <div key={`text-content_${id}`}
+                     className={css.textContent}>{HTMLReactParser(textContent)}</div>
+            </div>
+        </>
     );
 };
 

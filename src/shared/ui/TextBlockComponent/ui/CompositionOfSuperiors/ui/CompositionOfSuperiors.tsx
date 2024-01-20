@@ -6,19 +6,18 @@ import {FC} from "react";
 
 
 interface SuperiorsCompositionProps {
-    superiors: Superior[]
-    id?:number;
+    superior: Superior
+    id?: number;
 }
 
-export const CompositionOfSuperiors: FC<SuperiorsCompositionProps> = observer(({superiors,id}) => {
+export const CompositionOfSuperiors: FC<SuperiorsCompositionProps> = ({superior, id}) => {
     return (
         <div className={css.compositionCards}>
-            {superiors?.map((item, index) => (
-                index % 2 ?
-                    <SuperiorCard key={`superior-card_${index}_${id}`} superior={item} positionRight={false}/>
-                    :
-                    <SuperiorCard key={`superior-card_${index}_${id}`} superior={item} positionRight={true}/>
-            ))}
+            {superior.imgLeft?
+                <SuperiorCard key={`superior-card_${id}`} superior={superior} positionRight={false}/>
+                :
+                <SuperiorCard key={`superior-card_${id}`} superior={superior} positionRight={true}/>
+            }
         </div>
     )
-})
+}

@@ -1,12 +1,13 @@
 import {Image} from "../../image";
 
 export type Superior ={
-    textContent?: string[],
+    textContent?: string,
     position:string,
     fullName:string,
     achievements?:string[],
     image:Image,
     militaryRank: string,
     phoneNumber?: string,
+    imgLeft: boolean
 }
 

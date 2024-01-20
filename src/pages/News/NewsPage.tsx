@@ -6,96 +6,96 @@ import $api from "shared/api";
 import {TextBlock} from "entities/text-block";
 import {AccordionElement} from "entities/accordion-element";
 import {Page} from "entities/page";
-import {superiorsPage} from "../../shared/data/dump-data/institute/superiorsPage";
-import {entrancesPage} from "../../shared/data/dump-data/entrancePage";
-import {educationsPage} from "../../shared/data/dump-data/educationPage";
-import {publicInfoPage} from "../../shared/data/dump-data/institute/publicInfoPage";
-import {sciencesPage} from "../../shared/data/dump-data/sciencePage";
-import {contactsPage} from "../../shared/data/dump-data/contactsPage";
-import {heroesPage} from "../../shared/data/dump-data/institute/heroesPage";
-import {historyPage} from "../../shared/data/dump-data/institute/historyPage";
-import {whyMITITPage} from "../../shared/data/dump-data/institute/whyMITITPage";
-import {unit1Page} from "../../shared/data/dump-data/units/unit1";
-import {unit2Page} from "../../shared/data/dump-data/units/unit2";
-import {unit3Page} from "../../shared/data/dump-data/units/unit3";
-import {faculty1Page} from "../../shared/data/dump-data/faculties/faculty1Page";
-import {faculty2Page} from "../../shared/data/dump-data/faculties/faculty2Page";
-import {faculty3Page} from "../../shared/data/dump-data/faculties/faculty3Page";
-import {department1Page} from "../../shared/data/dump-data/departments/department1Page";
-import {department6Page} from "../../shared/data/dump-data/departments/department6Page";
-import {department5Page} from "../../shared/data/dump-data/departments/department5Page";
-import {department4Page} from "../../shared/data/dump-data/departments/department4Page";
-import {department3Page} from "../../shared/data/dump-data/departments/department3Page";
-import {department2Page} from "../../shared/data/dump-data/departments/department2Page";
-import {cooperationPage} from "../../shared/data/dump-data/cooperationPage";
-import {homeSliders} from "../../shared/data/dump-data/homeSliders";
+// import {superiorsPage} from "../../shared/data/dump-data/institute/superiorsPage";
+// import {entrancesPage} from "../../shared/data/dump-data/entrancePage";
+// import {educationsPage} from "../../shared/data/dump-data/educationPage";
+// import {publicInfoPage} from "../../shared/data/dump-data/institute/publicInfoPage";
+// import {sciencesPage} from "../../shared/data/dump-data/sciencePage";
+// import {contactsPage} from "../../shared/data/dump-data/contactsPage";
+// import {heroesPage} from "../../shared/data/dump-data/institute/heroesPage";
+// import {historyPage} from "../../shared/data/dump-data/institute/historyPage";
+// import {whyMITITPage} from "../../shared/data/dump-data/institute/whyMITITPage";
+// import {unit1Page} from "../../shared/data/dump-data/units/unit1";
+// import {unit2Page} from "../../shared/data/dump-data/units/unit2";
+// import {unit3Page} from "../../shared/data/dump-data/units/unit3";
+// import {faculty1Page} from "../../shared/data/dump-data/faculties/faculty1Page";
+// import {faculty2Page} from "../../shared/data/dump-data/faculties/faculty2Page";
+// import {faculty3Page} from "../../shared/data/dump-data/faculties/faculty3Page";
+// import {department1Page} from "../../shared/data/dump-data/departments/department1Page";
+// import {department6Page} from "../../shared/data/dump-data/departments/department6Page";
+// import {department5Page} from "../../shared/data/dump-data/departments/department5Page";
+// import {department4Page} from "../../shared/data/dump-data/departments/department4Page";
+// import {department3Page} from "../../shared/data/dump-data/departments/department3Page";
+// import {department2Page} from "../../shared/data/dump-data/departments/department2Page";
+// import {cooperationPage} from "../../shared/data/dump-data/cooperationPage";
+// import {homeSliders} from "../../shared/data/dump-data/homeSliders";
 
 const NewsPage = observer(() => {
 
-    const sendAllPages = () => {
-        sendPage(superiorsPage).then(() => {
-            sendPage(entrancesPage).then(() => {
-                sendPage(educationsPage).then(() => {
-                    sendPage(publicInfoPage).then(() => {
-                        sendPage(sciencesPage).then(() => {
-                            sendPage(contactsPage).then(() => {
-                                sendPage(heroesPage).then(() => {
-                                    sendPage(historyPage).then(() => {
-                                        sendPage(whyMITITPage).then(() => {
-                                            sendPage(unit1Page).then(() => {
-                                                sendPage(unit2Page).then(() => {
-                                                    sendPage(unit3Page).then(() => {
-                                                        sendPage(faculty1Page).then(() => {
-                                                            sendPage(faculty2Page).then(() => {
-                                                                sendPage(faculty3Page).then(() => {
-                                                                    sendPage(department1Page).then(() => {
-                                                                        sendPage(department2Page).then(() => {
-                                                                            sendPage(department3Page).then(() => {
-                                                                                sendPage(department4Page).then(() => {
-                                                                                    sendPage(department5Page).then(() => {
-                                                                                        sendPage(department6Page).then(() => {
-                                                                                            sendPage(cooperationPage)
-                                                                                        })
-                                                                                    })
-                                                                                })
-                                                                            })
-                                                                        })
-                                                                    })
-                                                                })
-                                                            })
-                                                        })
-                                                    })
-                                                })
-                                            })
-                                        })
-                                    })
-                                })
-                            })
-                        })
-                    })
-                })
-            })
-        })
-    }
+    // const sendAllPages = () => {
+    //     sendPage(superiorsPage).then(() => {
+    //         sendPage(entrancesPage).then(() => {
+    //             sendPage(educationsPage).then(() => {
+    //                 sendPage(publicInfoPage).then(() => {
+    //                     sendPage(sciencesPage).then(() => {
+    //                         sendPage(contactsPage).then(() => {
+    //                             sendPage(heroesPage).then(() => {
+    //                                 sendPage(historyPage).then(() => {
+    //                                     sendPage(whyMITITPage).then(() => {
+    //                                         sendPage(unit1Page).then(() => {
+    //                                             sendPage(unit2Page).then(() => {
+    //                                                 sendPage(unit3Page).then(() => {
+    //                                                     sendPage(faculty1Page).then(() => {
+    //                                                         sendPage(faculty2Page).then(() => {
+    //                                                             sendPage(faculty3Page).then(() => {
+    //                                                                 sendPage(department1Page).then(() => {
+    //                                                                     sendPage(department2Page).then(() => {
+    //                                                                         sendPage(department3Page).then(() => {
+    //                                                                             sendPage(department4Page).then(() => {
+    //                                                                                 sendPage(department5Page).then(() => {
+    //                                                                                     sendPage(department6Page).then(() => {
+    //                                                                                         sendPage(cooperationPage)
+    //                                                                                     })
+    //                                                                                 })
+    //                                                                             })
+    //                                                                         })
+    //                                                                     })
+    //                                                                 })
+    //                                                             })
+    //                                                         })
+    //                                                     })
+    //                                                 })
+    //                                             })
+    //                                         })
+    //                                     })
+    //                                 })
+    //                             })
+    //                         })
+    //                     })
+    //                 })
+    //             })
+    //         })
+    //     })
+    // }
 
     const counter = 0;
-    const sendSliders = (index: number) => {
-        $api.post("/slider-items", {
-            title: homeSliders[index].title,
-            text: homeSliders[index].text,
-            imageId: homeSliders[index].image.id,
-            mobileImageId: homeSliders[index].mobileImage?.id,
-            sliderDescriptionButton: {
-                href: "",
-                text: ""
-            }
-        }).then(res => {
-            console.log(res)
-            homeSliders[index++] && sendSliders(index)
-        }).catch(e => {
-            console.log(e)
-        })
-    }
+    // const sendSliders = (index: number) => {
+    //     $api.post("/slider-items", {
+    //         title: homeSliders[index].title,
+    //         text: homeSliders[index].text,
+    //         imageId: homeSliders[index].image.id,
+    //         mobileImageId: homeSliders[index].mobileImage?.id,
+    //         sliderDescriptionButton: {
+    //             href: "",
+    //             text: ""
+    //         }
+    //     }).then(res => {
+    //         console.log(res)
+    //         homeSliders[index++] && sendSliders(index)
+    //     }).catch(e => {
+    //         console.log(e)
+    //     })
+    // }
 
     // const counter2 = 0
     // const sendSpecialities = (index:number) => {

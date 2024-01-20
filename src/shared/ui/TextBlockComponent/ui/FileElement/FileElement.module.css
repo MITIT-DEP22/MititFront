@@ -1,0 +1,13 @@
+.image{
+    width: 25px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.link{
+    color:black
+}

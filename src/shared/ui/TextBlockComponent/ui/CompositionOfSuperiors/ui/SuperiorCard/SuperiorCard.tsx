@@ -4,7 +4,6 @@ import {Superior} from "entities/superior";
 import {ImageComponent} from "features/ImageComponent";
 import HTMLReactParser from "html-react-parser";
 
-
 interface ChiefCardData {
     superior: Superior;
     positionRight?: boolean;
@@ -16,12 +15,12 @@ const SuperiorCard: FC<ChiefCardData> = ({superior, positionRight, id}) => {
         <div className={css.chiefCard}>
             {positionRight ? (
                 <>
-                    <ImageComponent imgId={superior?.image?.id}/>
+                    <ImageComponent className={css.img} imgId={superior.image.id}/>
                     <div className={css.chiefCardTextContainer}>
                         <div className={`${css.chiefCardTextAbout} ${css.leftAlign}`}>
-                            {superior.textContent?.map((item,index)=>(
-                                <p key={`superior_text-about_${index}_${id}`}>{HTMLReactParser(item)}</p>
-                            ))}
+                            {superior.textContent &&
+                                <p key={`superior_text-about_${id}`}>{HTMLReactParser(superior.textContent)}</p>
+                            }
                         </div>
                         <div className={`${css.chiefCardText} ${css.leftAlign}`}>
                             <div className={`${positionRight ? css.borderLeft : css.borderRight}`}>
@@ -43,9 +42,9 @@ const SuperiorCard: FC<ChiefCardData> = ({superior, positionRight, id}) => {
                 <>
                     <div className={`${css.chiefCardTextContainer}`}>
                         <div className={`${css.chiefCardTextAbout} ${css.rightAlign}`}>
-                            {superior.textContent?.map((item,index)=>(
-                                <p key={`superior_text-about_${index}_${id}`}>{HTMLReactParser(item)}</p>
-                            ))}
+                            {superior.textContent &&
+                                <p key={`superior_text-about_${id}`}>{HTMLReactParser(superior.textContent)}</p>
+                            }
                         </div>
                         <div className={`${css.chiefCardText} ${css.rightAlign}`}>
                             <div className={`${positionRight ? css.borderLeft : css.borderRight}`}>
@@ -62,7 +61,7 @@ const SuperiorCard: FC<ChiefCardData> = ({superior, positionRight, id}) => {
                             <span className={css.chiefCardPhone}>{superior.phoneNumber}</span>
                         </div>
                     </div>
-                    <ImageComponent imgId={superior.image.id}/>
+                    <ImageComponent className={css.img} imgId={superior.image.id}/>
                 </>
             )}
         </div>
